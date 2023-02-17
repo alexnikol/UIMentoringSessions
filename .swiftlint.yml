@@ -1,0 +1,44 @@
+disabled_rules:
+  - todo
+  - identifier_name
+  - trailing_whitespace
+  - conditional_returns_on_newline
+  - sorted_imports
+  - unneeded_parentheses_in_closure_argument
+  - pattern_matching_keywords
+  - trailing_closure
+  - force_cast
+  - unused_optional_binding
+  - force_unwrapping
+opt_in_rules:
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - conditional_returns_on_newline
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - force_unwrapping
+  - multiline_parameters
+  - operator_usage_whitespace
+  - overridden_super_call
+  - private_outlet
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - single_test_class
+  - sorted_imports
+  - switch_case_on_newline
+  - unneeded_parentheses_in_closure_argument
+excluded:
+  - Carthage
+  - Pods
+  - Electra/Resources/R.generated.swift
+identifier_name:
+  excluded:
+    - id
+    - to
+    - in
+    - at
+    - of
+    - up
