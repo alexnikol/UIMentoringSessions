@@ -17,6 +17,7 @@
 		8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271F2299F81A300321A85 /* MenteesListController.swift */; };
 		8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271F4299F84D700321A85 /* ChallengesListViewController.swift */; };
 		8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271FC299F9A0C00321A85 /* MenteesList.swift */; };
+		8D4271FF299FA6EE00321A85 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D4271FE299FA6ED00321A85 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8D4271F2299F81A300321A85 /* MenteesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteesListController.swift; sourceTree = "<group>"; };
 		8D4271F4299F84D700321A85 /* ChallengesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesListViewController.swift; sourceTree = "<group>"; };
 		8D4271FC299F9A0C00321A85 /* MenteesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteesList.swift; sourceTree = "<group>"; };
+		8D4271FE299FA6ED00321A85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 		8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				8D4271FE299FA6ED00321A85 /* README.md */,
 			);
 			path = "CoffeeShop UI Challenge";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				8D4271E3299F7BBD00321A85 /* README.md in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
+				8D4271FF299FA6EE00321A85 /* README.md in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

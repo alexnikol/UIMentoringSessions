@@ -1,6 +1,11 @@
 # UIMentoringSessions
 Repository for mentees' UI practice, review, and improvements. Write to alexalmostengineer@gmail.com if you want to be a part of mentoring session
 
+## **List of available challenges**
+**Feature**                 | **Link on documentation (specs, use cases)**
+--------------------------- | -----------------------------------------------
+**`CoffeeShop UI Challenge`** | [Spec](UIMentoringSession/MenteesChallenges/CoffeeShop%20UI%20Challenge/README.md)
+
 ## How to work on challenges?
 
 - Write to alexalmostengineer@gmail.com and ask to add to the contributor's list.
