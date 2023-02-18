@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		337963CA29A0F4BB00B14675 /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337963C929A0F4BB00B14675 /* OleksandrKharchenkoFactory.swift */; };
+		337963D029A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337963CE29A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.swift */; };
+		337963D129A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 337963CF29A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.xib */; };
 		5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */; };
 		8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CC299F789400321A85 /* AppDelegate.swift */; };
 		8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CE299F789400321A85 /* SceneDelegate.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		337963C929A0F4BB00B14675 /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
+		337963CE29A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoCoffeeShopListViewController.swift; sourceTree = "<group>"; };
+		337963CF29A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OleksandrKharchenkoCoffeeShopListViewController.xib; sourceTree = "<group>"; };
 		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		8D4271C9299F789400321A85 /* UIMentoringSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIMentoringSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4271CC299F789400321A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		337963CD29A0FB5200B14675 /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+				337963CE29A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.swift */,
+				337963CF29A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.xib */,
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
 		5ED2BA0C25A7B4D4BD72A1F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +117,7 @@
 		8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				337963CD29A0FB5200B14675 /* OleksandrKharchenko */,
 				8D4271FE299FA6ED00321A85 /* README.md */,
 			);
 			path = "CoffeeShop UI Challenge";
@@ -196,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337963D129A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.xib in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
 			);
@@ -239,6 +254,7 @@
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
+				337963D029A0FC2000B14675 /* OleksandrKharchenkoCoffeeShopListViewController.swift in Sources */,
 				8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

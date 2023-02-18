@@ -8,7 +8,7 @@ final class OleksandrKharchenkoFactory: MenteeChallengesFactory {
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
         case .coffeeShopList:
-            return nil
+            return OleksandrKharchenkoCoffeeShopListViewController()
         case .login:
             return nil
         }
