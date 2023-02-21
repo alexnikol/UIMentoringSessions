@@ -5,6 +5,6 @@ import Foundation
 enum MenteesList {
     
     static func list() -> [MenteeChallengesFactory] {
-        return [OleksandrNikolaichukFactory()]
+        return [YefimYakuninFactory()]
     }
 }
