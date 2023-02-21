@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
+		481D8890299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888E299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.swift */; };
+		481D8891299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481D888F299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.xib */; };
 		5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */; };
 		8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CC299F789400321A85 /* AppDelegate.swift */; };
 		8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CE299F789400321A85 /* SceneDelegate.swift */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
+		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
+		481D888E299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakunin_CoffeShopListViewController.swift; sourceTree = "<group>"; };
+		481D888F299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakunin_CoffeShopListViewController.xib; sourceTree = "<group>"; };
 		8D4271C9299F789400321A85 /* UIMentoringSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIMentoringSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4271CC299F789400321A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4271CE299F789400321A85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		481D888D299FF909002ABFDC /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+				481D888E299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.swift */,
+				481D888F299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.xib */,
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
 		5ED2BA0C25A7B4D4BD72A1F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +119,7 @@
 		8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				481D888D299FF909002ABFDC /* YefimYakunin */,
 				8D4271FE299FA6ED00321A85 /* README.md */,
 			);
 			path = "CoffeeShop UI Challenge";
@@ -124,6 +140,7 @@
 			children = (
 				8D4271FC299F9A0C00321A85 /* MenteesList.swift */,
 				8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */,
+				481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */,
 			);
 			path = MenteesList;
 			sourceTree = "<group>";
@@ -197,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
+				481D8891299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.xib in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,7 +256,9 @@
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
+				481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */,
 				8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */,
+				481D8890299FF98C002ABFDC /* YefimYakunin_CoffeShopListViewController.swift in Sources */,
 				8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -361,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -379,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WUJDW64U79;
+				DEVELOPMENT_TEAM = 59HT9UJH46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -387,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,9 +415,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AE-team.UIMentoringSession";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -408,7 +432,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WUJDW64U79;
+				DEVELOPMENT_TEAM = 59HT9UJH46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -416,6 +440,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,9 +448,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AE-team.UIMentoringSession";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
