@@ -100,6 +100,7 @@
 		8D4271E4299F7BD000321A85 /* MenteesChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				8D46C98929A64A0900431E17 /* Start Screen UI Challenge */,
 				8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */,
 			);
 			path = MenteesChallenges;
@@ -132,6 +133,13 @@
 				336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */,
 			);
 			path = MenteesList;
+			sourceTree = "<group>";
+		};
+		8D46C98929A64A0900431E17 /* Start Screen UI Challenge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Start Screen UI Challenge";
 			sourceTree = "<group>";
 		};
 		99B34E112B037536B2CDAFE0 /* Frameworks */ = {
