@@ -25,6 +25,7 @@ class StartScreenViewController: UIViewController {
         letsGoButton.setTitle("Let's Go!", for: .normal)
         letsGoButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
         letsGoButton.setTitleColor(UIColor.white, for: .normal)
+        letsGoButton.backgroundColor = .blue
         letsGoButton.layer.cornerRadius = 30
         letsGoButton.layer.masksToBounds = true
     }
