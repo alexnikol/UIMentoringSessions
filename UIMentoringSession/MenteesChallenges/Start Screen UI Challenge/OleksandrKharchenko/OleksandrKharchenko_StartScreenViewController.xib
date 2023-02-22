@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OleksandrKharchenko_StartScreenViewController" customModule="UIMentoringSession" customModuleProvider="target">
             <connections>
+                <outlet property="LetsGoButton" destination="O4h-kN-9pi" id="WwS-zQ-3cj"/>
+                <outlet property="centralLabel" destination="Re6-Do-YB3" id="QAk-x4-LJT"/>
+                <outlet property="topLabel" destination="pQE-VB-ffV" id="Bhl-HG-Wde"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,12 +22,68 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-bc-cBC">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="takee" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQE-VB-ffV" userLabel="topLabel">
+                    <rect key="frame" x="160" y="83" width="73.333333333333314" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="FdC-gF-GpD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re6-Do-YB3" userLabel="centralLabel">
+                    <rect key="frame" x="16" y="610" width="361" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="NF3-xo-3WQ"/>
+                    </constraints>
+                    <string key="text">Happiness is closer
+than you think</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-kN-9pi" userLabel="LetsGoButton">
+                    <rect key="frame" x="16" y="742" width="361" height="58"/>
+                    <color key="backgroundColor" name="Let'sGoButtonColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="EyC-DF-HXg"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Let's Go!">
+                        <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="23"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="104" y="-11"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5ki-bc-cBC" secondAttribute="bottom" id="0DG-DV-Mc2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O4h-kN-9pi" secondAttribute="trailing" constant="16" id="C1K-8K-Ffe"/>
+                <constraint firstItem="Re6-Do-YB3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="MvG-Gj-eMk"/>
+                <constraint firstItem="5ki-bc-cBC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vv2-Mz-6v8"/>
+                <constraint firstItem="pQE-VB-ffV" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WIq-yV-FnO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="O4h-kN-9pi" secondAttribute="bottom" constant="18" id="blU-m6-UId"/>
+                <constraint firstItem="pQE-VB-ffV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="cwq-RI-H9v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Re6-Do-YB3" secondAttribute="trailing" constant="16" id="g17-m7-I3c"/>
+                <constraint firstItem="5ki-bc-cBC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jtb-DF-9Yk"/>
+                <constraint firstItem="5ki-bc-cBC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lRF-X2-ovA"/>
+                <constraint firstItem="pQE-VB-ffV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" priority="750" constant="175" id="sbX-dB-MAY"/>
+                <constraint firstItem="O4h-kN-9pi" firstAttribute="top" secondItem="Re6-Do-YB3" secondAttribute="bottom" constant="52" id="vrG-31-eCS"/>
+                <constraint firstItem="O4h-kN-9pi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xi7-YP-e59"/>
+            </constraints>
+            <point key="canvasLocation" x="103.05343511450381" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
+        <image name="GoodDogs" width="375" height="812"/>
+        <namedColor name="Let'sGoButtonColor">
+            <color red="0.89671558139999996" green="0.60451430080000002" blue="0.57253783940000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
