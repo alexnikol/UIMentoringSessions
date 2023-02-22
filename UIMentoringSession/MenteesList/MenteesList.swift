@@ -5,6 +5,10 @@ import Foundation
 enum MenteesList {
     
     static func list() -> [MenteeChallengesFactory] {
-        return [OleksandrNikolaichukFactory(), OleksandrKharchenkoFactory()]
+        return [
+            OleksandrNikolaichukFactory(),
+            YefimYakuninFactory(),
+            OleksandrKharchenkoFactory()
+        ]
     }
 }
