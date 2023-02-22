@@ -6,12 +6,10 @@ final class YefimYakuninFactory: MenteeChallengesFactory {
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
         case .coffeeShopList:
-            let coffeeShopListVC = YefimYakunin_CoffeShopListViewController()
-            return coffeeShopListVC
+            return nil
             
         case .login:
             return nil
         }
     }
 }
-
