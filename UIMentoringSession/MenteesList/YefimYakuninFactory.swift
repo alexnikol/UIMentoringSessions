@@ -1,7 +1,7 @@
 import UIKit
 
 final class YefimYakuninFactory: MenteeChallengesFactory {
-    var menteeName = "Yefim Yakunin"
+    var menteeName = "Yefim Yakunin!!!!!!"
     
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
