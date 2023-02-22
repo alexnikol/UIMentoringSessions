@@ -6,5 +6,4 @@ enum MenteesList {
     
     static func list() -> [MenteeChallengesFactory] {
         return [OleksandrNikolaichukFactory(),YefimYakuninFactory()]
-    }
 }
