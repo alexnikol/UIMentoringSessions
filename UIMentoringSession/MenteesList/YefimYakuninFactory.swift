@@ -7,9 +7,10 @@ final class YefimYakuninFactory: MenteeChallengesFactory {
         switch challenge {
         case .coffeeShopList:
             return nil
-            
         case .login:
             return nil
+        case .startScreen:
+            return YefimYakunin_StartScreenViewController()
         }
     }
 }
