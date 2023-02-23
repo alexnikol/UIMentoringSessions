@@ -26,10 +26,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Re6-Do-YB3" userLabel="centralLabel">
-                    <rect key="frame" x="16" y="618" width="361" height="72"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="72" id="NF3-xo-3WQ"/>
-                    </constraints>
+                    <rect key="frame" x="16" y="603.66666666666663" width="361" height="76.333333333333371"/>
                     <string key="text">Happiness is closer
 than you think</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
@@ -37,7 +34,7 @@ than you think</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-kN-9pi" userLabel="LetsGoButton">
-                    <rect key="frame" x="16" y="742" width="361" height="58"/>
+                    <rect key="frame" x="16" y="732" width="361" height="58"/>
                     <color key="backgroundColor" name="Let'sGoButtonColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="58" id="EyC-DF-HXg"/>
@@ -45,7 +42,7 @@ than you think</string>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Let's Go!">
-                        <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="23"/>
+                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                     </buttonConfiguration>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogotipTakee" translatesAutoresizingMaskIntoConstraints="NO" id="6kz-hw-8fa">
@@ -61,7 +58,7 @@ than you think</string>
                 <constraint firstItem="5ki-bc-cBC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vv2-Mz-6v8"/>
                 <constraint firstItem="6kz-hw-8fa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="X24-NW-dz8"/>
                 <constraint firstItem="6kz-hw-8fa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="152" id="Yrz-1E-WH7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="O4h-kN-9pi" secondAttribute="bottom" constant="18" id="blU-m6-UId"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="O4h-kN-9pi" secondAttribute="bottom" constant="28" id="blU-m6-UId"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Re6-Do-YB3" secondAttribute="trailing" constant="16" id="g17-m7-I3c"/>
                 <constraint firstItem="5ki-bc-cBC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jtb-DF-9Yk"/>
                 <constraint firstItem="5ki-bc-cBC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lRF-X2-ovA"/>
