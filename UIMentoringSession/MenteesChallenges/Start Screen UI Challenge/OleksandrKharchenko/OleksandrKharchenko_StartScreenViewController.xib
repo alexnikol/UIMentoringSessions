@@ -12,8 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OleksandrKharchenko_StartScreenViewController" customModule="UIMentoringSession" customModuleProvider="target">
             <connections>
-                <outlet property="LetsGoButton" destination="O4h-kN-9pi" id="WwS-zQ-3cj"/>
                 <outlet property="centralLabel" destination="Re6-Do-YB3" id="QAk-x4-LJT"/>
+                <outlet property="letsGoButton" destination="O4h-kN-9pi" id="WwS-zQ-3cj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,7 +33,7 @@ than you think</string>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-kN-9pi" userLabel="LetsGoButton">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-kN-9pi" userLabel="letsGoButton">
                     <rect key="frame" x="16" y="732" width="361" height="58"/>
                     <color key="backgroundColor" name="Let'sGoButtonColor"/>
                     <constraints>

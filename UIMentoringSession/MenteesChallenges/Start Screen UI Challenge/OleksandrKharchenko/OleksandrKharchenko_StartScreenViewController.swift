@@ -6,11 +6,11 @@ class OleksandrKharchenko_StartScreenViewController: UIViewController {
 
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var centralLabel: UILabel!
-    @IBOutlet weak var LetsGoButton: UIButton!
+    @IBOutlet weak var letsGoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        LetsGoButton.layer.cornerRadius = 28
+        letsGoButton.layer.cornerRadius = 28
     }
 }
