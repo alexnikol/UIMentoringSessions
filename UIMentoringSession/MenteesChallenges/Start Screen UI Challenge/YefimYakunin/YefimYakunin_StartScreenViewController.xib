@@ -25,10 +25,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoTakee" translatesAutoresizingMaskIntoConstraints="NO" id="k8V-SJ-NbY">
-                    <rect key="frame" x="16" y="36" width="288" height="16"/>
+                    <rect key="frame" x="125.5" y="36" width="69" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Hcq-Me-sm6"/>
+                        <constraint firstAttribute="width" constant="69" id="er2-Sd-SlS"/>
+                    </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-NF-lQu">
-                    <rect key="frame" x="16" y="338.5" width="288" height="115"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-NF-lQu">
+                    <rect key="frame" x="16" y="377.5" width="288" height="76"/>
                     <string key="text">Happiness is closer
 than you think</string>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
@@ -48,17 +52,16 @@ than you think</string>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="k8V-SJ-NbY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8XR-oT-rFJ"/>
                 <constraint firstItem="eRs-Vl-5Pn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9NG-u0-Bea"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k8V-SJ-NbY" secondAttribute="trailing" constant="16" id="DGe-nw-M2H"/>
                 <constraint firstItem="eRs-Vl-5Pn" firstAttribute="top" secondItem="BpM-NF-lQu" secondAttribute="bottom" constant="52" id="EoM-Om-2Dm"/>
                 <constraint firstItem="675-6a-1bu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gix-ov-0ms"/>
                 <constraint firstItem="675-6a-1bu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KFj-GF-i9L"/>
-                <constraint firstItem="k8V-SJ-NbY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="TYj-iK-O6X"/>
                 <constraint firstAttribute="trailing" secondItem="675-6a-1bu" secondAttribute="trailing" id="cOb-nh-SXj"/>
                 <constraint firstItem="BpM-NF-lQu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fHG-Ye-RNB"/>
+                <constraint firstItem="k8V-SJ-NbY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fM5-or-l63"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BpM-NF-lQu" secondAttribute="trailing" constant="16" id="lWl-jL-d5O"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eRs-Vl-5Pn" secondAttribute="trailing" constant="16" id="m8G-I6-Thv"/>
+                <constraint firstItem="k8V-SJ-NbY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="uJS-eJ-fzN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eRs-Vl-5Pn" secondAttribute="bottom" constant="28" id="uuP-5P-d3T"/>
                 <constraint firstAttribute="bottom" secondItem="675-6a-1bu" secondAttribute="bottom" id="yHA-dn-tdD"/>
             </constraints>
