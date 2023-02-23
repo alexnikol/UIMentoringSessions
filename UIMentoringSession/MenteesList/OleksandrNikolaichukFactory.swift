@@ -8,7 +8,7 @@ final class OleksandrNikolaichukFactory: MenteeChallengesFactory {
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
         case .coffeeShopList:
-            return nil
+            return OlNikol_CoffeeChallengeViewController(nibName: "OlNikol_CoffeeChallengeViewController", bundle: nil)
             
         case .login:
             return nil

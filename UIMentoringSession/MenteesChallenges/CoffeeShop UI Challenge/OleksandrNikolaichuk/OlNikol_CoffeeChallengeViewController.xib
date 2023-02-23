@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OlNikol_CoffeeChallengeViewController" customModule="UIMentoringSession" customModuleProvider="target">
+            <connections>
+                <outlet property="mainButton" destination="kS6-pu-7qF" id="L02-5S-TqM"/>
+                <outlet property="mapWrap" destination="EeA-30-nqA" id="nHB-Et-hwg"/>
+                <outlet property="secondaryTitle" destination="bvH-S9-p7W" id="vOD-Y6-kG8"/>
+                <outlet property="tableView" destination="J1L-2W-Azs" id="n83-6Q-Bgf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your favorite coffee shops. Save places and easily find them on the map" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvH-S9-p7W">
+                    <rect key="frame" x="16" y="67" width="361" height="38.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" name="OLNikSecondaryColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS6-pu-7qF" customClass="OlNik__MainButton" customModule="UIMentoringSession" customModuleProvider="target">
+                    <rect key="frame" x="16" y="135.33333333333334" width="361" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Fqb-mC-Dix"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeA-30-nqA">
+                    <rect key="frame" x="0.0" y="201.33333333333337" width="393" height="213.66666666666663"/>
+                    <color key="backgroundColor" systemColor="systemMintColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="EeA-30-nqA" secondAttribute="height" multiplier="375:204" id="m1b-Ie-bna"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J1L-2W-Azs">
+                    <rect key="frame" x="0.0" y="415" width="393" height="437"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kS6-pu-7qF" firstAttribute="top" secondItem="bvH-S9-p7W" secondAttribute="bottom" constant="30" id="251-lF-JoX"/>
+                <constraint firstItem="kS6-pu-7qF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="5tU-xW-qmN"/>
+                <constraint firstItem="bvH-S9-p7W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="AOg-EG-9DJ"/>
+                <constraint firstAttribute="bottom" secondItem="J1L-2W-Azs" secondAttribute="bottom" id="Ix5-gp-WYF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J1L-2W-Azs" secondAttribute="trailing" id="NND-gi-Aet"/>
+                <constraint firstItem="EeA-30-nqA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TOe-M4-Hqq"/>
+                <constraint firstItem="J1L-2W-Azs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X50-4M-abu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bvH-S9-p7W" secondAttribute="trailing" constant="16" id="cLz-k2-aWt"/>
+                <constraint firstItem="bvH-S9-p7W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="dPq-8M-Ab3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kS6-pu-7qF" secondAttribute="trailing" constant="16" id="e0y-bL-jnh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EeA-30-nqA" secondAttribute="trailing" id="jHM-l4-235"/>
+                <constraint firstItem="EeA-30-nqA" firstAttribute="top" secondItem="kS6-pu-7qF" secondAttribute="bottom" constant="16" id="q4l-4P-PyA"/>
+                <constraint firstItem="J1L-2W-Azs" firstAttribute="top" secondItem="EeA-30-nqA" secondAttribute="bottom" id="vJK-TD-TO2"/>
+            </constraints>
+            <point key="canvasLocation" x="92" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="OLNikSecondaryColor">
+            <color red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

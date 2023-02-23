@@ -19,6 +19,11 @@
 		8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271F4299F84D700321A85 /* ChallengesListViewController.swift */; };
 		8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271FC299F9A0C00321A85 /* MenteesList.swift */; };
 		8D46C98B29A64B1400431E17 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D46C98A29A64B1400431E17 /* README.md */; };
+		8D46C99E29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46C99C29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.swift */; };
+		8D46C99F29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D46C99D29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.xib */; };
+		8D46C9A629A7AE1600431E17 /* CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46C9A429A7AE1600431E17 /* CoffeeShopCell.swift */; };
+		8D46C9A729A7AE1600431E17 /* CoffeeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D46C9A529A7AE1600431E17 /* CoffeeShopCell.xib */; };
+		8D46C9A929A7B8D700431E17 /* OlNik__MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46C9A829A7B8D700431E17 /* OlNik__MainButton.swift */; };
 		8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +44,11 @@
 		8D4271FC299F9A0C00321A85 /* MenteesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteesList.swift; sourceTree = "<group>"; };
 		8D4271FE299FA6ED00321A85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8D46C98A29A64B1400431E17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D46C99C29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlNikol_CoffeeChallengeViewController.swift; sourceTree = "<group>"; };
+		8D46C99D29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OlNikol_CoffeeChallengeViewController.xib; sourceTree = "<group>"; };
+		8D46C9A429A7AE1600431E17 /* CoffeeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopCell.swift; sourceTree = "<group>"; };
+		8D46C9A529A7AE1600431E17 /* CoffeeShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopCell.xib; sourceTree = "<group>"; };
+		8D46C9A829A7B8D700431E17 /* OlNik__MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlNik__MainButton.swift; sourceTree = "<group>"; };
 		8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrNikolaichukFactory.swift; sourceTree = "<group>"; };
 		A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8D4271FE299FA6ED00321A85 /* README.md */,
+				8D46C9A029A7A8C800431E17 /* OleksandrNikolaichuk */,
 			);
 			path = "CoffeeShop UI Challenge";
 			sourceTree = "<group>";
@@ -143,6 +154,34 @@
 				8D46C98A29A64B1400431E17 /* README.md */,
 			);
 			path = "Start Screen UI Challenge";
+			sourceTree = "<group>";
+		};
+		8D46C9A029A7A8C800431E17 /* OleksandrNikolaichuk */ = {
+			isa = PBXGroup;
+			children = (
+				8D46C9A129A7ADEA00431E17 /* Views */,
+				8D46C99C29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.swift */,
+				8D46C99D29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.xib */,
+			);
+			path = OleksandrNikolaichuk;
+			sourceTree = "<group>";
+		};
+		8D46C9A129A7ADEA00431E17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D46C9A329A7ADF600431E17 /* CoffeeShopCell */,
+				8D46C9A829A7B8D700431E17 /* OlNik__MainButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D46C9A329A7ADF600431E17 /* CoffeeShopCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D46C9A429A7AE1600431E17 /* CoffeeShopCell.swift */,
+				8D46C9A529A7AE1600431E17 /* CoffeeShopCell.xib */,
+			);
+			path = CoffeeShopCell;
 			sourceTree = "<group>";
 		};
 		99B34E112B037536B2CDAFE0 /* Frameworks */ = {
@@ -216,6 +255,8 @@
 				8D46C98B29A64B1400431E17 /* README.md in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
+				8D46C9A729A7AE1600431E17 /* CoffeeShopCell.xib in Resources */,
+				8D46C99F29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +293,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */,
+				8D46C99E29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
 				481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */,
+				8D46C9A629A7AE1600431E17 /* CoffeeShopCell.swift in Sources */,
 				8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */,
+				8D46C9A929A7B8D700431E17 /* OlNik__MainButton.swift in Sources */,
 				8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
