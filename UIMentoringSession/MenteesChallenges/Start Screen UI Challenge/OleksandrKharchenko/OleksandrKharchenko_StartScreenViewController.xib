@@ -14,7 +14,6 @@
             <connections>
                 <outlet property="LetsGoButton" destination="O4h-kN-9pi" id="WwS-zQ-3cj"/>
                 <outlet property="centralLabel" destination="Re6-Do-YB3" id="QAk-x4-LJT"/>
-                <outlet property="topLabel" destination="pQE-VB-ffV" id="Bhl-HG-Wde"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,15 +25,6 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-bc-cBC">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="takee" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQE-VB-ffV" userLabel="topLabel">
-                    <rect key="frame" x="160" y="83" width="73.333333333333314" height="24"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="24" id="FdC-gF-GpD"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re6-Do-YB3" userLabel="centralLabel">
                     <rect key="frame" x="16" y="610" width="361" height="80"/>
                     <constraints>
@@ -42,7 +32,7 @@
                     </constraints>
                     <string key="text">Happiness is closer
 than you think</string>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -58,6 +48,9 @@ than you think</string>
                         <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="23"/>
                     </buttonConfiguration>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogotipTakee" translatesAutoresizingMaskIntoConstraints="NO" id="6kz-hw-8fa">
+                    <rect key="frame" x="152" y="91" width="89" height="16"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,13 +59,13 @@ than you think</string>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O4h-kN-9pi" secondAttribute="trailing" constant="16" id="C1K-8K-Ffe"/>
                 <constraint firstItem="Re6-Do-YB3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="MvG-Gj-eMk"/>
                 <constraint firstItem="5ki-bc-cBC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vv2-Mz-6v8"/>
-                <constraint firstItem="pQE-VB-ffV" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WIq-yV-FnO"/>
+                <constraint firstItem="6kz-hw-8fa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="X24-NW-dz8"/>
+                <constraint firstItem="6kz-hw-8fa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="152" id="Yrz-1E-WH7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="O4h-kN-9pi" secondAttribute="bottom" constant="18" id="blU-m6-UId"/>
-                <constraint firstItem="pQE-VB-ffV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="cwq-RI-H9v"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Re6-Do-YB3" secondAttribute="trailing" constant="16" id="g17-m7-I3c"/>
                 <constraint firstItem="5ki-bc-cBC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jtb-DF-9Yk"/>
                 <constraint firstItem="5ki-bc-cBC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lRF-X2-ovA"/>
-                <constraint firstItem="pQE-VB-ffV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" priority="750" constant="175" id="sbX-dB-MAY"/>
+                <constraint firstItem="6kz-hw-8fa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="mYg-co-fxw"/>
                 <constraint firstItem="O4h-kN-9pi" firstAttribute="top" secondItem="Re6-Do-YB3" secondAttribute="bottom" constant="52" id="vrG-31-eCS"/>
                 <constraint firstItem="O4h-kN-9pi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xi7-YP-e59"/>
             </constraints>
@@ -81,8 +74,9 @@ than you think</string>
     </objects>
     <resources>
         <image name="GoodDogs" width="375" height="812"/>
+        <image name="LogotipTakee" width="69" height="16"/>
         <namedColor name="Let'sGoButtonColor">
-            <color red="0.89671558139999996" green="0.60451430080000002" blue="0.57253783940000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.8970000147819519" green="0.60500001907348633" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
