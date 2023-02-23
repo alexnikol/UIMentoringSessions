@@ -3,6 +3,7 @@ import UIKit
 class YefimYakunin_StartScreenViewController: UIViewController {
     
     @IBOutlet weak var letsGoButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
