@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
 		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
+		48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */; };
+		48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */; };
 		5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */; };
 		8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CC299F789400321A85 /* AppDelegate.swift */; };
 		8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CE299F789400321A85 /* SceneDelegate.swift */; };
@@ -26,6 +28,8 @@
 		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
 		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
+		48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakunin_StartScreenViewController.swift; sourceTree = "<group>"; };
+		48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakunin_StartScreenViewController.xib; sourceTree = "<group>"; };
 		8D4271C9299F789400321A85 /* UIMentoringSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIMentoringSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4271CC299F789400321A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4271CE299F789400321A85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48E148AE29A74EF300E26085 /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+				48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */,
+				48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */,
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
 		5ED2BA0C25A7B4D4BD72A1F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +153,7 @@
 		8D46C98929A64A0900431E17 /* Start Screen UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				48E148AE29A74EF300E26085 /* YefimYakunin */,
 				8D46C98A29A64B1400431E17 /* README.md */,
 			);
 			path = "Start Screen UI Challenge";
@@ -213,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */,
 				8D46C98B29A64B1400431E17 /* README.md in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
@@ -253,6 +268,7 @@
 			files = (
 				336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
+				48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */,
 				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
