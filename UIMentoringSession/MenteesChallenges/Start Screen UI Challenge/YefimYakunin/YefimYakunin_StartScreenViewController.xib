@@ -72,7 +72,7 @@ than you think</string>
         <image name="logoTakee" width="69" height="16"/>
         <image name="startScreenDogBackground" width="375" height="812"/>
         <namedColor name="startScreenMainColor">
-            <color red="0.94901960784313721" green="0.58823529411764708" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.58799999952316284" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
