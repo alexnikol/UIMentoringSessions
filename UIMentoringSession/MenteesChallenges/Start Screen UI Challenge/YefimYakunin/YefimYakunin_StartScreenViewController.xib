@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YefimYakunin_StartScreenViewController" customModule="UIMentoringSession" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="BpM-NF-lQu" id="HJN-6f-xzw"/>
                 <outlet property="letsGoButton" destination="eRs-Vl-5Pn" id="H5O-yO-Vcu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,10 +32,8 @@
                         <constraint firstAttribute="width" constant="69" id="er2-Sd-SlS"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-NF-lQu">
-                    <rect key="frame" x="16" y="521.33333333333337" width="382" height="76.666666666666629"/>
-                    <string key="text">Happiness is closer
-than you think</string>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-NF-lQu">
+                    <rect key="frame" x="16" y="559.66666666666663" width="382" height="38.333333333333371"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -47,7 +46,7 @@ than you think</string>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Let's Go!">
+                    <buttonConfiguration key="configuration" style="plain" title="button">
                         <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
                     </buttonConfiguration>
                 </button>
