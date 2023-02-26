@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startScreenDogBackground" translatesAutoresizingMaskIntoConstraints="NO" id="675-6a-1bu">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="675-6a-1bu">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoTakee" translatesAutoresizingMaskIntoConstraints="NO" id="k8V-SJ-NbY">
@@ -34,7 +34,7 @@
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-NF-lQu">
                     <rect key="frame" x="16" y="559.66666666666663" width="382" height="38.333333333333371"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -71,8 +71,8 @@
         </view>
     </objects>
     <resources>
-        <image name="logoTakee" width="69" height="16"/>
-        <image name="startScreenDogBackground" width="375" height="812"/>
+        <image name="GoodDogs" width="125" height="270.66665649414062"/>
+        <image name="logoTakee" width="23" height="5.3333334922790527"/>
         <namedColor name="startScreenMainColor">
             <color red="0.94900000095367432" green="0.58799999952316284" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

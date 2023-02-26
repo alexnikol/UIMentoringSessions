@@ -1,7 +1,6 @@
 import UIKit
 
 final class YefimYakunin_StartScreenViewController: UIViewController {
-    
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var letsGoButton: UIButton!
     
