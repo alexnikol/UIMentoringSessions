@@ -10,7 +10,7 @@ final class YefimYakuninFactory: MenteeChallengesFactory {
         case .login:
             return nil
         case .startScreen:
-            return nil
+            return YefimYakunin_StartScreenViewController()
         }
     }
 }
