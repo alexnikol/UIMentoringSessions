@@ -9,11 +9,10 @@ final class OleksandrKharchenkoFactory: MenteeChallengesFactory {
         switch challenge {
         case .coffeeShopList:
             return nil
-            
         case .login:
             return nil
         case .startScreen:
-            return nil
+            return OleksandrKharchenko_StartScreenViewController(nibName: "OleksandrKharchenko_StartScreenViewController", bundle: nil)
         }
     }
 }

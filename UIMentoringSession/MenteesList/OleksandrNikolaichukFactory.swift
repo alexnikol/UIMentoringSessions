@@ -9,7 +9,6 @@ final class OleksandrNikolaichukFactory: MenteeChallengesFactory {
         switch challenge {
         case .coffeeShopList:
             return nil
-            
         case .login:
             return nil
         case .startScreen:

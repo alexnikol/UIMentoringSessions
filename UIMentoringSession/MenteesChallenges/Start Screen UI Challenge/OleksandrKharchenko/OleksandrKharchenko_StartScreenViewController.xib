@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OleksandrKharchenko_StartScreenViewController" customModule="UIMentoringSession" customModuleProvider="target">
+            <connections>
+                <outlet property="centralLabel" destination="Re6-Do-YB3" id="QAk-x4-LJT"/>
+                <outlet property="letsGoButton" destination="O4h-kN-9pi" id="WwS-zQ-3cj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-bc-cBC">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Re6-Do-YB3" userLabel="centralLabel">
+                    <rect key="frame" x="16" y="603.66666666666663" width="361" height="76.333333333333371"/>
+                    <string key="text">Happiness is closer
+than you think</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
+                    <color key="textColor" name="TextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-kN-9pi" userLabel="letsGoButton">
+                    <rect key="frame" x="16" y="732" width="361" height="58"/>
+                    <color key="backgroundColor" name="Let'sGoButtonColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="EyC-DF-HXg"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Let's Go!">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
+                    </buttonConfiguration>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipTakee" translatesAutoresizingMaskIntoConstraints="NO" id="6kz-hw-8fa">
+                    <rect key="frame" x="162" y="95" width="69" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="1KL-bv-HNZ"/>
+                        <constraint firstAttribute="height" constant="14" id="rSM-Pw-9UV"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5ki-bc-cBC" secondAttribute="bottom" id="0DG-DV-Mc2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O4h-kN-9pi" secondAttribute="trailing" constant="16" id="C1K-8K-Ffe"/>
+                <constraint firstItem="Re6-Do-YB3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="MvG-Gj-eMk"/>
+                <constraint firstItem="5ki-bc-cBC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Vv2-Mz-6v8"/>
+                <constraint firstItem="6kz-hw-8fa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="X24-NW-dz8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="O4h-kN-9pi" secondAttribute="bottom" constant="28" id="blU-m6-UId"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Re6-Do-YB3" secondAttribute="trailing" constant="16" id="g17-m7-I3c"/>
+                <constraint firstItem="5ki-bc-cBC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jtb-DF-9Yk"/>
+                <constraint firstItem="5ki-bc-cBC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lRF-X2-ovA"/>
+                <constraint firstItem="6kz-hw-8fa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="mYg-co-fxw"/>
+                <constraint firstItem="O4h-kN-9pi" firstAttribute="top" secondItem="Re6-Do-YB3" secondAttribute="bottom" constant="52" id="vrG-31-eCS"/>
+                <constraint firstItem="O4h-kN-9pi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xi7-YP-e59"/>
+            </constraints>
+            <point key="canvasLocation" x="103.05343511450381" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GoodDogs" width="125" height="270.66665649414062"/>
+        <image name="logotipTakee" width="23" height="5.3333334922790527"/>
+        <namedColor name="Let'sGoButtonColor">
+            <color red="0.8970000147819519" green="0.60500001907348633" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
