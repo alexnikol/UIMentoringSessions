@@ -12,6 +12,8 @@ final class OleksandrKharchenkoFactory: MenteeChallengesFactory {
             
         case .login:
             return nil
+        case .startScreen:
+            return nil
         }
     }
 }
