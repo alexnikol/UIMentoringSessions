@@ -64,20 +64,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		338B788329AD25A500ADBEDB /* OleksandrKharchenko */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OleksandrKharchenko;
-			sourceTree = "<group>";
-		};
-		338B788429AD25B400ADBEDB /* YefimYakunin */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = YefimYakunin;
-			sourceTree = "<group>";
-		};
 		48E148AE29A74EF300E26085 /* YefimYakunin */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +96,20 @@
 				8D40068029AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift */,
 			);
 			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		8D40068429ADF9F300FB54B2 /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		8D40068529ADF9F900FB54B2 /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YefimYakunin;
 			sourceTree = "<group>";
 		};
 		8D4271C0299F789400321A85 = {
@@ -159,8 +159,8 @@
 		8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				338B788329AD25A500ADBEDB /* OleksandrKharchenko */,
-				338B788429AD25B400ADBEDB /* YefimYakunin */,
+				8D40068529ADF9F900FB54B2 /* YefimYakunin */,
+				8D40068429ADF9F300FB54B2 /* OleksandrKharchenko */,
 				8D4271FE299FA6ED00321A85 /* README.md */,
 			);
 			path = "CoffeeShop UI Challenge";
