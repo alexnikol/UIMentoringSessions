@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-bc-cBC">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-bc-cBC">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Re6-Do-YB3" userLabel="centralLabel">
@@ -30,12 +30,12 @@
                     <string key="text">Happiness is closer
 than you think</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
-                    <color key="textColor" name="TextColor"/>
+                    <color key="textColor" name="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-kN-9pi" userLabel="letsGoButton">
                     <rect key="frame" x="16" y="732" width="361" height="58"/>
-                    <color key="backgroundColor" name="Let'sGoButtonColor"/>
+                    <color key="backgroundColor" name="let'sGoButtonColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="58" id="EyC-DF-HXg"/>
                     </constraints>
@@ -73,12 +73,12 @@ than you think</string>
         </view>
     </objects>
     <resources>
-        <image name="GoodDogs" width="125" height="270.66665649414062"/>
+        <image name="goodDogs" width="125" height="270.66665649414062"/>
         <image name="logotipTakee" width="23" height="5.3333334922790527"/>
-        <namedColor name="Let'sGoButtonColor">
+        <namedColor name="let'sGoButtonColor">
             <color red="0.8970000147819519" green="0.60500001907348633" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="TextColor">
+        <namedColor name="textColor">
             <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">

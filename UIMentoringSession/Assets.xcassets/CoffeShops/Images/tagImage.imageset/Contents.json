@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "GoodDogs.png",
+      "filename" : "Vector (Stroke).png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "GoodDogs@2x.png",
+      "filename" : "Vector (Stroke)@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "GoodDogs@3x.png",
+      "filename" : "Vector (Stroke)@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
