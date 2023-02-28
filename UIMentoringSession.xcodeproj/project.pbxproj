@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333913C729AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333913C529AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift */; };
+		333913C829AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333913C629AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib */; };
 		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
 		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
 		48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333913C529AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_CoffeShopViewController.swift; sourceTree = "<group>"; };
+		333913C629AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OleksandrKharchenko_CoffeShopViewController.xib; sourceTree = "<group>"; };
 		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
 		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		8D40068429ADF9F300FB54B2 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
+				333913C529AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift */,
+				333913C629AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib */,
 			);
 			path = OleksandrKharchenko;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333913C829AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
 				48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */,
 				8D46C98B29A64B1400431E17 /* README.md in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
@@ -309,6 +316,7 @@
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */,
 				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
+				333913C729AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
