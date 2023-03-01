@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OleksandrKharchenko_CoffeShopViewController" customModule="UIMentoringSession" customModuleProvider="target">
             <connections>
+                <outlet property="mainButton" destination="aeR-BW-5Sg" id="yTd-5O-UI2"/>
+                <outlet property="secondaryLabel" destination="JNP-W5-i8v" id="LK8-aa-aRp"/>
+                <outlet property="tableView" destination="F5r-Tk-CF9" id="ymx-8R-bgx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,12 +22,89 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNP-W5-i8v">
+                    <rect key="frame" x="16" y="75" width="361" height="19.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" name="descriptionColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeR-BW-5Sg" customClass="OleksandrKharchenko_MainButton" customModule="UIMentoringSession" customModuleProvider="target">
+                    <rect key="frame" x="16" y="124.33333333333331" width="361" height="50"/>
+                    <color key="backgroundColor" name="buttonColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="b8x-Rq-9O3"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="ADD SHOP"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapImage" translatesAutoresizingMaskIntoConstraints="NO" id="E5b-KX-xRf">
+                    <rect key="frame" x="0.0" y="190.33333333333337" width="393" height="213.66666666666663"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="E5b-KX-xRf" secondAttribute="height" multiplier="375:204" id="xCx-z1-SoJ"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cupImage" translatesAutoresizingMaskIntoConstraints="NO" id="PZj-vX-19t">
+                    <rect key="frame" x="87" y="258.33333333333331" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="hnm-tT-wnN"/>
+                        <constraint firstAttribute="width" constant="24" id="yVa-9g-8qF"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cupImage" translatesAutoresizingMaskIntoConstraints="NO" id="eui-ft-b2B">
+                    <rect key="frame" x="180" y="216.33333333333334" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="OPw-Ek-bkc"/>
+                        <constraint firstAttribute="height" constant="24" id="zcX-EP-L2s"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cupImage" translatesAutoresizingMaskIntoConstraints="NO" id="bsi-YR-RJW">
+                    <rect key="frame" x="195" y="365.33333333333331" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="LIK-UD-lX6"/>
+                        <constraint firstAttribute="height" constant="24" id="Mh0-RM-JS3"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="F5r-Tk-CF9">
+                    <rect key="frame" x="0.0" y="404" width="393" height="448"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="-1" y="-11"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JNP-W5-i8v" secondAttribute="trailing" constant="16" id="14y-Kg-fdp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F5r-Tk-CF9" secondAttribute="trailing" id="3BL-79-gvT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aeR-BW-5Sg" secondAttribute="trailing" constant="16" id="CxK-cb-PVg"/>
+                <constraint firstItem="eui-ft-b2B" firstAttribute="top" secondItem="E5b-KX-xRf" secondAttribute="top" constant="26" id="NKf-e8-9EU"/>
+                <constraint firstItem="E5b-KX-xRf" firstAttribute="top" secondItem="aeR-BW-5Sg" secondAttribute="bottom" constant="16" id="Poy-MK-jSX"/>
+                <constraint firstItem="PZj-vX-19t" firstAttribute="leading" secondItem="E5b-KX-xRf" secondAttribute="leading" constant="87" id="Tcn-ip-kEg"/>
+                <constraint firstItem="bsi-YR-RJW" firstAttribute="leading" secondItem="E5b-KX-xRf" secondAttribute="leading" constant="195" id="YvS-1c-Daw"/>
+                <constraint firstItem="aeR-BW-5Sg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bWC-Yq-3PX"/>
+                <constraint firstItem="PZj-vX-19t" firstAttribute="top" secondItem="E5b-KX-xRf" secondAttribute="top" constant="68" id="gn3-3i-4KM"/>
+                <constraint firstItem="F5r-Tk-CF9" firstAttribute="top" secondItem="E5b-KX-xRf" secondAttribute="bottom" id="iMH-gB-Qg1"/>
+                <constraint firstItem="bsi-YR-RJW" firstAttribute="top" secondItem="E5b-KX-xRf" secondAttribute="top" constant="175" id="m13-cA-wXz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E5b-KX-xRf" secondAttribute="trailing" id="nMc-XH-Dpq"/>
+                <constraint firstItem="F5r-Tk-CF9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rT3-2g-Ryw"/>
+                <constraint firstAttribute="bottom" secondItem="F5r-Tk-CF9" secondAttribute="bottom" id="sVJ-y2-veP"/>
+                <constraint firstItem="E5b-KX-xRf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tEE-xY-XeO"/>
+                <constraint firstItem="JNP-W5-i8v" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="ttc-zl-IkT"/>
+                <constraint firstItem="aeR-BW-5Sg" firstAttribute="top" secondItem="JNP-W5-i8v" secondAttribute="bottom" constant="30" id="v9Y-JT-z0k"/>
+                <constraint firstItem="JNP-W5-i8v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vDD-FI-2IE"/>
+                <constraint firstItem="eui-ft-b2B" firstAttribute="leading" secondItem="E5b-KX-xRf" secondAttribute="leading" constant="180" id="yRt-HM-m3d"/>
+            </constraints>
+            <point key="canvasLocation" x="-668" y="-18"/>
         </view>
     </objects>
     <resources>
+        <image name="cupImage" width="24" height="24"/>
+        <image name="mapImage" width="375" height="204"/>
+        <namedColor name="buttonColor">
+            <color red="0.94499999284744263" green="0.94499999284744263" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="descriptionColor">
+            <color red="0.54900002479553223" green="0.54900002479553223" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
