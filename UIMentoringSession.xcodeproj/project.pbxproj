@@ -12,6 +12,8 @@
 		48BB00A829AE81F9005E6B81 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB00A629AE81F9005E6B81 /* YefimYakuninCoffeShopChallengeViewController.swift */; };
 		48BB00A929AE81F9005E6B81 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BB00A729AE81F9005E6B81 /* YefimYakuninCoffeShopChallengeViewController.xib */; };
 		48BB00AB29AF57E1005E6B81 /* YefimYakunin_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB00AA29AF57E1005E6B81 /* YefimYakunin_MainButton.swift */; };
+		48BB00B029AF6397005E6B81 /* YeYa_CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB00AE29AF6397005E6B81 /* YeYa_CoffeeShopCell.swift */; };
+		48BB00B129AF6397005E6B81 /* YeYa_CoffeeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BB00AF29AF6397005E6B81 /* YeYa_CoffeeShopCell.xib */; };
 		48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */; };
 		48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */; };
 		5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */; };
@@ -36,6 +38,8 @@
 		48BB00A629AE81F9005E6B81 /* YefimYakuninCoffeShopChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninCoffeShopChallengeViewController.swift; sourceTree = "<group>"; };
 		48BB00A729AE81F9005E6B81 /* YefimYakuninCoffeShopChallengeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakuninCoffeShopChallengeViewController.xib; sourceTree = "<group>"; };
 		48BB00AA29AF57E1005E6B81 /* YefimYakunin_MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakunin_MainButton.swift; sourceTree = "<group>"; };
+		48BB00AE29AF6397005E6B81 /* YeYa_CoffeeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_CoffeeShopCell.swift; sourceTree = "<group>"; };
+		48BB00AF29AF6397005E6B81 /* YeYa_CoffeeShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YeYa_CoffeeShopCell.xib; sourceTree = "<group>"; };
 		48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakunin_StartScreenViewController.swift; sourceTree = "<group>"; };
 		48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakunin_StartScreenViewController.xib; sourceTree = "<group>"; };
 		8D40067F29AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
@@ -70,6 +74,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48BB00AC29AF62A9005E6B81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48BB00AD29AF62D3005E6B81 /* YeYa_CoffeeShopCell */,
+				48BB00AA29AF57E1005E6B81 /* YefimYakunin_MainButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48BB00AD29AF62D3005E6B81 /* YeYa_CoffeeShopCell */ = {
+			isa = PBXGroup;
+			children = (
+				48BB00AE29AF6397005E6B81 /* YeYa_CoffeeShopCell.swift */,
+				48BB00AF29AF6397005E6B81 /* YeYa_CoffeeShopCell.xib */,
+			);
+			path = YeYa_CoffeeShopCell;
+			sourceTree = "<group>";
+		};
 		48E148AE29A74EF300E26085 /* YefimYakunin */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +136,9 @@
 		8D40068529ADF9F900FB54B2 /* YefimYakunin */ = {
 			isa = PBXGroup;
 			children = (
+				48BB00AC29AF62A9005E6B81 /* Views */,
 				48BB00A629AE81F9005E6B81 /* YefimYakuninCoffeShopChallengeViewController.swift */,
 				48BB00A729AE81F9005E6B81 /* YefimYakuninCoffeShopChallengeViewController.xib */,
-				48BB00AA29AF57E1005E6B81 /* YefimYakunin_MainButton.swift */,
 			);
 			path = YefimYakunin;
 			sourceTree = "<group>";
@@ -274,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48BB00B129AF6397005E6B81 /* YeYa_CoffeeShopCell.xib in Resources */,
 				48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */,
 				8D46C98B29A64B1400431E17 /* README.md in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
@@ -328,6 +351,7 @@
 				8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */,
 				8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */,
 				8D40068229AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */,
+				48BB00B029AF6397005E6B81 /* YeYa_CoffeeShopCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
