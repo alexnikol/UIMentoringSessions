@@ -13,6 +13,8 @@ final class OleksandrKharchenkoFactory: MenteeChallengesFactory {
             return nil
         case .startScreen:
             return OleksandrKharchenko_StartScreenViewController(nibName: "OleksandrKharchenko_StartScreenViewController", bundle: nil)
+        case .gamingScreen:
+            return nil
         }
     }
 }
