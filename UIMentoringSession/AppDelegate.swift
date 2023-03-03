@@ -1,11 +1,13 @@
 // Copyright © 2023 Almost Engineer. All rights reserved.
 
 import UIKit
+import GoogleMaps
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        GMSServices.provideAPIKey("AIzaSyDqZXPqg980fQHAwh29R-c7JUHr7lhygZ0")
         return true
     }
 

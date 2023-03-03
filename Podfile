@@ -4,4 +4,5 @@ target 'UIMentoringSession' do
    use_frameworks!
 
    pod 'R.swift', '6.1.0'
+   pod 'GoogleMaps', '7.1.0'
 end

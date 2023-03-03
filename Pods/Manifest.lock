@@ -1,20 +1,28 @@
 PODS:
+  - GoogleMaps (7.1.0):
+    - GoogleMaps/Maps (= 7.1.0)
+  - GoogleMaps/Base (7.1.0)
+  - GoogleMaps/Maps (7.1.0):
+    - GoogleMaps/Base
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
 
 DEPENDENCIES:
+  - GoogleMaps (= 7.1.0)
   - R.swift (= 6.1.0)
 
 SPEC REPOS:
   trunk:
+    - GoogleMaps
     - R.swift
     - R.swift.Library
 
 SPEC CHECKSUMS:
+  GoogleMaps: bc56ffb0324e345a2d91bac1a64a920f9c8f1b20
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
 
-PODFILE CHECKSUM: d5d0f91a392126c3033cd26c14d2fcca8fafbf50
+PODFILE CHECKSUM: ea93142ec78edb48a46f2ee8c56daf96674cb5e8
 
 COCOAPODS: 1.11.3
