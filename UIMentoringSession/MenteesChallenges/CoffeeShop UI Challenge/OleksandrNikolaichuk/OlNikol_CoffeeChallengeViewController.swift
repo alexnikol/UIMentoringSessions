@@ -12,13 +12,27 @@ final class OlNikol_CoffeeChallengeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Coffee shops"
-        secondaryTitle.text = "Title 1 Long long long title Long long long title Long long long title Long long long title Long long long title Title 1 Long long long title Long long long title Long long long title Long long long title Long long long title "
-        mainButton.setTitle("ADD SHOP", for: .normal)
+        secondaryTitle.text = R.string.texts.coffeeShopSecondaryTitle()
+        mainButton.setTitle(R.string.texts.coffeeShopAddShop(), for: .normal)
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "CoffeeShopCell", bundle: nil), forCellReuseIdentifier: "CoffeeShopCell")
         
+        tableView.register(R.nib.coffeeShopCell)
+        
+//        let image = UIImage(named: "tagIcon")
+//        let image = R.image.tagIcon
+        
+        let color = R.color.olNikSecondaryColor
+//        let color = UIColor(named: "olNikSecondaryColor")
+        
+        fakeSetup()
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.sizeToFit()
+    }
+    
+    func fakeSetup() {
         let items: [CoffeeShopViewModel] = [
             .init(
                 title: "Title 1 Long long long title Long long long title Long long long title Long long long title Long long long title ",
@@ -35,9 +49,6 @@ final class OlNikol_CoffeeChallengeViewController: UIViewController {
         ]
         
         models = items + items + items + items  + items + items  + items + items
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.sizeToFit()
     }
 }
 
@@ -49,7 +60,8 @@ extension OlNikol_CoffeeChallengeViewController: UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeShopCell", for: indexPath) as! CoffeeShopCell
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.coffeeShopCell, for: indexPath)!
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero

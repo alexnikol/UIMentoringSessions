@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2954E8267B3E1E6510A04C7D /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6926A8D9218792F7E4F09BB5 /* Pods_UIMentoringSession.framework */; };
 		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
 		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
-		5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */; };
 		8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CC299F789400321A85 /* AppDelegate.swift */; };
 		8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CE299F789400321A85 /* SceneDelegate.swift */; };
 		8D4271D6299F789600321A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4271D5299F789600321A85 /* Assets.xcassets */; };
@@ -25,12 +25,16 @@
 		8D46C9A729A7AE1600431E17 /* CoffeeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D46C9A529A7AE1600431E17 /* CoffeeShopCell.xib */; };
 		8D46C9A929A7B8D700431E17 /* OlNik__MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46C9A829A7B8D700431E17 /* OlNik__MainButton.swift */; };
 		8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */; };
+		8DF4FD7929B1DF2A00EA8715 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FD7829B1DF2A00EA8715 /* R.generated.swift */; };
+		8DF4FD7D29B1E1D300EA8715 /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4FD7F29B1E1D300EA8715 /* Texts.strings */; };
+		8DF4FD8229B1E5EB00EA8715 /* R.Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FD8129B1E5EB00EA8715 /* R.Aliases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26273F074C2C98912CFE2F6D /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
 		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
-		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
+		6926A8D9218792F7E4F09BB5 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4271C9299F789400321A85 /* UIMentoringSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIMentoringSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4271CC299F789400321A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4271CE299F789400321A85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +54,12 @@
 		8D46C9A529A7AE1600431E17 /* CoffeeShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopCell.xib; sourceTree = "<group>"; };
 		8D46C9A829A7B8D700431E17 /* OlNik__MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlNik__MainButton.swift; sourceTree = "<group>"; };
 		8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrNikolaichukFactory.swift; sourceTree = "<group>"; };
-		A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
+		8DF4FD7829B1DF2A00EA8715 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		8DF4FD7C29B1E1C800EA8715 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8DF4FD7E29B1E1D300EA8715 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
+		8DF4FD8029B1E1D600EA8715 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
+		8DF4FD8129B1E5EB00EA8715 /* R.Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.Aliases.swift; sourceTree = "<group>"; };
+		E0EF23544ABBA93313DDFD69 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,18 +67,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */,
+				2954E8267B3E1E6510A04C7D /* Pods_UIMentoringSession.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200EA0B74B32D5A965ED0B1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6926A8D9218792F7E4F09BB5 /* Pods_UIMentoringSession.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5ED2BA0C25A7B4D4BD72A1F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */,
-				E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */,
+				E0EF23544ABBA93313DDFD69 /* Pods-UIMentoringSession.debug.xcconfig */,
+				26273F074C2C98912CFE2F6D /* Pods-UIMentoringSession.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -81,7 +97,7 @@
 				8D4271CB299F789400321A85 /* UIMentoringSession */,
 				8D4271CA299F789400321A85 /* Products */,
 				5ED2BA0C25A7B4D4BD72A1F4 /* Pods */,
-				99B34E112B037536B2CDAFE0 /* Frameworks */,
+				200EA0B74B32D5A965ED0B1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +116,11 @@
 				8D4271F6299F994300321A85 /* MenteesList */,
 				8D4271E4299F7BD000321A85 /* MenteesChallenges */,
 				8D4271F1299F817300321A85 /* Core */,
+				8DF4FD7F29B1E1D300EA8715 /* Texts.strings */,
 				8D4271CC299F789400321A85 /* AppDelegate.swift */,
 				8D4271CE299F789400321A85 /* SceneDelegate.swift */,
+				8DF4FD7829B1DF2A00EA8715 /* R.generated.swift */,
+				8DF4FD8129B1E5EB00EA8715 /* R.Aliases.swift */,
 				8D4271D5299F789600321A85 /* Assets.xcassets */,
 				8D4271D7299F789600321A85 /* LaunchScreen.storyboard */,
 				8D4271DA299F789600321A85 /* Info.plist */,
@@ -184,14 +203,6 @@
 			path = CoffeeShopCell;
 			sourceTree = "<group>";
 		};
-		99B34E112B037536B2CDAFE0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,10 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D4271DD299F789600321A85 /* Build configuration list for PBXNativeTarget "UIMentoringSession" */;
 			buildPhases = (
-				AD96B828A7F51E3AD63429D1 /* [CP] Check Pods Manifest.lock */,
+				DAC2F9CDF32060F581F65ACA /* [CP] Check Pods Manifest.lock */,
+				8DF4FD7729B1DD2300EA8715 /* R.Swift */,
 				8D4271C5299F789400321A85 /* Sources */,
 				8D4271C6299F789400321A85 /* Frameworks */,
 				8D4271C7299F789400321A85 /* Resources */,
+				8CD64CD03FBD4295D16AB60F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +249,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = 8D4271C0299F789400321A85;
 			productRefGroup = 8D4271CA299F789400321A85 /* Products */;
@@ -254,6 +268,7 @@
 			files = (
 				8D46C98B29A64B1400431E17 /* README.md in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
+				8DF4FD7D29B1E1D300EA8715 /* Texts.strings in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
 				8D46C9A729A7AE1600431E17 /* CoffeeShopCell.xib in Resources */,
 				8D46C99F29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.xib in Resources */,
@@ -263,7 +278,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		AD96B828A7F51E3AD63429D1 /* [CP] Check Pods Manifest.lock */ = {
+		8CD64CD03FBD4295D16AB60F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF4FD7729B1DD2300EA8715 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		DAC2F9CDF32060F581F65ACA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,12 +344,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF4FD8229B1E5EB00EA8715 /* R.Aliases.swift in Sources */,
 				336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */,
 				8D46C99E29A7A8BF00431E17 /* OlNikol_CoffeeChallengeViewController.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
+				8DF4FD7929B1DF2A00EA8715 /* R.generated.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
 				481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */,
 				8D46C9A629A7AE1600431E17 /* CoffeeShopCell.swift in Sources */,
@@ -314,8 +368,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				8D4271D8299F789600321A85 /* Base */,
+				8DF4FD7C29B1E1C800EA8715 /* uk */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8DF4FD7F29B1E1D300EA8715 /* Texts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DF4FD7E29B1E1D300EA8715 /* en */,
+				8DF4FD8029B1E1D600EA8715 /* uk */,
+			);
+			name = Texts.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -325,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -385,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -437,7 +503,7 @@
 		};
 		8D4271DE299F789600321A85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */;
+			baseConfigurationReference = E0EF23544ABBA93313DDFD69 /* Pods-UIMentoringSession.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,7 +536,7 @@
 		};
 		8D4271DF299F789600321A85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */;
+			baseConfigurationReference = 26273F074C2C98912CFE2F6D /* Pods-UIMentoringSession.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
