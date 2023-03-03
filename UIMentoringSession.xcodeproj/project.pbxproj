@@ -11,7 +11,8 @@
 		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
 		48339DD429B0F42200E7F717 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48339DD329B0F42200E7F717 /* README.md */; };
 		48339DD829B0F45600E7F717 /* OlKhTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48339DD729B0F45600E7F717 /* OlKhTest.swift */; };
-		48339DDA29B0F46200E7F717 /* YeYaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48339DD929B0F46200E7F717 /* YeYaTest.swift */; };
+		48A7B40E29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */; };
+		48A7B40F29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */; };
 		48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */; };
 		48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */; };
 		5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */; };
@@ -35,7 +36,8 @@
 		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
 		48339DD329B0F42200E7F717 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		48339DD729B0F45600E7F717 /* OlKhTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKhTest.swift; sourceTree = "<group>"; };
-		48339DD929B0F46200E7F717 /* YeYaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYaTest.swift; sourceTree = "<group>"; };
+		48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninGamingScreenViewController.swift; sourceTree = "<group>"; };
+		48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakuninGamingScreenViewController.xib; sourceTree = "<group>"; };
 		48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakunin_StartScreenViewController.swift; sourceTree = "<group>"; };
 		48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakunin_StartScreenViewController.xib; sourceTree = "<group>"; };
 		8D40067F29AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
@@ -91,7 +93,8 @@
 		48339DD629B0F43C00E7F717 /* YefimYakunin */ = {
 			isa = PBXGroup;
 			children = (
-				48339DD929B0F46200E7F717 /* YeYaTest.swift */,
+				48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */,
+				48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */,
 			);
 			path = YefimYakunin;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				8D46C98B29A64B1400431E17 /* README.md in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
+				48A7B40F29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib in Resources */,
 				8D40068129AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,10 +349,10 @@
 				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				48339DD829B0F45600E7F717 /* OlKhTest.swift in Sources */,
-				48339DDA29B0F46200E7F717 /* YeYaTest.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
 				481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */,
+				48A7B40E29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift in Sources */,
 				8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */,
 				8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */,
 				8D40068229AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */,
