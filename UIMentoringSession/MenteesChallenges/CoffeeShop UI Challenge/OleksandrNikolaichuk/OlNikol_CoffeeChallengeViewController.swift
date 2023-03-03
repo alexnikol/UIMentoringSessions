@@ -4,6 +4,12 @@ import UIKit
 import GoogleMaps
 
 final class OlNikol_CoffeeChallengeViewController: UIViewController {
+    
+    private enum Defaults {
+        static let defaultCenter = (lat: 47.918089, long: 33.352680)
+    }
+
+    
     @IBOutlet private weak var mapWrap: GMSMapView!
     @IBOutlet private weak var secondaryTitle: UILabel!
     @IBOutlet private weak var tableView: UITableView!
@@ -27,14 +33,23 @@ final class OlNikol_CoffeeChallengeViewController: UIViewController {
 //        let color = R.color.olNikSecondaryColor
 //        let color = UIColor(named: "olNikSecondaryColor")
         
-        fakeSetup()
-        
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.sizeToFit()
+        
+        mapSetup()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+            self.fakeSetup()
+        })
     }
     
     func mapSetup() {
         mapWrap.delegate = self
+        let defaultCamera = GMSCameraPosition.camera(withLatitude: Defaults.defaultCenter.lat,
+                                                     longitude: Defaults.defaultCenter.long,
+                                                     zoom: 12)
+        mapWrap.camera = defaultCamera
+
     }
     
     func fakeSetup() {
@@ -59,6 +74,8 @@ final class OlNikol_CoffeeChallengeViewController: UIViewController {
         models = items
         
         showMarkersOnMap(from: models)
+        
+        tableView.reloadData()
     }
     
     func showMarkersOnMap(from list: [CoffeeShopViewModel]) {
