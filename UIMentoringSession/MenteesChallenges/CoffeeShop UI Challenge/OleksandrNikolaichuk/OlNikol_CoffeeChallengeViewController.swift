@@ -9,7 +9,6 @@ final class OlNikol_CoffeeChallengeViewController: UIViewController {
         static let defaultCenter = (lat: 47.918089, long: 33.352680)
     }
 
-    
     @IBOutlet private weak var mapWrap: GMSMapView!
     @IBOutlet private weak var secondaryTitle: UILabel!
     @IBOutlet private weak var tableView: UITableView!
