@@ -181,6 +181,7 @@
 		8D4271E4299F7BD000321A85 /* MenteesChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				48339DD229B0F3BB00E7F717 /* Gaming Screen UI Challenge */,
 				8D46C98929A64A0900431E17 /* Start Screen UI Challenge */,
 				8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */,
 			);
