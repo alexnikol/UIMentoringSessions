@@ -78,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				3348385729AE3389009A440E /* OleksandrKharchenko_MainButton.swift */,
+				3348385A29AE4326009A440E /* OleksandrKharchenko_CoffeShopCell */,
 			);
 			path = OleksandrKharchenko_View;
 			sourceTree = "<group>";
@@ -85,7 +86,6 @@
 		3348385A29AE4326009A440E /* OleksandrKharchenko_CoffeShopCell */ = {
 			isa = PBXGroup;
 			children = (
-				3348385929AE4305009A440E /* OleksandrKharchenko_View */,
 				3348385B29AE43A1009A440E /* OleksandrKharchenko_CoffeShopCell.swift */,
 				3348385C29AE43A1009A440E /* OleksandrKharchenko_CoffeShopCell.xib */,
 			);
@@ -129,7 +129,7 @@
 		8D40068429ADF9F300FB54B2 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
-				3348385A29AE4326009A440E /* OleksandrKharchenko_CoffeShopCell */,
+				3348385929AE4305009A440E /* OleksandrKharchenko_View */,
 				333913C529AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift */,
 				333913C629AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib */,
 			);

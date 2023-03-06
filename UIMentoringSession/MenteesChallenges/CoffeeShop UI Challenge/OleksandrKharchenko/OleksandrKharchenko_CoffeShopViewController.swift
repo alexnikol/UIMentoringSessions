@@ -2,8 +2,7 @@
 
 import UIKit
 
-class OleksandrKharchenko_CoffeShopViewController: UIViewController {
-    
+final class OleksandrKharchenko_CoffeShopViewController: UIViewController {
     @IBOutlet private weak var secondaryLabel: UILabel!
     @IBOutlet private weak var mainButton: OleksandrKharchenko_MainButton!
     @IBOutlet private weak var tableView: UITableView!
