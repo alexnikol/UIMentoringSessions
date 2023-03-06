@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3307E66129B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3307E65F29B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.swift */; };
 		3307E66229B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3307E66029B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.xib */; };
+		3329F91929B514510057243D /* OleksandrKharchenko_MainsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3329F91729B514510057243D /* OleksandrKharchenko_MainsButtons.swift */; };
+		3329F91A29B514510057243D /* OleksandrKharchenko_MainsButtons.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3329F91829B514510057243D /* OleksandrKharchenko_MainsButtons.xib */; };
 		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
 		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
 		48339DDA29B0F46200E7F717 /* YeYaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48339DD929B0F46200E7F717 /* YeYaTest.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		3307E65F29B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_GamingScreenViewController.swift; sourceTree = "<group>"; };
 		3307E66029B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OleksandrKharchenko_GamingScreenViewController.xib; sourceTree = "<group>"; };
+		3329F91729B514510057243D /* OleksandrKharchenko_MainsButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_MainsButtons.swift; sourceTree = "<group>"; };
+		3329F91829B514510057243D /* OleksandrKharchenko_MainsButtons.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OleksandrKharchenko_MainsButtons.xib; sourceTree = "<group>"; };
 		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
 		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
@@ -70,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3329F90E29B50BCD0057243D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3329F91729B514510057243D /* OleksandrKharchenko_MainsButtons.swift */,
+				3329F91829B514510057243D /* OleksandrKharchenko_MainsButtons.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		48339DD229B0F3BB00E7F717 /* Gaming Screen UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,7 @@
 		48339DD529B0F42E00E7F717 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
+				3329F90E29B50BCD0057243D /* View */,
 				3307E65F29B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.swift */,
 				3307E66029B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.xib */,
 			);
@@ -301,6 +315,7 @@
 			files = (
 				3307E66229B21DCC00D17850 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */,
 				48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */,
+				3329F91A29B514510057243D /* OleksandrKharchenko_MainsButtons.xib in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
 				8D40068129AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
@@ -349,6 +364,7 @@
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
 				481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */,
+				3329F91929B514510057243D /* OleksandrKharchenko_MainsButtons.swift in Sources */,
 				8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */,
 				8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */,
 				8D40068229AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */,
