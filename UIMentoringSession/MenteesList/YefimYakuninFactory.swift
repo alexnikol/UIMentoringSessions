@@ -6,11 +6,13 @@ final class YefimYakuninFactory: MenteeChallengesFactory {
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
         case .coffeeShopList:
-            return nil
+            return YefimYakuninCoffeShopChallengeViewController(nibName: "YefimYakuninCoffeShopChallengeViewController", bundle: nil)
         case .login:
             return nil
         case .startScreen:
             return YefimYakunin_StartScreenViewController()
+        case .gamingScreen:
+            return nil
         }
     }
 }
