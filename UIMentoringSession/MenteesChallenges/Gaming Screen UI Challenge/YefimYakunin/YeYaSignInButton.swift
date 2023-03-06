@@ -14,6 +14,9 @@ final class YeYaSignInButton: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
+        // Устанавливаем отступ для иконки и текста
+        imageView
         
     }
     

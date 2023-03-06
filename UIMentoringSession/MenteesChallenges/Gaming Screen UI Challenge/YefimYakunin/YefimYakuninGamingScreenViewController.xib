@@ -22,13 +22,67 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-j2-7zn">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-4T-aEb">
-                            <rect key="frame" x="170" y="351" width="75" height="35"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="6no-9t-tuh">
+                            <rect key="frame" x="32" y="364.33333333333331" width="350" height="187.66666666666669"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-4T-aEb" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="38"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Apple icon" title="Button"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0b-Qw-v6y" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="57" width="350" height="38"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Facebook icon" title="Button"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVv-TJ-aer" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="113.99999999999999" width="350" height="34.333333333333329"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Phone icon" title="Button"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-xQ-6CI">
+                                    <rect key="frame" x="0.0" y="167.33333333333331" width="350" height="20.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-lg-WR2">
+                            <rect key="frame" x="16" y="61" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="evh-v1-qe6"/>
+                                <constraint firstAttribute="height" constant="24" id="l4b-Y4-Nq3"/>
+                            </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Arrow circle icon"/>
                         </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bird logo" translatesAutoresizingMaskIntoConstraints="NO" id="w5B-bf-dyB">
+                            <rect key="frame" x="87" y="78" width="240" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoH-YY-e6d">
+                            <rect key="frame" x="186" y="238" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjp-gZ-vej">
+                            <rect key="frame" x="186" y="288" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="Ifn-lg-WR2" firstAttribute="top" secondItem="7G0-j2-7zn" secondAttribute="top" constant="61" id="7vJ-Rq-iGe"/>
+                        <constraint firstItem="6no-9t-tuh" firstAttribute="leading" secondItem="7G0-j2-7zn" secondAttribute="leading" constant="32" id="GcW-fV-bXC"/>
+                        <constraint firstAttribute="trailing" secondItem="6no-9t-tuh" secondAttribute="trailing" constant="32" id="VWz-YO-xsk"/>
+                        <constraint firstItem="Ifn-lg-WR2" firstAttribute="leading" secondItem="7G0-j2-7zn" secondAttribute="leading" constant="16" id="aeT-Mg-YMA"/>
+                        <constraint firstAttribute="bottom" secondItem="6no-9t-tuh" secondAttribute="bottom" constant="184" id="wlJ-a2-vTY"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -41,4 +95,11 @@
             <point key="canvasLocation" x="65" y="-1"/>
         </view>
     </objects>
+    <resources>
+        <image name="Apple icon" width="19.333333969116211" height="24"/>
+        <image name="Arrow circle icon" width="24" height="24"/>
+        <image name="Bird logo" width="101" height="89"/>
+        <image name="Facebook icon" width="24" height="24"/>
+        <image name="Phone icon" width="20" height="20"/>
+    </resources>
 </document>
