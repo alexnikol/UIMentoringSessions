@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -10,96 +10,97 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YefimYakuninGamingScreenViewController" customModule="UIMentoringSession" customModuleProvider="target">
             <connections>
-                <outlet property="mainView" destination="7G0-j2-7zn" id="sWw-gw-xd8"/>
+                <outlet property="appleButton" destination="zQM-4T-aEb" id="YqU-JU-DNb"/>
+                <outlet property="fbButton" destination="Z0b-Qw-v6y" id="UKd-EV-7df"/>
+                <outlet property="forgotPassLabel" destination="t7d-xQ-6CI" id="Yzi-ZG-BFu"/>
+                <outlet property="phoneButton" destination="rVv-TJ-aer" id="cFP-Lo-kgA"/>
+                <outlet property="termsAndConditionsLabel" destination="Tjp-gZ-vej" id="vu9-Lp-KAr"/>
+                <outlet property="titleLabel" destination="XoH-YY-e6d" id="lsh-ZR-4TF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-j2-7zn">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bird logo" translatesAutoresizingMaskIntoConstraints="NO" id="w5B-bf-dyB">
+                    <rect key="frame" x="146" y="157" width="101" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="w5B-bf-dyB" secondAttribute="height" multiplier="101:89" id="YJm-Ji-fOk"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d8y-By-GYC">
+                    <rect key="frame" x="32" y="258" width="329" height="81"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="6no-9t-tuh">
-                            <rect key="frame" x="32" y="364.33333333333331" width="350" height="187.66666666666669"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-4T-aEb" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="350" height="38"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Apple icon" title="Button"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0b-Qw-v6y" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="57" width="350" height="38"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Facebook icon" title="Button"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVv-TJ-aer" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="113.99999999999999" width="350" height="34.333333333333329"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Phone icon" title="Button"/>
-                                </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-xQ-6CI">
-                                    <rect key="frame" x="0.0" y="167.33333333333331" width="350" height="20.333333333333343"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-lg-WR2">
-                            <rect key="frame" x="16" y="61" width="24" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="24" id="evh-v1-qe6"/>
-                                <constraint firstAttribute="height" constant="24" id="l4b-Y4-Nq3"/>
-                            </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="Arrow circle icon"/>
-                        </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bird logo" translatesAutoresizingMaskIntoConstraints="NO" id="w5B-bf-dyB">
-                            <rect key="frame" x="87" y="78" width="240" height="128"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoH-YY-e6d">
-                            <rect key="frame" x="186" y="238" width="42" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoH-YY-e6d">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="57.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="48"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjp-gZ-vej">
-                            <rect key="frame" x="186" y="288" width="42" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjp-gZ-vej">
+                            <rect key="frame" x="0.0" y="65.333333333333314" width="329" height="15.666666666666671"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="6no-9t-tuh">
+                    <rect key="frame" x="32" y="363" width="329" height="141"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQM-4T-aEb" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="34.333333333333336"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0b-Qw-v6y" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="53.333333333333314" width="329" height="34.333333333333343"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVv-TJ-aer" customClass="YeYaSignInButton" customModule="UIMentoringSession" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="106.66666666666669" width="329" height="34.333333333333343"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7d-xQ-6CI">
+                    <rect key="frame" x="32" y="523" width="329" height="30"/>
                     <constraints>
-                        <constraint firstItem="Ifn-lg-WR2" firstAttribute="top" secondItem="7G0-j2-7zn" secondAttribute="top" constant="61" id="7vJ-Rq-iGe"/>
-                        <constraint firstItem="6no-9t-tuh" firstAttribute="leading" secondItem="7G0-j2-7zn" secondAttribute="leading" constant="32" id="GcW-fV-bXC"/>
-                        <constraint firstAttribute="trailing" secondItem="6no-9t-tuh" secondAttribute="trailing" constant="32" id="VWz-YO-xsk"/>
-                        <constraint firstItem="Ifn-lg-WR2" firstAttribute="leading" secondItem="7G0-j2-7zn" secondAttribute="leading" constant="16" id="aeT-Mg-YMA"/>
-                        <constraint firstAttribute="bottom" secondItem="6no-9t-tuh" secondAttribute="bottom" constant="184" id="wlJ-a2-vTY"/>
+                        <constraint firstAttribute="height" constant="30" id="qJb-Iy-RWN"/>
                     </constraints>
-                </view>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="7G0-j2-7zn" secondAttribute="trailing" id="3Rc-zS-mBo"/>
-                <constraint firstAttribute="bottom" secondItem="7G0-j2-7zn" secondAttribute="bottom" id="7ZH-Ua-UWg"/>
-                <constraint firstItem="7G0-j2-7zn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Poe-Za-1sT"/>
-                <constraint firstItem="7G0-j2-7zn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rXK-Pe-0Vs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6no-9t-tuh" secondAttribute="trailing" constant="32" id="4wr-K0-lg9"/>
+                <constraint firstItem="d8y-By-GYC" firstAttribute="top" secondItem="w5B-bf-dyB" secondAttribute="bottom" constant="12" id="EMD-HP-kha"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d8y-By-GYC" secondAttribute="trailing" constant="32" id="Jsr-Ea-0a3"/>
+                <constraint firstItem="t7d-xQ-6CI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="MFI-Dp-mP3"/>
+                <constraint firstItem="6no-9t-tuh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="XA0-R7-G5h"/>
+                <constraint firstItem="t7d-xQ-6CI" firstAttribute="top" secondItem="6no-9t-tuh" secondAttribute="bottom" constant="19" id="ddG-xK-pec"/>
+                <constraint firstItem="6no-9t-tuh" firstAttribute="top" secondItem="d8y-By-GYC" secondAttribute="bottom" constant="24" id="fAH-th-Zce"/>
+                <constraint firstItem="d8y-By-GYC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="iRZ-7b-hKG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t7d-xQ-6CI" secondAttribute="trailing" constant="32" id="ihg-pn-A4v"/>
+                <constraint firstItem="w5B-bf-dyB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tYY-fR-uhb"/>
+                <constraint firstItem="w5B-bf-dyB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="98" id="yyw-bn-dWg"/>
             </constraints>
-            <point key="canvasLocation" x="65" y="-1"/>
+            <point key="canvasLocation" x="64.885496183206101" y="-1.4084507042253522"/>
         </view>
     </objects>
     <resources>
-        <image name="Apple icon" width="19.333333969116211" height="24"/>
-        <image name="Arrow circle icon" width="24" height="24"/>
-        <image name="Bird logo" width="101" height="89"/>
-        <image name="Facebook icon" width="24" height="24"/>
-        <image name="Phone icon" width="20" height="20"/>
+        <image name="bird logo" width="101" height="89"/>
     </resources>
 </document>
