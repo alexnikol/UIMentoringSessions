@@ -2,35 +2,46 @@
 
 import UIKit
 
-class OleksandrKharchenko_GamingScreenViewController: UIViewController {
-
-    
-    @IBOutlet private weak var firstView: UIView!
+final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
     @IBOutlet private weak var gamingLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var passwordLabel: UILabel!
+    
+    @IBOutlet weak var appleButton: OleksandrKharchenko_MainsButtons!
+    @IBOutlet weak var facebookButton: OleksandrKharchenko_MainsButtons!
+    @IBOutlet weak var phoneButton: OleksandrKharchenko_MainsButtons!
+    
+    @IBOutlet weak var appleView: OleksandrKharchenko_ViewButtons!
+    @IBOutlet weak var facebookView: OleksandrKharchenko_ViewButtons!
+    @IBOutlet weak var phoneView: OleksandrKharchenko_ViewButtons!
+    var gradient: CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        descriptionLabel.text = "By creating an account or signing you agree to our Terms and Conditions."
         setGradientLayer()
-
-//        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
-//        let underlineAttributedString = NSAttributedString(string: "Terms and Conditions.", attributes: underlineAttribute)
-//        descriptionLabel.attributedText = underlineAttributedString
+        gamingLabel.text = "Gaming"
+        passwordLabel.attributedText = AddAtribute(partOfText: "Forgot your password?")
+        descriptionLabel.attributedText = AddAttributeMixed(firstPartOfText: "By creating an account or signing you agree to our",
+                                                            secondPartOfText: "\nTerms and Conditions.")
+        appleButton.configuration?.title = "sing in with apple".uppercased()
+        facebookButton.configuration?.title = "sign in with facebook".uppercased()
+        phoneButton.configuration?.title = "sign in with phone".uppercased()
     }
     
-    
-    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        gradient.frame = view.bounds
+    }
     
     private func setGradientLayer() {
-        let gradient = CAGradientLayer()
+        gradient = CAGradientLayer()
         let colorTop = UIColor(red: 0.33, green: 0.94, blue: 0.80, alpha: 1.0).cgColor
         let colorBottom = UIColor(red: 0.00, green: 0.40, blue: 1.00, alpha: 1.0).cgColor
         gradient.colors = [colorTop, colorBottom]
         gradient.startPoint = CGPoint(x: 0.5, y: 0)
         gradient.endPoint = CGPoint(x: 1, y: 1)
-        gradient.frame = firstView.bounds
-        firstView.layer.insertSublayer(gradient, at: 0)
+        gradient.frame = view.bounds
+        view.layer.insertSublayer(gradient, at: 0)
     }
     
     init() {
@@ -39,5 +50,35 @@ class OleksandrKharchenko_GamingScreenViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func AddAttributeMixed(firstPartOfText: String, secondPartOfText: String) -> NSMutableAttributedString {
+        let firstAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 13.0),
+            .strokeColor: UIColor.white,
+        ]
+        let secondaryAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 13.0, weight: .bold),
+            .underlineStyle: 1,
+            .underlineColor: UIColor.white
+        ]
+        let firstString = NSMutableAttributedString(string: firstPartOfText, attributes: firstAttributes)
+        let secondaryString = NSAttributedString(string: secondPartOfText, attributes: secondaryAttributes)
+        firstString.append(secondaryString)
+        return firstString
+    }
+    
+    func AddAtribute(partOfText: String) -> NSMutableAttributedString {
+        let oneAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 13.0, weight: .semibold),
+            .strokeColor: UIColor.white,
+            .underlineStyle: 1,
+            .baselineOffset: 4
+        ]
+        let oneString = NSMutableAttributedString(string: partOfText, attributes: oneAttributes)
+        return oneString
     }
 }

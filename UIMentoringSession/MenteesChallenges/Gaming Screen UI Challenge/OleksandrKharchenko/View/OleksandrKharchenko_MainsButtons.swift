@@ -2,12 +2,19 @@
 
 import UIKit
 
-class OleksandrKharchenko_MainsButtons: UITableViewCell {
-
-    @IBOutlet weak var mainsButtons: UIButton!
+final class OleksandrKharchenko_MainsButtons: UIButton {
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
+    func setupButton() {
+        // button setting
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupButton()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupButton()
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		335C639A29B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C639929B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift */; };
+		336AD4D829BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift */; };
 		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
 		33F60C9F29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F60C9D29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift */; };
 		33F60CA029B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F60C9E29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib */; };
@@ -34,13 +36,13 @@
 		8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271FC299F9A0C00321A85 /* MenteesList.swift */; };
 		8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */; };
 		8DF4FDAC29B647B400EA8715 /* OleksandrKharchenko_GamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FDA429B647B400EA8715 /* OleksandrKharchenko_GamingScreenViewController.swift */; };
-		8DF4FDAD29B647B400EA8715 /* OleksandrKharchenko_MainsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FDA629B647B400EA8715 /* OleksandrKharchenko_MainsButtons.swift */; };
-		8DF4FDAE29B647B400EA8715 /* OleksandrKharchenko_MainsButtons.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4FDA729B647B400EA8715 /* OleksandrKharchenko_MainsButtons.xib */; };
 		8DF4FDAF29B647B400EA8715 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4FDA829B647B400EA8715 /* OleksandrKharchenko_GamingScreenViewController.xib */; };
 		8DF4FDB029B647B400EA8715 /* YeYaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FDAA29B647B400EA8715 /* YeYaTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		335C639929B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_MainsButtons.swift; sourceTree = "<group>"; };
+		336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_ViewButtons.swift; sourceTree = "<group>"; };
 		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
 		33F60C9D29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YefimYakuninCoffeShopChallengeViewController.swift; sourceTree = "<group>"; };
 		33F60C9E29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YefimYakuninCoffeShopChallengeViewController.xib; sourceTree = "<group>"; };
@@ -73,8 +75,6 @@
 		8DF4FD8629B63ACB00EA8715 /* YeYa_CoffeeShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YeYa_CoffeeShopCell.xib; sourceTree = "<group>"; };
 		8DF4FD8729B63ACB00EA8715 /* YeYa_CoffeeShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYa_CoffeeShopCell.swift; sourceTree = "<group>"; };
 		8DF4FDA429B647B400EA8715 /* OleksandrKharchenko_GamingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_GamingScreenViewController.swift; sourceTree = "<group>"; };
-		8DF4FDA629B647B400EA8715 /* OleksandrKharchenko_MainsButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_MainsButtons.swift; sourceTree = "<group>"; };
-		8DF4FDA729B647B400EA8715 /* OleksandrKharchenko_MainsButtons.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_MainsButtons.xib; sourceTree = "<group>"; };
 		8DF4FDA829B647B400EA8715 /* OleksandrKharchenko_GamingScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_GamingScreenViewController.xib; sourceTree = "<group>"; };
 		8DF4FDAA29B647B400EA8715 /* YeYaTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYaTest.swift; sourceTree = "<group>"; };
 		8DF4FDAB29B647B400EA8715 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -293,8 +293,8 @@
 		8DF4FDA529B647B400EA8715 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8DF4FDA629B647B400EA8715 /* OleksandrKharchenko_MainsButtons.swift */,
-				8DF4FDA729B647B400EA8715 /* OleksandrKharchenko_MainsButtons.xib */,
+				335C639929B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift */,
+				336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,7 +383,6 @@
 				33F60CB029B65067001A6B8D /* YeYa_CoffeeShopCell.xib in Resources */,
 				33F60CA029B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */,
 				33F60CAE29B65020001A6B8D /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
-				8DF4FDAE29B647B400EA8715 /* OleksandrKharchenko_MainsButtons.xib in Resources */,
 				8D40068129AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335C639A29B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
 				33F60CAD29B65020001A6B8D /* OleksandrKharchenko_MainButton.swift in Sources */,
 				336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */,
 				33F60CA229B64FB7001A6B8D /* YefimYakunin_MainButton.swift in Sources */,
@@ -431,9 +431,9 @@
 				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
 				33F60C9F29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
-				8DF4FDAD29B647B400EA8715 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
 				8DF4FDB029B647B400EA8715 /* YeYaTest.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
+				336AD4D829BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
 				481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */,
 				8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */,
@@ -579,7 +579,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59HT9UJH46;
+				DEVELOPMENT_TEAM = K9947R9LK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -612,7 +612,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59HT9UJH46;
+				DEVELOPMENT_TEAM = K9947R9LK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
