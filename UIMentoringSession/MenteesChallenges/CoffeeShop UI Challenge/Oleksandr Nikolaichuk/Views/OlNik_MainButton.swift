@@ -16,13 +16,13 @@ final class OlNik_MainButton: UIButton {
         
     override func layoutSubviews() {
         super.layoutSubviews()
-        setTitleColor(UIColor(named: "secondaryLabelColor"), for: .normal)
-        titleLabel?.textColor = UIColor(named: "secondaryLabelColor")
+        setTitleColor(R.color.secondaryLabelColor(), for: .normal)
+        titleLabel?.textColor = R.color.secondaryLabelColor()
         titleLabel?.font = UIFont.systemFont(ofSize: 14.0, weight: .bold)
     }
         
     private func setup() {
-        backgroundColor = UIColor(named: "mainButtonBG")
+        backgroundColor = R.color.mainButtonBG()
         layer.cornerRadius = 10.0
     }
 }

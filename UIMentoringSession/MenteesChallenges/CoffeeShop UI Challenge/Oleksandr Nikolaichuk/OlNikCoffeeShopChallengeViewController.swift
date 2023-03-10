@@ -11,15 +11,17 @@ final class OlNikCoffeeShopChallengeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        secondaryLabel.text = "Add your favorite coffee shops. Save places and easily find them on the map"
-        title = "Coffee shops"
-        mainButton.setTitle("add shop".uppercased(), for: .normal)
+        secondaryLabel.text = Text.coffeeShopSecondaryTitle()
+        title = Text.coffeeShopTitle()
+        mainButton.setTitle(Text.coffeeShopAddShop().uppercased(), for: .normal)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.sizeToFit()
-        
+                
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "OlNik_CoffeeShopCell", bundle: nil), forCellReuseIdentifier: "OlNik_CoffeeShopCell")
+//        tableView.register(UINib(nibName: "OlNik_CoffeeShopCell", bundle: nil), forCellReuseIdentifier: "OlNik_CoffeeShopCell")
+        
+        tableView.register(R.nib.olNik_CoffeeShopCell)
         
         let items: [CoffeeShopViewModel] = [
             .init(
@@ -53,7 +55,11 @@ extension OlNikCoffeeShopChallengeViewController: UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OlNik_CoffeeShopCell", for: indexPath) as! OlNik_CoffeeShopCell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "OlNik_CoffeeShopCell", for: indexPath) as! OlNik_CoffeeShopCell
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.olNik_CoffeeShopCell, for: indexPath)!
+        
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero

@@ -25,6 +25,9 @@
 		8D46CAE129A7D0C700431E17 /* OlNik_CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46CADF29A7D0C700431E17 /* OlNik_CoffeeShopCell.swift */; };
 		8D46CAE229A7D0C700431E17 /* OlNik_CoffeeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D46CAE029A7D0C700431E17 /* OlNik_CoffeeShopCell.xib */; };
 		8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */; };
+		8D6993FD29BB82A400985057 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6993FC29BB82A400985057 /* R.generated.swift */; };
+		8D69940129BB848900985057 /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D69940329BB848900985057 /* Texts.strings */; };
+		8D69940629BB879500985057 /* R.Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69940529BB879500985057 /* R.Aliases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,11 @@
 		8D46CADF29A7D0C700431E17 /* OlNik_CoffeeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlNik_CoffeeShopCell.swift; sourceTree = "<group>"; };
 		8D46CAE029A7D0C700431E17 /* OlNik_CoffeeShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OlNik_CoffeeShopCell.xib; sourceTree = "<group>"; };
 		8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrNikolaichukFactory.swift; sourceTree = "<group>"; };
+		8D6993FC29BB82A400985057 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		8D6993FE29BB83BD00985057 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8D69940229BB848900985057 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
+		8D69940429BB849200985057 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
+		8D69940529BB879500985057 /* R.Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.Aliases.swift; sourceTree = "<group>"; };
 		A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,9 +110,12 @@
 				8D4271F1299F817300321A85 /* Core */,
 				8D4271CC299F789400321A85 /* AppDelegate.swift */,
 				8D4271CE299F789400321A85 /* SceneDelegate.swift */,
+				8D6993FC29BB82A400985057 /* R.generated.swift */,
+				8D69940529BB879500985057 /* R.Aliases.swift */,
 				8D4271D5299F789600321A85 /* Assets.xcassets */,
 				8D4271D7299F789600321A85 /* LaunchScreen.storyboard */,
 				8D4271DA299F789600321A85 /* Info.plist */,
+				8D69940329BB848900985057 /* Texts.strings */,
 			);
 			path = UIMentoringSession;
 			sourceTree = "<group>";
@@ -200,9 +211,11 @@
 			buildConfigurationList = 8D4271DD299F789600321A85 /* Build configuration list for PBXNativeTarget "UIMentoringSession" */;
 			buildPhases = (
 				AD96B828A7F51E3AD63429D1 /* [CP] Check Pods Manifest.lock */,
+				8D6993F929BB816100985057 /* R.Swift */,
 				8D4271C5299F789400321A85 /* Sources */,
 				8D4271C6299F789400321A85 /* Frameworks */,
 				8D4271C7299F789400321A85 /* Resources */,
+				8BF19412280BF59620023AF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +249,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = 8D4271C0299F789400321A85;
 			productRefGroup = 8D4271CA299F789400321A85 /* Products */;
@@ -255,6 +269,7 @@
 				8D46CADA29A7C97C00431E17 /* OlNikCoffeeShopChallengeViewController.xib in Resources */,
 				8D46C98B29A64B1400431E17 /* README.md in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
+				8D69940129BB848900985057 /* Texts.strings in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
 				8D46CAE229A7D0C700431E17 /* OlNik_CoffeeShopCell.xib in Resources */,
 			);
@@ -263,6 +278,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8BF19412280BF59620023AF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D6993F929BB816100985057 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		AD96B828A7F51E3AD63429D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,12 +344,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D69940629BB879500985057 /* R.Aliases.swift in Sources */,
 				336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				8D46CAD929A7C97C00431E17 /* OlNikCoffeeShopChallengeViewController.swift in Sources */,
 				8D46CADC29A7CD9300431E17 /* OlNik_MainButton.swift in Sources */,
 				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
+				8D6993FD29BB82A400985057 /* R.generated.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D46CAE129A7D0C700431E17 /* OlNik_CoffeeShopCell.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
@@ -314,8 +368,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				8D4271D8299F789600321A85 /* Base */,
+				8D6993FE29BB83BD00985057 /* uk */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8D69940329BB848900985057 /* Texts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D69940229BB848900985057 /* en */,
+				8D69940429BB849200985057 /* uk */,
+			);
+			name = Texts.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -325,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -385,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
