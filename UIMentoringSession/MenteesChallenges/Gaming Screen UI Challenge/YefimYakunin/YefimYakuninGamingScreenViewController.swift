@@ -15,18 +15,12 @@ final class YefimYakuninGamingScreenViewController: UIViewController {
         
         titleLabel.text = "Gaming"
         termsAndConditionsLabel.attributedText = addAttributeMixed(firstPartOfText: "By creating an account or signing you agree to our", secondPartOfText: "\nTerms and Conditions.")
-        appleButton.configuration?.contentInsets = .init(top: 15, leading: 10, bottom: 15, trailing: 10)
         appleButton.configuration?.title = "SIGN IN WITH APPLE"
-        appleButton.configuration?.image = UIImage(named: "apple icon")
-        appleButton.configuration?.imagePadding = 20
-        fbButton.configuration?.contentInsets = .init(top: 15, leading: 10, bottom: 15, trailing: 10)
+        appleButton.configuration?.image = R.image.appleIcon()
         fbButton.configuration?.title = "SIGN IN WITH FACEBOOK"
-        fbButton.configuration?.image = UIImage(named: "facebook icon")
-        fbButton.configuration?.imagePadding = 20
-        phoneButton.configuration?.contentInsets = .init(top: 15, leading: 10, bottom: 15, trailing: 10)
+        fbButton.configuration?.image = R.image.facebookIcon()
         phoneButton.configuration?.title = "SIGN IN WITH PHONE"
-        phoneButton.configuration?.image = UIImage(named: "phone icon")
-        phoneButton.configuration?.imagePadding = 20
+        phoneButton.configuration?.image = R.image.phoneIcon()
         forgotPassLabel.attributedText = addAttribute(partOfText: "Forgot your password?")
     }
     

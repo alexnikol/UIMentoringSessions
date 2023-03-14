@@ -12,6 +12,7 @@
 		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
 		33F60C9C29B6403F001A6B8D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 33F60C9929B6403F001A6B8D /* README.md */; };
 		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
+		48A0090A29BFC98600DE0A2F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0090929BFC98600DE0A2F /* R.generated.swift */; };
 		48A7B40E29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */; };
 		48A7B40F29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */; };
 		48A7B41129B25920004B3821 /* YeYaSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B41029B25920004B3821 /* YeYaSignInButton.swift */; };
@@ -51,6 +52,7 @@
 		33F60C9929B6403F001A6B8D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
+		48A0090929BFC98600DE0A2F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninGamingScreenViewController.swift; sourceTree = "<group>"; };
 		48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakuninGamingScreenViewController.xib; sourceTree = "<group>"; };
 		48A7B41029B25920004B3821 /* YeYaSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYaSignInButton.swift; sourceTree = "<group>"; };
@@ -134,9 +136,17 @@
 			children = (
 				48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */,
 				48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */,
-				48A7B41029B25920004B3821 /* YeYaSignInButton.swift */,
+				480BD3CE29BCFE9800073AE3 /* YeYaSignInButton */,
 			);
 			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
+		480BD3CE29BCFE9800073AE3 /* YeYaSignInButton */ = {
+			isa = PBXGroup;
+			children = (
+				48A7B41029B25920004B3821 /* YeYaSignInButton.swift */,
+			);
+			path = YeYaSignInButton;
 			sourceTree = "<group>";
 		};
 		48E148AE29A74EF300E26085 /* YefimYakunin */ = {
@@ -218,6 +228,7 @@
 				8D4271E4299F7BD000321A85 /* MenteesChallenges */,
 				8D4271F1299F817300321A85 /* Core */,
 				8D4271CC299F789400321A85 /* AppDelegate.swift */,
+				48A0090929BFC98600DE0A2F /* R.generated.swift */,
 				8D4271CE299F789400321A85 /* SceneDelegate.swift */,
 				8D4271D5299F789600321A85 /* Assets.xcassets */,
 				8D4271D7299F789600321A85 /* LaunchScreen.storyboard */,
@@ -313,9 +324,11 @@
 			buildConfigurationList = 8D4271DD299F789600321A85 /* Build configuration list for PBXNativeTarget "UIMentoringSession" */;
 			buildPhases = (
 				AD96B828A7F51E3AD63429D1 /* [CP] Check Pods Manifest.lock */,
+				48A0090829BFC83400DE0A2F /* R.swift */,
 				8D4271C5299F789400321A85 /* Sources */,
 				8D4271C6299F789400321A85 /* Frameworks */,
 				8D4271C7299F789400321A85 /* Resources */,
+				E64CECDF5810D124FCD36389 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -382,6 +395,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		48A0090829BFC83400DE0A2F /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		AD96B828A7F51E3AD63429D1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +437,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E64CECDF5810D124FCD36389 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -418,6 +468,7 @@
 				333913C729AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
 				8DF4FDB629B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
+				48A0090A29BFC98600DE0A2F /* R.generated.swift in Sources */,
 				8DF4FDB229B6499600EA8715 /* OleksandrKharchenko_MainButton.swift in Sources */,
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				8DF4FDBB29B64A1A00EA8715 /* YeYa_CoffeeShopCell.swift in Sources */,
