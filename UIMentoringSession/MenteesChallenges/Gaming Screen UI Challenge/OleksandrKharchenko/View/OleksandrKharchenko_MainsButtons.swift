@@ -13,6 +13,10 @@ final class OleksandrKharchenko_MainsButtons: UIButton {
         setupButton()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupButton()

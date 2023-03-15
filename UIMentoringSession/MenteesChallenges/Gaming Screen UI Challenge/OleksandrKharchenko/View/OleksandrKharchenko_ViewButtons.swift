@@ -17,6 +17,10 @@ final class OleksandrKharchenko_ViewButtons: UIView {
         setupViewForButtons()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupViewForButtons()
