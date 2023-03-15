@@ -14,8 +14,8 @@ final class YefimYakunin_MainButton: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        setTitleColor(R.color.descriptionColor(), for: .normal)
-        titleLabel?.textColor = R.color.descriptionColor()
+        setTitleColor(UIColor(named: "buttonColor"), for: .normal)
+        titleLabel?.textColor = UIColor(named: "descriptionColor")
         titleLabel?.font = UIFont.systemFont(ofSize: 14.0, weight: .bold)
     }
     

@@ -13,6 +13,7 @@
 		33F60C9C29B6403F001A6B8D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 33F60C9929B6403F001A6B8D /* README.md */; };
 		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
 		48A0090A29BFC98600DE0A2F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0090929BFC98600DE0A2F /* R.generated.swift */; };
+		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
 		48A7B40E29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */; };
 		48A7B40F29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */; };
 		48A7B41129B25920004B3821 /* YeYaSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B41029B25920004B3821 /* YeYaSignInButton.swift */; };
@@ -53,6 +54,9 @@
 		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
 		48A0090929BFC98600DE0A2F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
+		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninGamingScreenViewController.swift; sourceTree = "<group>"; };
 		48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakuninGamingScreenViewController.xib; sourceTree = "<group>"; };
 		48A7B41029B25920004B3821 /* YeYaSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYaSignInButton.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 				8D4271D5299F789600321A85 /* Assets.xcassets */,
 				8D4271D7299F789600321A85 /* LaunchScreen.storyboard */,
 				8D4271DA299F789600321A85 /* Info.plist */,
+				48A0091029C0A6C500DE0A2F /* Texts.strings */,
 			);
 			path = UIMentoringSession;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = 8D4271C0299F789400321A85;
 			productRefGroup = 8D4271CA299F789400321A85 /* Products */;
@@ -387,6 +393,7 @@
 				8DF4FDBA29B64A0B00EA8715 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
+				48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */,
 				48A7B40F29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib in Resources */,
 				8D40068129AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
 			);
@@ -487,10 +494,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		48A0091029C0A6C500DE0A2F /* Texts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48A0090F29C0A6C500DE0A2F /* en */,
+				48A0091129C0A6D500DE0A2F /* uk */,
+			);
+			name = Texts.strings;
+			sourceTree = "<group>";
+		};
 		8D4271D7299F789600321A85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8D4271D8299F789600321A85 /* Base */,
+				48A0090B29C099C900DE0A2F /* uk */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -502,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -562,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

@@ -13,15 +13,18 @@ final class YefimYakuninGamingScreenViewController: UIViewController {
         super.viewDidLoad()
         setUpGradient()
         
-        titleLabel.text = "Gaming"
-        termsAndConditionsLabel.attributedText = addAttributeMixed(firstPartOfText: "By creating an account or signing you agree to our", secondPartOfText: "\nTerms and Conditions.")
-        appleButton.configuration?.title = "SIGN IN WITH APPLE"
+        titleLabel.text = R.string.texts.gamingScreenTitleLabel()
+        termsAndConditionsLabel.attributedText = addAttributeMixed(
+            firstPartOfText: R.string.texts.gamingScreenFirstPartOfText(),
+            secondPartOfText: R.string.texts.gamingScreenSecondPartOfText()
+        )
+        appleButton.configuration?.title = R.string.texts.gamingScreenAppleButtonTitle()
         appleButton.configuration?.image = R.image.appleIcon()
-        fbButton.configuration?.title = "SIGN IN WITH FACEBOOK"
+        fbButton.configuration?.title = R.string.texts.gamingScreenFbButtonTitle()
         fbButton.configuration?.image = R.image.facebookIcon()
-        phoneButton.configuration?.title = "SIGN IN WITH PHONE"
+        phoneButton.configuration?.title = R.string.texts.gamingScreenPhoneButtonTitle()
         phoneButton.configuration?.image = R.image.phoneIcon()
-        forgotPassLabel.attributedText = addAttribute(partOfText: "Forgot your password?")
+        forgotPassLabel.attributedText = addAttribute(partOfText: R.string.texts.gamingScreenForgotPassLabel())
     }
     
     override func viewDidLayoutSubviews() {
