@@ -6,11 +6,9 @@ final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
     @IBOutlet private weak var gamingLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var passwordLabel: UILabel!
-    
     @IBOutlet weak var appleButton: OleksandrKharchenko_MainsButtons!
     @IBOutlet weak var facebookButton: OleksandrKharchenko_MainsButtons!
     @IBOutlet weak var phoneButton: OleksandrKharchenko_MainsButtons!
-    
     @IBOutlet weak var appleView: OleksandrKharchenko_ViewButtons!
     @IBOutlet weak var facebookView: OleksandrKharchenko_ViewButtons!
     @IBOutlet weak var phoneView: OleksandrKharchenko_ViewButtons!
@@ -21,8 +19,8 @@ final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
         setGradientLayer()
         gamingLabel.text = RText.gamingGamingLabel()
         passwordLabel.attributedText = AddAtribute(partOfText: RText.gamingPasswordLabel())
-        descriptionLabel.attributedText = AddAttributeMixed(firstPartOfText: RText.gamingDescriptionLabel(),
-                                                            secondPartOfText: "\nTerms and Conditions.")
+        descriptionLabel.attributedText = AddAttributeMixed(firstPartOfText: RText.gamingFirstPartOfText(),
+                                                            secondPartOfText: RText.gamingSecondPartOfText())
         appleButton.configuration?.title = RText.gamingAppleButton().uppercased()
         facebookButton.configuration?.title = RText.gamingFacebookButton().uppercased()
         phoneButton.configuration?.title = RText.gamingPhoneButton().uppercased()
@@ -73,7 +71,7 @@ final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
     func AddAtribute(partOfText: String) -> NSMutableAttributedString {
         let oneAttributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.white,
-            .font: UIFont.systemFont(ofSize: 13.0, weight: .semibold),
+            .font: UIFont.systemFont(ofSize: 15.0, weight: .semibold),
             .strokeColor: UIColor.white,
             .underlineStyle: 1,
             .baselineOffset: 4
