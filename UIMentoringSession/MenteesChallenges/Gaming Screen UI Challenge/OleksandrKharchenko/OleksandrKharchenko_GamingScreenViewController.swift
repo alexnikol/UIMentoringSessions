@@ -19,13 +19,13 @@ final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientLayer()
-        gamingLabel.text = "Gaming"
-        passwordLabel.attributedText = AddAtribute(partOfText: "Forgot your password?")
-        descriptionLabel.attributedText = AddAttributeMixed(firstPartOfText: "By creating an account or signing you agree to our",
+        gamingLabel.text = RText.gamingGamingLabel()
+        passwordLabel.attributedText = AddAtribute(partOfText: RText.gamingPasswordLabel())
+        descriptionLabel.attributedText = AddAttributeMixed(firstPartOfText: RText.gamingDescriptionLabel(),
                                                             secondPartOfText: "\nTerms and Conditions.")
-        appleButton.configuration?.title = "sing in with apple".uppercased()
-        facebookButton.configuration?.title = "sign in with facebook".uppercased()
-        phoneButton.configuration?.title = "sign in with phone".uppercased()
+        appleButton.configuration?.title = RText.gamingAppleButton().uppercased()
+        facebookButton.configuration?.title = RText.gamingFacebookButton().uppercased()
+        phoneButton.configuration?.title = RText.gamingPhoneButton().uppercased()
     }
     
     override func viewDidLayoutSubviews() {

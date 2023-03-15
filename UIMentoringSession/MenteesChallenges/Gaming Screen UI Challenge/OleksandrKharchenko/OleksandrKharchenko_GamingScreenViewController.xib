@@ -57,7 +57,7 @@
                                     <rect key="frame" x="20" y="12" width="19.333333333333329" height="24"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk0-cR-3kr" userLabel="appleButton" customClass="OleksandrKharchenko_MainsButtons" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="326" height="48"/>
+                                    <rect key="frame" x="39.333333333333343" y="0.0" width="286.66666666666663" height="48"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="appleButton">
                                         <color key="baseForegroundColor" name="Text color"/>
@@ -68,9 +68,9 @@
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="Kk0-cR-3kr" secondAttribute="trailing" id="6ml-EF-0kK"/>
                                 <constraint firstItem="zOx-yA-grs" firstAttribute="leading" secondItem="Kh5-8I-OQm" secondAttribute="leading" constant="20" id="Mel-E1-lnO"/>
+                                <constraint firstItem="Kk0-cR-3kr" firstAttribute="leading" secondItem="zOx-yA-grs" secondAttribute="trailing" id="hud-yt-X16"/>
                                 <constraint firstItem="zOx-yA-grs" firstAttribute="centerY" secondItem="Kk0-cR-3kr" secondAttribute="centerY" id="if5-Ii-MhR"/>
                                 <constraint firstItem="Kk0-cR-3kr" firstAttribute="top" secondItem="Kh5-8I-OQm" secondAttribute="top" id="sxU-H5-zVJ"/>
-                                <constraint firstItem="Kk0-cR-3kr" firstAttribute="leading" secondItem="Kh5-8I-OQm" secondAttribute="leading" id="wCX-vr-wN4"/>
                                 <constraint firstAttribute="height" constant="48" id="xaC-rJ-Qnh"/>
                                 <constraint firstAttribute="bottom" secondItem="Kk0-cR-3kr" secondAttribute="bottom" id="yhH-dK-4fb"/>
                             </constraints>
@@ -82,7 +82,7 @@
                                     <rect key="frame" x="20" y="12" width="24" height="24"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8o-ow-YdX" customClass="OleksandrKharchenko_MainsButtons" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="326" height="48"/>
+                                    <rect key="frame" x="44" y="0.0" width="282" height="48"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="facebookButton">
                                         <color key="baseForegroundColor" name="Text color"/>
@@ -94,7 +94,7 @@
                                 <constraint firstAttribute="bottom" secondItem="B8o-ow-YdX" secondAttribute="bottom" id="6yK-G9-3aM"/>
                                 <constraint firstItem="aDd-tp-Kti" firstAttribute="centerY" secondItem="B8o-ow-YdX" secondAttribute="centerY" id="7hy-wd-xGH"/>
                                 <constraint firstItem="B8o-ow-YdX" firstAttribute="top" secondItem="Xhf-5r-Xth" secondAttribute="top" id="AyQ-ef-aaq"/>
-                                <constraint firstItem="B8o-ow-YdX" firstAttribute="leading" secondItem="Xhf-5r-Xth" secondAttribute="leading" id="XKP-SR-f8C"/>
+                                <constraint firstItem="B8o-ow-YdX" firstAttribute="leading" secondItem="aDd-tp-Kti" secondAttribute="trailing" id="ZqR-0F-Hji"/>
                                 <constraint firstItem="aDd-tp-Kti" firstAttribute="leading" secondItem="Xhf-5r-Xth" secondAttribute="leading" constant="20" id="bHg-64-whc"/>
                                 <constraint firstAttribute="height" constant="48" id="lex-xx-oQa"/>
                                 <constraint firstAttribute="trailing" secondItem="B8o-ow-YdX" secondAttribute="trailing" id="sbe-PC-XCo"/>
@@ -107,7 +107,7 @@
                                     <rect key="frame" x="20" y="14" width="20" height="20"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPf-hD-L6y" customClass="OleksandrKharchenko_MainsButtons" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="326" height="48"/>
+                                    <rect key="frame" x="40" y="0.0" width="286" height="48"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="phoneButton">
                                         <color key="baseForegroundColor" name="Text color"/>
@@ -119,9 +119,9 @@
                                 <constraint firstItem="VPf-hD-L6y" firstAttribute="top" secondItem="nYu-xZ-8OB" secondAttribute="top" id="LGu-d8-KHD"/>
                                 <constraint firstAttribute="bottom" secondItem="VPf-hD-L6y" secondAttribute="bottom" id="ONX-Dz-YSn"/>
                                 <constraint firstItem="jih-G7-8np" firstAttribute="centerY" secondItem="VPf-hD-L6y" secondAttribute="centerY" id="PyA-c0-CSC"/>
-                                <constraint firstItem="VPf-hD-L6y" firstAttribute="leading" secondItem="nYu-xZ-8OB" secondAttribute="leading" id="ZJQ-eG-veS"/>
                                 <constraint firstAttribute="trailing" secondItem="VPf-hD-L6y" secondAttribute="trailing" id="gZo-kw-9Qa"/>
                                 <constraint firstItem="jih-G7-8np" firstAttribute="leading" secondItem="nYu-xZ-8OB" secondAttribute="leading" constant="20" id="ndq-3e-kLM"/>
+                                <constraint firstItem="VPf-hD-L6y" firstAttribute="leading" secondItem="jih-G7-8np" secondAttribute="trailing" id="wnx-Sl-T1t"/>
                                 <constraint firstAttribute="height" constant="48" id="zcf-yJ-geY"/>
                             </constraints>
                         </view>

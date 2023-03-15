@@ -5,7 +5,7 @@ import UIKit
 final class OleksandrKharchenko_MainsButtons: UIButton {
     
     func setupButton() {
-        // button setting
+        titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
     }
     
     override init(frame: CGRect) {
