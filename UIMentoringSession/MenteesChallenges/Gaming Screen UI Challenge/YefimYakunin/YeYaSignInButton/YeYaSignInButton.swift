@@ -30,12 +30,11 @@ final class YeYaSignInButton: UIButton {
     private func setup() {
         var configuration = UIButton.Configuration.tinted()
         layer.cornerRadius = 25.0
-        layer.borderWidth = 1.0
+        layer.borderWidth = 2.0
         layer.borderColor = UIColor.white.cgColor
         clipsToBounds = true
-        configuration.contentInsets = NSDirectionalEdgeInsets(top: 15, leading: 10, bottom: 15, trailing: 10)
-        configuration.imagePadding = 20
-        backgroundColor = UIColor.white.withAlphaComponent(0.2)
+        configuration.contentInsets = NSDirectionalEdgeInsets(top: 14, leading: 0, bottom: 14, trailing: 0)
+        backgroundColor = UIColor.white.withAlphaComponent(0.1)
         self.configuration = configuration
     }
 }
