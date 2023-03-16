@@ -88,6 +88,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33361E5E29C2F6AC00BAA02A /* IOS News UI Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				33361E6029C2F76500BAA02A /* YefimYakunin */,
+				33361E5F29C2F75300BAA02A /* OleksandrKharchenko */,
+			);
+			path = "IOS News UI Challenge";
+			sourceTree = "<group>";
+		};
+		33361E5F29C2F75300BAA02A /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		33361E6029C2F76500BAA02A /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
 		3348385929AE4305009A440E /* OleksandrKharchenko_View */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +247,7 @@
 		8D4271E4299F7BD000321A85 /* MenteesChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				33361E5E29C2F6AC00BAA02A /* IOS News UI Challenge */,
 				33F60C9429B6403F001A6B8D /* Gaming Screen UI Challenge */,
 				8D46C98929A64A0900431E17 /* Start Screen UI Challenge */,
 				8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */,
