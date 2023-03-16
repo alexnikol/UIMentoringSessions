@@ -50,7 +50,7 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="p1C-nT-5xm">
                     <rect key="frame" x="32" y="351" width="326" height="223"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kh5-8I-OQm" userLabel="appleView" customClass="OleksandrKharchenko_ViewButtons" customModule="UIMentoringSession" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kh5-8I-OQm" userLabel="appleView" customClass="OleksandrKharchenko_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="326" height="48"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple icon" translatesAutoresizingMaskIntoConstraints="NO" id="zOx-yA-grs">
@@ -75,7 +75,7 @@
                                 <constraint firstAttribute="bottom" secondItem="Kk0-cR-3kr" secondAttribute="bottom" id="yhH-dK-4fb"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-5r-Xth" userLabel="facobookView" customClass="OleksandrKharchenko_ViewButtons" customModule="UIMentoringSession" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-5r-Xth" userLabel="facobookView" customClass="OleksandrKharchenko_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="67" width="326" height="48"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook icon" translatesAutoresizingMaskIntoConstraints="NO" id="aDd-tp-Kti">
@@ -100,7 +100,7 @@
                                 <constraint firstAttribute="trailing" secondItem="B8o-ow-YdX" secondAttribute="trailing" id="sbe-PC-XCo"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYu-xZ-8OB" userLabel="phoneView" customClass="OleksandrKharchenko_ViewButtons" customModule="UIMentoringSession" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYu-xZ-8OB" userLabel="phoneView" customClass="OleksandrKharchenko_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="134" width="326" height="48"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone icon" translatesAutoresizingMaskIntoConstraints="NO" id="jih-G7-8np">

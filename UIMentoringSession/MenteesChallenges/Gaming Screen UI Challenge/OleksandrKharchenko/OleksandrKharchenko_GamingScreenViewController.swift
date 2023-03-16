@@ -9,17 +9,17 @@ final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
     @IBOutlet weak var appleButton: OleksandrKharchenko_MainsButtons!
     @IBOutlet weak var facebookButton: OleksandrKharchenko_MainsButtons!
     @IBOutlet weak var phoneButton: OleksandrKharchenko_MainsButtons!
-    @IBOutlet weak var appleView: OleksandrKharchenko_ViewButtons!
-    @IBOutlet weak var facebookView: OleksandrKharchenko_ViewButtons!
-    @IBOutlet weak var phoneView: OleksandrKharchenko_ViewButtons!
+    @IBOutlet weak var appleView: OleksandrKharchenko_ViewButton!
+    @IBOutlet weak var facebookView: OleksandrKharchenko_ViewButton!
+    @IBOutlet weak var phoneView: OleksandrKharchenko_ViewButton!
     var gradient: CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradientLayer()
         gamingLabel.text = RText.gamingGamingLabel()
-        passwordLabel.attributedText = AddAtribute(partOfText: RText.gamingPasswordLabel())
-        descriptionLabel.attributedText = AddAttributeMixed(firstPartOfText: RText.gamingFirstPartOfText(),
+        passwordLabel.attributedText = addAtribute(partOfText: RText.gamingPasswordLabel())
+        descriptionLabel.attributedText = addAttributeMixed(firstPartOfText: RText.gamingFirstPartOfText(),
                                                             secondPartOfText: RText.gamingSecondPartOfText())
         appleButton.configuration?.title = RText.gamingAppleButton().uppercased()
         facebookButton.configuration?.title = RText.gamingFacebookButton().uppercased()
@@ -50,7 +50,7 @@ final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
         super.init(coder: aDecoder)
     }
     
-    func AddAttributeMixed(firstPartOfText: String, secondPartOfText: String) -> NSMutableAttributedString {
+    func addAttributeMixed(firstPartOfText: String, secondPartOfText: String) -> NSMutableAttributedString {
         let firstAttributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.white,
             .font: UIFont.systemFont(ofSize: 13.0),
@@ -68,7 +68,7 @@ final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
         return firstString
     }
     
-    func AddAtribute(partOfText: String) -> NSMutableAttributedString {
+    func addAtribute(partOfText: String) -> NSMutableAttributedString {
         let oneAttributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.white,
             .font: UIFont.systemFont(ofSize: 15.0, weight: .semibold),

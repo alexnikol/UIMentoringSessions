@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		335C639A29B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335C639929B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift */; };
-		336AD4D829BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift */; };
+		336AD4D829BA05B100AAC7B8 /* OleksandrKharchenko_ViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButton.swift */; };
 		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
 		33F60C9F29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F60C9D29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift */; };
 		33F60CA029B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F60C9E29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib */; };
@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		33493C6929C0B07A00E93BD1 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		335C639929B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_MainsButtons.swift; sourceTree = "<group>"; };
-		336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_ViewButtons.swift; sourceTree = "<group>"; };
+		336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_ViewButton.swift; sourceTree = "<group>"; };
 		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
 		33F60C9D29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YefimYakuninCoffeShopChallengeViewController.swift; sourceTree = "<group>"; };
 		33F60C9E29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YefimYakuninCoffeShopChallengeViewController.xib; sourceTree = "<group>"; };
@@ -305,7 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				335C639929B88F8000CE4BA7 /* OleksandrKharchenko_MainsButtons.swift */,
-				336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift */,
+				336AD4D729BA05B100AAC7B8 /* OleksandrKharchenko_ViewButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -504,7 +504,7 @@
 				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
 				8DF4FDB029B647B400EA8715 /* YeYaTest.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
-				336AD4D829BA05B100AAC7B8 /* OleksandrKharchenko_ViewButtons.swift in Sources */,
+				336AD4D829BA05B100AAC7B8 /* OleksandrKharchenko_ViewButton.swift in Sources */,
 				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
 				481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */,
 				8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */,

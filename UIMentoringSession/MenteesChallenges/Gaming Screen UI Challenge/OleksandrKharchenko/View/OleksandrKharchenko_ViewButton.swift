@@ -2,7 +2,7 @@
 
 import UIKit
 
-final class OleksandrKharchenko_ViewButtons: UIView {
+final class OleksandrKharchenko_ViewButton: UIView {
     
     func setupViewForButtons() {
         let colorViewForButtons = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.20)
@@ -15,10 +15,6 @@ final class OleksandrKharchenko_ViewButtons: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViewForButtons()
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
     }
     
     required init?(coder aDecoder: NSCoder) {
