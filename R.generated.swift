@@ -105,7 +105,7 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 7 colors.
+  /// This `R.color` struct is generated, and contains static references to 10 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
@@ -115,12 +115,18 @@ struct R: Rswift.Validatable {
     static let letSGoButtonColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "Let'sGoButtonColor")
     /// Color `Second background color`.
     static let secondBackgroundColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "Second background color")
+    /// Color `background`.
+    static let background = Rswift.ColorResource(bundle: R.hostingBundle, name: "background")
     /// Color `buttonColor`.
     static let buttonColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "buttonColor")
     /// Color `descriptionColor`.
     static let descriptionColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "descriptionColor")
+    /// Color `description`.
+    static let description = Rswift.ColorResource(bundle: R.hostingBundle, name: "description")
     /// Color `titleAndLabelColor`.
     static let titleAndLabelColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "titleAndLabelColor")
+    /// Color `title`.
+    static let title = Rswift.ColorResource(bundle: R.hostingBundle, name: "title")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
@@ -159,6 +165,15 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "background", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func background(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.background, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIColor(named: "buttonColor", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
@@ -168,11 +183,29 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "description", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func description(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.description, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIColor(named: "descriptionColor", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
     static func descriptionColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.descriptionColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "title", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func title(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.title, compatibleWith: traitCollection)
     }
     #endif
 
@@ -218,6 +251,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
+    /// `UIColor(named: "background", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func background(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.background.name)
+    }
+    #endif
+
+    #if os(watchOS)
     /// `UIColor(named: "buttonColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func buttonColor(_: Void = ()) -> UIKit.UIColor? {
@@ -226,10 +267,26 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
+    /// `UIColor(named: "description", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func description(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.description.name)
+    }
+    #endif
+
+    #if os(watchOS)
     /// `UIColor(named: "descriptionColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func descriptionColor(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.descriptionColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "title", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func title(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.title.name)
     }
     #endif
 
@@ -244,7 +301,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 15 images.
+  /// This `R.image` struct is generated, and contains static references to 33 images.
   struct image {
     /// Image `Apple icon`.
     static let appleIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Apple icon")
@@ -258,6 +315,42 @@ struct R: Rswift.Validatable {
     static let goodDogs = Rswift.ImageResource(bundle: R.hostingBundle, name: "GoodDogs")
     /// Image `Phone icon`.
     static let phoneIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Phone icon")
+    /// Image `avatar`.
+    static let avatar = Rswift.ImageResource(bundle: R.hostingBundle, name: "avatar")
+    /// Image `bookAnna`.
+    static let bookAnna = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookAnna")
+    /// Image `bookArtOfWar`.
+    static let bookArtOfWar = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookArtOfWar")
+    /// Image `bookCrime`.
+    static let bookCrime = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookCrime")
+    /// Image `bookFyodorDostoyevsky`.
+    static let bookFyodorDostoyevsky = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookFyodorDostoyevsky")
+    /// Image `bookGabrielGarciaMarouez`.
+    static let bookGabrielGarciaMarouez = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookGabrielGarciaMarouez")
+    /// Image `bookGreatGatsby`.
+    static let bookGreatGatsby = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookGreatGatsby")
+    /// Image `bookGreat`.
+    static let bookGreat = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookGreat")
+    /// Image `bookGulliver's`.
+    static let bookGulliverS = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookGulliver's")
+    /// Image `bookHobbit`.
+    static let bookHobbit = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookHobbit")
+    /// Image `bookJamesRussell`.
+    static let bookJamesRussell = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookJamesRussell")
+    /// Image `bookKillaMockingbird`.
+    static let bookKillaMockingbird = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookKillaMockingbird")
+    /// Image `bookPrideAndPrejudice`.
+    static let bookPrideAndPrejudice = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookPrideAndPrejudice")
+    /// Image `bookStephenKing`.
+    static let bookStephenKing = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookStephenKing")
+    /// Image `bookTreasure`.
+    static let bookTreasure = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookTreasure")
+    /// Image `bookTwoCities`.
+    static let bookTwoCities = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookTwoCities")
+    /// Image `bookWuthering`.
+    static let bookWuthering = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookWuthering")
+    /// Image `booklliad`.
+    static let booklliad = Rswift.ImageResource(bundle: R.hostingBundle, name: "booklliad")
     /// Image `cupImage`.
     static let cupImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "cupImage")
     /// Image `iconAudiobooks`.
@@ -316,6 +409,132 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Phone icon", bundle: ..., traitCollection: ...)`
     static func phoneIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.phoneIcon, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "avatar", bundle: ..., traitCollection: ...)`
+    static func avatar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.avatar, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookAnna", bundle: ..., traitCollection: ...)`
+    static func bookAnna(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookAnna, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookArtOfWar", bundle: ..., traitCollection: ...)`
+    static func bookArtOfWar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookArtOfWar, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookCrime", bundle: ..., traitCollection: ...)`
+    static func bookCrime(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookCrime, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookFyodorDostoyevsky", bundle: ..., traitCollection: ...)`
+    static func bookFyodorDostoyevsky(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookFyodorDostoyevsky, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookGabrielGarciaMarouez", bundle: ..., traitCollection: ...)`
+    static func bookGabrielGarciaMarouez(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookGabrielGarciaMarouez, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookGreat", bundle: ..., traitCollection: ...)`
+    static func bookGreat(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookGreat, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookGreatGatsby", bundle: ..., traitCollection: ...)`
+    static func bookGreatGatsby(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookGreatGatsby, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookGulliver's", bundle: ..., traitCollection: ...)`
+    static func bookGulliverS(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookGulliverS, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookHobbit", bundle: ..., traitCollection: ...)`
+    static func bookHobbit(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookHobbit, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookJamesRussell", bundle: ..., traitCollection: ...)`
+    static func bookJamesRussell(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookJamesRussell, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookKillaMockingbird", bundle: ..., traitCollection: ...)`
+    static func bookKillaMockingbird(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookKillaMockingbird, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookPrideAndPrejudice", bundle: ..., traitCollection: ...)`
+    static func bookPrideAndPrejudice(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookPrideAndPrejudice, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookStephenKing", bundle: ..., traitCollection: ...)`
+    static func bookStephenKing(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookStephenKing, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookTreasure", bundle: ..., traitCollection: ...)`
+    static func bookTreasure(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookTreasure, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookTwoCities", bundle: ..., traitCollection: ...)`
+    static func bookTwoCities(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookTwoCities, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bookWuthering", bundle: ..., traitCollection: ...)`
+    static func bookWuthering(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bookWuthering, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "booklliad", bundle: ..., traitCollection: ...)`
+    static func booklliad(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.booklliad, compatibleWith: traitCollection)
     }
     #endif
 
@@ -415,22 +634,32 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 7 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 8 nibs.
   struct nib {
+    /// Nib `OlKha_IOSNewsViewController`.
+    static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
     /// Nib `OleksandrKharchenko_CoffeShopCell`.
     static let oleksandrKharchenko_CoffeShopCell = _R.nib._OleksandrKharchenko_CoffeShopCell()
     /// Nib `OleksandrKharchenko_CoffeShopViewController`.
     static let oleksandrKharchenko_CoffeShopViewController = _R.nib._OleksandrKharchenko_CoffeShopViewController()
-    /// Nib `OleksandrKharchenko_GamingScreenViewController`.
-    static let oleksandrKharchenko_GamingScreenViewController = _R.nib._OleksandrKharchenko_GamingScreenViewController()
     /// Nib `OleksandrKharchenko_StartScreenViewController`.
     static let oleksandrKharchenko_StartScreenViewController = _R.nib._OleksandrKharchenko_StartScreenViewController()
     /// Nib `YeYa_CoffeeShopCell`.
     static let yeYa_CoffeeShopCell = _R.nib._YeYa_CoffeeShopCell()
+    /// Nib `YeYa_IOSNewsViewController`.
+    static let yeYa_IOSNewsViewController = _R.nib._YeYa_IOSNewsViewController()
     /// Nib `YefimYakuninCoffeShopChallengeViewController`.
     static let yefimYakuninCoffeShopChallengeViewController = _R.nib._YefimYakuninCoffeShopChallengeViewController()
     /// Nib `YefimYakunin_StartScreenViewController`.
     static let yefimYakunin_StartScreenViewController = _R.nib._YefimYakunin_StartScreenViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "OlKha_IOSNewsViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.olKha_IOSNewsViewController) instead")
+    static func olKha_IOSNewsViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.olKha_IOSNewsViewController)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "OleksandrKharchenko_CoffeShopCell", in: bundle)`
@@ -445,14 +674,6 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.oleksandrKharchenko_CoffeShopViewController) instead")
     static func oleksandrKharchenko_CoffeShopViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.oleksandrKharchenko_CoffeShopViewController)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "OleksandrKharchenko_GamingScreenViewController", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.oleksandrKharchenko_GamingScreenViewController) instead")
-    static func oleksandrKharchenko_GamingScreenViewController(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.oleksandrKharchenko_GamingScreenViewController)
     }
     #endif
 
@@ -473,6 +694,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UINib(name: "YeYa_IOSNewsViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.yeYa_IOSNewsViewController) instead")
+    static func yeYa_IOSNewsViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.yeYa_IOSNewsViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UINib(name: "YefimYakuninCoffeShopChallengeViewController", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.yefimYakuninCoffeShopChallengeViewController) instead")
     static func yefimYakuninCoffeShopChallengeViewController(_: Void = ()) -> UIKit.UINib {
@@ -488,6 +717,10 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    static func olKha_IOSNewsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.olKha_IOSNewsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
     static func oleksandrKharchenko_CoffeShopCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> OleksandrKharchenko_CoffeShopCell? {
       return R.nib.oleksandrKharchenko_CoffeShopCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? OleksandrKharchenko_CoffeShopCell
     }
@@ -496,16 +729,16 @@ struct R: Rswift.Validatable {
       return R.nib.oleksandrKharchenko_CoffeShopViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
-    static func oleksandrKharchenko_GamingScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-      return R.nib.oleksandrKharchenko_GamingScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-    }
-
     static func oleksandrKharchenko_StartScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.oleksandrKharchenko_StartScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func yeYa_CoffeeShopCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> YeYa_CoffeeShopCell? {
       return R.nib.yeYa_CoffeeShopCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? YeYa_CoffeeShopCell
+    }
+
+    static func yeYa_IOSNewsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.yeYa_IOSNewsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func yefimYakuninCoffeShopChallengeViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -696,10 +929,20 @@ struct _R: Rswift.Validatable {
     static func validate() throws {
       try _OleksandrKharchenko_CoffeShopCell.validate()
       try _OleksandrKharchenko_CoffeShopViewController.validate()
-      try _OleksandrKharchenko_GamingScreenViewController.validate()
       try _OleksandrKharchenko_StartScreenViewController.validate()
       try _YeYa_CoffeeShopCell.validate()
       try _YefimYakunin_StartScreenViewController.validate()
+    }
+
+    struct _OlKha_IOSNewsViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "OlKha_IOSNewsViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
     }
 
     struct _OleksandrKharchenko_CoffeShopCell: Rswift.NibResourceType, Rswift.Validatable {
@@ -741,27 +984,6 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _OleksandrKharchenko_GamingScreenViewController: Rswift.NibResourceType, Rswift.Validatable {
-      let bundle = R.hostingBundle
-      let name = "OleksandrKharchenko_GamingScreenViewController"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
-      }
-
-      static func validate() throws {
-        if UIKit.UIImage(named: "Apple icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Apple icon' is used in nib 'OleksandrKharchenko_GamingScreenViewController', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "Bird logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Bird logo' is used in nib 'OleksandrKharchenko_GamingScreenViewController', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "Facebook icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Facebook icon' is used in nib 'OleksandrKharchenko_GamingScreenViewController', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "Phone icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Phone icon' is used in nib 'OleksandrKharchenko_GamingScreenViewController', but couldn't be loaded.") }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "Text color", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Text color' is used in nib 'OleksandrKharchenko_GamingScreenViewController', but couldn't be loaded.") }
-        }
-      }
-
-      fileprivate init() {}
-    }
-
     struct _OleksandrKharchenko_StartScreenViewController: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "OleksandrKharchenko_StartScreenViewController"
@@ -795,6 +1017,17 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "descriptionColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'descriptionColor' is used in nib 'YeYa_CoffeeShopCell', but couldn't be loaded.") }
         }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _YeYa_IOSNewsViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "YeYa_IOSNewsViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
 
       fileprivate init() {}
