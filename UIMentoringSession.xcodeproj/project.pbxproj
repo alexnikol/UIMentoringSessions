@@ -43,11 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		333913C529AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_CoffeShopViewController.swift; sourceTree = "<group>"; };
-		333913C629AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OleksandrKharchenko_CoffeShopViewController.xib; sourceTree = "<group>"; };
-		3348385729AE3389009A440E /* OleksandrKharchenko_MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_MainButton.swift; sourceTree = "<group>"; };
-		3348385B29AE43A1009A440E /* OleksandrKharchenko_CoffeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_CoffeShopCell.swift; sourceTree = "<group>"; };
-		3348385C29AE43A1009A440E /* OleksandrKharchenko_CoffeShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OleksandrKharchenko_CoffeShopCell.xib; sourceTree = "<group>"; };
+		33493C6929C0B07A00E93BD1 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
 		33F60C9629B6403F001A6B8D /* OlKhTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlKhTest.swift; sourceTree = "<group>"; };
 		33F60C9929B6403F001A6B8D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -99,50 +95,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3348385929AE4305009A440E /* OleksandrKharchenko_View */ = {
+		33ECF4B729C31EEE00C40C72 /* IOS News UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				3348385729AE3389009A440E /* OleksandrKharchenko_MainButton.swift */,
-				3348385A29AE4326009A440E /* OleksandrKharchenko_CoffeShopCell */,
+				33ECF4B829C31EEE00C40C72 /* OleksandrKharchenko */,
+				33ECF4B929C31EEE00C40C72 /* YefimYakunin */,
 			);
-			path = OleksandrKharchenko_View;
+			path = "IOS News UI Challenge";
 			sourceTree = "<group>";
 		};
-		3348385A29AE4326009A440E /* OleksandrKharchenko_CoffeShopCell */ = {
+		33ECF4B829C31EEE00C40C72 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
-				3348385B29AE43A1009A440E /* OleksandrKharchenko_CoffeShopCell.swift */,
-				3348385C29AE43A1009A440E /* OleksandrKharchenko_CoffeShopCell.xib */,
+				33ECF4BA29C31F6000C40C72 /* OlKha_IOSNewsViewController.swift */,
+				33ECF4BB29C31F6000C40C72 /* OlKha_IOSNewsViewController.xib */,
 			);
-			path = OleksandrKharchenko_CoffeShopCell;
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		33ECF4B929C31EEE00C40C72 /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+				33ECF4BE29C31F8300C40C72 /* YeYa_IOSNewsViewController.swift */,
+				33ECF4BF29C31F8300C40C72 /* YeYa_IOSNewsViewController.xib */,
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
+		33ECF4C229C32C7E00C40C72 /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+				33ECF4C329C32C7E00C40C72 /* OleksandrKharchenko_GamingScreenViewController.swift */,
+				33ECF4C429C32C7E00C40C72 /* View */,
+				33ECF4C829C32C7E00C40C72 /* OleksandrKharchenko_GamingScreenViewController.xib */,
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		33ECF4C429C32C7E00C40C72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33ECF4C529C32C7E00C40C72 /* OleksandrKharchenko_MainsButtons.swift */,
+				33ECF4C729C32C7E00C40C72 /* OleksandrKharchenko_ViewButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		33F60C9429B6403F001A6B8D /* Gaming Screen UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				33F60C9529B6403F001A6B8D /* OleksandrKharchenko */,
-				33F60C9729B6403F001A6B8D /* YefimYakunin */,
+				33ECF4C229C32C7E00C40C72 /* OleksandrKharchenko */,
 				33F60C9929B6403F001A6B8D /* README.md */,
 			);
 			path = "Gaming Screen UI Challenge";
 			sourceTree = "<group>";
 		};
-		33F60C9529B6403F001A6B8D /* OleksandrKharchenko */ = {
+		33F60CA429B65020001A6B8D /* OleksandrKharchenko_View */ = {
 			isa = PBXGroup;
 			children = (
-				33F60C9629B6403F001A6B8D /* OlKhTest.swift */,
+				33F60CA529B65020001A6B8D /* OleksandrKharchenko_CoffeShopCell */,
+				33F60CA829B65020001A6B8D /* OleksandrKharchenko_MainButton.swift */,
 			);
-			path = OleksandrKharchenko;
+			path = OleksandrKharchenko_View;
 			sourceTree = "<group>";
 		};
-		33F60C9729B6403F001A6B8D /* YefimYakunin */ = {
+		33F60CA529B65020001A6B8D /* OleksandrKharchenko_CoffeShopCell */ = {
 			isa = PBXGroup;
 			children = (
 				48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */,
 				48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */,
 				480BD3CE29BCFE9800073AE3 /* YeYaSignInButton */,
 			);
-			path = YefimYakunin;
+			path = OleksandrKharchenko_CoffeShopCell;
 			sourceTree = "<group>";
 		};
 		480BD3CE29BCFE9800073AE3 /* YeYaSignInButton */ = {
@@ -198,9 +222,9 @@
 		8D40068429ADF9F300FB54B2 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
-				3348385929AE4305009A440E /* OleksandrKharchenko_View */,
-				333913C529AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift */,
-				333913C629AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib */,
+				33F60CA329B65020001A6B8D /* OleksandrKharchenko_CoffeShopViewController.swift */,
+				33F60CA929B65020001A6B8D /* OleksandrKharchenko_CoffeShopViewController.xib */,
+				33F60CA429B65020001A6B8D /* OleksandrKharchenko_View */,
 			);
 			path = OleksandrKharchenko;
 			sourceTree = "<group>";
@@ -208,6 +232,8 @@
 		8D40068529ADF9F900FB54B2 /* YefimYakunin */ = {
 			isa = PBXGroup;
 			children = (
+				33F60C9D29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift */,
+				33F60C9E29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib */,
 				8DF4FD8329B63ACB00EA8715 /* Views */,
 			);
 			path = YefimYakunin;
@@ -240,6 +266,8 @@
 				8D4271E4299F7BD000321A85 /* MenteesChallenges */,
 				8D4271F1299F817300321A85 /* Core */,
 				8D4271CC299F789400321A85 /* AppDelegate.swift */,
+				33F8514F29C1ADD500875F31 /* R.generated.swift */,
+				33F8514729C1A5C100875F31 /* R.Aliases.swift */,
 				8D4271CE299F789400321A85 /* SceneDelegate.swift */,
 				8DAF20CB29C4991D003ADAD3 /* R.generated.swift */,
 				8D4271D5299F789600321A85 /* Assets.xcassets */,
@@ -253,6 +281,7 @@
 		8D4271E4299F7BD000321A85 /* MenteesChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				33ECF4B729C31EEE00C40C72 /* IOS News UI Challenge */,
 				33F60C9429B6403F001A6B8D /* Gaming Screen UI Challenge */,
 				8D46C98929A64A0900431E17 /* Start Screen UI Challenge */,
 				8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */,
@@ -468,9 +497,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F8514829C1A5C100875F31 /* R.Aliases.swift in Sources */,
+				33ECF4C929C32C7E00C40C72 /* OleksandrKharchenko_GamingScreenViewController.swift in Sources */,
+				33F60CAD29B65020001A6B8D /* OleksandrKharchenko_MainButton.swift in Sources */,
 				336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */,
+				33F60CA229B64FB7001A6B8D /* YefimYakunin_MainButton.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */,
+				33F60CAC29B65020001A6B8D /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
+				33ECF4CA29C32C7E00C40C72 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
+				33ECF4CC29C32C7E00C40C72 /* OleksandrKharchenko_ViewButton.swift in Sources */,
+				33F60CAA29B65020001A6B8D /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
 				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
 				333913C729AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
@@ -488,6 +525,7 @@
 				48A7B41129B25920004B3821 /* YeYaSignInButton.swift in Sources */,
 				8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */,
 				8D40068229AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */,
+				33ECF4BC29C31F6000C40C72 /* OlKha_IOSNewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +677,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59HT9UJH46;
+				DEVELOPMENT_TEAM = K9947R9LK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -672,7 +710,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59HT9UJH46;
+				DEVELOPMENT_TEAM = K9947R9LK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

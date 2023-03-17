@@ -5,3 +5,11 @@
 "GamingScreen.fbButtonTitle" = "УВІЙТИ З FACEBOOK";
 "GamingScreen.phoneButtonTitle" = "УВІЙТИ З ТЕЛЕФОНУ";
 "GamingScreen.forgotPassLabel" = "Забули пароль?";
+
+"Gaming.gamingLabel" = "Ігри";
+"Gaming.passwordLabel" = "Забули свій пароль?";
+"Gaming.firstPartOfText" = "Створюючи обліковий запис або підписуючи, ви погоджуєтеся з нашими";
+"Gaming.secondPartOfText" = "\nПравила та умови.";
+"Gaming.appleButton" = "увійти з apple";
+"Gaming.facebookButton" = "увійти з facebook";
+"Gaming.phoneButton" = "увійти з телефону";

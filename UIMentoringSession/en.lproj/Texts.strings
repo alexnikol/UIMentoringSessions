@@ -5,3 +5,11 @@
 "GamingScreen.fbButtonTitle" = "SIGN IN WITH FACEBOOK";
 "GamingScreen.phoneButtonTitle" = "SIGN IN WITH PHONE";
 "GamingScreen.forgotPassLabel" = "Forgot your password?";
+
+"Gaming.gamingLabel" = "Gaming";
+"Gaming.passwordLabel" = "Forgot your password?";
+"Gaming.firstPartOfText" = "By creating an account or signing you agree to our";
+"Gaming.secondPartOfText" = "\nTerms and Conditions.";
+"Gaming.appleButton" = "sing in with apple";
+"Gaming.facebookButton" = "sign in with facebook";
+"Gaming.phoneButton" = "sign in with phone";
