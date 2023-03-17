@@ -7,59 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		333913C729AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333913C529AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift */; };
-		333913C829AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333913C629AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib */; };
-		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
-		33F60C9C29B6403F001A6B8D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 33F60C9929B6403F001A6B8D /* README.md */; };
-		44054B0AA34BDA115851838F /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730175858D7477DD2D08D001 /* Pods_UIMentoringSession.framework */; };
-		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
+		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
+		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
+		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
-		48A7B40E29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */; };
-		48A7B40F29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */; };
-		48A7B41129B25920004B3821 /* YeYaSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B41029B25920004B3821 /* YeYaSignInButton.swift */; };
-		48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */; };
-		48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */; };
-		8D40068129AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D40067F29AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib */; };
-		8D40068229AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D40068029AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift */; };
+		8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25176C29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib */; };
+		8D2517A429C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25176D29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift */; };
+		8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25176F29C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift */; };
+		8D2517A629C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25177029C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib */; };
+		8D2517A729C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25177329C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib */; };
+		8D2517A829C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25177429C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.swift */; };
+		8D2517A929C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25177629C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.swift */; };
+		8D2517AA29C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25177729C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib */; };
+		8D2517AC29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25177B29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.swift */; };
+		8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25177D29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift */; };
+		8D2517AE29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25177E29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift */; };
+		8D2517AF29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25177F29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib */; };
+		8D2517B029C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25178129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib */; };
+		8D2517B129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25178229C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift */; };
+		8D2517B229C4AE8300CD54A5 /* YeYaSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25178429C4AE8300CD54A5 /* YeYaSignInButton.swift */; };
+		8D2517B429C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25178829C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib */; };
+		8D2517B529C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25178929C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift */; };
+		8D2517B629C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25178C29C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib */; };
+		8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25178D29C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift */; };
+		8D2517B829C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25178E29C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift */; };
+		8D2517BA29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25179229C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib */; };
+		8D2517BB29C4AE8300CD54A5 /* YefimYakunin_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25179429C4AE8300CD54A5 /* YefimYakunin_MainButton.swift */; };
+		8D2517BC29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25179629C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib */; };
+		8D2517BD29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25179729C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift */; };
+		8D2517BE29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25179829C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift */; };
+		8D2517C029C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25179B29C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift */; };
+		8D2517C129C4AE8300CD54A5 /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25179C29C4AE8300CD54A5 /* YefimYakuninFactory.swift */; };
+		8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25179D29C4AE8300CD54A5 /* MenteesList.swift */; };
+		8D2517C329C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25179E29C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift */; };
+		8D2517C429C4AE8300CD54A5 /* MenteeChallengesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2517A029C4AE8300CD54A5 /* MenteeChallengesFactory.swift */; };
+		8D2517C529C4AE8300CD54A5 /* MenteesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2517A129C4AE8300CD54A5 /* MenteesListController.swift */; };
+		8D2517C629C4AE8300CD54A5 /* ChallengesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2517A229C4AE8300CD54A5 /* ChallengesListViewController.swift */; };
+		8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2517C729C4AF0000CD54A5 /* R.Aliases.swift */; };
 		8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CC299F789400321A85 /* AppDelegate.swift */; };
 		8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CE299F789400321A85 /* SceneDelegate.swift */; };
 		8D4271D6299F789600321A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D4271D5299F789600321A85 /* Assets.xcassets */; };
 		8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D4271D7299F789600321A85 /* LaunchScreen.storyboard */; };
-		8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271EF299F7F2700321A85 /* MenteeChallengesFactory.swift */; };
-		8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271F2299F81A300321A85 /* MenteesListController.swift */; };
-		8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271F4299F84D700321A85 /* ChallengesListViewController.swift */; };
-		8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271FC299F9A0C00321A85 /* MenteesList.swift */; };
-		8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */; };
 		8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAF20CB29C4991D003ADAD3 /* R.generated.swift */; };
-		8DF4FD8929B63ACC00EA8715 /* YeYa_CoffeeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4FD8629B63ACB00EA8715 /* YeYa_CoffeeShopCell.xib */; };
 		8DF4FD8D29B63BB400EA8715 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		8DF4FDB229B6499600EA8715 /* OleksandrKharchenko_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3348385729AE3389009A440E /* OleksandrKharchenko_MainButton.swift */; };
-		8DF4FDB529B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4FDB329B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib */; };
-		8DF4FDB629B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FDB429B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift */; };
-		8DF4FDB729B649F200EA8715 /* YefimYakunin_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FD8429B63ACB00EA8715 /* YefimYakunin_MainButton.swift */; };
-		8DF4FDB929B64A0B00EA8715 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3348385B29AE43A1009A440E /* OleksandrKharchenko_CoffeShopCell.swift */; };
-		8DF4FDBA29B64A0B00EA8715 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3348385C29AE43A1009A440E /* OleksandrKharchenko_CoffeShopCell.xib */; };
-		8DF4FDBB29B64A1A00EA8715 /* YeYa_CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FD8729B63ACB00EA8715 /* YeYa_CoffeeShopCell.swift */; };
+		8DF4FDB229B6499600EA8715 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		8DF4FDB929B64A0B00EA8715 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33493C6929C0B07A00E93BD1 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
-		33F60C9629B6403F001A6B8D /* OlKhTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlKhTest.swift; sourceTree = "<group>"; };
-		33F60C9929B6403F001A6B8D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3961256D4F177EC5735EDDEF /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
-		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
-		48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninGamingScreenViewController.swift; sourceTree = "<group>"; };
-		48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakuninGamingScreenViewController.xib; sourceTree = "<group>"; };
-		48A7B41029B25920004B3821 /* YeYaSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYaSignInButton.swift; sourceTree = "<group>"; };
-		48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakunin_StartScreenViewController.swift; sourceTree = "<group>"; };
-		48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakunin_StartScreenViewController.xib; sourceTree = "<group>"; };
-		730175858D7477DD2D08D001 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D40067F29AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
-		8D40068029AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
+		8D25176C29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OlKha_IOSNewsViewController.xib; sourceTree = "<group>"; };
+		8D25176D29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlKha_IOSNewsViewController.swift; sourceTree = "<group>"; };
+		8D25176F29C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYa_IOSNewsViewController.swift; sourceTree = "<group>"; };
+		8D25177029C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YeYa_IOSNewsViewController.xib; sourceTree = "<group>"; };
+		8D25177329C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
+		8D25177429C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
+		8D25177629C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YefimYakunin_StartScreenViewController.swift; sourceTree = "<group>"; };
+		8D25177729C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YefimYakunin_StartScreenViewController.xib; sourceTree = "<group>"; };
+		8D25177829C4AE8300CD54A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D25177B29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_GamingScreenViewController.swift; sourceTree = "<group>"; };
+		8D25177D29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_MainsButtons.swift; sourceTree = "<group>"; };
+		8D25177E29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_ViewButton.swift; sourceTree = "<group>"; };
+		8D25177F29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_GamingScreenViewController.xib; sourceTree = "<group>"; };
+		8D25178129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YefimYakuninGamingScreenViewController.xib; sourceTree = "<group>"; };
+		8D25178229C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YefimYakuninGamingScreenViewController.swift; sourceTree = "<group>"; };
+		8D25178429C4AE8300CD54A5 /* YeYaSignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYaSignInButton.swift; sourceTree = "<group>"; };
+		8D25178529C4AE8300CD54A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D25178829C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_CoffeShopViewController.xib; sourceTree = "<group>"; };
+		8D25178929C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_CoffeShopViewController.swift; sourceTree = "<group>"; };
+		8D25178C29C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_CoffeShopCell.xib; sourceTree = "<group>"; };
+		8D25178D29C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_CoffeShopCell.swift; sourceTree = "<group>"; };
+		8D25178E29C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_MainButton.swift; sourceTree = "<group>"; };
+		8D25179229C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YefimYakuninCoffeShopChallengeViewController.xib; sourceTree = "<group>"; };
+		8D25179429C4AE8300CD54A5 /* YefimYakunin_MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YefimYakunin_MainButton.swift; sourceTree = "<group>"; };
+		8D25179629C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YeYa_CoffeeShopCell.xib; sourceTree = "<group>"; };
+		8D25179729C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYa_CoffeeShopCell.swift; sourceTree = "<group>"; };
+		8D25179829C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YefimYakuninCoffeShopChallengeViewController.swift; sourceTree = "<group>"; };
+		8D25179929C4AE8300CD54A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D25179B29C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
+		8D25179C29C4AE8300CD54A5 /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
+		8D25179D29C4AE8300CD54A5 /* MenteesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenteesList.swift; sourceTree = "<group>"; };
+		8D25179E29C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrNikolaichukFactory.swift; sourceTree = "<group>"; };
+		8D2517A029C4AE8300CD54A5 /* MenteeChallengesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenteeChallengesFactory.swift; sourceTree = "<group>"; };
+		8D2517A129C4AE8300CD54A5 /* MenteesListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenteesListController.swift; sourceTree = "<group>"; };
+		8D2517A229C4AE8300CD54A5 /* ChallengesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesListViewController.swift; sourceTree = "<group>"; };
+		8D2517C729C4AF0000CD54A5 /* R.Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.Aliases.swift; sourceTree = "<group>"; };
 		8D4271C9299F789400321A85 /* UIMentoringSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIMentoringSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4271CC299F789400321A85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D4271CE299F789400321A85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,20 +102,10 @@
 		8D4271D8299F789600321A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D4271DA299F789600321A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4271E2299F7BBD00321A85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		8D4271EF299F7F2700321A85 /* MenteeChallengesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteeChallengesFactory.swift; sourceTree = "<group>"; };
-		8D4271F2299F81A300321A85 /* MenteesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteesListController.swift; sourceTree = "<group>"; };
-		8D4271F4299F84D700321A85 /* ChallengesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesListViewController.swift; sourceTree = "<group>"; };
-		8D4271FC299F9A0C00321A85 /* MenteesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenteesList.swift; sourceTree = "<group>"; };
-		8D4271FE299FA6ED00321A85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8D46C98A29A64B1400431E17 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrNikolaichukFactory.swift; sourceTree = "<group>"; };
 		8DAF20CB29C4991D003ADAD3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		8DF4FD8429B63ACB00EA8715 /* YefimYakunin_MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YefimYakunin_MainButton.swift; sourceTree = "<group>"; };
-		8DF4FD8629B63ACB00EA8715 /* YeYa_CoffeeShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YeYa_CoffeeShopCell.xib; sourceTree = "<group>"; };
-		8DF4FD8729B63ACB00EA8715 /* YeYa_CoffeeShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYa_CoffeeShopCell.swift; sourceTree = "<group>"; };
-		8DF4FDB329B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YefimYakuninCoffeShopChallengeViewController.xib; path = "UIMentoringSession/MenteesChallenges/CoffeeShop UI Challenge/YefimYakunin/YefimYakuninCoffeShopChallengeViewController.xib"; sourceTree = SOURCE_ROOT; };
-		8DF4FDB429B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YefimYakuninCoffeShopChallengeViewController.swift; path = "UIMentoringSession/MenteesChallenges/CoffeeShop UI Challenge/YefimYakunin/YefimYakuninCoffeShopChallengeViewController.swift"; sourceTree = SOURCE_ROOT; };
-		A2861C30DC08983A3C25BB29 /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
+		A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7836AFE77AD449BF51E5C2 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
+		F4D4A726FE8B1D6FED3A787B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,119 +113,220 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44054B0AA34BDA115851838F /* Pods_UIMentoringSession.framework in Frameworks */,
+				2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33ECF4B729C31EEE00C40C72 /* IOS News UI Challenge */ = {
-			isa = PBXGroup;
-			children = (
-				33ECF4B829C31EEE00C40C72 /* OleksandrKharchenko */,
-				33ECF4B929C31EEE00C40C72 /* YefimYakunin */,
-			);
-			path = "IOS News UI Challenge";
-			sourceTree = "<group>";
-		};
-		33ECF4B829C31EEE00C40C72 /* OleksandrKharchenko */ = {
-			isa = PBXGroup;
-			children = (
-				33ECF4BA29C31F6000C40C72 /* OlKha_IOSNewsViewController.swift */,
-				33ECF4BB29C31F6000C40C72 /* OlKha_IOSNewsViewController.xib */,
-			);
-			path = OleksandrKharchenko;
-			sourceTree = "<group>";
-		};
-		33ECF4B929C31EEE00C40C72 /* YefimYakunin */ = {
-			isa = PBXGroup;
-			children = (
-				33ECF4BE29C31F8300C40C72 /* YeYa_IOSNewsViewController.swift */,
-				33ECF4BF29C31F8300C40C72 /* YeYa_IOSNewsViewController.xib */,
-			);
-			path = YefimYakunin;
-			sourceTree = "<group>";
-		};
-		33ECF4C229C32C7E00C40C72 /* OleksandrKharchenko */ = {
-			isa = PBXGroup;
-			children = (
-				33ECF4C329C32C7E00C40C72 /* OleksandrKharchenko_GamingScreenViewController.swift */,
-				33ECF4C429C32C7E00C40C72 /* View */,
-				33ECF4C829C32C7E00C40C72 /* OleksandrKharchenko_GamingScreenViewController.xib */,
-			);
-			path = OleksandrKharchenko;
-			sourceTree = "<group>";
-		};
-		33ECF4C429C32C7E00C40C72 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				33ECF4C529C32C7E00C40C72 /* OleksandrKharchenko_MainsButtons.swift */,
-				33ECF4C729C32C7E00C40C72 /* OleksandrKharchenko_ViewButton.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		33F60C9429B6403F001A6B8D /* Gaming Screen UI Challenge */ = {
-			isa = PBXGroup;
-			children = (
-				33ECF4C229C32C7E00C40C72 /* OleksandrKharchenko */,
-				33F60C9929B6403F001A6B8D /* README.md */,
-			);
-			path = "Gaming Screen UI Challenge";
-			sourceTree = "<group>";
-		};
-		33F60CA429B65020001A6B8D /* OleksandrKharchenko_View */ = {
-			isa = PBXGroup;
-			children = (
-				33F60CA529B65020001A6B8D /* OleksandrKharchenko_CoffeShopCell */,
-				33F60CA829B65020001A6B8D /* OleksandrKharchenko_MainButton.swift */,
-			);
-			path = OleksandrKharchenko_View;
-			sourceTree = "<group>";
-		};
-		33F60CA529B65020001A6B8D /* OleksandrKharchenko_CoffeShopCell */ = {
-			isa = PBXGroup;
-			children = (
-				48A7B40C29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift */,
-				48A7B40D29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib */,
-				480BD3CE29BCFE9800073AE3 /* YeYaSignInButton */,
-			);
-			path = OleksandrKharchenko_CoffeShopCell;
-			sourceTree = "<group>";
-		};
-		480BD3CE29BCFE9800073AE3 /* YeYaSignInButton */ = {
-			isa = PBXGroup;
-			children = (
-				48A7B41029B25920004B3821 /* YeYaSignInButton.swift */,
-			);
-			path = YeYaSignInButton;
-			sourceTree = "<group>";
-		};
-		48E148AE29A74EF300E26085 /* YefimYakunin */ = {
-			isa = PBXGroup;
-			children = (
-				48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */,
-				48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */,
-			);
-			path = YefimYakunin;
-			sourceTree = "<group>";
-		};
 		5ED2BA0C25A7B4D4BD72A1F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3961256D4F177EC5735EDDEF /* Pods-UIMentoringSession.debug.xcconfig */,
-				A2861C30DC08983A3C25BB29 /* Pods-UIMentoringSession.release.xcconfig */,
+				AE7836AFE77AD449BF51E5C2 /* Pods-UIMentoringSession.debug.xcconfig */,
+				F4D4A726FE8B1D6FED3A787B /* Pods-UIMentoringSession.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		8AA8E471A994B5121161A60C /* Frameworks */ = {
+		8D25176929C4AE8300CD54A5 /* MenteesChallenges */ = {
 			isa = PBXGroup;
 			children = (
-				730175858D7477DD2D08D001 /* Pods_UIMentoringSession.framework */,
+				8D25176A29C4AE8300CD54A5 /* IOS News UI Challenge */,
+				8D25177129C4AE8300CD54A5 /* Start Screen UI Challenge */,
+				8D25177929C4AE8300CD54A5 /* Gaming Screen UI Challenge */,
+				8D25178629C4AE8300CD54A5 /* CoffeeShop UI Challenge */,
 			);
-			name = Frameworks;
+			path = MenteesChallenges;
+			sourceTree = "<group>";
+		};
+		8D25176A29C4AE8300CD54A5 /* IOS News UI Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				8D25176B29C4AE8300CD54A5 /* OleksandrKharchenko */,
+				8D25176E29C4AE8300CD54A5 /* YefimYakunin */,
+			);
+			path = "IOS News UI Challenge";
+			sourceTree = "<group>";
+		};
+		8D25176B29C4AE8300CD54A5 /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+				8D25176C29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib */,
+				8D25176D29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift */,
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		8D25176E29C4AE8300CD54A5 /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+				8D25176F29C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift */,
+				8D25177029C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib */,
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
+		8D25177129C4AE8300CD54A5 /* Start Screen UI Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				8D25177229C4AE8300CD54A5 /* OleksandrKharchenko */,
+				8D25177529C4AE8300CD54A5 /* YefimYakunin */,
+				8D25177829C4AE8300CD54A5 /* README.md */,
+			);
+			path = "Start Screen UI Challenge";
+			sourceTree = "<group>";
+		};
+		8D25177229C4AE8300CD54A5 /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+				8D25177329C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib */,
+				8D25177429C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.swift */,
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		8D25177529C4AE8300CD54A5 /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+				8D25177629C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.swift */,
+				8D25177729C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib */,
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
+		8D25177929C4AE8300CD54A5 /* Gaming Screen UI Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				8D25177A29C4AE8300CD54A5 /* OleksandrKharchenko */,
+				8D25178029C4AE8300CD54A5 /* YefimYakunin */,
+				8D25178529C4AE8300CD54A5 /* README.md */,
+			);
+			path = "Gaming Screen UI Challenge";
+			sourceTree = "<group>";
+		};
+		8D25177A29C4AE8300CD54A5 /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+				8D25177B29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.swift */,
+				8D25177C29C4AE8300CD54A5 /* View */,
+				8D25177F29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib */,
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		8D25177C29C4AE8300CD54A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D25177D29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift */,
+				8D25177E29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D25178029C4AE8300CD54A5 /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+				8D25178129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib */,
+				8D25178229C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift */,
+				8D25178329C4AE8300CD54A5 /* YeYaSignInButton */,
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
+		8D25178329C4AE8300CD54A5 /* YeYaSignInButton */ = {
+			isa = PBXGroup;
+			children = (
+				8D25178429C4AE8300CD54A5 /* YeYaSignInButton.swift */,
+			);
+			path = YeYaSignInButton;
+			sourceTree = "<group>";
+		};
+		8D25178629C4AE8300CD54A5 /* CoffeeShop UI Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				8D25178729C4AE8300CD54A5 /* OleksandrKharchenko */,
+				8D25179129C4AE8300CD54A5 /* YefimYakunin */,
+				8D25179929C4AE8300CD54A5 /* README.md */,
+			);
+			path = "CoffeeShop UI Challenge";
+			sourceTree = "<group>";
+		};
+		8D25178729C4AE8300CD54A5 /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+				8D25178829C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib */,
+				8D25178929C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift */,
+				8D25178A29C4AE8300CD54A5 /* OleksandrKharchenko_View */,
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		8D25178A29C4AE8300CD54A5 /* OleksandrKharchenko_View */ = {
+			isa = PBXGroup;
+			children = (
+				8D25178B29C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell */,
+				8D25178E29C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift */,
+			);
+			path = OleksandrKharchenko_View;
+			sourceTree = "<group>";
+		};
+		8D25178B29C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D25178C29C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib */,
+				8D25178D29C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift */,
+			);
+			path = OleksandrKharchenko_CoffeShopCell;
+			sourceTree = "<group>";
+		};
+		8D25179129C4AE8300CD54A5 /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+				8D25179229C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib */,
+				8D25179329C4AE8300CD54A5 /* Views */,
+				8D25179829C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift */,
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
+		8D25179329C4AE8300CD54A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D25179429C4AE8300CD54A5 /* YefimYakunin_MainButton.swift */,
+				8D25179529C4AE8300CD54A5 /* YeYa_CoffeeShopCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D25179529C4AE8300CD54A5 /* YeYa_CoffeeShopCell */ = {
+			isa = PBXGroup;
+			children = (
+				8D25179629C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib */,
+				8D25179729C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift */,
+			);
+			path = YeYa_CoffeeShopCell;
+			sourceTree = "<group>";
+		};
+		8D25179A29C4AE8300CD54A5 /* MenteesList */ = {
+			isa = PBXGroup;
+			children = (
+				8D25179B29C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift */,
+				8D25179C29C4AE8300CD54A5 /* YefimYakuninFactory.swift */,
+				8D25179D29C4AE8300CD54A5 /* MenteesList.swift */,
+				8D25179E29C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift */,
+			);
+			path = MenteesList;
+			sourceTree = "<group>";
+		};
+		8D25179F29C4AE8300CD54A5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8D2517A029C4AE8300CD54A5 /* MenteeChallengesFactory.swift */,
+				8D2517A129C4AE8300CD54A5 /* MenteesListController.swift */,
+				8D2517A229C4AE8300CD54A5 /* ChallengesListViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		8D40067D29AD00BE00FB54B2 /* Recovered References */ = {
@@ -210,35 +336,6 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		8D40067E29AD00D300FB54B2 /* OleksandrKharchenko */ = {
-			isa = PBXGroup;
-			children = (
-				8D40068029AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift */,
-				8D40067F29AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib */,
-			);
-			path = OleksandrKharchenko;
-			sourceTree = "<group>";
-		};
-		8D40068429ADF9F300FB54B2 /* OleksandrKharchenko */ = {
-			isa = PBXGroup;
-			children = (
-				33F60CA329B65020001A6B8D /* OleksandrKharchenko_CoffeShopViewController.swift */,
-				33F60CA929B65020001A6B8D /* OleksandrKharchenko_CoffeShopViewController.xib */,
-				33F60CA429B65020001A6B8D /* OleksandrKharchenko_View */,
-			);
-			path = OleksandrKharchenko;
-			sourceTree = "<group>";
-		};
-		8D40068529ADF9F900FB54B2 /* YefimYakunin */ = {
-			isa = PBXGroup;
-			children = (
-				33F60C9D29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.swift */,
-				33F60C9E29B64F9C001A6B8D /* YefimYakuninCoffeShopChallengeViewController.xib */,
-				8DF4FD8329B63ACB00EA8715 /* Views */,
-			);
-			path = YefimYakunin;
-			sourceTree = "<group>";
-		};
 		8D4271C0299F789400321A85 = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +343,7 @@
 				8D4271CA299F789400321A85 /* Products */,
 				5ED2BA0C25A7B4D4BD72A1F4 /* Pods */,
 				8D40067D29AD00BE00FB54B2 /* Recovered References */,
-				8AA8E471A994B5121161A60C /* Frameworks */,
+				FFFCE0C5A6F01B233D8D311D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,13 +359,12 @@
 			isa = PBXGroup;
 			children = (
 				8D4271E2299F7BBD00321A85 /* README.md */,
-				8D4271F6299F994300321A85 /* MenteesList */,
-				8D4271E4299F7BD000321A85 /* MenteesChallenges */,
-				8D4271F1299F817300321A85 /* Core */,
+				8D25179F29C4AE8300CD54A5 /* Core */,
+				8D25176929C4AE8300CD54A5 /* MenteesChallenges */,
+				8D25179A29C4AE8300CD54A5 /* MenteesList */,
 				8D4271CC299F789400321A85 /* AppDelegate.swift */,
-				33F8514F29C1ADD500875F31 /* R.generated.swift */,
-				33F8514729C1A5C100875F31 /* R.Aliases.swift */,
 				8D4271CE299F789400321A85 /* SceneDelegate.swift */,
+				8D2517C729C4AF0000CD54A5 /* R.Aliases.swift */,
 				8DAF20CB29C4991D003ADAD3 /* R.generated.swift */,
 				8D4271D5299F789600321A85 /* Assets.xcassets */,
 				8D4271D7299F789600321A85 /* LaunchScreen.storyboard */,
@@ -278,76 +374,12 @@
 			path = UIMentoringSession;
 			sourceTree = "<group>";
 		};
-		8D4271E4299F7BD000321A85 /* MenteesChallenges */ = {
+		FFFCE0C5A6F01B233D8D311D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				33ECF4B729C31EEE00C40C72 /* IOS News UI Challenge */,
-				33F60C9429B6403F001A6B8D /* Gaming Screen UI Challenge */,
-				8D46C98929A64A0900431E17 /* Start Screen UI Challenge */,
-				8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */,
+				A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */,
 			);
-			path = MenteesChallenges;
-			sourceTree = "<group>";
-		};
-		8D4271E7299F7C6C00321A85 /* CoffeeShop UI Challenge */ = {
-			isa = PBXGroup;
-			children = (
-				8D40068529ADF9F900FB54B2 /* YefimYakunin */,
-				8D40068429ADF9F300FB54B2 /* OleksandrKharchenko */,
-				8D4271FE299FA6ED00321A85 /* README.md */,
-			);
-			path = "CoffeeShop UI Challenge";
-			sourceTree = "<group>";
-		};
-		8D4271F1299F817300321A85 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				8D4271EF299F7F2700321A85 /* MenteeChallengesFactory.swift */,
-				8D4271F2299F81A300321A85 /* MenteesListController.swift */,
-				8D4271F4299F84D700321A85 /* ChallengesListViewController.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		8D4271F6299F994300321A85 /* MenteesList */ = {
-			isa = PBXGroup;
-			children = (
-				8D4271FC299F9A0C00321A85 /* MenteesList.swift */,
-				8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */,
-				481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */,
-				336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */,
-			);
-			path = MenteesList;
-			sourceTree = "<group>";
-		};
-		8D46C98929A64A0900431E17 /* Start Screen UI Challenge */ = {
-			isa = PBXGroup;
-			children = (
-				8D40067E29AD00D300FB54B2 /* OleksandrKharchenko */,
-				48E148AE29A74EF300E26085 /* YefimYakunin */,
-				8D46C98A29A64B1400431E17 /* README.md */,
-			);
-			path = "Start Screen UI Challenge";
-			sourceTree = "<group>";
-		};
-		8DF4FD8329B63ACB00EA8715 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				8DF4FD8429B63ACB00EA8715 /* YefimYakunin_MainButton.swift */,
-				8DF4FDB429B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift */,
-				8DF4FDB329B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib */,
-				8DF4FD8529B63ACB00EA8715 /* YeYa_CoffeeShopCell */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8DF4FD8529B63ACB00EA8715 /* YeYa_CoffeeShopCell */ = {
-			isa = PBXGroup;
-			children = (
-				8DF4FD8629B63ACB00EA8715 /* YeYa_CoffeeShopCell.xib */,
-				8DF4FD8729B63ACB00EA8715 /* YeYa_CoffeeShopCell.swift */,
-			);
-			path = YeYa_CoffeeShopCell;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,12 +389,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D4271DD299F789600321A85 /* Build configuration list for PBXNativeTarget "UIMentoringSession" */;
 			buildPhases = (
-				41DBB08743A75754A8CEF27F /* [CP] Check Pods Manifest.lock */,
+				59CEE8CCE525F41337B42772 /* [CP] Check Pods Manifest.lock */,
 				48A0090829BFC83400DE0A2F /* R.swift */,
 				8D4271C5299F789400321A85 /* Sources */,
 				8D4271C6299F789400321A85 /* Frameworks */,
 				8D4271C7299F789400321A85 /* Resources */,
-				E8918D2D7AF4D812DC9E3BD5 /* [CP] Embed Pods Frameworks */,
+				3302614FBDDAE56F4EE0D1E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,44 +445,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				333913C829AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
-				8DF4FD8929B63ACC00EA8715 /* YeYa_CoffeeShopCell.xib in Resources */,
-				33F60C9C29B6403F001A6B8D /* README.md in Resources */,
+				333913C829AE014D00B05E2B /* (null) in Resources */,
 				8DF4FD8D29B63BB400EA8715 /* (null) in Resources */,
-				48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */,
-				8DF4FDB529B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */,
-				8DF4FDBA29B64A0B00EA8715 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
+				8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */,
+				8D2517B629C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
+				8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
+				8D2517A729C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
+				8D2517AA29C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib in Resources */,
+				8D2517A629C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib in Resources */,
+				8D2517B029C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
+				8D2517BA29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */,
+				8D2517BC29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib in Resources */,
+				8D2517AF29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */,
+				8D2517B429C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
 				48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */,
-				48A7B40F29B2522B004B3821 /* YefimYakuninGamingScreenViewController.xib in Resources */,
-				8D40068129AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		41DBB08743A75754A8CEF27F /* [CP] Check Pods Manifest.lock */ = {
+		3302614FBDDAE56F4EE0D1E7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UIMentoringSession-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		48A0090829BFC83400DE0A2F /* R.swift */ = {
@@ -473,21 +504,26 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		E8918D2D7AF4D812DC9E3BD5 /* [CP] Embed Pods Frameworks */ = {
+		59CEE8CCE525F41337B42772 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIMentoringSession-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -497,35 +533,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F8514829C1A5C100875F31 /* R.Aliases.swift in Sources */,
-				33ECF4C929C32C7E00C40C72 /* OleksandrKharchenko_GamingScreenViewController.swift in Sources */,
-				33F60CAD29B65020001A6B8D /* OleksandrKharchenko_MainButton.swift in Sources */,
-				336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */,
-				33F60CA229B64FB7001A6B8D /* YefimYakunin_MainButton.swift in Sources */,
+				8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
+				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
-				48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */,
-				33F60CAC29B65020001A6B8D /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
-				33ECF4CA29C32C7E00C40C72 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
-				33ECF4CC29C32C7E00C40C72 /* OleksandrKharchenko_ViewButton.swift in Sources */,
-				33F60CAA29B65020001A6B8D /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
-				8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */,
-				333913C729AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
-				8DF4FDB929B64A0B00EA8715 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
-				8DF4FDB629B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
+				8D2517C329C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift in Sources */,
+				333913C729AE014D00B05E2B /* (null) in Sources */,
+				8D2517A929C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.swift in Sources */,
+				8D2517AC29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.swift in Sources */,
+				8D2517A829C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */,
+				8D2517BB29C4AE8300CD54A5 /* YefimYakunin_MainButton.swift in Sources */,
+				8D2517B129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift in Sources */,
+				8D2517C629C4AE8300CD54A5 /* ChallengesListViewController.swift in Sources */,
+				8D2517C029C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift in Sources */,
+				8D2517C529C4AE8300CD54A5 /* MenteesListController.swift in Sources */,
+				8D2517B229C4AE8300CD54A5 /* YeYaSignInButton.swift in Sources */,
+				8D2517C129C4AE8300CD54A5 /* YefimYakuninFactory.swift in Sources */,
+				8D2517B829C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift in Sources */,
+				8D2517B529C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
+				8D2517BE29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
+				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
+				8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */,
+				8D2517AE29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift in Sources */,
+				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
+				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
-				8DF4FDB229B6499600EA8715 /* OleksandrKharchenko_MainButton.swift in Sources */,
-				8D4271F0299F7F2700321A85 /* MenteeChallengesFactory.swift in Sources */,
-				8DF4FDBB29B64A1A00EA8715 /* YeYa_CoffeeShopCell.swift in Sources */,
+				8DF4FDB229B6499600EA8715 /* (null) in Sources */,
+				8D2517BD29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
-				8D4271F5299F84D700321A85 /* ChallengesListViewController.swift in Sources */,
-				481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */,
-				48A7B40E29B2522B004B3821 /* YefimYakuninGamingScreenViewController.swift in Sources */,
-				8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */,
-				8DF4FDB729B649F200EA8715 /* YefimYakunin_MainButton.swift in Sources */,
-				48A7B41129B25920004B3821 /* YeYaSignInButton.swift in Sources */,
-				8D4271F3299F81A300321A85 /* MenteesListController.swift in Sources */,
-				8D40068229AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */,
-				33ECF4BC29C31F6000C40C72 /* OlKha_IOSNewsViewController.swift in Sources */,
+				8D2517C429C4AE8300CD54A5 /* MenteeChallengesFactory.swift in Sources */,
+				8D2517A429C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +707,7 @@
 		};
 		8D4271DE299F789600321A85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3961256D4F177EC5735EDDEF /* Pods-UIMentoringSession.debug.xcconfig */;
+			baseConfigurationReference = AE7836AFE77AD449BF51E5C2 /* Pods-UIMentoringSession.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -704,7 +740,7 @@
 		};
 		8D4271DF299F789600321A85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2861C30DC08983A3C25BB29 /* Pods-UIMentoringSession.release.xcconfig */;
+			baseConfigurationReference = F4D4A726FE8B1D6FED3A787B /* Pods-UIMentoringSession.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

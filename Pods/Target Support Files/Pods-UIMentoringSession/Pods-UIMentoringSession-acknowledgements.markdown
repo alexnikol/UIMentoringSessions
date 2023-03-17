@@ -1,13 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-<<<<<<< HEAD
-=======
-## GoogleMaps
-
-Copyright 2022 Google
-
->>>>>>> main
 ## R.swift
 
 The MIT License (MIT)
