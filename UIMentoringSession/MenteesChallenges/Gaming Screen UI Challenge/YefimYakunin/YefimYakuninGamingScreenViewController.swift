@@ -18,12 +18,21 @@ final class YefimYakuninGamingScreenViewController: UIViewController {
             firstPartOfText: R.string.texts.gamingScreenFirstPartOfText(),
             secondPartOfText: R.string.texts.gamingScreenSecondPartOfText()
         )
-        appleButton.configuration?.title = R.string.texts.gamingScreenAppleButtonTitle()
-        appleButton.configuration?.image = R.image.appleIcon()
-        fbButton.configuration?.title = R.string.texts.gamingScreenFbButtonTitle()
-        fbButton.configuration?.image = R.image.facebookIcon()
-        phoneButton.configuration?.title = R.string.texts.gamingScreenPhoneButtonTitle()
-        phoneButton.configuration?.image = R.image.phoneIcon()
+        if #available(iOS 15, *) {
+            appleButton.configuration?.title = R.string.texts.gamingScreenAppleButtonTitle()
+            appleButton.configuration?.image = R.image.appleIcon()
+            fbButton.configuration?.title = R.string.texts.gamingScreenFbButtonTitle()
+            fbButton.configuration?.image = R.image.facebookIcon()
+            phoneButton.configuration?.title = R.string.texts.gamingScreenPhoneButtonTitle()
+            phoneButton.configuration?.image = R.image.phoneIcon()
+        } else {
+            appleButton.setTitle(R.string.texts.gamingScreenAppleButtonTitle(), for: .normal)
+            appleButton.setImage(R.image.appleIcon(), for: .normal)
+            fbButton.setTitle(R.string.texts.gamingScreenFbButtonTitle(), for: .normal)
+            fbButton.setImage(R.image.facebookIcon(), for: .normal)
+            phoneButton.setTitle(R.string.texts.gamingScreenPhoneButtonTitle(), for: .normal)
+            phoneButton.setImage(R.image.phoneIcon(), for: .normal)
+        }
         forgotPassLabel.attributedText = addAttribute(partOfText: R.string.texts.gamingScreenForgotPassLabel())
     }
     
