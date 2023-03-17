@@ -109,12 +109,6 @@ struct R: Rswift.Validatable {
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
-    /// Color `First background color`.
-    static let firstBackgroundColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "First background color")
-    /// Color `Let'sGoButtonColor`.
-    static let letSGoButtonColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "Let'sGoButtonColor")
-    /// Color `Second background color`.
-    static let secondBackgroundColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "Second background color")
     /// Color `background`.
     static let background = Rswift.ColorResource(bundle: R.hostingBundle, name: "background")
     /// Color `buttonColor`.
@@ -123,6 +117,12 @@ struct R: Rswift.Validatable {
     static let descriptionColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "descriptionColor")
     /// Color `description`.
     static let description = Rswift.ColorResource(bundle: R.hostingBundle, name: "description")
+    /// Color `first background color`.
+    static let firstBackgroundColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "first background color")
+    /// Color `let'sGoButtonColor`.
+    static let letSGoButtonColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "let'sGoButtonColor")
+    /// Color `second background color`.
+    static let secondBackgroundColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "second background color")
     /// Color `titleAndLabelColor`.
     static let titleAndLabelColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "titleAndLabelColor")
     /// Color `title`.
@@ -134,33 +134,6 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func accentColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.accentColor, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "First background color", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func firstBackgroundColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.firstBackgroundColor, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "Let'sGoButtonColor", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func letSGoButtonColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.letSGoButtonColor, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "Second background color", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func secondBackgroundColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.secondBackgroundColor, compatibleWith: traitCollection)
     }
     #endif
 
@@ -201,6 +174,33 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "first background color", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func firstBackgroundColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.firstBackgroundColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "let'sGoButtonColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func letSGoButtonColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.letSGoButtonColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "second background color", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func secondBackgroundColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.secondBackgroundColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIColor(named: "title", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
@@ -223,30 +223,6 @@ struct R: Rswift.Validatable {
     @available(watchOSApplicationExtension 4.0, *)
     static func accentColor(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.accentColor.name)
-    }
-    #endif
-
-    #if os(watchOS)
-    /// `UIColor(named: "First background color", bundle: ..., traitCollection: ...)`
-    @available(watchOSApplicationExtension 4.0, *)
-    static func firstBackgroundColor(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.firstBackgroundColor.name)
-    }
-    #endif
-
-    #if os(watchOS)
-    /// `UIColor(named: "Let'sGoButtonColor", bundle: ..., traitCollection: ...)`
-    @available(watchOSApplicationExtension 4.0, *)
-    static func letSGoButtonColor(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.letSGoButtonColor.name)
-    }
-    #endif
-
-    #if os(watchOS)
-    /// `UIColor(named: "Second background color", bundle: ..., traitCollection: ...)`
-    @available(watchOSApplicationExtension 4.0, *)
-    static func secondBackgroundColor(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.secondBackgroundColor.name)
     }
     #endif
 
@@ -283,6 +259,30 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
+    /// `UIColor(named: "first background color", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func firstBackgroundColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.firstBackgroundColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "let'sGoButtonColor", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func letSGoButtonColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.letSGoButtonColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "second background color", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func secondBackgroundColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.secondBackgroundColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
     /// `UIColor(named: "title", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func title(_: Void = ()) -> UIKit.UIColor? {
@@ -303,20 +303,14 @@ struct R: Rswift.Validatable {
 
   /// This `R.image` struct is generated, and contains static references to 28 images.
   struct image {
-    /// Image `Apple icon`.
-    static let appleIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Apple icon")
-    /// Image `Arrow circle icon`.
-    static let arrowCircleIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Arrow circle icon")
-    /// Image `Bird logo`.
-    static let birdLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "Bird logo")
-    /// Image `Facebook icon`.
-    static let facebookIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Facebook icon")
-    /// Image `GoodDogs`.
-    static let goodDogs = Rswift.ImageResource(bundle: R.hostingBundle, name: "GoodDogs")
-    /// Image `Phone icon`.
-    static let phoneIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Phone icon")
+    /// Image `apple icon`.
+    static let appleIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "apple icon")
+    /// Image `arrow circle icon`.
+    static let arrowCircleIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "arrow circle icon")
     /// Image `avatar`.
     static let avatar = Rswift.ImageResource(bundle: R.hostingBundle, name: "avatar")
+    /// Image `bird logo`.
+    static let birdLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "bird logo")
     /// Image `bookAnna`.
     static let bookAnna = Rswift.ImageResource(bundle: R.hostingBundle, name: "bookAnna")
     /// Image `bookArtOfWar`.
@@ -353,52 +347,30 @@ struct R: Rswift.Validatable {
     static let booklliad = Rswift.ImageResource(bundle: R.hostingBundle, name: "booklliad")
     /// Image `cupImage`.
     static let cupImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "cupImage")
+    /// Image `facebook icon`.
+    static let facebookIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "facebook icon")
+    /// Image `goodDogs`.
+    static let goodDogs = Rswift.ImageResource(bundle: R.hostingBundle, name: "goodDogs")
     /// Image `logotipTakee`.
     static let logotipTakee = Rswift.ImageResource(bundle: R.hostingBundle, name: "logotipTakee")
     /// Image `mapImage`.
     static let mapImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "mapImage")
+    /// Image `phone icon`.
+    static let phoneIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "phone icon")
     /// Image `tagImage`.
     static let tagImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "tagImage")
 
     #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "Apple icon", bundle: ..., traitCollection: ...)`
+    /// `UIImage(named: "apple icon", bundle: ..., traitCollection: ...)`
     static func appleIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.appleIcon, compatibleWith: traitCollection)
     }
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "Arrow circle icon", bundle: ..., traitCollection: ...)`
+    /// `UIImage(named: "arrow circle icon", bundle: ..., traitCollection: ...)`
     static func arrowCircleIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.arrowCircleIcon, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "Bird logo", bundle: ..., traitCollection: ...)`
-    static func birdLogo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.birdLogo, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "Facebook icon", bundle: ..., traitCollection: ...)`
-    static func facebookIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.facebookIcon, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "GoodDogs", bundle: ..., traitCollection: ...)`
-    static func goodDogs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.goodDogs, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "Phone icon", bundle: ..., traitCollection: ...)`
-    static func phoneIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.phoneIcon, compatibleWith: traitCollection)
     }
     #endif
 
@@ -406,6 +378,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "avatar", bundle: ..., traitCollection: ...)`
     static func avatar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.avatar, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bird logo", bundle: ..., traitCollection: ...)`
+    static func birdLogo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.birdLogo, compatibleWith: traitCollection)
     }
     #endif
 
@@ -536,6 +515,20 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "facebook icon", bundle: ..., traitCollection: ...)`
+    static func facebookIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.facebookIcon, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "goodDogs", bundle: ..., traitCollection: ...)`
+    static func goodDogs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.goodDogs, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "logotipTakee", bundle: ..., traitCollection: ...)`
     static func logotipTakee(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.logotipTakee, compatibleWith: traitCollection)
@@ -546,6 +539,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "mapImage", bundle: ..., traitCollection: ...)`
     static func mapImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.mapImage, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "phone icon", bundle: ..., traitCollection: ...)`
+    static func phoneIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.phoneIcon, compatibleWith: traitCollection)
     }
     #endif
 
