@@ -11,6 +11,7 @@
 		333913C829AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333913C629AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib */; };
 		336D1FBB29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */; };
 		33F60C9C29B6403F001A6B8D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 33F60C9929B6403F001A6B8D /* README.md */; };
+		44054B0AA34BDA115851838F /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730175858D7477DD2D08D001 /* Pods_UIMentoringSession.framework */; };
 		481D888C299FE916002ABFDC /* YefimYakuninFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */; };
 		48A0090A29BFC98600DE0A2F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0090929BFC98600DE0A2F /* R.generated.swift */; };
 		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
@@ -19,7 +20,6 @@
 		48A7B41129B25920004B3821 /* YeYaSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7B41029B25920004B3821 /* YeYaSignInButton.swift */; };
 		48E148B129A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */; };
 		48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */; };
-		5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */; };
 		8D40068129AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D40067F29AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib */; };
 		8D40068229AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D40068029AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift */; };
 		8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271CC299F789400321A85 /* AppDelegate.swift */; };
@@ -32,7 +32,7 @@
 		8D4271FD299F9A0C00321A85 /* MenteesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4271FC299F9A0C00321A85 /* MenteesList.swift */; };
 		8D59901A299FC33500AF9342 /* OleksandrNikolaichukFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D599019299FC33500AF9342 /* OleksandrNikolaichukFactory.swift */; };
 		8DF4FD8929B63ACC00EA8715 /* YeYa_CoffeeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4FD8629B63ACB00EA8715 /* YeYa_CoffeeShopCell.xib */; };
-		8DF4FD8D29B63BB400EA8715 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		8DF4FD8D29B63BB400EA8715 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		8DF4FDB229B6499600EA8715 /* OleksandrKharchenko_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3348385729AE3389009A440E /* OleksandrKharchenko_MainButton.swift */; };
 		8DF4FDB529B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF4FDB329B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib */; };
 		8DF4FDB629B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF4FDB429B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift */; };
@@ -51,7 +51,7 @@
 		336D1FBA29A379BB004A1B0C /* OleksandrKharchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenkoFactory.swift; sourceTree = "<group>"; };
 		33F60C9629B6403F001A6B8D /* OlKhTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlKhTest.swift; sourceTree = "<group>"; };
 		33F60C9929B6403F001A6B8D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
+		3961256D4F177EC5735EDDEF /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		481D888B299FE916002ABFDC /* YefimYakuninFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakuninFactory.swift; sourceTree = "<group>"; };
 		48A0090929BFC98600DE0A2F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -62,6 +62,7 @@
 		48A7B41029B25920004B3821 /* YeYaSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYaSignInButton.swift; sourceTree = "<group>"; };
 		48E148AF29A74FB500E26085 /* YefimYakunin_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YefimYakunin_StartScreenViewController.swift; sourceTree = "<group>"; };
 		48E148B029A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YefimYakunin_StartScreenViewController.xib; sourceTree = "<group>"; };
+		730175858D7477DD2D08D001 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D40067F29AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OleksandrKharchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
 		8D40068029AD00D300FB54B2 /* OleksandrKharchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OleksandrKharchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
 		8D4271C9299F789400321A85 /* UIMentoringSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIMentoringSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,8 +84,7 @@
 		8DF4FD8729B63ACB00EA8715 /* YeYa_CoffeeShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYa_CoffeeShopCell.swift; sourceTree = "<group>"; };
 		8DF4FDB329B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YefimYakuninCoffeShopChallengeViewController.xib; path = "UIMentoringSession/MenteesChallenges/CoffeeShop UI Challenge/YefimYakunin/YefimYakuninCoffeShopChallengeViewController.xib"; sourceTree = SOURCE_ROOT; };
 		8DF4FDB429B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YefimYakuninCoffeShopChallengeViewController.swift; path = "UIMentoringSession/MenteesChallenges/CoffeeShop UI Challenge/YefimYakunin/YefimYakuninCoffeShopChallengeViewController.swift"; sourceTree = SOURCE_ROOT; };
-		A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
+		A2861C30DC08983A3C25BB29 /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B49A8E0922581C728BFE3D4 /* Pods_UIMentoringSession.framework in Frameworks */,
+				44054B0AA34BDA115851838F /* Pods_UIMentoringSession.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,10 +165,18 @@
 		5ED2BA0C25A7B4D4BD72A1F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */,
-				E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */,
+				3961256D4F177EC5735EDDEF /* Pods-UIMentoringSession.debug.xcconfig */,
+				A2861C30DC08983A3C25BB29 /* Pods-UIMentoringSession.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8AA8E471A994B5121161A60C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				730175858D7477DD2D08D001 /* Pods_UIMentoringSession.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8D40067D29AD00BE00FB54B2 /* Recovered References */ = {
@@ -211,8 +219,8 @@
 				8D4271CB299F789400321A85 /* UIMentoringSession */,
 				8D4271CA299F789400321A85 /* Products */,
 				5ED2BA0C25A7B4D4BD72A1F4 /* Pods */,
-				99B34E112B037536B2CDAFE0 /* Frameworks */,
 				8D40067D29AD00BE00FB54B2 /* Recovered References */,
+				8AA8E471A994B5121161A60C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -313,14 +321,6 @@
 			path = YeYa_CoffeeShopCell;
 			sourceTree = "<group>";
 		};
-		99B34E112B037536B2CDAFE0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A3575D63F953A1A3474014A5 /* Pods_UIMentoringSession.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,12 +328,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D4271DD299F789600321A85 /* Build configuration list for PBXNativeTarget "UIMentoringSession" */;
 			buildPhases = (
-				AD96B828A7F51E3AD63429D1 /* [CP] Check Pods Manifest.lock */,
+				41DBB08743A75754A8CEF27F /* [CP] Check Pods Manifest.lock */,
 				48A0090829BFC83400DE0A2F /* R.swift */,
 				8D4271C5299F789400321A85 /* Sources */,
 				8D4271C6299F789400321A85 /* Frameworks */,
 				8D4271C7299F789400321A85 /* Resources */,
-				E64CECDF5810D124FCD36389 /* [CP] Embed Pods Frameworks */,
+				E8918D2D7AF4D812DC9E3BD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -387,7 +387,7 @@
 				333913C829AE014D00B05E2B /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
 				8DF4FD8929B63ACC00EA8715 /* YeYa_CoffeeShopCell.xib in Resources */,
 				33F60C9C29B6403F001A6B8D /* README.md in Resources */,
-				8DF4FD8D29B63BB400EA8715 /* (null) in Resources */,
+				8DF4FD8D29B63BB400EA8715 /* BuildFile in Resources */,
 				48E148B229A74FB500E26085 /* YefimYakunin_StartScreenViewController.xib in Resources */,
 				8DF4FDB529B649E600EA8715 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */,
 				8DF4FDBA29B64A0B00EA8715 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
@@ -402,27 +402,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		48A0090829BFC83400DE0A2F /* R.swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = R.swift;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
-		AD96B828A7F51E3AD63429D1 /* [CP] Check Pods Manifest.lock */ = {
+		41DBB08743A75754A8CEF27F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -444,7 +424,27 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E64CECDF5810D124FCD36389 /* [CP] Embed Pods Frameworks */ = {
+		48A0090829BFC83400DE0A2F /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		E8918D2D7AF4D812DC9E3BD5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -633,7 +633,7 @@
 		};
 		8D4271DE299F789600321A85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45CFAE3178BDE4DAD05774A7 /* Pods-UIMentoringSession.debug.xcconfig */;
+			baseConfigurationReference = 3961256D4F177EC5735EDDEF /* Pods-UIMentoringSession.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -666,7 +666,7 @@
 		};
 		8D4271DF299F789600321A85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E03CD8BBA43A72A796F0311B /* Pods-UIMentoringSession.release.xcconfig */;
+			baseConfigurationReference = A2861C30DC08983A3C25BB29 /* Pods-UIMentoringSession.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
