@@ -14,13 +14,13 @@ final class YefimYakunin_MainButton: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        setTitleColor(UIColor(named: "descriptionColor"), for: .normal)
+        setTitleColor(UIColor(named: "buttonColor"), for: .normal)
         titleLabel?.textColor = UIColor(named: "descriptionColor")
         titleLabel?.font = UIFont.systemFont(ofSize: 14.0, weight: .bold)
     }
     
     private func setup() {
-        backgroundColor = UIColor(named: "buttonColor")
+        backgroundColor = R.color.buttonColor()
         layer.cornerRadius = 10
     }
 }
