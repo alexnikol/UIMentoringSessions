@@ -21,9 +21,11 @@ final class OleksandrKharchenko_GamingScreenViewController: UIViewController {
         passwordLabel.attributedText = addAtribute(partOfText: RText.gamingPasswordLabel())
         descriptionLabel.attributedText = addAttributeMixed(firstPartOfText: RText.gamingFirstPartOfText(),
                                                             secondPartOfText: RText.gamingSecondPartOfText())
-        appleButton.configuration?.title = RText.gamingAppleButton().uppercased()
-        facebookButton.configuration?.title = RText.gamingFacebookButton().uppercased()
-        phoneButton.configuration?.title = RText.gamingPhoneButton().uppercased()
+        if #available(iOS 15, *) {
+            appleButton.configuration?.title = RText.gamingAppleButton().uppercased()
+            facebookButton.configuration?.title = RText.gamingFacebookButton().uppercased()
+            phoneButton.configuration?.title = RText.gamingPhoneButton().uppercased()
+        }
     }
     
     override func viewDidLayoutSubviews() {
