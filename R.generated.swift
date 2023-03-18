@@ -105,7 +105,7 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 10 colors.
+  /// This `R.color` struct is generated, and contains static references to 12 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
@@ -119,10 +119,14 @@ struct R: Rswift.Validatable {
     static let description = Rswift.ColorResource(bundle: R.hostingBundle, name: "description")
     /// Color `first background color`.
     static let firstBackgroundColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "first background color")
+    /// Color `gaming text color`.
+    static let gamingTextColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "gaming text color")
     /// Color `let'sGoButtonColor`.
     static let letSGoButtonColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "let'sGoButtonColor")
     /// Color `second background color`.
     static let secondBackgroundColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "second background color")
+    /// Color `start text color`.
+    static let startTextColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "start text color")
     /// Color `titleAndLabelColor`.
     static let titleAndLabelColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "titleAndLabelColor")
     /// Color `title`.
@@ -183,6 +187,15 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "gaming text color", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func gamingTextColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.gamingTextColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIColor(named: "let'sGoButtonColor", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
@@ -197,6 +210,15 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func secondBackgroundColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.secondBackgroundColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "start text color", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func startTextColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.startTextColor, compatibleWith: traitCollection)
     }
     #endif
 
@@ -267,6 +289,14 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
+    /// `UIColor(named: "gaming text color", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func gamingTextColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.gamingTextColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
     /// `UIColor(named: "let'sGoButtonColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func letSGoButtonColor(_: Void = ()) -> UIKit.UIColor? {
@@ -279,6 +309,14 @@ struct R: Rswift.Validatable {
     @available(watchOSApplicationExtension 4.0, *)
     static func secondBackgroundColor(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.secondBackgroundColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "start text color", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func startTextColor(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.startTextColor.name)
     }
     #endif
 
@@ -742,12 +780,8 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    /// This `R.string.texts` struct is generated, and contains static references to 14 localization keys.
+    /// This `R.string.texts` struct is generated, and contains static references to 7 localization keys.
     struct texts {
-      /// en translation:  Terms and Conditions.
-      ///
-      /// Locales: en, uk
-      static let gamingScreenSecondPartOfText = Rswift.StringResource(key: "GamingScreen.secondPartOfText", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
       /// en translation:  Terms and Conditions.
       ///
       /// Locales: en, uk
@@ -756,38 +790,14 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, uk
       static let gamingFirstPartOfText = Rswift.StringResource(key: "Gaming.firstPartOfText", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
-      /// en translation: By creating an account or signing you agree to our
-      ///
-      /// Locales: en, uk
-      static let gamingScreenFirstPartOfText = Rswift.StringResource(key: "GamingScreen.firstPartOfText", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
       /// en translation: Forgot your password?
       ///
       /// Locales: en, uk
       static let gamingPasswordLabel = Rswift.StringResource(key: "Gaming.passwordLabel", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
-      /// en translation: Forgot your password?
-      ///
-      /// Locales: en, uk
-      static let gamingScreenForgotPassLabel = Rswift.StringResource(key: "GamingScreen.forgotPassLabel", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
       /// en translation: Gaming
       ///
       /// Locales: en, uk
       static let gamingGamingLabel = Rswift.StringResource(key: "Gaming.gamingLabel", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
-      /// en translation: Gaming
-      ///
-      /// Locales: en, uk
-      static let gamingScreenTitleLabel = Rswift.StringResource(key: "GamingScreen.titleLabel", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
-      /// en translation: SIGN IN WITH APPLE
-      ///
-      /// Locales: en, uk
-      static let gamingScreenAppleButtonTitle = Rswift.StringResource(key: "GamingScreen.appleButtonTitle", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
-      /// en translation: SIGN IN WITH FACEBOOK
-      ///
-      /// Locales: en, uk
-      static let gamingScreenFbButtonTitle = Rswift.StringResource(key: "GamingScreen.fbButtonTitle", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
-      /// en translation: SIGN IN WITH PHONE
-      ///
-      /// Locales: en, uk
-      static let gamingScreenPhoneButtonTitle = Rswift.StringResource(key: "GamingScreen.phoneButtonTitle", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
       /// en translation: sign in with facebook
       ///
       /// Locales: en, uk
@@ -800,21 +810,6 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, uk
       static let gamingAppleButton = Rswift.StringResource(key: "Gaming.appleButton", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
-
-      /// en translation:  Terms and Conditions.
-      ///
-      /// Locales: en, uk
-      static func gamingScreenSecondPartOfText(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("GamingScreen.secondPartOfText", tableName: "Texts", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
-          return "GamingScreen.secondPartOfText"
-        }
-
-        return NSLocalizedString("GamingScreen.secondPartOfText", tableName: "Texts", bundle: bundle, comment: "")
-      }
 
       /// en translation:  Terms and Conditions.
       ///
@@ -846,21 +841,6 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Gaming.firstPartOfText", tableName: "Texts", bundle: bundle, comment: "")
       }
 
-      /// en translation: By creating an account or signing you agree to our
-      ///
-      /// Locales: en, uk
-      static func gamingScreenFirstPartOfText(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("GamingScreen.firstPartOfText", tableName: "Texts", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
-          return "GamingScreen.firstPartOfText"
-        }
-
-        return NSLocalizedString("GamingScreen.firstPartOfText", tableName: "Texts", bundle: bundle, comment: "")
-      }
-
       /// en translation: Forgot your password?
       ///
       /// Locales: en, uk
@@ -876,21 +856,6 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Gaming.passwordLabel", tableName: "Texts", bundle: bundle, comment: "")
       }
 
-      /// en translation: Forgot your password?
-      ///
-      /// Locales: en, uk
-      static func gamingScreenForgotPassLabel(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("GamingScreen.forgotPassLabel", tableName: "Texts", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
-          return "GamingScreen.forgotPassLabel"
-        }
-
-        return NSLocalizedString("GamingScreen.forgotPassLabel", tableName: "Texts", bundle: bundle, comment: "")
-      }
-
       /// en translation: Gaming
       ///
       /// Locales: en, uk
@@ -904,66 +869,6 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("Gaming.gamingLabel", tableName: "Texts", bundle: bundle, comment: "")
-      }
-
-      /// en translation: Gaming
-      ///
-      /// Locales: en, uk
-      static func gamingScreenTitleLabel(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("GamingScreen.titleLabel", tableName: "Texts", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
-          return "GamingScreen.titleLabel"
-        }
-
-        return NSLocalizedString("GamingScreen.titleLabel", tableName: "Texts", bundle: bundle, comment: "")
-      }
-
-      /// en translation: SIGN IN WITH APPLE
-      ///
-      /// Locales: en, uk
-      static func gamingScreenAppleButtonTitle(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("GamingScreen.appleButtonTitle", tableName: "Texts", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
-          return "GamingScreen.appleButtonTitle"
-        }
-
-        return NSLocalizedString("GamingScreen.appleButtonTitle", tableName: "Texts", bundle: bundle, comment: "")
-      }
-
-      /// en translation: SIGN IN WITH FACEBOOK
-      ///
-      /// Locales: en, uk
-      static func gamingScreenFbButtonTitle(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("GamingScreen.fbButtonTitle", tableName: "Texts", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
-          return "GamingScreen.fbButtonTitle"
-        }
-
-        return NSLocalizedString("GamingScreen.fbButtonTitle", tableName: "Texts", bundle: bundle, comment: "")
-      }
-
-      /// en translation: SIGN IN WITH PHONE
-      ///
-      /// Locales: en, uk
-      static func gamingScreenPhoneButtonTitle(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("GamingScreen.phoneButtonTitle", tableName: "Texts", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
-          return "GamingScreen.phoneButtonTitle"
-        }
-
-        return NSLocalizedString("GamingScreen.phoneButtonTitle", tableName: "Texts", bundle: bundle, comment: "")
       }
 
       /// en translation: sign in with facebook
@@ -1132,11 +1037,11 @@ struct _R: Rswift.Validatable {
       }
 
       static func validate() throws {
-        if UIKit.UIImage(named: "GoodDogs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'GoodDogs' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "goodDogs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'goodDogs' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
         if UIKit.UIImage(named: "logotipTakee", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logotipTakee' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "let'sGoButtonColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'let'sGoButtonColor' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "textColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textColor' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "start text color", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'start text color' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
         }
       }
 
@@ -1209,11 +1114,11 @@ struct _R: Rswift.Validatable {
       }
 
       static func validate() throws {
-        if UIKit.UIImage(named: "GoodDogs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'GoodDogs' is used in nib 'YefimYakunin_StartScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "goodDogs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'goodDogs' is used in nib 'YefimYakunin_StartScreenViewController', but couldn't be loaded.") }
         if UIKit.UIImage(named: "logotipTakee", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logotipTakee' is used in nib 'YefimYakunin_StartScreenViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "let'sGoButtonColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'let'sGoButtonColor' is used in nib 'YefimYakunin_StartScreenViewController', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "textColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'textColor' is used in nib 'YefimYakunin_StartScreenViewController', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "start text color", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'start text color' is used in nib 'YefimYakunin_StartScreenViewController', but couldn't be loaded.") }
         }
       }
 

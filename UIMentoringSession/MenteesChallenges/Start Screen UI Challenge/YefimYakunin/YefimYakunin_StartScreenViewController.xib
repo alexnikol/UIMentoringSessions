@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="675-6a-1bu">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="675-6a-1bu">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipTakee" translatesAutoresizingMaskIntoConstraints="NO" id="k8V-SJ-NbY">
@@ -35,7 +35,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-NF-lQu">
                     <rect key="frame" x="16" y="641.66666666666663" width="361" height="38.333333333333371"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
-                    <color key="textColor" name="textColor"/>
+                    <color key="textColor" name="start text color"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRs-Vl-5Pn">
@@ -71,12 +71,12 @@
         </view>
     </objects>
     <resources>
-        <image name="GoodDogs" width="125" height="270.66665649414062"/>
+        <image name="goodDogs" width="125" height="270.66665649414062"/>
         <image name="logotipTakee" width="23" height="5.3333334922790527"/>
         <namedColor name="let'sGoButtonColor">
             <color red="0.8970000147819519" green="0.60500001907348633" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <namedColor name="textColor">
+        <namedColor name="start text color">
             <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
