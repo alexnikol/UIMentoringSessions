@@ -11,6 +11,10 @@
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
+		48E2EC2D29D4197F00A9ACE2 /* YeYa_PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */; };
+		48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */; };
+		48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC2F29D419A200A9ACE2 /* OlKha_PetsViewController.swift */; };
+		48E2EC3229D419A200A9ACE2 /* OlKha_PetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E2EC3029D419A200A9ACE2 /* OlKha_PetsViewController.xib */; };
 		8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25176C29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib */; };
 		8D2517A429C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25176D29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift */; };
 		8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25176F29C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift */; };
@@ -59,6 +63,11 @@
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
+		48E2EC2129D3885400A9ACE2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_PetsViewController.swift; sourceTree = "<group>"; };
+		48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YeYa_PetsViewController.xib; sourceTree = "<group>"; };
+		48E2EC2F29D419A200A9ACE2 /* OlKha_PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_PetsViewController.swift; sourceTree = "<group>"; };
+		48E2EC3029D419A200A9ACE2 /* OlKha_PetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OlKha_PetsViewController.xib; sourceTree = "<group>"; };
 		8D25176C29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OlKha_IOSNewsViewController.xib; sourceTree = "<group>"; };
 		8D25176D29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlKha_IOSNewsViewController.swift; sourceTree = "<group>"; };
 		8D25176F29C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYa_IOSNewsViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +129,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48E2EC1629D386F400A9ACE2 /* Pets Main Card UI Chellenge */ = {
+			isa = PBXGroup;
+			children = (
+				48E2EC2129D3885400A9ACE2 /* README.md */,
+				48E2EC1829D3876D00A9ACE2 /* YefimYakunin */,
+				48E2EC1729D3875D00A9ACE2 /* OleksandrKharchenko */,
+			);
+			path = "Pets Main Card UI Chellenge";
+			sourceTree = "<group>";
+		};
+		48E2EC1729D3875D00A9ACE2 /* OleksandrKharchenko */ = {
+			isa = PBXGroup;
+			children = (
+				48E2EC2F29D419A200A9ACE2 /* OlKha_PetsViewController.swift */,
+				48E2EC3029D419A200A9ACE2 /* OlKha_PetsViewController.xib */,
+			);
+			path = OleksandrKharchenko;
+			sourceTree = "<group>";
+		};
+		48E2EC1829D3876D00A9ACE2 /* YefimYakunin */ = {
+			isa = PBXGroup;
+			children = (
+				48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */,
+				48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */,
+			);
+			path = YefimYakunin;
+			sourceTree = "<group>";
+		};
 		5ED2BA0C25A7B4D4BD72A1F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +169,7 @@
 		8D25176929C4AE8300CD54A5 /* MenteesChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				48E2EC1629D386F400A9ACE2 /* Pets Main Card UI Chellenge */,
 				8D25176A29C4AE8300CD54A5 /* IOS News UI Challenge */,
 				8D25177129C4AE8300CD54A5 /* Start Screen UI Challenge */,
 				8D25177929C4AE8300CD54A5 /* Gaming Screen UI Challenge */,
@@ -449,9 +487,11 @@
 				8DF4FD8D29B63BB400EA8715 /* (null) in Resources */,
 				8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */,
 				8D2517B629C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
+				48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */,
 				8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D2517A729C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
+				48E2EC3229D419A200A9ACE2 /* OlKha_PetsViewController.xib in Resources */,
 				8D2517AA29C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib in Resources */,
 				8D2517A629C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib in Resources */,
 				8D2517B029C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib in Resources */,
@@ -554,6 +594,7 @@
 				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
 				8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */,
 				8D2517AE29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift in Sources */,
+				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,
 				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
@@ -561,6 +602,7 @@
 				8D2517BD29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D2517C429C4AE8300CD54A5 /* MenteeChallengesFactory.swift in Sources */,
+				48E2EC2D29D4197F00A9ACE2 /* YeYa_PetsViewController.swift in Sources */,
 				8D2517A429C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

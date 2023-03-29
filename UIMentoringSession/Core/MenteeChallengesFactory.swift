@@ -7,6 +7,7 @@ enum Challenge: String, CaseIterable {
     case login = "Login screen"
     case startScreen = "Start screen"
     case gamingScreen = "Gaming screen"
+    case petsMainScreen = "Pets screen"
 }
 
 protocol MenteeChallengesFactory {

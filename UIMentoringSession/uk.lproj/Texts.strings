@@ -5,3 +5,10 @@
 "Gaming.appleButton" = "увійти з apple";
 "Gaming.facebookButton" = "увійти з facebook";
 "Gaming.phoneButton" = "увійти з телефону";
+"PetsList.allCategories" = "Усі";
+"PetsList.dogCategories" = "Собака";
+"PetsList.catCategories" = "Кішка";
+"PetsList.petAgeYear" = "рік"
+"PetsList.petAgeYears" = "роки"
+"PetsList.petAgeMonth" = "місяц"
+"PetsList.petAgeMonths" = "місяців"
