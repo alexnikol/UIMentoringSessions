@@ -13,6 +13,8 @@ final class YefimYakuninFactory: MenteeChallengesFactory {
             return YefimYakunin_StartScreenViewController()
         case .gamingScreen:
             return YefimYakuninGamingScreenViewController(nibName: "YefimYakuninGamingScreenViewController", bundle: nil)
+        case .petsMainScreen:
+            return nil
         }
     }
 }

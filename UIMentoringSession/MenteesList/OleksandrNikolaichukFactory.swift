@@ -15,6 +15,8 @@ final class OleksandrNikolaichukFactory: MenteeChallengesFactory {
             return nil
         case .gamingScreen:
             return nil
+        case .petsMainScreen:
+            return nil
         }
     }
 }
