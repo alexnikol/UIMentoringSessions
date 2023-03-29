@@ -8,7 +8,7 @@
 "PetsList.allCategories" = "All";
 "PetsList.dogCategories" = "Dog";
 "PetsList.catCategories" = "Cat";
-"PetsList.petAgeYear" = "year"
-"PetsList.petAgeYears" = "years"
-"PetsList.petAgeMonth" = "month"
-"PetsList.petAgeMonths" = "months"
+"PetsList.petAgeYear" = "year";
+"PetsList.petAgeYears" = "years";
+"PetsList.petAgeMonth" = "month";
+"PetsList.petAgeMonths" = "months";
