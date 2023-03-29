@@ -5,10 +5,10 @@
 "Gaming.appleButton" = "увійти з apple";
 "Gaming.facebookButton" = "увійти з facebook";
 "Gaming.phoneButton" = "увійти з телефону";
-"Pets.allCategories" = "Усі";
-"Pets.dogCategories" = "Собака";
-"Pets.catCategories" = "Кішка";
-"Pet.petAgeYear" = "рік"
-"Pet.petAgeYears" = "роки"
-"Pet.petAgeMonth" = "місяц"
-"Pet.petAgeMonths" = "місяців"
+"PetsList.allCategories" = "Усі";
+"PetsList.dogCategories" = "Собака";
+"PetsList.catCategories" = "Кішка";
+"PetsList.petAgeYear" = "рік"
+"PetsList.petAgeYears" = "роки"
+"PetsList.petAgeMonth" = "місяц"
+"PetsList.petAgeMonths" = "місяців"
