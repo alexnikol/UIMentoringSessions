@@ -5,3 +5,10 @@
 "Gaming.appleButton" = "sing in with apple";
 "Gaming.facebookButton" = "sign in with facebook";
 "Gaming.phoneButton" = "sign in with phone";
+"Pets.allCategories" = "All";
+"Pets.dogCategories" = "Dog";
+"Pets.catCategories" = "Cat";
+"Pet.petAgeYear" = "year"
+"Pet.petAgeYears" = "years"
+"Pet.petAgeMonth" = "month"
+"Pet.petAgeMonths" = "months"
