@@ -10,6 +10,8 @@
 		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
+		3389CBF829D5BECD00DCD1A7 /* AnimalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389CBF629D5BECD00DCD1A7 /* AnimalsCell.swift */; };
+		3389CBF929D5BECD00DCD1A7 /* AnimalsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3389CBF729D5BECD00DCD1A7 /* AnimalsCell.xib */; };
 		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
 		48E2EC2D29D4197F00A9ACE2 /* YeYa_PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */; };
 		48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */; };
@@ -60,6 +62,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3389CBF629D5BECD00DCD1A7 /* AnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsCell.swift; sourceTree = "<group>"; };
+		3389CBF729D5BECD00DCD1A7 /* AnimalsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalsCell.xib; sourceTree = "<group>"; };
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
@@ -129,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3389CBF529D5BE3C00DCD1A7 /* AnimalsCells */ = {
+			isa = PBXGroup;
+			children = (
+				3389CBF629D5BECD00DCD1A7 /* AnimalsCell.swift */,
+				3389CBF729D5BECD00DCD1A7 /* AnimalsCell.xib */,
+			);
+			path = AnimalsCells;
+			sourceTree = "<group>";
+		};
 		48E2EC1629D386F400A9ACE2 /* Pets Main Card UI Chellenge */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +155,7 @@
 		48E2EC1729D3875D00A9ACE2 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
+				3389CBF529D5BE3C00DCD1A7 /* AnimalsCells */,
 				48E2EC2F29D419A200A9ACE2 /* OlKha_PetsViewController.swift */,
 				48E2EC3029D419A200A9ACE2 /* OlKha_PetsViewController.xib */,
 			);
@@ -497,6 +511,7 @@
 				8D2517B029C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
 				8D2517BA29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */,
+				3389CBF929D5BECD00DCD1A7 /* AnimalsCell.xib in Resources */,
 				8D2517BC29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib in Resources */,
 				8D2517AF29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */,
 				8D2517B429C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
@@ -590,6 +605,7 @@
 				8D2517C129C4AE8300CD54A5 /* YefimYakuninFactory.swift in Sources */,
 				8D2517B829C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift in Sources */,
 				8D2517B529C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
+				3389CBF829D5BECD00DCD1A7 /* AnimalsCell.swift in Sources */,
 				8D2517BE29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
 				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
 				8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */,
@@ -755,7 +771,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59HT9UJH46;
+				DEVELOPMENT_TEAM = K9947R9LK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -769,7 +785,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AE-team.UIMentoringSession";
+				PRODUCT_BUNDLE_IDENTIFIER = "--------------------Personal-Team-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -788,7 +804,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59HT9UJH46;
+				DEVELOPMENT_TEAM = K9947R9LK8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -802,7 +818,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AE-team.UIMentoringSession";
+				PRODUCT_BUNDLE_IDENTIFIER = "--------------------Personal-Team-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

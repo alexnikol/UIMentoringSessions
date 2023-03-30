@@ -1,7 +1,9 @@
 import UIKit
 
 class OlKha_PetsViewController: UIViewController {
-
+    @IBOutlet weak var animalsCollectionView: UICollectionView!
+    @IBOutlet weak var filterCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
