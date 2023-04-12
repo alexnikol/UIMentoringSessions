@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */; };
 		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -60,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				8D25179C29C4AE8300CD54A5 /* YefimYakuninFactory.swift */,
 				8D25179D29C4AE8300CD54A5 /* MenteesList.swift */,
 				8D25179E29C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift */,
+				1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */,
 			);
 			path = MenteesList;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */,
 				8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
