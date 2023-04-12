@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,7 +41,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-3N-T15" userLabel="animals Collection View">
-                    <rect key="frame" x="16" y="191" width="361" height="627"/>
+                    <rect key="frame" x="16" y="191" width="361" height="661"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zGz-Gz-hRx">
                         <size key="itemSize" width="128" height="128"/>
@@ -54,9 +54,9 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="gdc-3N-T15" secondAttribute="bottom" id="04x-yX-Ngh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KHm-TK-OpK" secondAttribute="trailing" constant="16" id="19x-IP-Giz"/>
                 <constraint firstItem="KHm-TK-OpK" firstAttribute="top" secondItem="wGB-GN-SSi" secondAttribute="bottom" constant="38" id="Il6-gH-bpx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gdc-3N-T15" secondAttribute="bottom" id="L0v-Yf-8pl"/>
                 <constraint firstItem="gdc-3N-T15" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TMF-TF-e8x"/>
                 <constraint firstItem="wGB-GN-SSi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Twh-a8-wLn"/>
                 <constraint firstItem="KHm-TK-OpK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="h2L-N7-N8S"/>
@@ -64,7 +64,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gdc-3N-T15" secondAttribute="trailing" constant="16" id="sgC-bq-MMU"/>
                 <constraint firstItem="wGB-GN-SSi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="v3w-T9-EIB"/>
             </constraints>
-            <point key="canvasLocation" x="120" y="-11"/>
+            <point key="canvasLocation" x="136.64122137404578" y="-39.436619718309863"/>
         </view>
     </objects>
     <resources>

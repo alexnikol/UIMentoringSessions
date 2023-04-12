@@ -783,7 +783,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 12 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 13 nibs.
   struct nib {
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
@@ -797,6 +797,8 @@ struct R: Rswift.Validatable {
     static let oleksandrKharchenko_GamingScreenViewController = _R.nib._OleksandrKharchenko_GamingScreenViewController()
     /// Nib `OleksandrKharchenko_StartScreenViewController`.
     static let oleksandrKharchenko_StartScreenViewController = _R.nib._OleksandrKharchenko_StartScreenViewController()
+    /// Nib `OlkhaAnimalsCell`.
+    static let olkhaAnimalsCell = _R.nib._OlkhaAnimalsCell()
     /// Nib `YeYa_CoffeeShopCell`.
     static let yeYa_CoffeeShopCell = _R.nib._YeYa_CoffeeShopCell()
     /// Nib `YeYa_IOSNewsViewController`.
@@ -855,6 +857,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.oleksandrKharchenko_StartScreenViewController) instead")
     static func oleksandrKharchenko_StartScreenViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.oleksandrKharchenko_StartScreenViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "OlkhaAnimalsCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.olkhaAnimalsCell) instead")
+    static func olkhaAnimalsCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.olkhaAnimalsCell)
     }
     #endif
 
@@ -928,6 +938,10 @@ struct R: Rswift.Validatable {
 
     static func oleksandrKharchenko_StartScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.oleksandrKharchenko_StartScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func olkhaAnimalsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> OlkhaAnimalsCell? {
+      return R.nib.olkhaAnimalsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? OlkhaAnimalsCell
     }
 
     static func yeYa_CoffeeShopCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> YeYa_CoffeeShopCell? {
@@ -1265,10 +1279,12 @@ struct _R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   struct nib: Rswift.Validatable {
     static func validate() throws {
+      try _OlKha_PetsViewController.validate()
       try _OleksandrKharchenko_CoffeShopCell.validate()
       try _OleksandrKharchenko_CoffeShopViewController.validate()
       try _OleksandrKharchenko_GamingScreenViewController.validate()
       try _OleksandrKharchenko_StartScreenViewController.validate()
+      try _OlkhaAnimalsCell.validate()
       try _YeYa_CoffeeShopCell.validate()
       try _YefimYakuninGamingScreenViewController.validate()
       try _YefimYakunin_StartScreenViewController.validate()
@@ -1285,12 +1301,18 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _OlKha_PetsViewController: Rswift.NibResourceType {
+    struct _OlKha_PetsViewController: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "OlKha_PetsViewController"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "logoTakeeBlack", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logoTakeeBlack' is used in nib 'OlKha_PetsViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}
@@ -1370,6 +1392,23 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "let'sGoButtonColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'let'sGoButtonColor' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
           if UIKit.UIColor(named: "start text color", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'start text color' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _OlkhaAnimalsCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "OlkhaAnimalsCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> OlkhaAnimalsCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? OlkhaAnimalsCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "whitheyCat", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'whitheyCat' is used in nib 'OlkhaAnimalsCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
 
