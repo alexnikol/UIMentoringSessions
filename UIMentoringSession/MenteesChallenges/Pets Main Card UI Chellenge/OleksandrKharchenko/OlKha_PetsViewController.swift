@@ -3,67 +3,24 @@ import UIKit
 final class OlKha_PetsViewController: UIViewController {
     @IBOutlet weak var animalsCollectionView: UICollectionView!
     @IBOutlet weak var filterCollectionView: UICollectionView!
-    var models : [OlKha_PetsViewModel] = []
+    var models: [OlKha_PetsViewModel] = []
+    var filter: [OlKha_FilterViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.animalsCollectionView.register(UINib(nibName: "OlkhaAnimalsCell", bundle: nil), forCellWithReuseIdentifier: "OlkhaAnimalsCell")
+        view.backgroundColor = RColor.petWhiteColor()
+        filterCollectionView.backgroundColor = RColor.petWhiteColor()
+        animalsCollectionView.backgroundColor = RColor.petWhiteColor()
+        self.animalsCollectionView.register(UINib(nibName: "Olkha_AnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_AnimalsCell")
         self.animalsCollectionView.dataSource = self
         self.animalsCollectionView.delegate = self
+        self.filterCollectionView.register(UINib(nibName: "Olkha_FilterAnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_FilterAnimalsCell")
+        self.filterCollectionView.dataSource = self
+        self.filterCollectionView.delegate = self
+        // едлаем магазин с фильтрами
         
-        let items: [OlKha_PetsViewModel] = [
-            .init(name: "Gary",
-                  age: "3 years",
-                  breadAnimal: "Yorkshire Terrier",
-                  animal: UIImage(imageLiteralResourceName: "garyDog")
-                 ),
-            .init(name: "Peach",
-                  age: "2.5 years",
-                  breadAnimal: "Half-breed",
-                  animal: UIImage(imageLiteralResourceName: "peachCat")
-                 ),
-            .init(name: "Whitney",
-                  age: "2 months",
-                  breadAnimal: "British Longhair",
-                  animal: UIImage(imageLiteralResourceName: "whitheyCat")
-                 ),
-            .init(name: "Buggy",
-                  age: "4 months",
-                  breadAnimal: "Jack Russell Terrier",
-                  animal: UIImage(imageLiteralResourceName: "buggyDog")
-                 ),
-            .init(name: "Willie",
-                  age: "1.5 years",
-                  breadAnimal: "Samoyed",
-                  animal: UIImage(imageLiteralResourceName: "willieDog")
-                 ),
-            .init(name: "Kiwi",
-                  age: "1 years",
-                  breadAnimal: "Yorkshire Terrier",
-                  animal: UIImage(imageLiteralResourceName: "kiwiDog")
-                 ),
-            .init(name: "Stitch",
-                  age: "1 year",
-                  breadAnimal: "European cat",
-                  animal: UIImage(imageLiteralResourceName: "whitheyCat")
-                 ),
-            .init(name: "Cake",
-                  age: "2 months",
-                  breadAnimal: "Welsh Corgi",
-                  animal: UIImage(imageLiteralResourceName: "whitheyCat")
-                 ),
-            .init(name: "Moon",
-                  age: "2.5 years",
-                  breadAnimal: "Siberian cat",
-                  animal: UIImage(imageLiteralResourceName: "whitheyCat")
-                 ),
-            .init(name: "Spike",
-                  age: "1.5 years",
-                  breadAnimal: "Maine Coon",
-                  animal: UIImage(imageLiteralResourceName: "whitheyCat")
-                 ),
-        ]
-        models = items
+        models = itemsAnimals
+        filter = itemsFilter
     }
     
     init() {
@@ -75,29 +32,66 @@ final class OlKha_PetsViewController: UIViewController {
     }
 }
 
-extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    struct OlKha_PetsViewModel {
-        let name: String
-        let age: String
-        let breadAnimal: String
-        let animal: UIImage
-    }
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return models.count
+        if collectionView == filterCollectionView {
+            return filter.count
+        } else if collectionView == animalsCollectionView {
+            return models.count
+        } else {
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let model = models[indexPath.row ]
-        let cell = animalsCollectionView.dequeueReusableCell(withReuseIdentifier: "OlkhaAnimalsCell", for: indexPath) as! OlkhaAnimalsCell
-        cell.nameLabel.text = model.name
-        cell.ageLabel.text = model.age
-        cell.breadAnimalLabel.text = model.breadAnimal
-        cell.animalsImageView.image  = model.animal
-    
-        return cell
+        if collectionView == filterCollectionView {
+            let animals = filter[indexPath.row ]
+            let cell = filterCollectionView.dequeueReusableCell(withReuseIdentifier: "Olkha_FilterAnimalsCell", for: indexPath) as! Olkha_FilterAnimalsCell
+            cell.filterAnimalsLabel.text = animals.type
+            cell.filterAnimalsImage.image = animals.animal
+            filterCollectionView.showsHorizontalScrollIndicator = false
+            return cell
+            
+        } else if collectionView == animalsCollectionView {
+            let model = models[indexPath.row ]
+            let cell = animalsCollectionView.dequeueReusableCell(withReuseIdentifier: "Olkha_AnimalsCell", for: indexPath) as! Olkha_AnimalsCell
+            cell.nameLabel.text = model.name
+            cell.ageLabel.text = model.age
+            cell.breadAnimalLabel.text = model.breadAnimal
+            cell.animalsImageView.image  = model.animal
+            animalsCollectionView.showsVerticalScrollIndicator = false
+            return cell
+            
+        } else {
+            return UICollectionViewCell()
+        }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == filterCollectionView {
+            let typeAnimals = filter[indexPath.row]
+            let cell = filterCollectionView.dequeueReusableCell(withReuseIdentifier: "Olkha_FilterAnimalsCell", for: indexPath) as! Olkha_FilterAnimalsCell
+        }
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == filterCollectionView {
+            return CGSize(width: 99, height: 52)
+        } else if collectionView == animalsCollectionView {
+            let widht = (UIScreen.main.bounds.width - 36) / 2
+            let heigth = widht / 163 * 192
+            return CGSize(width: widht, height: heigth)
+        } else {
+            return .zero
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 16
+    }
 }
