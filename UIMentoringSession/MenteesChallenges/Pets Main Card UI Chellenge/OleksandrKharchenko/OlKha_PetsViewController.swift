@@ -5,18 +5,19 @@ final class OlKha_PetsViewController: UIViewController {
     @IBOutlet weak var filterCollectionView: UICollectionView!
     var models: [OlKha_PetsViewModel] = []
     var filter: [OlKha_FilterViewModel] = []
+    var animalsTypes: [AnimalsTypes] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = RColor.petWhiteColor()
         filterCollectionView.backgroundColor = RColor.petWhiteColor()
         animalsCollectionView.backgroundColor = RColor.petWhiteColor()
-        self.animalsCollectionView.register(UINib(nibName: "Olkha_AnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_AnimalsCell")
-        self.animalsCollectionView.dataSource = self
-        self.animalsCollectionView.delegate = self
-        self.filterCollectionView.register(UINib(nibName: "Olkha_FilterAnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_FilterAnimalsCell")
-        self.filterCollectionView.dataSource = self
-        self.filterCollectionView.delegate = self
+        animalsCollectionView.register(UINib(nibName: "Olkha_AnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_AnimalsCell")
+        animalsCollectionView.dataSource = self
+        animalsCollectionView.delegate = self
+        filterCollectionView.register(UINib(nibName: "Olkha_FilterAnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_FilterAnimalsCell")
+        filterCollectionView.dataSource = self
+        filterCollectionView.delegate = self
         // едлаем магазин с фильтрами
         
         models = itemsAnimals

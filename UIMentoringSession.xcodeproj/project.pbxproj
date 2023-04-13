@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
+		33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */; };
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		3389CBF829D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsTypes.swift; sourceTree = "<group>"; };
 		3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsCell.swift; sourceTree = "<group>"; };
 		3389CBF729D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Olkha_AnimalsCell.xib; sourceTree = "<group>"; };
 		33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_FilterAnimalsCell.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33309E0A29E87BB300170025 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		3389CBF529D5BE3C00DCD1A7 /* AnimalsCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +174,7 @@
 		48E2EC1729D3875D00A9ACE2 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
+				33309E0A29E87BB300170025 /* Enum */,
 				3389CBF529D5BE3C00DCD1A7 /* AnimalsCells */,
 				48E2EC2F29D419A200A9ACE2 /* OlKha_PetsViewController.swift */,
 				48E2EC3029D419A200A9ACE2 /* OlKha_PetsViewController.xib */,
@@ -599,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
+				33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				8D2517C329C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift in Sources */,
