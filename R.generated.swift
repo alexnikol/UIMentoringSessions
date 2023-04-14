@@ -396,7 +396,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 39 images.
+  /// This `R.image` struct is generated, and contains static references to 43 images.
   struct image {
     /// Image `Apple icon`.
     static let appleIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Apple icon")
@@ -450,6 +450,8 @@ struct R: Rswift.Validatable {
     static let booklliad = Rswift.ImageResource(bundle: R.hostingBundle, name: "booklliad")
     /// Image `buggyDog`.
     static let buggyDog = Rswift.ImageResource(bundle: R.hostingBundle, name: "buggyDog")
+    /// Image `cakeDog`.
+    static let cakeDog = Rswift.ImageResource(bundle: R.hostingBundle, name: "cakeDog")
     /// Image `catPet`.
     static let catPet = Rswift.ImageResource(bundle: R.hostingBundle, name: "catPet")
     /// Image `cupImage`.
@@ -468,8 +470,14 @@ struct R: Rswift.Validatable {
     static let logotipTakee = Rswift.ImageResource(bundle: R.hostingBundle, name: "logotipTakee")
     /// Image `mapImage`.
     static let mapImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "mapImage")
+    /// Image `moonCat`.
+    static let moonCat = Rswift.ImageResource(bundle: R.hostingBundle, name: "moonCat")
     /// Image `peachCat`.
     static let peachCat = Rswift.ImageResource(bundle: R.hostingBundle, name: "peachCat")
+    /// Image `spikeCat`.
+    static let spikeCat = Rswift.ImageResource(bundle: R.hostingBundle, name: "spikeCat")
+    /// Image `stitchCat`.
+    static let stitchCat = Rswift.ImageResource(bundle: R.hostingBundle, name: "stitchCat")
     /// Image `tagImage`.
     static let tagImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "tagImage")
     /// Image `whitheyCat`.
@@ -660,6 +668,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "cakeDog", bundle: ..., traitCollection: ...)`
+    static func cakeDog(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.cakeDog, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "catPet", bundle: ..., traitCollection: ...)`
     static func catPet(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.catPet, compatibleWith: traitCollection)
@@ -723,9 +738,30 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "moonCat", bundle: ..., traitCollection: ...)`
+    static func moonCat(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.moonCat, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "peachCat", bundle: ..., traitCollection: ...)`
     static func peachCat(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.peachCat, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "spikeCat", bundle: ..., traitCollection: ...)`
+    static func spikeCat(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.spikeCat, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "stitchCat", bundle: ..., traitCollection: ...)`
+    static func stitchCat(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.stitchCat, compatibleWith: traitCollection)
     }
     #endif
 

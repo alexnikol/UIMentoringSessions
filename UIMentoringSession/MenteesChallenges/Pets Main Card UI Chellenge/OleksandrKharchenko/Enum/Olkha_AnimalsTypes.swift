@@ -1,10 +1,9 @@
 import Foundation
-import UIKit
 
-enum AnimalsTypes: Int, CaseIterable {
-    case allPets = 0
-    case cats = 1
-    case dogs = 2
+enum AnimalsTypes: CaseIterable {
+    case allPets
+    case cats
+    case dogs
     
     var title: String {
         switch self {

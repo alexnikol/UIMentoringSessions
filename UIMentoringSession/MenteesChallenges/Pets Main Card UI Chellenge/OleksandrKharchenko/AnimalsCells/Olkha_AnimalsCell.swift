@@ -13,7 +13,7 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
         super.awakeFromNib()
     }
     
-    func setup() {
+    private func setupLayout() {
         layer.cornerRadius = 16
         backgroundColor = .white
         layer.shadowColor = UIColor.gray.cgColor
@@ -25,12 +25,19 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
+        setupLayout()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setup()
+        setupLayout()
+    }
+    
+    func setup(model: OlKha_PetsViewModel) {
+        nameLabel.text = model.name
+        ageLabel.text = model.age
+        breadAnimalLabel.text = model.breadAnimal
+        animalsImageView.image  = model.animal
     }
     
 }
