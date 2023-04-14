@@ -18,8 +18,6 @@ final class OlKha_PetsViewController: UIViewController {
         filterCollectionView.register(UINib(nibName: "Olkha_FilterAnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_FilterAnimalsCell")
         filterCollectionView.dataSource = self
         filterCollectionView.delegate = self
-        // едлаем магазин с фильтрами
-        
         models = itemsAnimals
         filter = itemsFilter
     }
@@ -69,12 +67,23 @@ extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionView
         }
     }
     
+    func reconfigureItems(at: [IndexPath]) {
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == filterCollectionView {
             let typeAnimals = filter[indexPath.row]
             let cell = filterCollectionView.dequeueReusableCell(withReuseIdentifier: "Olkha_FilterAnimalsCell", for: indexPath) as! Olkha_FilterAnimalsCell
+//        let cell = filterCollectionView.cellForItem(at: indexPath)
+//        cell?.backgroundColor = UIColor(resource: RColor.petSelectColor)
         }
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+//        let cell = filterCollectionView.cellForItem(at: indexPath)
+//        cell?.backgroundColor = .clear
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == filterCollectionView {
