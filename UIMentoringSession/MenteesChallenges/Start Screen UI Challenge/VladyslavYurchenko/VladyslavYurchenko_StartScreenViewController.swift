@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VladyslavYurchenko_StartScreenViewController: UIViewController {
+final class VladyslavYurchenko_StartScreenViewController: UIViewController {
     @IBOutlet weak var letsGoButton: UIButton!
     @IBOutlet weak var happinessLabel: UILabel!
     
