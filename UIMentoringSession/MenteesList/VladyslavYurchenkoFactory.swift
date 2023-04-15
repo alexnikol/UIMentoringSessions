@@ -12,6 +12,9 @@ final class VladyslavYurchenkoFactory: MenteeChallengesFactory {
     var menteeName = "Vladyslav Yurchenko"
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
+        case .startScreen:
+            return VladyslavYurchenko_StartScreenViewController()
+                                
         default:
             return nil
         }

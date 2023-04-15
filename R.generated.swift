@@ -783,7 +783,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 12 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 13 nibs.
   struct nib {
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
@@ -797,6 +797,8 @@ struct R: Rswift.Validatable {
     static let oleksandrKharchenko_GamingScreenViewController = _R.nib._OleksandrKharchenko_GamingScreenViewController()
     /// Nib `OleksandrKharchenko_StartScreenViewController`.
     static let oleksandrKharchenko_StartScreenViewController = _R.nib._OleksandrKharchenko_StartScreenViewController()
+    /// Nib `VladyslavYurchenko_StartScreenViewController`.
+    static let vladyslavYurchenko_StartScreenViewController = _R.nib._VladyslavYurchenko_StartScreenViewController()
     /// Nib `YeYa_CoffeeShopCell`.
     static let yeYa_CoffeeShopCell = _R.nib._YeYa_CoffeeShopCell()
     /// Nib `YeYa_IOSNewsViewController`.
@@ -855,6 +857,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.oleksandrKharchenko_StartScreenViewController) instead")
     static func oleksandrKharchenko_StartScreenViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.oleksandrKharchenko_StartScreenViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "VladyslavYurchenko_StartScreenViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.vladyslavYurchenko_StartScreenViewController) instead")
+    static func vladyslavYurchenko_StartScreenViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.vladyslavYurchenko_StartScreenViewController)
     }
     #endif
 
@@ -928,6 +938,10 @@ struct R: Rswift.Validatable {
 
     static func oleksandrKharchenko_StartScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.oleksandrKharchenko_StartScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func vladyslavYurchenko_StartScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.vladyslavYurchenko_StartScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func yeYa_CoffeeShopCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> YeYa_CoffeeShopCell? {
@@ -1269,6 +1283,7 @@ struct _R: Rswift.Validatable {
       try _OleksandrKharchenko_CoffeShopViewController.validate()
       try _OleksandrKharchenko_GamingScreenViewController.validate()
       try _OleksandrKharchenko_StartScreenViewController.validate()
+      try _VladyslavYurchenko_StartScreenViewController.validate()
       try _YeYa_CoffeeShopCell.validate()
       try _YefimYakuninGamingScreenViewController.validate()
       try _YefimYakunin_StartScreenViewController.validate()
@@ -1370,6 +1385,25 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "let'sGoButtonColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'let'sGoButtonColor' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
           if UIKit.UIColor(named: "start text color", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'start text color' is used in nib 'OleksandrKharchenko_StartScreenViewController', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _VladyslavYurchenko_StartScreenViewController: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "VladyslavYurchenko_StartScreenViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "GoodDogs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'GoodDogs' is used in nib 'VladyslavYurchenko_StartScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "logotipTakee", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logotipTakee' is used in nib 'VladyslavYurchenko_StartScreenViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "Let'sGoButtonColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Let'sGoButtonColor' is used in nib 'VladyslavYurchenko_StartScreenViewController', but couldn't be loaded.") }
         }
       }
 
