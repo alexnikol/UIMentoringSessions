@@ -8,8 +8,8 @@
 import UIKit
 
 final class VladyslavYurchenko_StartScreenViewController: UIViewController {
-    @IBOutlet weak var letsGoButton: UIButton!
-    @IBOutlet weak var happinessLabel: UILabel!
+    @IBOutlet private weak var letsGoButton: UIButton!
+    @IBOutlet private weak var happinessLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ final class VladyslavYurchenko_StartScreenViewController: UIViewController {
         happinessLabel.font = UIFont(name: happinessLabel.font.fontName, size: 35)
     }
     
-    @IBAction func didTabButton(_ sender: Any) {
+    @IBAction private func didTabButton(_ sender: Any) {
     }
     
     init() {
