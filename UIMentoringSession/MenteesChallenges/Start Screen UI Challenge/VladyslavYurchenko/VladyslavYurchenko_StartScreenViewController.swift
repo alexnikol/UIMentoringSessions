@@ -13,17 +13,13 @@ final class VladyslavYurchenko_StartScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        letsGoButton.setTitle("Let's Go!", for: .normal)
+        letsGoButton.setTitle(RText.startScreenButton(), for: .normal)
         letsGoButton.layer.cornerRadius = 30
-        happinessLabel.text = "Happiness is closer than you think"
-        happinessLabel.font = UIFont(name: happinessLabel.font.fontName, size: 35)
+        happinessLabel.text = RText.startScreenLabel()
     }
-    
-    @IBAction private func didTabButton(_ sender: Any) {
-    }
-    
+  
     init() {
-        super.init(nibName: "VladyslavYurchenko_StartScreenViewController", bundle: nil)
+        super.init(nibName: String(describing: VladyslavYurchenko_StartScreenViewController.self), bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {

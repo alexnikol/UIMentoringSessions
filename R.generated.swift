@@ -978,7 +978,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    /// This `R.string.texts` struct is generated, and contains static references to 14 localization keys.
+    /// This `R.string.texts` struct is generated, and contains static references to 16 localization keys.
     struct texts {
       /// en translation:  Terms and Conditions.
       ///
@@ -1008,6 +1008,14 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, uk
       static let gamingGamingLabel = Rswift.StringResource(key: "Gaming.gamingLabel", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
+      /// en translation: Happiness is closer than you think
+      ///
+      /// Locales: en, uk
+      static let startScreenLabel = Rswift.StringResource(key: "StartScreen.label", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
+      /// en translation: Let's Go!
+      ///
+      /// Locales: en, uk
+      static let startScreenButton = Rswift.StringResource(key: "StartScreen.button", tableName: "Texts", bundle: R.hostingBundle, locales: ["en", "uk"], comment: nil)
       /// en translation: month
       ///
       /// Locales: en, uk
@@ -1140,6 +1148,36 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("Gaming.gamingLabel", tableName: "Texts", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Happiness is closer than you think
+      ///
+      /// Locales: en, uk
+      static func startScreenLabel(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("StartScreen.label", tableName: "Texts", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
+          return "StartScreen.label"
+        }
+
+        return NSLocalizedString("StartScreen.label", tableName: "Texts", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Let's Go!
+      ///
+      /// Locales: en, uk
+      static func startScreenButton(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("StartScreen.button", tableName: "Texts", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Texts", preferredLanguages: preferredLanguages) else {
+          return "StartScreen.button"
+        }
+
+        return NSLocalizedString("StartScreen.button", tableName: "Texts", bundle: bundle, comment: "")
       }
 
       /// en translation: month
