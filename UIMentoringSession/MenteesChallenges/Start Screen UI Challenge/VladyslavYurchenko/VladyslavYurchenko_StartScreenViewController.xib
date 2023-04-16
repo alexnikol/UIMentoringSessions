@@ -21,64 +21,56 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="D2I-fx-rus">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodDogs" translatesAutoresizingMaskIntoConstraints="NO" id="D2I-fx-rus">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCG-IF-9yd">
-                    <rect key="frame" x="29" y="730" width="341" height="58"/>
+                    <rect key="frame" x="16" y="732" width="361" height="58"/>
                     <color key="backgroundColor" name="Let'sGoButtonColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="58" id="6ux-La-J1W"/>
+                        <constraint firstAttribute="height" constant="58" id="2gu-za-JE1"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                    <connections>
-                        <action selector="myButton:" destination="-1" eventType="touchUpInside" id="1kB-Wg-nav"/>
-                    </connections>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
+                    </buttonConfiguration>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-IM-2L0">
-                    <rect key="frame" x="26" y="560" width="341" height="72"/>
-                    <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="341" id="UBU-Lj-wT2"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="ZBZ-HP-Zx5"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-IM-2L0">
+                    <rect key="frame" x="16" y="638" width="361" height="42"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logotipTakee" translatesAutoresizingMaskIntoConstraints="NO" id="Ls7-ic-cB0">
-                    <rect key="frame" x="162" y="68" width="69" height="14.666666666666671"/>
+                    <rect key="frame" x="162" y="68" width="69" height="15"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="69" id="1fn-NT-uyb"/>
-                        <constraint firstAttribute="height" constant="14.630000000000001" id="EcV-7r-50G"/>
+                        <constraint firstAttribute="height" constant="15" id="kcJ-sX-uFY"/>
                     </constraints>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="rCG-IF-9yd" firstAttribute="trailing" secondItem="Cax-IM-2L0" secondAttribute="trailing" constant="3" id="82X-mu-xUp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rCG-IF-9yd" secondAttribute="bottom" constant="30" id="CkO-tC-K7e"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rCG-IF-9yd" secondAttribute="trailing" constant="23" id="DB4-Of-XMm"/>
                 <constraint firstAttribute="bottom" secondItem="D2I-fx-rus" secondAttribute="bottom" id="DlY-yZ-cek"/>
-                <constraint firstItem="Cax-IM-2L0" firstAttribute="top" secondItem="Ls7-ic-cB0" secondAttribute="bottom" constant="477.33333333333337" id="FqY-bP-af7"/>
-                <constraint firstItem="D2I-fx-rus" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NRq-VP-1gc"/>
-                <constraint firstItem="Ls7-ic-cB0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="162" id="O3v-oQ-bky"/>
-                <constraint firstItem="rCG-IF-9yd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="29" id="TrX-GW-v3R"/>
-                <constraint firstItem="D2I-fx-rus" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="V7m-99-mgx"/>
+                <constraint firstItem="rCG-IF-9yd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GUC-M5-ITt"/>
+                <constraint firstItem="rCG-IF-9yd" firstAttribute="top" secondItem="Cax-IM-2L0" secondAttribute="bottom" constant="52" id="J1a-IM-NRf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rCG-IF-9yd" secondAttribute="bottom" constant="28" id="LFI-yL-6QC"/>
+                <constraint firstItem="D2I-fx-rus" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NRq-VP-1gc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cax-IM-2L0" secondAttribute="trailing" constant="16" id="UIF-7M-SCh"/>
+                <constraint firstItem="Cax-IM-2L0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="YKv-xi-W3z"/>
                 <constraint firstItem="D2I-fx-rus" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YdS-my-Ysy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="Ls7-ic-cB0" secondAttribute="top" constant="-9" id="b02-j9-qar"/>
-                <constraint firstItem="Cax-IM-2L0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="hjy-NC-sC2"/>
-                <constraint firstItem="D2I-fx-rus" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qnH-Dd-scQ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ls7-ic-cB0" secondAttribute="trailing" constant="162" id="reI-Km-7mg"/>
-                <constraint firstItem="rCG-IF-9yd" firstAttribute="leading" secondItem="Cax-IM-2L0" secondAttribute="leading" constant="3" id="wP6-Fd-ClZ"/>
+                <constraint firstItem="Ls7-ic-cB0" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gC8-F6-4yR"/>
+                <constraint firstItem="D2I-fx-rus" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="qnH-Dd-scQ"/>
+                <constraint firstItem="Ls7-ic-cB0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="9" id="wGT-To-Z8S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rCG-IF-9yd" secondAttribute="trailing" constant="16" id="x7p-ZS-ojj"/>
             </constraints>
             <point key="canvasLocation" x="96.946564885496173" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
-        <image name="GoodDogs" width="125" height="270.66665649414062"/>
+        <image name="goodDogs" width="125" height="270.66665649414062"/>
         <image name="logotipTakee" width="23" height="5.3333334922790527"/>
         <namedColor name="Let'sGoButtonColor">
             <color red="0.8970000147819519" green="0.60500001907348633" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
