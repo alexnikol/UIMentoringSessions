@@ -15,7 +15,7 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     
     private func setupLayout() {
         layer.cornerRadius = 16
-        backgroundColor = .white
+        backgroundColor = RColor.petWhiteColor()
         layer.shadowColor = UIColor.gray.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 10)
         layer.shadowRadius = 3
