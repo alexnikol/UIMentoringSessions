@@ -406,8 +406,6 @@ struct R: Rswift.Validatable {
     static let birdLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "Bird logo")
     /// Image `Facebook icon`.
     static let facebookIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Facebook icon")
-    /// Image `GoodDogs`.
-    static let goodDogs = Rswift.ImageResource(bundle: R.hostingBundle, name: "GoodDogs")
     /// Image `Phone icon`.
     static let phoneIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Phone icon")
     /// Image `allPet`.
@@ -460,6 +458,8 @@ struct R: Rswift.Validatable {
     static let favouritePet = Rswift.ImageResource(bundle: R.hostingBundle, name: "favouritePet")
     /// Image `garyDog`.
     static let garyDog = Rswift.ImageResource(bundle: R.hostingBundle, name: "garyDog")
+    /// Image `goodDogs`.
+    static let goodDogs = Rswift.ImageResource(bundle: R.hostingBundle, name: "goodDogs")
     /// Image `kiwiDog`.
     static let kiwiDog = Rswift.ImageResource(bundle: R.hostingBundle, name: "kiwiDog")
     /// Image `logoTakeeBlack`.
@@ -502,13 +502,6 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Facebook icon", bundle: ..., traitCollection: ...)`
     static func facebookIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.facebookIcon, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "GoodDogs", bundle: ..., traitCollection: ...)`
-    static func goodDogs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.goodDogs, compatibleWith: traitCollection)
     }
     #endif
 
@@ -695,6 +688,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "goodDogs", bundle: ..., traitCollection: ...)`
+    static func goodDogs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.goodDogs, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "kiwiDog", bundle: ..., traitCollection: ...)`
     static func kiwiDog(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.kiwiDog, compatibleWith: traitCollection)
@@ -783,7 +783,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 13 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 14 nibs.
   struct nib {
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
@@ -797,6 +797,8 @@ struct R: Rswift.Validatable {
     static let oleksandrKharchenko_GamingScreenViewController = _R.nib._OleksandrKharchenko_GamingScreenViewController()
     /// Nib `OleksandrKharchenko_StartScreenViewController`.
     static let oleksandrKharchenko_StartScreenViewController = _R.nib._OleksandrKharchenko_StartScreenViewController()
+    /// Nib `VladyslavYurchenko_GamingScreenViewController`.
+    static let vladyslavYurchenko_GamingScreenViewController = _R.nib._VladyslavYurchenko_GamingScreenViewController()
     /// Nib `VladyslavYurchenko_StartScreenViewController`.
     static let vladyslavYurchenko_StartScreenViewController = _R.nib._VladyslavYurchenko_StartScreenViewController()
     /// Nib `YeYa_CoffeeShopCell`.
@@ -857,6 +859,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.oleksandrKharchenko_StartScreenViewController) instead")
     static func oleksandrKharchenko_StartScreenViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.oleksandrKharchenko_StartScreenViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "VladyslavYurchenko_GamingScreenViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.vladyslavYurchenko_GamingScreenViewController) instead")
+    static func vladyslavYurchenko_GamingScreenViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.vladyslavYurchenko_GamingScreenViewController)
     }
     #endif
 
@@ -938,6 +948,10 @@ struct R: Rswift.Validatable {
 
     static func oleksandrKharchenko_StartScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.oleksandrKharchenko_StartScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func vladyslavYurchenko_GamingScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.vladyslavYurchenko_GamingScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func vladyslavYurchenko_StartScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -1429,6 +1443,17 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
+    struct _VladyslavYurchenko_GamingScreenViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "VladyslavYurchenko_GamingScreenViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
+    }
+
     struct _VladyslavYurchenko_StartScreenViewController: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "VladyslavYurchenko_StartScreenViewController"
@@ -1438,7 +1463,7 @@ struct _R: Rswift.Validatable {
       }
 
       static func validate() throws {
-        if UIKit.UIImage(named: "GoodDogs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'GoodDogs' is used in nib 'VladyslavYurchenko_StartScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "goodDogs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'goodDogs' is used in nib 'VladyslavYurchenko_StartScreenViewController', but couldn't be loaded.") }
         if UIKit.UIImage(named: "logotipTakee", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logotipTakee' is used in nib 'VladyslavYurchenko_StartScreenViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "Let'sGoButtonColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Let'sGoButtonColor' is used in nib 'VladyslavYurchenko_StartScreenViewController', but couldn't be loaded.") }
