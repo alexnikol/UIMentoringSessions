@@ -40,9 +40,3 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
         animalsImageView.image  = model.animal
     }
 }
-
-extension UICollectionViewCell {
-    public var identifier: String {
-        return String(describing: self)
-    }
-}
