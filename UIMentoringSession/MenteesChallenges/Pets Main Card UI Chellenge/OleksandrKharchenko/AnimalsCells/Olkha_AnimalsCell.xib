@@ -80,7 +80,7 @@
             <connections>
                 <outlet property="ageLabel" destination="VMi-Ba-8zP" id="EXv-Yu-hOt"/>
                 <outlet property="animalBreedLabel" destination="6G9-Qw-M2C" id="mJg-A1-0zf"/>
-                <outlet property="animalsImageView" destination="7wT-tx-Yau" id="7oh-eg-nxE"/>
+                <outlet property="animalImageView" destination="7wT-tx-Yau" id="7oh-eg-nxE"/>
                 <outlet property="nameLabel" destination="u7q-VO-Dcz" id="QOe-l0-Tet"/>
             </connections>
             <point key="canvasLocation" x="137.40458015267174" y="-7.746478873239437"/>

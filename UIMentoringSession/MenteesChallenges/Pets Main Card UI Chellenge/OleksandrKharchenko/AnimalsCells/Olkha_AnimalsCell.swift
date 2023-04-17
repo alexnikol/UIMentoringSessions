@@ -4,7 +4,7 @@ import Rswift
 final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     public typealias ReusableType = Olkha_AnimalsCell
     
-    @IBOutlet private weak var animalsImageView: UIImageView!
+    @IBOutlet private weak var animalImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var ageLabel: UILabel!
     @IBOutlet private weak var animalBreedLabel: UILabel!
@@ -37,6 +37,6 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
         nameLabel.text = model.name
         ageLabel.text = model.age
         animalBreedLabel.text = model.breadAnimal
-        animalsImageView.image  = model.animal
+        animalImageView.image  = model.animal
     }
 }
