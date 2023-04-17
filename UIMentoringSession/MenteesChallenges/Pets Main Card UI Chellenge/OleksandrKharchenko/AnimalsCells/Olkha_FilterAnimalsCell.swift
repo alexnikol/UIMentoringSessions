@@ -1,9 +1,8 @@
 import UIKit
-import Rswift
 
 class Olkha_FilterAnimalsCell: UICollectionViewCell {
-    @IBOutlet weak var filterAnimalsLabel: UILabel!
-    @IBOutlet weak var filterAnimalsImage: UIImageView!
+    @IBOutlet private weak var filterAnimalsLabel: UILabel!
+    @IBOutlet private weak var filterAnimalsImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
