@@ -7,7 +7,7 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     @IBOutlet private weak var animalsImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var ageLabel: UILabel!
-    @IBOutlet private weak var breadAnimalLabel: UILabel!
+    @IBOutlet private weak var animalBreedLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,7 +36,7 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     func setup(model: OlKha_PetsViewModel) {
         nameLabel.text = model.name
         ageLabel.text = model.age
-        breadAnimalLabel.text = model.breadAnimal
+        animalBreedLabel.text = model.breadAnimal
         animalsImageView.image  = model.animal
     }
 }
