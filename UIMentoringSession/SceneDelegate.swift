@@ -9,8 +9,8 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let rootController = OlKha_PetsViewController()
-//        rootController.models = MenteesList.list()
+        let rootController = MenteesListController()
+        rootController.models = MenteesList.list()
         let rootNavigation = UINavigationController(rootViewController: rootController)
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = rootNavigation
