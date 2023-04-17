@@ -49,13 +49,13 @@ extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == filterCollectionView {
-            let filter = filters[indexPath.row ]
+            let filter = filters[indexPath.row]
             let cell = filterCollectionView.dequeueReusableCell(withReuseIdentifier: "Olkha_FilterAnimalsCell", for: indexPath) as! Olkha_FilterAnimalsCell
             let isSelected = filter.type == selectedFilterType
             cell.setup(model: filter, isSelected: isSelected)
             return cell
         } else if collectionView == animalsCollectionView {
-            let pets = filteredAnimals[indexPath.row ]
+            let pets = filteredAnimals[indexPath.row]
             let cell = animalsCollectionView.dequeueReusableCell(withReuseIdentifier: "Olkha_AnimalsCell", for: indexPath) as! Olkha_AnimalsCell
             cell.setup(model: pets)
             return cell
