@@ -11,8 +11,8 @@ class Olkha_FilterAnimalsCell: UICollectionViewCell {
     private func setupLayout() {
         backgroundColor = .white
         layer.cornerRadius = 26
-        layer.borderWidth = 0.5
-        layer.borderColor = UIColor(resource: RColor.descriptionColor)?.cgColor
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.black.withAlphaComponent(0.08).cgColor
     }
     
     override init(frame: CGRect) {
@@ -30,8 +30,12 @@ class Olkha_FilterAnimalsCell: UICollectionViewCell {
         filterAnimalsImage.image = model.animal
         if isSelected {
             backgroundColor = RColor.petSelectColor()
+            layer.borderColor = RColor.petSelectColor()?.cgColor
+            filterAnimalsLabel.textColor = .white
         } else {
             backgroundColor = .white
+            layer.borderColor = UIColor.black.withAlphaComponent(0.08).cgColor
+            filterAnimalsLabel.textColor = RColor.petTextColor()?.withAlphaComponent(0.6)
         }
     }
 }
