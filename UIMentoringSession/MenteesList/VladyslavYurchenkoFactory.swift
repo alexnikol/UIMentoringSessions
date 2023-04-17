@@ -14,7 +14,8 @@ final class VladyslavYurchenkoFactory: MenteeChallengesFactory {
         switch challenge {
         case .startScreen:
             return VladyslavYurchenko_StartScreenViewController()
-                                
+        case .gamingScreen:
+            return VladyslavYurchenko_GamingScreenViewController()
         default:
             return nil
         }
