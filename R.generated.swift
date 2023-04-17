@@ -1021,10 +1021,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `Olkha_AnimalsCell`.
     static let olkha_AnimalsCell: Rswift.ReuseIdentifier<Olkha_AnimalsCell> = Rswift.ReuseIdentifier(identifier: "Olkha_AnimalsCell")
+    /// Reuse identifier `Olkha_FilterAnimalsCell`.
+    static let olkha_FilterAnimalsCell: Rswift.ReuseIdentifier<Olkha_FilterAnimalsCell> = Rswift.ReuseIdentifier(identifier: "Olkha_FilterAnimalsCell")
 
     fileprivate init() {}
   }
@@ -1479,8 +1481,11 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _Olkha_FilterAnimalsCell: Rswift.NibResourceType, Rswift.Validatable {
+    struct _Olkha_FilterAnimalsCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+      typealias ReusableType = Olkha_FilterAnimalsCell
+
       let bundle = R.hostingBundle
+      let identifier = "Olkha_FilterAnimalsCell"
       let name = "Olkha_FilterAnimalsCell"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> Olkha_FilterAnimalsCell? {

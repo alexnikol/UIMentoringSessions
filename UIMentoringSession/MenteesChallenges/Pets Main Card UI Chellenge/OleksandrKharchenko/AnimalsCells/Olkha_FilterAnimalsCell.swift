@@ -1,6 +1,9 @@
 import UIKit
+import Rswift
 
-class Olkha_FilterAnimalsCell: UICollectionViewCell {
+class Olkha_FilterAnimalsCell: UICollectionViewCell, ReuseIdentifierType {
+    typealias ReusableType = Olkha_FilterAnimalsCell
+    
     @IBOutlet private weak var filterAnimalsLabel: UILabel!
     @IBOutlet private weak var filterAnimalsImage: UIImageView!
     
