@@ -22,32 +22,29 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoTakeeBlack" translatesAutoresizingMaskIntoConstraints="NO" id="wGB-GN-SSi">
-                    <rect key="frame" x="16" y="75" width="69" height="14"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="14" id="AXC-p9-kq3"/>
-                    </constraints>
+                    <rect key="frame" x="16" y="75" width="69" height="15"/>
                 </imageView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KHm-TK-OpK" userLabel="filter Collection View">
-                    <rect key="frame" x="0.0" y="105" width="393" height="52"/>
+                    <rect key="frame" x="0.0" y="106" width="393" height="52"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="Y5P-Ck-dwJ"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2zd-4o-q2G">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="16" id="2zd-4o-q2G">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="13" minY="0.0" maxX="13" maxY="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-3N-T15" userLabel="animals Collection View">
-                    <rect key="frame" x="0.0" y="169" width="393" height="683"/>
+                    <rect key="frame" x="0.0" y="170" width="393" height="682"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="13" minimumInteritemSpacing="13" id="zGz-Gz-hRx">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="zGz-Gz-hRx">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="13" minY="0.0" maxX="13" maxY="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>

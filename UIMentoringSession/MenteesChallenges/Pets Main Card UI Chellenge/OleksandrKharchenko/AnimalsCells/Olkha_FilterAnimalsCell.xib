@@ -19,10 +19,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="allPet" translatesAutoresizingMaskIntoConstraints="NO" id="m27-CB-YdH">
-                        <rect key="frame" x="8" y="34.666666666666664" width="32" height="31.999999999999993"/>
+                        <rect key="frame" x="10" y="34.666666666666664" width="32" height="31.999999999999993"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnm-vX-8vI" userLabel="filter">
-                        <rect key="frame" x="46" y="40.333333333333336" width="38" height="20.333333333333336"/>
+                        <rect key="frame" x="54" y="40.333333333333336" width="38" height="20.333333333333336"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" name="descriptionColor"/>
                         <nil key="highlightedColor"/>
@@ -32,8 +32,8 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="m27-CB-YdH" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="DbM-gx-hmh"/>
-                <constraint firstItem="m27-CB-YdH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="HGF-Lj-cVt"/>
-                <constraint firstItem="Vnm-vX-8vI" firstAttribute="leading" secondItem="m27-CB-YdH" secondAttribute="trailing" constant="6" id="nrx-cn-vdv"/>
+                <constraint firstItem="m27-CB-YdH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="HGF-Lj-cVt"/>
+                <constraint firstItem="Vnm-vX-8vI" firstAttribute="leading" secondItem="m27-CB-YdH" secondAttribute="trailing" constant="12" id="nrx-cn-vdv"/>
                 <constraint firstItem="Vnm-vX-8vI" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="zBw-cS-4CX"/>
             </constraints>
             <size key="customSize" width="121" height="76"/>

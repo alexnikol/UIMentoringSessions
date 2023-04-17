@@ -91,7 +91,7 @@ extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionView
         if collectionView == filterCollectionView {
             return CGSize(width: 99, height: 52)
         } else if collectionView == animalsCollectionView {
-            let widht = (UIScreen.main.bounds.width - 39) / 2
+            let widht = (UIScreen.main.bounds.width - 48) / 2
             let heigth = widht / 163 * 192
             return CGSize(width: widht, height: heigth)
         } else {

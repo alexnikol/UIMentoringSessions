@@ -4,10 +4,10 @@ import Rswift
 final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     public typealias ReusableType = Olkha_AnimalsCell
     
-    @IBOutlet weak var animalsImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
-    @IBOutlet weak var breadAnimalLabel: UILabel!
+    @IBOutlet private weak var animalsImageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var ageLabel: UILabel!
+    @IBOutlet private weak var breadAnimalLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,7 +39,6 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
         breadAnimalLabel.text = model.breadAnimal
         animalsImageView.image  = model.animal
     }
-    
 }
 
 extension UICollectionViewCell {
