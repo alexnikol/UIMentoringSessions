@@ -1,8 +1,8 @@
 import UIKit
 
 final class OlKha_PetsViewController: UIViewController {
-    @IBOutlet weak var animalsCollectionView: UICollectionView!
-    @IBOutlet weak var filterCollectionView: UICollectionView!
+    @IBOutlet private weak var animalsCollectionView: UICollectionView!
+    @IBOutlet private weak var filterCollectionView: UICollectionView!
     var allAnimals: [OlKha_PetsViewModel] = []
     var filteredAnimals: [OlKha_PetsViewModel] = []
     var filters: [OlKha_FilterViewModel] = []
@@ -54,13 +54,11 @@ extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionView
             let isSelected = filter.type == selectedFilterType
             cell.setup(model: filter, isSelected: isSelected)
             return cell
-            
         } else if collectionView == animalsCollectionView {
             let pets = filteredAnimals[indexPath.row ]
             let cell = animalsCollectionView.dequeueReusableCell(withReuseIdentifier: "Olkha_AnimalsCell", for: indexPath) as! Olkha_AnimalsCell
             cell.setup(model: pets)
             return cell
-            
         } else {
             return UICollectionViewCell()
         }
@@ -76,7 +74,6 @@ extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionView
             selectedFilterType = filter.type
             filterCollectionView.reloadData()
             filterCollectionView.scrollToItem(at: indexPath, at:.centeredHorizontally, animated: true)
-            
             switch filter.type {
             case .allPets:
                 filteredAnimals = allAnimals
