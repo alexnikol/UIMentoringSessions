@@ -13,11 +13,11 @@ final class OlKha_PetsViewController: UIViewController {
         view.backgroundColor = RColor.petWhiteColor()
         filterCollectionView.backgroundColor = RColor.petWhiteColor()
         animalsCollectionView.backgroundColor = RColor.petWhiteColor()
-        animalsCollectionView.register(UINib(nibName: "Olkha_AnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_AnimalsCell")
+        animalsCollectionView.register(RNib.olkha_AnimalsCell)
         animalsCollectionView.dataSource = self
         animalsCollectionView.delegate = self
         animalsCollectionView.showsVerticalScrollIndicator = false
-        filterCollectionView.register(UINib(nibName: "Olkha_FilterAnimalsCell", bundle: nil), forCellWithReuseIdentifier: "Olkha_FilterAnimalsCell")
+        filterCollectionView.register(RNib.olkha_FilterAnimalsCell)
         filterCollectionView.dataSource = self
         filterCollectionView.delegate = self
         filterCollectionView.showsHorizontalScrollIndicator = false

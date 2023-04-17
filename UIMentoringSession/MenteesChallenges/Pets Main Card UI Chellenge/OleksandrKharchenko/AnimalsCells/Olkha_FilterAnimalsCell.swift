@@ -7,10 +7,6 @@ class Olkha_FilterAnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     @IBOutlet private weak var filterAnimalsLabel: UILabel!
     @IBOutlet private weak var filterAnimalsImage: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     private func setupLayout() {
         backgroundColor = .white
         layer.cornerRadius = 26
