@@ -64,10 +64,6 @@ extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionView
         }
     }
     
-    func reconfigureItems(at: [IndexPath]) {
-        
-    }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == filterCollectionView {
             let filter = filters[indexPath.row]
