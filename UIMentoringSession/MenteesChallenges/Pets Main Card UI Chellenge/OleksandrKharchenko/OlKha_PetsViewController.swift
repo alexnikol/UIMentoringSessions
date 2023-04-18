@@ -3,10 +3,10 @@ import UIKit
 final class OlKha_PetsViewController: UIViewController {
     @IBOutlet private weak var animalsCollectionView: UICollectionView!
     @IBOutlet private weak var filterCollectionView: UICollectionView!
-    var allAnimals: [OlKha_PetsViewModel] = []
-    var filteredAnimals: [OlKha_PetsViewModel] = []
-    var filters: [OlKha_FilterViewModel] = []
-    var selectedFilterType: AnimalsTypes = .allPets
+    private var allAnimals: [OlKha_PetsViewModel] = []
+    private var filteredAnimals: [OlKha_PetsViewModel] = []
+    private var filters: [OlKha_FilterViewModel] = []
+    private var selectedFilterType: AnimalsTypes = .allPets
     
     override func viewDidLoad() {
         super.viewDidLoad()
