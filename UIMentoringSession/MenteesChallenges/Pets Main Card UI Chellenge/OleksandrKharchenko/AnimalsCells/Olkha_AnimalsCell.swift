@@ -36,7 +36,7 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     func setup(model: OlKha_PetsViewModel) {
         nameLabel.text = model.name
         ageLabel.text = model.age
-        animalBreedLabel.text = model.breadAnimal
+        animalBreedLabel.text = model.breedAnimal
         animalImageView.image  = model.animal
     }
 }
