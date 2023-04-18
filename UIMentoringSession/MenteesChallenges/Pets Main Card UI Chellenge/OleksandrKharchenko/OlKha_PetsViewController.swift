@@ -11,19 +11,11 @@ final class OlKha_PetsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = RColor.petWhiteColor()
-        filterCollectionView.backgroundColor = RColor.petWhiteColor()
-        animalsCollectionView.backgroundColor = RColor.petWhiteColor()
-        animalsCollectionView.register(RNib.olkha_AnimalsCell)
-        animalsCollectionView.dataSource = self
-        animalsCollectionView.delegate = self
-        animalsCollectionView.showsVerticalScrollIndicator = false
-        filterCollectionView.register(RNib.olkha_FilterAnimalsCell)
-        filterCollectionView.dataSource = self
-        filterCollectionView.delegate = self
-        filterCollectionView.showsHorizontalScrollIndicator = false
         allAnimals = itemsAnimals
         filteredAnimals = itemsAnimals
         filters = itemsFilter
+        configureFilterCollection()
+        configureAnimalsCollection()
     }
     
     init() {
@@ -90,5 +82,21 @@ extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionView
         } else {
             return .zero
         }
+    }
+
+    private func configureAnimalsCollection() {
+        animalsCollectionView.backgroundColor = RColor.petWhiteColor()
+        animalsCollectionView.register(RNib.olkha_AnimalsCell)
+        animalsCollectionView.dataSource = self
+        animalsCollectionView.delegate = self
+        animalsCollectionView.showsVerticalScrollIndicator = false
+    }
+    
+    private func configureFilterCollection() {
+        filterCollectionView.backgroundColor = RColor.petWhiteColor()
+        filterCollectionView.register(RNib.olkha_FilterAnimalsCell)
+        filterCollectionView.dataSource = self
+        filterCollectionView.delegate = self
+        filterCollectionView.showsHorizontalScrollIndicator = false
     }
 }
