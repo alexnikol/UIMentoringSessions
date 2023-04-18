@@ -14,10 +14,10 @@
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
 		3389CBF829D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */; };
 		3389CBF929D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3389CBF729D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib */; };
-		33BF038929EE71AD00C797C0 /* Olkha_PetsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF038829EE71AD00C797C0 /* Olkha_PetsModels.swift */; };
+		33BF038929EE71AD00C797C0 /* OlKha_PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF038829EE71AD00C797C0 /* OlKha_PetsViewModel.swift */; };
 		33E311EF29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */; };
 		33E311F029E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */; };
-		33E311F229E7325700014BA9 /* Olkha_AnimalsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E311F129E7325700014BA9 /* Olkha_AnimalsModels.swift */; };
+		33E311F229E7325700014BA9 /* OlKha_FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E311F129E7325700014BA9 /* OlKha_FilterViewModel.swift */; };
 		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
 		48E2EC2D29D4197F00A9ACE2 /* YeYa_PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */; };
 		48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */; };
@@ -72,10 +72,10 @@
 		33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsTypes.swift; sourceTree = "<group>"; };
 		3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsCell.swift; sourceTree = "<group>"; };
 		3389CBF729D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Olkha_AnimalsCell.xib; sourceTree = "<group>"; };
-		33BF038829EE71AD00C797C0 /* Olkha_PetsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_PetsModels.swift; sourceTree = "<group>"; };
+		33BF038829EE71AD00C797C0 /* OlKha_PetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_PetsViewModel.swift; sourceTree = "<group>"; };
 		33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_FilterAnimalsCell.swift; sourceTree = "<group>"; };
 		33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Olkha_FilterAnimalsCell.xib; sourceTree = "<group>"; };
-		33E311F129E7325700014BA9 /* Olkha_AnimalsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsModels.swift; sourceTree = "<group>"; };
+		33E311F129E7325700014BA9 /* OlKha_FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_FilterViewModel.swift; sourceTree = "<group>"; };
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
@@ -166,8 +166,6 @@
 			children = (
 				3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */,
 				3389CBF729D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib */,
-				33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */,
-				33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */,
 			);
 			path = AnimalsCells;
 			sourceTree = "<group>";
@@ -175,10 +173,19 @@
 		33BF038729EE713F00C797C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				33E311F129E7325700014BA9 /* Olkha_AnimalsModels.swift */,
-				33BF038829EE71AD00C797C0 /* Olkha_PetsModels.swift */,
+				33E311F129E7325700014BA9 /* OlKha_FilterViewModel.swift */,
+				33BF038829EE71AD00C797C0 /* OlKha_PetsViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		33BF039829EECDB200C797C0 /* FilterAnimalsCell */ = {
+			isa = PBXGroup;
+			children = (
+				33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */,
+				33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */,
+			);
+			path = FilterAnimalsCell;
 			sourceTree = "<group>";
 		};
 		48E2EC1629D386F400A9ACE2 /* Pets Main Card UI Chellenge */ = {
@@ -194,6 +201,7 @@
 		48E2EC1729D3875D00A9ACE2 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
+				33BF039829EECDB200C797C0 /* FilterAnimalsCell */,
 				33BF038729EE713F00C797C0 /* Model */,
 				33309E0A29E87BB300170025 /* Enum */,
 				3389CBF529D5BE3C00DCD1A7 /* AnimalsCells */,
@@ -645,7 +653,7 @@
 				8D2517B129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift in Sources */,
 				8D2517C629C4AE8300CD54A5 /* ChallengesListViewController.swift in Sources */,
 				8D2517C029C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift in Sources */,
-				33BF038929EE71AD00C797C0 /* Olkha_PetsModels.swift in Sources */,
+				33BF038929EE71AD00C797C0 /* OlKha_PetsViewModel.swift in Sources */,
 				33E311EF29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift in Sources */,
 				8D2517C529C4AE8300CD54A5 /* MenteesListController.swift in Sources */,
 				8D2517B229C4AE8300CD54A5 /* YeYaSignInButton.swift in Sources */,
@@ -655,7 +663,7 @@
 				3389CBF829D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift in Sources */,
 				8D2517BE29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
 				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
-				33E311F229E7325700014BA9 /* Olkha_AnimalsModels.swift in Sources */,
+				33E311F229E7325700014BA9 /* OlKha_FilterViewModel.swift in Sources */,
 				8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */,
 				8D2517AE29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift in Sources */,
 				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,

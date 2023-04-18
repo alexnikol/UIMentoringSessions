@@ -8,11 +8,7 @@ final class Olkha_AnimalsCell: UICollectionViewCell, ReuseIdentifierType {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var ageLabel: UILabel!
     @IBOutlet private weak var animalBreedLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
+        
     private func setupLayout() {
         layer.cornerRadius = 16
         backgroundColor = RColor.petWhiteColor()

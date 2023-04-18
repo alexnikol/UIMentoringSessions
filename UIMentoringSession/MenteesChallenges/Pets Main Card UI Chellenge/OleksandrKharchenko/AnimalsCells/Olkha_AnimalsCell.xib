@@ -24,24 +24,20 @@
                             <constraint firstAttribute="width" secondItem="7wT-tx-Yau" secondAttribute="height" multiplier="163:116" id="ZpF-yi-XJS"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7q-VO-Dcz" userLabel="name Label">
-                        <rect key="frame" x="8" y="130.33333333333334" width="42" height="19.333333333333343"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameиавиыпркеурку" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7q-VO-Dcz" userLabel="name Label">
+                        <rect key="frame" x="8" y="130.33333333333334" width="97" height="38.333333333333343"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5 years" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMi-Ba-8zP" userLabel="age Label">
-                        <rect key="frame" x="104" y="130.33333333333334" width="60" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="YzQ-LQ-h0w"/>
-                            <constraint firstAttribute="width" constant="60" id="ot9-fh-s9l"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="2.5 years" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMi-Ba-8zP" userLabel="age Label">
+                        <rect key="frame" x="107" y="130.33333333333334" width="57" height="15.666666666666657"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                         <color key="textColor" name="descriptionColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="breed animal" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G9-Qw-M2C" userLabel="breed Animal Label">
-                        <rect key="frame" x="8" y="153.66666666666666" width="156" height="14.333333333333343"/>
+                        <rect key="frame" x="8" y="172.66666666666666" width="156" height="14.333333333333343"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" name="descriptionColor"/>
                         <nil key="highlightedColor"/>
@@ -64,7 +60,7 @@
                 <constraint firstAttribute="trailing" secondItem="Gtb-Gp-PyQ" secondAttribute="trailing" constant="8" id="FPO-wG-ArV"/>
                 <constraint firstAttribute="trailing" secondItem="7wT-tx-Yau" secondAttribute="trailing" id="G27-Zc-yOY"/>
                 <constraint firstAttribute="trailing" secondItem="VMi-Ba-8zP" secondAttribute="trailing" constant="8" id="TA1-w0-673"/>
-                <constraint firstItem="VMi-Ba-8zP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="u7q-VO-Dcz" secondAttribute="trailing" constant="2" id="Ut3-42-I5N"/>
+                <constraint firstItem="VMi-Ba-8zP" firstAttribute="leading" secondItem="u7q-VO-Dcz" secondAttribute="trailing" constant="2" id="Ut3-42-I5N"/>
                 <constraint firstItem="7wT-tx-Yau" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e4M-zy-GzE"/>
                 <constraint firstItem="u7q-VO-Dcz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="nB0-fU-TOc"/>
                 <constraint firstAttribute="trailing" secondItem="6G9-Qw-M2C" secondAttribute="trailing" constant="8" id="p5C-3K-H3G"/>
