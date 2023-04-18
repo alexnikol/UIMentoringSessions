@@ -27,7 +27,7 @@ final class OlKha_PetsViewController: UIViewController {
     }
     
     init() {
-        super.init(nibName: "OlKha_PetsViewController", bundle: nil)
+        super.init(nibName: RNib.olKha_PetsViewController.name, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
