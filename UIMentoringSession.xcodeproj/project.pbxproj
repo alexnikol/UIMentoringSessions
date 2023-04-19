@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C101DDA29F05C9700A5A740 /* VladyslavYurchenkoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C101DD929F05C9700A5A740 /* VladyslavYurchenkoButton.swift */; };
 		1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */; };
 		1C5AF6E129E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */; };
 		1CA05D9129ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA05D8F29ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift */; };
@@ -65,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C101DD929F05C9700A5A740 /* VladyslavYurchenkoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoButton.swift; sourceTree = "<group>"; };
 		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
 		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
 		1CA05D8F29ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_GamingScreenViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C101DD829F05C6D00A5A740 /* ButtonStyle */ = {
+			isa = PBXGroup;
+			children = (
+				1C101DD929F05C9700A5A740 /* VladyslavYurchenkoButton.swift */,
+			);
+			path = ButtonStyle;
+			sourceTree = "<group>";
+		};
 		1C5AF6DE29E71EC000FDDC7A /* VladyslavYurchenko */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				1CA05D8F29ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift */,
+				1C101DD829F05C6D00A5A740 /* ButtonStyle */,
 				1CA05D9029ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.xib */,
 			);
 			path = VladyslavYurchenko;
@@ -632,6 +643,7 @@
 				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,
 				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
+				1C101DDA29F05C9700A5A740 /* VladyslavYurchenkoButton.swift in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
 				1CA05D9129ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift in Sources */,
 				8DF4FDB229B6499600EA8715 /* (null) in Sources */,

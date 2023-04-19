@@ -1335,6 +1335,7 @@ struct _R: Rswift.Validatable {
       try _OleksandrKharchenko_CoffeShopViewController.validate()
       try _OleksandrKharchenko_GamingScreenViewController.validate()
       try _OleksandrKharchenko_StartScreenViewController.validate()
+      try _VladyslavYurchenko_GamingScreenViewController.validate()
       try _VladyslavYurchenko_StartScreenViewController.validate()
       try _YeYa_CoffeeShopCell.validate()
       try _YefimYakuninGamingScreenViewController.validate()
@@ -1443,12 +1444,20 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _VladyslavYurchenko_GamingScreenViewController: Rswift.NibResourceType {
+    struct _VladyslavYurchenko_GamingScreenViewController: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "VladyslavYurchenko_GamingScreenViewController"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Arrow circle icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Arrow circle icon' is used in nib 'VladyslavYurchenko_GamingScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Bird logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Bird logo' is used in nib 'VladyslavYurchenko_GamingScreenViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "background", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'background' is used in nib 'VladyslavYurchenko_GamingScreenViewController', but couldn't be loaded.") }
+        }
       }
 
       fileprivate init() {}
