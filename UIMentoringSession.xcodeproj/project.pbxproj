@@ -10,15 +10,16 @@
 		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
+		48908D4C29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */; };
+		48908D4D29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */; };
 		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
+		48A0624229ED49CC007BCF02 /* YeYa_PetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0624029ED49CC007BCF02 /* YeYa_PetCell.swift */; };
+		48A0624329ED49CC007BCF02 /* YeYa_PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A0624129ED49CC007BCF02 /* YeYa_PetCell.xib */; };
 		48E2EC2D29D4197F00A9ACE2 /* YeYa_PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */; };
 		48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */; };
 		48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC2F29D419A200A9ACE2 /* OlKha_PetsViewController.swift */; };
 		48E2EC3229D419A200A9ACE2 /* OlKha_PetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E2EC3029D419A200A9ACE2 /* OlKha_PetsViewController.xib */; };
-		48E2EC3629D46DF800A9ACE2 /* PetFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC3429D46DF800A9ACE2 /* PetFilterCollectionViewCell.swift */; };
-		48E2EC3729D46DF800A9ACE2 /* PetFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E2EC3529D46DF800A9ACE2 /* PetFilterCollectionViewCell.xib */; };
-		48E2EC3A29D4C38100A9ACE2 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC3929D4C38100A9ACE2 /* Pet.swift */; };
-		48E2EC3C29D4C42600A9ACE2 /* PetShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC3B29D4C42600A9ACE2 /* PetShop.swift */; };
+		48E2EC3A29D4C38100A9ACE2 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EC3929D4C38100A9ACE2 /* PetModel.swift */; };
 		8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D25176C29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib */; };
 		8D2517A429C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25176D29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift */; };
 		8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D25176F29C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift */; };
@@ -64,18 +65,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_PetFilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YeYa_PetFilterCollectionViewCell.xib; sourceTree = "<group>"; };
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
+		48A0624029ED49CC007BCF02 /* YeYa_PetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_PetCell.swift; sourceTree = "<group>"; };
+		48A0624129ED49CC007BCF02 /* YeYa_PetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YeYa_PetCell.xib; sourceTree = "<group>"; };
 		48E2EC2129D3885400A9ACE2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_PetsViewController.swift; sourceTree = "<group>"; };
 		48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YeYa_PetsViewController.xib; sourceTree = "<group>"; };
 		48E2EC2F29D419A200A9ACE2 /* OlKha_PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_PetsViewController.swift; sourceTree = "<group>"; };
 		48E2EC3029D419A200A9ACE2 /* OlKha_PetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OlKha_PetsViewController.xib; sourceTree = "<group>"; };
-		48E2EC3429D46DF800A9ACE2 /* PetFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFilterCollectionViewCell.swift; sourceTree = "<group>"; };
-		48E2EC3529D46DF800A9ACE2 /* PetFilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PetFilterCollectionViewCell.xib; sourceTree = "<group>"; };
-		48E2EC3929D4C38100A9ACE2 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
-		48E2EC3B29D4C42600A9ACE2 /* PetShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShop.swift; sourceTree = "<group>"; };
+		48E2EC3929D4C38100A9ACE2 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		8D25176C29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OlKha_IOSNewsViewController.xib; sourceTree = "<group>"; };
 		8D25176D29C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OlKha_IOSNewsViewController.swift; sourceTree = "<group>"; };
 		8D25176F29C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeYa_IOSNewsViewController.swift; sourceTree = "<group>"; };
@@ -160,27 +162,28 @@
 			isa = PBXGroup;
 			children = (
 				48E2EC3829D4C34100A9ACE2 /* Entities */,
-				48E2EC3329D46D5400A9ACE2 /* PetFilterCollectionCell */,
+				48E2EC3329D46D5400A9ACE2 /* PetCollectionCell */,
 				48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */,
 				48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */,
 			);
 			path = YefimYakunin;
 			sourceTree = "<group>";
 		};
-		48E2EC3329D46D5400A9ACE2 /* PetFilterCollectionCell */ = {
+		48E2EC3329D46D5400A9ACE2 /* PetCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
-				48E2EC3429D46DF800A9ACE2 /* PetFilterCollectionViewCell.swift */,
-				48E2EC3529D46DF800A9ACE2 /* PetFilterCollectionViewCell.xib */,
+				48A0624029ED49CC007BCF02 /* YeYa_PetCell.swift */,
+				48A0624129ED49CC007BCF02 /* YeYa_PetCell.xib */,
+				48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */,
+				48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */,
 			);
-			path = PetFilterCollectionCell;
+			path = PetCollectionCell;
 			sourceTree = "<group>";
 		};
 		48E2EC3829D4C34100A9ACE2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				48E2EC3929D4C38100A9ACE2 /* Pet.swift */,
-				48E2EC3B29D4C42600A9ACE2 /* PetShop.swift */,
+				48E2EC3929D4C38100A9ACE2 /* PetModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -512,8 +515,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				333913C829AE014D00B05E2B /* (null) in Resources */,
+				48A0624329ED49CC007BCF02 /* YeYa_PetCell.xib in Resources */,
+				48908D4D29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib in Resources */,
 				8DF4FD8D29B63BB400EA8715 /* (null) in Resources */,
-				48E2EC3729D46DF800A9ACE2 /* PetFilterCollectionViewCell.xib in Resources */,
 				8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */,
 				8D2517B629C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
 				48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */,
@@ -616,6 +620,7 @@
 				8D2517C029C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift in Sources */,
 				8D2517C529C4AE8300CD54A5 /* MenteesListController.swift in Sources */,
 				8D2517B229C4AE8300CD54A5 /* YeYaSignInButton.swift in Sources */,
+				48908D4C29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift in Sources */,
 				8D2517C129C4AE8300CD54A5 /* YefimYakuninFactory.swift in Sources */,
 				8D2517B829C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift in Sources */,
 				8D2517B529C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
@@ -623,17 +628,16 @@
 				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
 				8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */,
 				8D2517AE29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift in Sources */,
-				48E2EC3A29D4C38100A9ACE2 /* Pet.swift in Sources */,
+				48E2EC3A29D4C38100A9ACE2 /* PetModel.swift in Sources */,
 				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,
-				48E2EC3629D46DF800A9ACE2 /* PetFilterCollectionViewCell.swift in Sources */,
 				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
-				48E2EC3C29D4C42600A9ACE2 /* PetShop.swift in Sources */,
 				8DF4FDB229B6499600EA8715 /* (null) in Sources */,
 				8D2517BD29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift in Sources */,
 				8D4271CF299F789400321A85 /* SceneDelegate.swift in Sources */,
 				8D2517C429C4AE8300CD54A5 /* MenteeChallengesFactory.swift in Sources */,
+				48A0624229ED49CC007BCF02 /* YeYa_PetCell.swift in Sources */,
 				48E2EC2D29D4197F00A9ACE2 /* YeYa_PetsViewController.swift in Sources */,
 				8D2517A429C4AE8300CD54A5 /* OlKha_IOSNewsViewController.swift in Sources */,
 			);

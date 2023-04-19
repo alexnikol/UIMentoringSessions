@@ -783,7 +783,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 12 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 14 nibs.
   struct nib {
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
@@ -801,6 +801,10 @@ struct R: Rswift.Validatable {
     static let yeYa_CoffeeShopCell = _R.nib._YeYa_CoffeeShopCell()
     /// Nib `YeYa_IOSNewsViewController`.
     static let yeYa_IOSNewsViewController = _R.nib._YeYa_IOSNewsViewController()
+    /// Nib `YeYa_PetCell`.
+    static let yeYa_PetCell = _R.nib._YeYa_PetCell()
+    /// Nib `YeYa_PetFilterCollectionViewCell`.
+    static let yeYa_PetFilterCollectionViewCell = _R.nib._YeYa_PetFilterCollectionViewCell()
     /// Nib `YeYa_PetsViewController`.
     static let yeYa_PetsViewController = _R.nib._YeYa_PetsViewController()
     /// Nib `YefimYakuninCoffeShopChallengeViewController`.
@@ -875,6 +879,22 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UINib(name: "YeYa_PetCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.yeYa_PetCell) instead")
+    static func yeYa_PetCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.yeYa_PetCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "YeYa_PetFilterCollectionViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.yeYa_PetFilterCollectionViewCell) instead")
+    static func yeYa_PetFilterCollectionViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.yeYa_PetFilterCollectionViewCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UINib(name: "YeYa_PetsViewController", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.yeYa_PetsViewController) instead")
     static func yeYa_PetsViewController(_: Void = ()) -> UIKit.UINib {
@@ -936,6 +956,14 @@ struct R: Rswift.Validatable {
 
     static func yeYa_IOSNewsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.yeYa_IOSNewsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func yeYa_PetCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> YeYa_PetCell? {
+      return R.nib.yeYa_PetCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? YeYa_PetCell
+    }
+
+    static func yeYa_PetFilterCollectionViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> YeYa_PetFilterCollectionViewCell? {
+      return R.nib.yeYa_PetFilterCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? YeYa_PetFilterCollectionViewCell
     }
 
     static func yeYa_PetsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -1270,6 +1298,8 @@ struct _R: Rswift.Validatable {
       try _OleksandrKharchenko_GamingScreenViewController.validate()
       try _OleksandrKharchenko_StartScreenViewController.validate()
       try _YeYa_CoffeeShopCell.validate()
+      try _YeYa_PetCell.validate()
+      try _YeYa_PetsViewController.validate()
       try _YefimYakuninGamingScreenViewController.validate()
       try _YefimYakunin_StartScreenViewController.validate()
     }
@@ -1405,12 +1435,46 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    struct _YeYa_PetsViewController: Rswift.NibResourceType {
+    struct _YeYa_PetCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "YeYa_PetCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> YeYa_PetCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? YeYa_PetCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "garyDog", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'garyDog' is used in nib 'YeYa_PetCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _YeYa_PetFilterCollectionViewCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "YeYa_PetFilterCollectionViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> YeYa_PetFilterCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? YeYa_PetFilterCollectionViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _YeYa_PetsViewController: Rswift.NibResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "YeYa_PetsViewController"
 
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "logoTakeeBlack", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logoTakeeBlack' is used in nib 'YeYa_PetsViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
       }
 
       fileprivate init() {}

@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YeYa_PetsViewController" customModule="UIMentoringSession" customModuleProvider="target">
             <connections>
                 <outlet property="categoriesCollectionView" destination="q2Z-55-Lec" id="GdH-Sv-ITK"/>
+                <outlet property="petsCollectionView" destination="UdX-hJ-3dZ" id="nCM-Me-fsW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,12 +28,12 @@
                     </constraints>
                 </imageView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="q2Z-55-Lec">
-                    <rect key="frame" x="16" y="127" width="361" height="52"/>
+                    <rect key="frame" x="0.0" y="127" width="393" height="52"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="ctg-XX-qk3"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pNJ-og-SSY">
+                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pNJ-og-SSY">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -40,7 +41,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UdX-hJ-3dZ">
-                    <rect key="frame" x="16" y="191" width="361" height="627"/>
+                    <rect key="frame" x="0.0" y="191" width="393" height="627"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zqI-nE-lyJ">
                         <size key="itemSize" width="128" height="128"/>
@@ -54,13 +55,12 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UdX-hJ-3dZ" secondAttribute="bottom" id="60e-cz-Gzf"/>
-                <constraint firstItem="UdX-hJ-3dZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Bn9-ZB-pvQ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UdX-hJ-3dZ" secondAttribute="trailing" constant="16" id="C7e-PE-C0x"/>
-                <constraint firstItem="TVa-EQ-xOU" firstAttribute="leading" secondItem="q2Z-55-Lec" secondAttribute="leading" id="E4x-a5-Z2c"/>
+                <constraint firstItem="UdX-hJ-3dZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Bn9-ZB-pvQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UdX-hJ-3dZ" secondAttribute="trailing" id="C7e-PE-C0x"/>
                 <constraint firstItem="TVa-EQ-xOU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="E8D-Gh-J32"/>
-                <constraint firstItem="q2Z-55-Lec" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ScI-Vw-Jyd"/>
+                <constraint firstItem="q2Z-55-Lec" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ScI-Vw-Jyd"/>
                 <constraint firstItem="q2Z-55-Lec" firstAttribute="top" secondItem="TVa-EQ-xOU" secondAttribute="bottom" constant="38" id="hoz-W1-6Bc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q2Z-55-Lec" secondAttribute="trailing" constant="16" id="hu0-bF-xO3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q2Z-55-Lec" secondAttribute="trailing" id="hu0-bF-xO3"/>
                 <constraint firstItem="TVa-EQ-xOU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="tbR-rz-OQI"/>
                 <constraint firstItem="UdX-hJ-3dZ" firstAttribute="top" secondItem="q2Z-55-Lec" secondAttribute="bottom" constant="12" id="uk4-iS-LCg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TVa-EQ-xOU" secondAttribute="trailing" constant="308" id="xoH-YT-FkV"/>
