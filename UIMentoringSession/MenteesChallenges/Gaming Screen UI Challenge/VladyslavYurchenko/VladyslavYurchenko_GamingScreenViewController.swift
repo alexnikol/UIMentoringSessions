@@ -17,28 +17,44 @@ final class VladyslavYurchenko_GamingScreenViewController: UIViewController {
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var phoneButton: UIButton!
     @IBOutlet weak var passwordLabel: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         gamingLabel.text = RText.gamingGamingLabel()
-        gamingLabel.layer.cornerRadius = 30
         manualLabel.text = RText.gamingFirstPartOfText()
-        appleButton.setTitle(RText.gamingAppleButton(), for: .normal)
-        facebookButton.setTitle(RText.gamingFacebookButton(), for: .normal)
-        phoneButton.setTitle(RText.gamingPhoneButton(), for: .normal)
-        passwordLabel.text = RText.gamingPasswordLabel()
+        appleButton.setTitle(RText.gamingAppleButton().uppercased(), for: .normal)
+        appleButton.setImage(RImage.appleIcon(), for: .normal)
+        facebookButton.setTitle(RText.gamingFacebookButton().uppercased(), for: .normal)
+        facebookButton.setImage(RImage.facebookIcon(), for: .normal)
+        phoneButton.setTitle(RText.gamingPhoneButton().uppercased(), for: .normal)
+        phoneButton.setImage(RImage.phoneIcon(), for: .normal)
+        setUnderlineText()
+        for button in [appleButton, facebookButton, phoneButton] {
+            button?.layer.cornerRadius = 20
+            button?.layer.borderColor = UIColor.white.cgColor
+            button?.layer.borderWidth = 1
+        }
+    }
+    
+    func setUnderlineText() {
+        let attributes: [NSAttributedString.Key: Any] = [
+                  .foregroundColor: UIColor.white, //Text color
+                  .font: UIFont.systemFont(ofSize: 15.0, weight: .semibold), //Font, Font size and Font Weight
+                  .underlineStyle: 1, //Width of underline
+                  .underlineColor: UIColor.white //Color of underline
+              ]
+        let resultString = NSAttributedString(string: RText.gamingPasswordLabel(), attributes: attributes)
+        passwordLabel.attributedText = resultString
     }
     
     init() {
         super.init(nibName: String(describing: VladyslavYurchenko_GamingScreenViewController.self), bundle: nil)
-        let colorTop = UIColor(red: 85.0 / 255.0, green: 240.0 / 255.0, blue: 203.0 / 255.0, alpha: 1.0).cgColor
-        let colorBottom = UIColor(red: 0.0 / 255.0, green: 102.0 / 255.0, blue: 255 / 255.0, alpha: 1.0).cgColor
         let gradientLayer = CAGradientLayer()
-           gradientLayer.colors = [colorTop, colorBottom]
-           gradientLayer.locations = [0.0, 1.0]
-           gradientLayer.frame = self.view.bounds
-                   
-           self.view.layer.insertSublayer(gradientLayer, at:0)
+        gradientLayer.colors = [RColor.firstBackgroundColor()!.cgColor, RColor.secondBackgroundColor()!.cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.view.bounds
+        
+        self.view.layer.insertSublayer(gradientLayer, at:0)
     }
     
     required init?(coder aDecoder: NSCoder) {
