@@ -21,7 +21,6 @@ final class VladyslavYurchenko_GamingScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gamingLabel.text = RText.gamingGamingLabel()
-        manualLabel.text = RText.gamingFirstPartOfText()
         appleButton.setTitle(RText.gamingAppleButton().uppercased(), for: .normal)
         appleButton.setImage(RImage.appleIcon(), for: .normal)
         facebookButton.setTitle(RText.gamingFacebookButton().uppercased(), for: .normal)
@@ -29,6 +28,7 @@ final class VladyslavYurchenko_GamingScreenViewController: UIViewController {
         phoneButton.setTitle(RText.gamingPhoneButton().uppercased(), for: .normal)
         phoneButton.setImage(RImage.phoneIcon(), for: .normal)
         setUnderlineText()
+        manualLabel.attributedText = addAttributeManual(firstPartOfText: RText.gamingFirstPartOfText(), secondPartOfText: RText.gamingSecondPartOfText())
         for button in [appleButton, facebookButton, phoneButton] {
             button?.layer.cornerRadius = 20
             button?.layer.borderColor = UIColor.white.cgColor
@@ -38,13 +38,30 @@ final class VladyslavYurchenko_GamingScreenViewController: UIViewController {
     
     func setUnderlineText() {
         let attributes: [NSAttributedString.Key: Any] = [
-                  .foregroundColor: UIColor.white, //Text color
-                  .font: UIFont.systemFont(ofSize: 15.0, weight: .semibold), //Font, Font size and Font Weight
-                  .underlineStyle: 1, //Width of underline
-                  .underlineColor: UIColor.white //Color of underline
+                  .foregroundColor: UIColor.white, 
+                  .font: UIFont.systemFont(ofSize: 15.0, weight: .semibold),
+                  .underlineStyle: 1,
+                  .underlineColor: UIColor.white
               ]
         let resultString = NSAttributedString(string: RText.gamingPasswordLabel(), attributes: attributes)
         passwordLabel.attributedText = resultString
+    }
+    
+    func addAttributeManual(firstPartOfText: String, secondPartOfText: String) -> NSMutableAttributedString {
+        let firstAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 13, weight: .semibold)]
+        let secondAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 13, weight: .semibold),
+            .underlineStyle: 1,
+            .underlineColor: UIColor.white]
+        let firstString = NSMutableAttributedString(string: RText.gamingFirstPartOfText(), attributes: firstAttributes)
+        manualLabel.attributedText = firstString
+        let secondString = NSAttributedString(string: RText.gamingSecondPartOfText(), attributes: secondAttributes)
+        manualLabel.attributedText = secondString
+        firstString.append(secondString)
+        return firstString
     }
     
     init() {
