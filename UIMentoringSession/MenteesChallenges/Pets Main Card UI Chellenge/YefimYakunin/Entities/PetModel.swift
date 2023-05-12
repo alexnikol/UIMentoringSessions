@@ -1,7 +1,7 @@
 import Foundation
 import UIKit.UIImage
 
-enum PetType: Int, CaseIterable {
+enum YeYa_PetType: Int, CaseIterable {
     case allPets
     case cats
     case dogs
@@ -18,21 +18,21 @@ enum PetType: Int, CaseIterable {
     }
 }
 
-struct Pet {
+struct YeYa_Pet {
     let icon: UIImage
     let name: String
     let breed: String
     var age: String
-    let type: PetType
+    let type: YeYa_PetType
 }
 
 struct YeYa_PetFilter {
     let icon: UIImage
     let title: String
-    let type: PetType
+    let type: YeYa_PetType
 }
 
-let itemPets: [Pet] = [
+let itemPets: [YeYa_Pet] = [
     .init(icon: RImage.garyDog()!,
           name: "Gary",
           breed: "Yorkshire Terrier",
