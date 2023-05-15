@@ -22,13 +22,14 @@ final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
     private func setupLayout() {
         layer.cornerRadius = 26
         layer.borderWidth = 0.5
+        layer.borderColor = UIColor(resource: RColor.descriptionColor)?.cgColor
     }
     
     func setup(model filter: YeYa_PetFilter, isSelected: Bool) {
         petIconImage.image = filter.icon
         kindOfPetLabel.text = filter.title
         if isSelected {
-            backgroundColor = R.color.petSelectColor()
+            backgroundColor = RColor.petSelectColor()
         } else {
             backgroundColor = .white
         }

@@ -18,5 +18,17 @@ class YeYa_PetCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-
+    
+    private func setupLayout() {
+        layer.cornerRadius = 26
+        layer.borderWidth = 0.5
+        layer.borderColor = UIColor(resource: RColor.descriptionColor)?.cgColor
+    }
+    
+    func setup(model pet: YeYa_Pet) {
+        petImage.image = pet.icon
+        nameLabel.text = pet.name
+        breedLabel.text = pet.breed
+        ageLabel.text = pet.age
+    }
 }
