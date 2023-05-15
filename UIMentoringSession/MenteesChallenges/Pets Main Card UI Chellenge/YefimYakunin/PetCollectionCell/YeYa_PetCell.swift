@@ -25,7 +25,7 @@ class YeYa_PetCell: UICollectionViewCell {
         layer.borderColor = UIColor(resource: RColor.descriptionColor)?.cgColor
     }
     
-    func setup(model pet: YeYa_Pet) {
+    func setup(model pet: YeYa_PetModel) {
         petImage.image = pet.icon
         nameLabel.text = pet.name
         breedLabel.text = pet.breed

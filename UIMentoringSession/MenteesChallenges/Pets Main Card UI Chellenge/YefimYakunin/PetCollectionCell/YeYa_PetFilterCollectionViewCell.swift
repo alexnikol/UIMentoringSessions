@@ -25,7 +25,7 @@ final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
         layer.borderColor = UIColor(resource: RColor.descriptionColor)?.cgColor
     }
     
-    func setup(model filter: YeYa_PetFilter, isSelected: Bool) {
+    func setup(model filter: YeYa_PetFilterModel, isSelected: Bool) {
         petIconImage.image = filter.icon
         kindOfPetLabel.text = filter.title
         if isSelected {

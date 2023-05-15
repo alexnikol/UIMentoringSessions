@@ -3,9 +3,9 @@ import UIKit
 final class YeYa_PetsViewController: UIViewController {
     @IBOutlet weak var filtersCollectionView: UICollectionView!
     @IBOutlet weak var petsCollectionView: UICollectionView!
-    var pets: [YeYa_Pet] = []
-    var filters: [YeYa_PetFilter] = []
-    var filteredPets: [YeYa_Pet] = []
+    var pets: [YeYa_PetModel] = []
+    var filters: [YeYa_PetFilterModel] = []
+    var filteredPets: [YeYa_PetModel] = []
     var selectedFilterType: YeYa_PetType = .allPets
     
     override func viewDidLoad() {
@@ -15,33 +15,13 @@ final class YeYa_PetsViewController: UIViewController {
         filtersCollectionView.dataSource = self
         filtersCollectionView.delegate = self
         filtersCollectionView.showsHorizontalScrollIndicator = false
-        filters = [
-            .init(icon: RImage.allPet()!, title: "All", type: .allPets),
-            .init(icon: RImage.dogPet()!, title: "Dog",  type: .dogs),
-            .init(icon: RImage.catPet()!, title: "Cat",  type: .cats)
-        ]
+        filters = itemsFilters
         petsCollectionView.register(UINib(nibName: String(describing: YeYa_PetCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: YeYa_PetCell.self))
         petsCollectionView.backgroundColor = RColor.petWhiteColor()
         petsCollectionView.dataSource = self
         petsCollectionView.delegate = self
         petsCollectionView.showsVerticalScrollIndicator = false
-        pets = [
-            .init(icon: RImage.garyDog()!,
-                  name: "Gary",
-                  breed: "Yorkshire Terrier",
-                  age: "3 years",
-                  type: .dogs),
-            .init(icon: RImage.peachCat()!,
-                  name: "Peach",
-                  breed: "Half-Breed",
-                  age: "2.5 years",
-                  type: .cats),
-            .init(icon: RImage.whitheyCat()!,
-                  name: "Whitney",
-                  breed: "British Longhair",
-                  age: "2 months",
-                  type: .cats)
-        ]
+        pets = itemsPets
     }
 }
  
