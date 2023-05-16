@@ -11,10 +11,16 @@ final class YeYa_PetsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = RColor.petWhiteColor()
+        filtersCollectionView.register(UINib(nibName: String(describing: YeYa_PetFilterCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: YeYa_PetFilterCollectionViewCell.self))
+        filtersCollectionView.dataSource = self
+        filtersCollectionView.delegate = self
+        filtersCollectionView.showsHorizontalScrollIndicator = false
         filters = itemsFilters
+        petsCollectionView.register(UINib(nibName: String(describing: YeYa_PetCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: YeYa_PetCell.self))
+        petsCollectionView.dataSource = self
+        petsCollectionView.delegate = self
         pets = itemsPets
         filteredPets = itemsPets
-        
     }
 }
 
