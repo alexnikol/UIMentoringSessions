@@ -10,25 +10,25 @@ final class YeYa_PetsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        filtersCollectionView.register(UINib(nibName: String(describing: YeYa_PetFilterCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: YeYa_PetFilterCollectionViewCell.self))
-        filtersCollectionView.backgroundColor = RColor.petWhiteColor()
-        filtersCollectionView.dataSource = self
-        filtersCollectionView.delegate = self
-        filtersCollectionView.showsHorizontalScrollIndicator = false
+        view.backgroundColor = RColor.petWhiteColor()
         filters = itemsFilters
-        petsCollectionView.register(UINib(nibName: String(describing: YeYa_PetCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: YeYa_PetCell.self))
-        petsCollectionView.backgroundColor = RColor.petWhiteColor()
-        petsCollectionView.dataSource = self
-        petsCollectionView.delegate = self
-        petsCollectionView.showsVerticalScrollIndicator = false
         pets = itemsPets
+        filteredPets = itemsPets
+        
     }
 }
- 
+
 extension YeYa_PetsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-        
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return filters.count
+        switch collectionView {
+        case filtersCollectionView:
+            return filters.count
+        case petsCollectionView:
+            return filteredPets.count
+        default:
+            return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -38,9 +38,8 @@ extension YeYa_PetsViewController: UICollectionViewDelegate, UICollectionViewDat
             let isSelected = filter.type  == selectedFilterType
             cell.setup(petFilterModel: filter, isSelected: isSelected)
             return cell
-
         } else if collectionView == petsCollectionView {
-            let pet = pets[indexPath.row]
+            let pet = filteredPets[indexPath.row]
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: YeYa_PetCell.self), for: indexPath) as! YeYa_PetCell
             cell.setup(model: pet)
             return cell
@@ -54,6 +53,15 @@ extension YeYa_PetsViewController: UICollectionViewDelegate, UICollectionViewDat
             let filter = filters[indexPath.row]
             selectedFilterType = filter.type
             filtersCollectionView.reloadData()
+            filtersCollectionView.scrollToItem(at: indexPath, at:.centeredHorizontally, animated: true)
+            
+            switch filter.type {
+            case .allPets:
+                filteredPets = pets
+            case .cats, .dogs:
+                filteredPets = pets.filter { $0.type == filter.type }
+            }
+            petsCollectionView.reloadData()
         }
     }
 }

@@ -5,10 +5,6 @@ final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var petIconImage: UIImageView!
     @IBOutlet weak var kindOfPetLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
