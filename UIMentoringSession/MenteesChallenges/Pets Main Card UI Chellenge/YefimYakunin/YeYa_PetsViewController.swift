@@ -36,7 +36,7 @@ extension YeYa_PetsViewController: UICollectionViewDelegate, UICollectionViewDat
             let filter = filters[indexPath.row]
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: YeYa_PetFilterCollectionViewCell.self), for: indexPath) as! YeYa_PetFilterCollectionViewCell
             let isSelected = filter.type  == selectedFilterType
-            cell.setup(model: filter, isSelected: isSelected)
+            cell.setup(petFilterModel: filter, isSelected: isSelected)
             return cell
 
         } else if collectionView == petsCollectionView {

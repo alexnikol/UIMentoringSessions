@@ -143,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48620D332A12530E0042E0D2 /* PetFilterCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */,
+				48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */,
+			);
+			path = PetFilterCollectionCell;
+			sourceTree = "<group>";
+		};
 		48E2EC1629D386F400A9ACE2 /* Pets Main Card UI Chellenge */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +176,7 @@
 			children = (
 				48E2EC3829D4C34100A9ACE2 /* Model */,
 				48E2EC3329D46D5400A9ACE2 /* PetCollectionCell */,
+				48620D332A12530E0042E0D2 /* PetFilterCollectionCell */,
 				48E2EC2B29D4197F00A9ACE2 /* YeYa_PetsViewController.swift */,
 				48E2EC2C29D4197F00A9ACE2 /* YeYa_PetsViewController.xib */,
 			);
@@ -178,8 +188,6 @@
 			children = (
 				48A0624029ED49CC007BCF02 /* YeYa_PetCell.swift */,
 				48A0624129ED49CC007BCF02 /* YeYa_PetCell.xib */,
-				48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */,
-				48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */,
 			);
 			path = PetCollectionCell;
 			sourceTree = "<group>";

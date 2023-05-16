@@ -23,6 +23,7 @@ class YeYa_PetCell: UICollectionViewCell {
         layer.cornerRadius = 26
         layer.borderWidth = 0.5
         layer.borderColor = UIColor(resource: RColor.descriptionColor)?.cgColor
+        
     }
     
     func setup(model pet: YeYa_PetModel) {

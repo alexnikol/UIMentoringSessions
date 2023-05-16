@@ -21,17 +21,21 @@ final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
     
     private func setupLayout() {
         layer.cornerRadius = 26
-        layer.borderWidth = 0.5
-        layer.borderColor = UIColor(resource: RColor.descriptionColor)?.cgColor
+        layer.borderWidth = 1
     }
     
-    func setup(model filter: YeYa_PetFilterModel, isSelected: Bool) {
-        petIconImage.image = filter.icon
-        kindOfPetLabel.text = filter.title
+    func setup(petFilterModel petFilter: YeYa_PetFilterModel, isSelected: Bool) {
+        petIconImage.image = petFilter.icon
+        kindOfPetLabel.text = petFilter.title
         if isSelected {
             backgroundColor = RColor.petSelectColor()
+            layer.borderColor = RColor.petSelectColor()?.cgColor
+            kindOfPetLabel.textColor = .white
+            petIconImage.backgroundColor = UIColor.black.withAlphaComponent(0.05)
         } else {
-            backgroundColor = .white
+            layer.borderColor = UIColor.black.withAlphaComponent(0.05).cgColor
+            backgroundColor = RColor.petWhiteColor()
+            kindOfPetLabel.textColor = RColor.petTextColor()
         }
     }
 }
