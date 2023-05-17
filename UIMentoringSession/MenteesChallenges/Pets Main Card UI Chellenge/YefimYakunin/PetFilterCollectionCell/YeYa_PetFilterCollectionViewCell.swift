@@ -27,10 +27,9 @@ final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
             backgroundColor = RColor.petSelectColor()
             layer.borderColor = RColor.petSelectColor()?.cgColor
             kindOfPetLabel.textColor = .white
-            petIconImage.backgroundColor = UIColor.black.withAlphaComponent(0.05)
         } else {
-            layer.borderColor = UIColor.black.withAlphaComponent(0.05).cgColor
             backgroundColor = RColor.petWhiteColor()
+            layer.borderColor = UIColor.black.withAlphaComponent(0.05).cgColor
             kindOfPetLabel.textColor = RColor.petTextColor()
         }
     }

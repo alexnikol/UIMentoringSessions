@@ -1480,6 +1480,7 @@ struct _R: Rswift.Validatable {
       }
 
       static func validate() throws {
+        if UIKit.UIImage(named: "favouritePet", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'favouritePet' is used in nib 'YeYa_PetCell', but couldn't be loaded.") }
         if UIKit.UIImage(named: "garyDog", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'garyDog' is used in nib 'YeYa_PetCell', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }

@@ -6,18 +6,3 @@ struct YeYa_PetFilterModel {
     let title: String
     let type: YeYa_PetType
 }
-
-let itemsFilters: [YeYa_PetFilterModel] = [
-    .init(icon: RImage.allPet()!,
-          title: "All",
-          type: .allPets
-         ),
-    .init(icon: RImage.dogPet()!,
-          title: "Dog",
-          type: .dogs
-         ),
-    .init(icon: RImage.catPet()!,
-          title: "Cat",
-          type: .cats
-         )
-]

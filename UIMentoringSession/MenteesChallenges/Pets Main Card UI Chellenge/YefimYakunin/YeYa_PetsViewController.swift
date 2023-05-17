@@ -10,17 +10,18 @@ final class YeYa_PetsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = RColor.petWhiteColor()
         filtersCollectionView.register(UINib(nibName: String(describing: YeYa_PetFilterCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: YeYa_PetFilterCollectionViewCell.self))
         filtersCollectionView.dataSource = self
         filtersCollectionView.delegate = self
         filtersCollectionView.showsHorizontalScrollIndicator = false
-        filters = itemsFilters
+        let modelsFilterPet = getMockItemsFilterPet()
+        filters = modelsFilterPet
         petsCollectionView.register(UINib(nibName: String(describing: YeYa_PetCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: YeYa_PetCell.self))
         petsCollectionView.dataSource = self
         petsCollectionView.delegate = self
-        pets = itemsPets
-        filteredPets = itemsPets
+        let modelsPet = getMockItems()
+        pets = modelsPet
+        filteredPets = modelsPet
     }
 }
 
@@ -69,5 +70,92 @@ extension YeYa_PetsViewController: UICollectionViewDelegate, UICollectionViewDat
             }
             petsCollectionView.reloadData()
         }
+    }
+}
+
+extension YeYa_PetsViewController {
+    
+    func getMockItemsFilterPet() -> [YeYa_PetFilterModel] {
+        let itemsFilters: [YeYa_PetFilterModel] = [
+            .init(icon: RImage.allPet()!,
+                  title: "All",
+                  type: .allPets
+                 ),
+            .init(icon: RImage.dogPet()!,
+                  title: "Dog",
+                  type: .dogs
+                 ),
+            .init(icon: RImage.catPet()!,
+                  title: "Cat",
+                  type: .cats
+                 )
+        ]
+        return itemsFilters
+    }
+    
+    func getMockItems() -> [YeYa_PetModel] {
+        let itemsPets: [YeYa_PetModel] = [
+            .init(icon: RImage.garyDog()!,
+                  name: "Gary",
+                  breed: "Yorkshire Terrier",
+                  age: "3 years",
+                  type: .dogs
+                 ),
+            .init(icon: RImage.peachCat()!,
+                  name: "Peach",
+                  breed: "Half-breed",
+                  age: "2.5 years",
+                  type: .cats
+                 ),
+            .init(icon: RImage.whitheyCat()!,
+                  name: "Whitney",
+                  breed: "British Longhair",
+                  age: "2 months",
+                  type: .cats
+                 ),
+            .init(icon: RImage.buggyDog()!,
+                  name: "Buggy",
+                  breed: "Jack Russell Terrier",
+                  age: "4 months",
+                  type: .dogs
+                 ),
+            .init(icon: RImage.willieDog()!,
+                  name: "Willie",
+                  breed: "Samoyed",
+                  age: "1.5 years",
+                  type: .dogs
+                 ),
+            .init(icon: RImage.kiwiDog()!,
+                  name: "Kiwi",
+                  breed: "Yorkshire Terrier",
+                  age: "1 years",
+                  type: .dogs
+                 ),
+            .init(icon: RImage.stitchCat()!,
+                  name: "Stitch",
+                  breed: "European cat",
+                  age: "1 year",
+                  type: .cats
+                 ),
+            .init(icon: RImage.cakeDog()!,
+                  name: "Cake",
+                  breed: "Welsh Corgi",
+                  age: "2 months",
+                  type: .dogs
+                 ),
+            .init(icon: RImage.moonCat()!,
+                  name: "Moon",
+                  breed: "Siberian cat",
+                  age: "2.5 years",
+                  type: .cats
+                 ),
+            .init(icon: RImage.spikeCat()!,
+                  name: "Spike",
+                  breed: "Maine Coon",
+                  age: "1.5 years",
+                  type: .cats
+                 )
+        ]
+        return itemsPets
     }
 }
