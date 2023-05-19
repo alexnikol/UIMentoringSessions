@@ -1483,6 +1483,8 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "favouritePet", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'favouritePet' is used in nib 'YeYa_PetCell', but couldn't be loaded.") }
         if UIKit.UIImage(named: "garyDog", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'garyDog' is used in nib 'YeYa_PetCell', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "pet text color", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'pet text color' is used in nib 'YeYa_PetCell', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "pet white color", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'pet white color' is used in nib 'YeYa_PetCell', but couldn't be loaded.") }
         }
       }
 
@@ -1511,6 +1513,7 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if UIKit.UIImage(named: "logoTakeeBlack", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logoTakeeBlack' is used in nib 'YeYa_PetsViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "pet white color", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'pet white color' is used in nib 'YeYa_PetsViewController', but couldn't be loaded.") }
         }
       }
 

@@ -4,8 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,73 +22,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="163" height="180"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xV2-Xl-zJN" userLabel="MainView">
-                                <rect key="frame" x="0.0" y="0.0" width="163" height="180"/>
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="178"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garyDog" translatesAutoresizingMaskIntoConstraints="NO" id="YOM-IS-a5S">
-                                        <rect key="frame" x="0.0" y="0.6666666666666643" width="162" height="115.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="116"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="YOM-IS-a5S" secondAttribute="height" multiplier="163:116" id="bzQ-6i-sSO"/>
+                                            <constraint firstAttribute="width" secondItem="YOM-IS-a5S" secondAttribute="height" multiplier="163:116" id="g5w-5j-U8s"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-gf-FUQ">
-                                        <rect key="frame" x="8" y="123" width="45" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-gf-FUQ">
+                                        <rect key="frame" x="8" y="124" width="79" height="19"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEf-GC-Sp1">
-                                        <rect key="frame" x="8" y="152" width="45" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="8" y="147.33333333333334" width="33.666666666666664" height="14.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" name="pet text color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favouritePet" translatesAutoresizingMaskIntoConstraints="NO" id="rz1-h4-y7U">
-                                        <rect key="frame" x="130" y="7" width="24" height="24"/>
+                                        <rect key="frame" x="131" y="8" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="Lvi-e5-ltA"/>
                                             <constraint firstAttribute="height" constant="24" id="eBL-NP-7t5"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhL-wz-2MX">
-                                        <rect key="frame" x="122" y="124" width="40" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="131.33333333333334" y="124.00000000000001" width="23.666666666666657" height="15.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <color key="textColor" name="pet text color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="pet white color"/>
                                 <constraints>
-                                    <constraint firstItem="YOM-IS-a5S" firstAttribute="trailing" secondItem="LhL-wz-2MX" secondAttribute="trailing" id="51S-ye-RH2"/>
-                                    <constraint firstItem="LhL-wz-2MX" firstAttribute="leading" secondItem="Bmd-gf-FUQ" secondAttribute="trailing" constant="69" id="6d0-Cd-XUM"/>
-                                    <constraint firstItem="rz1-h4-y7U" firstAttribute="top" secondItem="xV2-Xl-zJN" secondAttribute="top" constant="7" id="BKS-8b-D6e"/>
-                                    <constraint firstItem="rz1-h4-y7U" firstAttribute="centerX" secondItem="LhL-wz-2MX" secondAttribute="centerX" id="Pbs-lL-dRa"/>
-                                    <constraint firstItem="Bmd-gf-FUQ" firstAttribute="centerX" secondItem="dEf-GC-Sp1" secondAttribute="centerX" id="VjN-TV-1jx"/>
-                                    <constraint firstItem="LhL-wz-2MX" firstAttribute="top" secondItem="YOM-IS-a5S" secondAttribute="bottom" constant="8" symbolic="YES" id="XTj-RD-tdY"/>
-                                    <constraint firstItem="rz1-h4-y7U" firstAttribute="leading" secondItem="xV2-Xl-zJN" secondAttribute="leading" constant="130" id="Xd4-L2-6RG"/>
-                                    <constraint firstItem="LhL-wz-2MX" firstAttribute="top" secondItem="rz1-h4-y7U" secondAttribute="bottom" constant="93" id="dEa-fd-3kG"/>
-                                    <constraint firstItem="Bmd-gf-FUQ" firstAttribute="top" secondItem="YOM-IS-a5S" secondAttribute="bottom" constant="7" id="dGv-fs-VPB"/>
-                                    <constraint firstItem="YOM-IS-a5S" firstAttribute="leading" secondItem="xV2-Xl-zJN" secondAttribute="leading" id="dbe-tl-Rnf"/>
-                                    <constraint firstItem="Bmd-gf-FUQ" firstAttribute="leading" secondItem="dEf-GC-Sp1" secondAttribute="leading" id="nOH-yF-0Ho"/>
-                                    <constraint firstItem="Bmd-gf-FUQ" firstAttribute="leading" secondItem="xV2-Xl-zJN" secondAttribute="leadingMargin" id="uHT-Ey-64v"/>
-                                    <constraint firstItem="dEf-GC-Sp1" firstAttribute="top" secondItem="Bmd-gf-FUQ" secondAttribute="bottom" constant="8" symbolic="YES" id="upy-3i-QdY"/>
+                                    <constraint firstItem="YOM-IS-a5S" firstAttribute="top" secondItem="xV2-Xl-zJN" secondAttribute="top" id="2R7-iX-Ghu"/>
+                                    <constraint firstItem="YOM-IS-a5S" firstAttribute="leading" secondItem="xV2-Xl-zJN" secondAttribute="leading" id="5hW-ln-CXd"/>
+                                    <constraint firstItem="dEf-GC-Sp1" firstAttribute="leading" secondItem="xV2-Xl-zJN" secondAttribute="leading" constant="8" id="GBi-L8-lm5"/>
+                                    <constraint firstItem="Bmd-gf-FUQ" firstAttribute="leading" secondItem="xV2-Xl-zJN" secondAttribute="leading" constant="8" id="Gtv-pO-LZx"/>
+                                    <constraint firstItem="rz1-h4-y7U" firstAttribute="top" secondItem="xV2-Xl-zJN" secondAttribute="top" constant="8" id="I5j-xf-9o3"/>
+                                    <constraint firstAttribute="trailing" secondItem="LhL-wz-2MX" secondAttribute="trailing" constant="8" id="UFs-Zx-t15"/>
+                                    <constraint firstAttribute="trailing" secondItem="rz1-h4-y7U" secondAttribute="trailing" constant="8" id="VE2-uV-rQ4"/>
+                                    <constraint firstItem="Bmd-gf-FUQ" firstAttribute="top" secondItem="YOM-IS-a5S" secondAttribute="bottom" constant="8" id="YpE-k8-sc0"/>
+                                    <constraint firstAttribute="trailing" secondItem="YOM-IS-a5S" secondAttribute="trailing" id="bgs-Oi-hqw"/>
+                                    <constraint firstItem="dEf-GC-Sp1" firstAttribute="top" secondItem="Bmd-gf-FUQ" secondAttribute="bottom" constant="4" id="p9v-VR-KHw"/>
+                                    <constraint firstItem="LhL-wz-2MX" firstAttribute="top" secondItem="YOM-IS-a5S" secondAttribute="bottom" constant="8" id="sxx-xD-rTe"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="xV2-Xl-zJN" secondAttribute="trailing" id="CtO-7f-Ol2"/>
-                            <constraint firstItem="xV2-Xl-zJN" firstAttribute="top" secondItem="C7p-dZ-jtt" secondAttribute="top" id="FTb-de-py0"/>
-                            <constraint firstAttribute="bottom" secondItem="xV2-Xl-zJN" secondAttribute="bottom" id="Tiw-mb-L72"/>
-                            <constraint firstItem="xV2-Xl-zJN" firstAttribute="leading" secondItem="C7p-dZ-jtt" secondAttribute="leading" id="vN6-0Z-5PN"/>
+                            <constraint firstAttribute="trailing" secondItem="xV2-Xl-zJN" secondAttribute="trailing" id="EXp-qI-CS9"/>
+                            <constraint firstAttribute="bottom" secondItem="xV2-Xl-zJN" secondAttribute="bottom" constant="2" id="ItC-cH-W8E"/>
+                            <constraint firstItem="xV2-Xl-zJN" firstAttribute="leading" secondItem="C7p-dZ-jtt" secondAttribute="leading" id="nuz-ck-AcQ"/>
+                            <constraint firstItem="xV2-Xl-zJN" firstAttribute="top" secondItem="C7p-dZ-jtt" secondAttribute="top" id="pzW-aJ-JCt"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="C7p-dZ-jtt" secondAttribute="bottom" id="4px-9a-MQV"/>
-                <constraint firstItem="C7p-dZ-jtt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WWq-UZ-q9D"/>
-                <constraint firstItem="C7p-dZ-jtt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZVq-zG-Zw3"/>
-                <constraint firstAttribute="trailing" secondItem="C7p-dZ-jtt" secondAttribute="trailing" id="ycN-h1-6G0"/>
+                <constraint firstAttribute="bottom" secondItem="C7p-dZ-jtt" secondAttribute="bottom" id="Aog-as-2fV"/>
+                <constraint firstAttribute="trailing" secondItem="C7p-dZ-jtt" secondAttribute="trailing" id="UEc-0z-i0R"/>
+                <constraint firstItem="C7p-dZ-jtt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="azT-dA-MKK"/>
+                <constraint firstItem="C7p-dZ-jtt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sVP-sJ-2V6"/>
             </constraints>
             <size key="customSize" width="163" height="180"/>
             <connections>
@@ -105,8 +103,11 @@
     <resources>
         <image name="favouritePet" width="24" height="24"/>
         <image name="garyDog" width="163" height="116"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="pet text color">
+            <color red="0.16899999976158142" green="0.16899999976158142" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pet white color">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>
