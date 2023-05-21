@@ -9,10 +9,10 @@ enum YeYa_PetType: Int, CaseIterable {
         switch self {
         case .allPets:
             return "All"
-        case .cats:
-            return "Cats"
         case .dogs:
             return "Dogs"
+        case .cats:
+            return "Cats"
         }
     }
 }

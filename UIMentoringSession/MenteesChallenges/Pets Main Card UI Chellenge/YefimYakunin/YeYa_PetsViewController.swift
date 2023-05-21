@@ -90,15 +90,15 @@ extension YeYa_PetsViewController {
     func getMockItemsFilterPet() -> [YeYa_PetFilterModel] {
         let itemsFilters: [YeYa_PetFilterModel] = [
             .init(icon: RImage.allPet()!,
-                  title: "All",
+                  title: R.string.texts.petsListAllCategories(),
                   type: .allPets
                  ),
             .init(icon: RImage.dogPet()!,
-                  title: "Dog",
+                  title: R.string.texts.petsListDogCategories(),
                   type: .dogs
                  ),
             .init(icon: RImage.catPet()!,
-                  title: "Cat",
+                  title: R.string.texts.petsListCatCategories(),
                   type: .cats
                  )
         ]
