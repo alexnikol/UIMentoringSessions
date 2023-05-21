@@ -76,8 +76,8 @@ extension YeYa_PetsViewController: UICollectionViewDelegate, UICollectionViewDat
         if collectionView == filtersCollectionView {
             return CGSize(width: 99, height: 52)
         } else if collectionView == petsCollectionView {
-            let widht = (UIScreen.main.bounds.width - 48) / 2
-            let heigth = widht / 163 * 192
+            let widht = (UIScreen.main.bounds.width - 32) / 2
+            let heigth = widht / 171 * 200
             return CGSize(width: widht, height: heigth)
         } else {
             return .zero
