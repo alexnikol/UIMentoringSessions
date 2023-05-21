@@ -2,8 +2,8 @@ import UIKit
 
 final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var petIconImage: UIImageView!
-    @IBOutlet weak var kindOfPetLabel: UILabel!
+    @IBOutlet private weak var petIconImage: UIImageView!
+    @IBOutlet private weak var kindOfPetLabel: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)

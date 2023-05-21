@@ -1,8 +1,8 @@
 import UIKit
 
 final class YeYa_PetsViewController: UIViewController {
-    @IBOutlet weak var filtersCollectionView: UICollectionView!
-    @IBOutlet weak var petsCollectionView: UICollectionView!
+    @IBOutlet private weak var filtersCollectionView: UICollectionView!
+    @IBOutlet private weak var petsCollectionView: UICollectionView!
     var pets: [YeYa_PetModel] = []
     var filters: [YeYa_PetFilterModel] = []
     var filteredPets: [YeYa_PetModel] = []

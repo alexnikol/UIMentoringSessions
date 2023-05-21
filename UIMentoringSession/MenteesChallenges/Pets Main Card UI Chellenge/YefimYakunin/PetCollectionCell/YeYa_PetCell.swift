@@ -2,12 +2,12 @@ import UIKit
 
 class YeYa_PetCell: UICollectionViewCell {
     
-    @IBOutlet weak var shadowView: UIView!
-    @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var petImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var breedLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet private weak var shadowView: UIView!
+    @IBOutlet private weak var mainView: UIView!
+    @IBOutlet private weak var petImage: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var breedLabel: UILabel!
+    @IBOutlet private weak var ageLabel: UILabel!
     
     private func setupLayout() {
         mainView.layer.cornerRadius = 16
