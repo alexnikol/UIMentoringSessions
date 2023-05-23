@@ -8,7 +8,7 @@ final class MaksymBilykFactory: MenteeChallengesFactory {
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
         case .coffeeShopList:
-            return MaksymBilyk_CoffeShopViewController(nibName: "MaksymBilyk_CoffeShopViewController", bundle: nil)
+            return MaksymBilyk_CoffeShopViewController()
         case .login:
             return nil
         case .startScreen:

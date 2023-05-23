@@ -39,6 +39,14 @@ final class MaksymBilyk_CoffeShopViewController: UIViewController {
         ]
         models = items + items + items
     }
+    
+    init() {
+        super.init(nibName: "MaksymBilyk_CoffeShopViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 }
 
 extension MaksymBilyk_CoffeShopViewController: UITableViewDataSource, UITableViewDelegate {
