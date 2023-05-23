@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaksymBilyk_CoffeShopViewController" customModule="UIMentoringSession" customModuleProvider="target">
+            <connections>
+                <outlet property="mainButton" destination="Anm-DB-Eit" id="LNQ-ZU-vKg"/>
+                <outlet property="secondaryLabel" destination="j3z-58-y5Y" id="4qe-ZC-Tl9"/>
+                <outlet property="tableView" destination="Wet-As-RV8" id="rhr-Wc-cZb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3z-58-y5Y">
+                    <rect key="frame" x="16" y="67" width="361" height="19.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" name="descriptionColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anm-DB-Eit" customClass="MaksymBilyk_MainButton" customModule="UIMentoringSession" customModuleProvider="target">
+                    <rect key="frame" x="16" y="116.33333333333331" width="361" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="s6q-dv-vXI"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zud-hw-7LS">
+                    <rect key="frame" x="0.0" y="182.33333333333337" width="393" height="213.66666666666663"/>
+                    <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zud-hw-7LS" secondAttribute="height" multiplier="375:204" id="Iyb-J1-wAE"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wet-As-RV8">
+                    <rect key="frame" x="0.0" y="396" width="393" height="456"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zud-hw-7LS" secondAttribute="trailing" id="2iE-5u-7HG"/>
+                <constraint firstItem="zud-hw-7LS" firstAttribute="top" secondItem="Anm-DB-Eit" secondAttribute="bottom" constant="16" id="5rM-hJ-ea4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j3z-58-y5Y" secondAttribute="trailing" constant="16" id="AEv-4j-sEN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Anm-DB-Eit" secondAttribute="trailing" constant="16" id="Fxb-GG-p5z"/>
+                <constraint firstItem="Wet-As-RV8" firstAttribute="top" secondItem="zud-hw-7LS" secondAttribute="bottom" id="HCQ-av-6T3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wet-As-RV8" secondAttribute="trailing" id="J76-gJ-VoB"/>
+                <constraint firstAttribute="bottom" secondItem="Wet-As-RV8" secondAttribute="bottom" id="MB1-93-xql"/>
+                <constraint firstItem="j3z-58-y5Y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="cSZ-Bj-d9I"/>
+                <constraint firstItem="j3z-58-y5Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jA6-nc-cYX"/>
+                <constraint firstItem="zud-hw-7LS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kDS-65-q7z"/>
+                <constraint firstItem="Wet-As-RV8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qr0-uA-xHu"/>
+                <constraint firstItem="Anm-DB-Eit" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="rTb-vz-Uft"/>
+                <constraint firstItem="Anm-DB-Eit" firstAttribute="top" secondItem="j3z-58-y5Y" secondAttribute="bottom" constant="30" id="zb7-dl-Vw7"/>
+            </constraints>
+            <point key="canvasLocation" x="44" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="descriptionColor">
+            <color red="0.54900002479553223" green="0.54900002479553223" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
