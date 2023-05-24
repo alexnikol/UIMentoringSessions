@@ -1429,6 +1429,7 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if UIKit.UIImage(named: "GoodDogs", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'GoodDogs' is used in nib 'MaksymBilyk_StartScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "logotipTakee", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logotipTakee' is used in nib 'MaksymBilyk_StartScreenViewController', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
