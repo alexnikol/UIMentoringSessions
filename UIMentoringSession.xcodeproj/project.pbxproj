@@ -10,6 +10,8 @@
 		1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */; };
 		1C5AF6E129E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */; };
 		1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */; };
+		1CB1520F2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */; };
+		1CB152102A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */; };
 		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
 		3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */; };
 		33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */; };
@@ -71,6 +73,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
+		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
+		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
+		1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_CoffeeShopViewController.swift; sourceTree = "<group>"; };
+		1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VladyslavYurchenko_CoffeeShopViewController.xib; sourceTree = "<group>"; };
 		3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsTypes.swift; sourceTree = "<group>"; };
 		3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsCell.swift; sourceTree = "<group>"; };
@@ -79,9 +86,6 @@
 		33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_FilterAnimalsCell.swift; sourceTree = "<group>"; };
 		33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Olkha_FilterAnimalsCell.xib; sourceTree = "<group>"; };
 		33E311F129E7325700014BA9 /* OlKha_FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_FilterViewModel.swift; sourceTree = "<group>"; };
-		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
-		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
-		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
@@ -156,6 +160,15 @@
 			children = (
 				1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */,
 				1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */,
+			);
+			path = VladyslavYurchenko;
+			sourceTree = "<group>";
+		};
+		1CB1520C2A1FA7A100B2DA0E /* VladyslavYurchenko */ = {
+			isa = PBXGroup;
+			children = (
+				1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */,
+				1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */,
 			);
 			path = VladyslavYurchenko;
 			sourceTree = "<group>";
@@ -362,6 +375,7 @@
 		8D25178629C4AE8300CD54A5 /* CoffeeShop UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				1CB1520C2A1FA7A100B2DA0E /* VladyslavYurchenko */,
 				8D25178729C4AE8300CD54A5 /* OleksandrKharchenko */,
 				8D25179129C4AE8300CD54A5 /* YefimYakunin */,
 				8D25179929C4AE8300CD54A5 /* README.md */,
@@ -568,6 +582,7 @@
 				8DF4FD8D29B63BB400EA8715 /* (null) in Resources */,
 				8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */,
 				8D2517B629C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
+				1CB152102A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib in Resources */,
 				48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */,
 				1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */,
 				8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */,
@@ -659,6 +674,7 @@
 			files = (
 				1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */,
 				8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
+				1CB1520F2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift in Sources */,
 				33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,

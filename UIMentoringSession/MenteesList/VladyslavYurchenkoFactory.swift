@@ -13,7 +13,10 @@ final class VladyslavYurchenkoFactory: MenteeChallengesFactory {
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
         case .startScreen:
-            return VladyslavYurchenko_StartScreenViewController()
+            return VladyslavYurchenko_StartScreenViewController();
+        case .coffeeShopList:
+            return VladyslavYurchenko_CoffeeShopViewController(nibName: "VladyslavYurchenko_CoffeeShopViewController", bundle: nil)
+            
                                 
         default:
             return nil

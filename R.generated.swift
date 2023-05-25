@@ -406,8 +406,6 @@ struct R: Rswift.Validatable {
     static let birdLogo = Rswift.ImageResource(bundle: R.hostingBundle, name: "Bird logo")
     /// Image `Facebook icon`.
     static let facebookIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Facebook icon")
-    /// Image `GoodDogs`.
-    static let goodDogs = Rswift.ImageResource(bundle: R.hostingBundle, name: "GoodDogs")
     /// Image `Phone icon`.
     static let phoneIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "Phone icon")
     /// Image `allPet`.
@@ -462,6 +460,8 @@ struct R: Rswift.Validatable {
     static let favouritePet = Rswift.ImageResource(bundle: R.hostingBundle, name: "favouritePet")
     /// Image `garyDog`.
     static let garyDog = Rswift.ImageResource(bundle: R.hostingBundle, name: "garyDog")
+    /// Image `goodDogs`.
+    static let goodDogs = Rswift.ImageResource(bundle: R.hostingBundle, name: "goodDogs")
     /// Image `kiwiDog`.
     static let kiwiDog = Rswift.ImageResource(bundle: R.hostingBundle, name: "kiwiDog")
     /// Image `logoTakeeBlack`.
@@ -510,13 +510,6 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Facebook icon", bundle: ..., traitCollection: ...)`
     static func facebookIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.facebookIcon, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIImage(named: "GoodDogs", bundle: ..., traitCollection: ...)`
-    static func goodDogs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image.goodDogs, compatibleWith: traitCollection)
     }
     #endif
 
@@ -710,6 +703,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "goodDogs", bundle: ..., traitCollection: ...)`
+    static func goodDogs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.goodDogs, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "kiwiDog", bundle: ..., traitCollection: ...)`
     static func kiwiDog(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.kiwiDog, compatibleWith: traitCollection)
@@ -819,7 +819,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 15 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 16 nibs.
   struct nib {
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
@@ -837,6 +837,8 @@ struct R: Rswift.Validatable {
     static let olkha_AnimalsCell = _R.nib._Olkha_AnimalsCell()
     /// Nib `Olkha_FilterAnimalsCell`.
     static let olkha_FilterAnimalsCell = _R.nib._Olkha_FilterAnimalsCell()
+    /// Nib `VladyslavYurchenko_CoffeeShopViewController`.
+    static let vladyslavYurchenko_CoffeeShopViewController = _R.nib._VladyslavYurchenko_CoffeeShopViewController()
     /// Nib `VladyslavYurchenko_StartScreenViewController`.
     static let vladyslavYurchenko_StartScreenViewController = _R.nib._VladyslavYurchenko_StartScreenViewController()
     /// Nib `YeYa_CoffeeShopCell`.
@@ -913,6 +915,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.olkha_FilterAnimalsCell) instead")
     static func olkha_FilterAnimalsCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.olkha_FilterAnimalsCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "VladyslavYurchenko_CoffeeShopViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.vladyslavYurchenko_CoffeeShopViewController) instead")
+    static func vladyslavYurchenko_CoffeeShopViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.vladyslavYurchenko_CoffeeShopViewController)
     }
     #endif
 
@@ -1002,6 +1012,10 @@ struct R: Rswift.Validatable {
 
     static func olkha_FilterAnimalsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> Olkha_FilterAnimalsCell? {
       return R.nib.olkha_FilterAnimalsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? Olkha_FilterAnimalsCell
+    }
+
+    static func vladyslavYurchenko_CoffeeShopViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.vladyslavYurchenko_CoffeeShopViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func vladyslavYurchenko_StartScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -1550,6 +1564,17 @@ struct _R: Rswift.Validatable {
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "descriptionColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'descriptionColor' is used in nib 'Olkha_FilterAnimalsCell', but couldn't be loaded.") }
         }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _VladyslavYurchenko_CoffeeShopViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "VladyslavYurchenko_CoffeeShopViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
 
       fileprivate init() {}
