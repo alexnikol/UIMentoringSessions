@@ -8,11 +8,13 @@
 
 import UIKit
 
-class VladyslavYurchenko_CoffeeShopViewController: UIViewController {
+final class VladyslavYurchenko_CoffeeShopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Coffee shops"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.sizeToFit()
         
     }
 }

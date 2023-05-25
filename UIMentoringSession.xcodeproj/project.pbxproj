@@ -12,6 +12,7 @@
 		1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */; };
 		1CB1520F2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */; };
 		1CB152102A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */; };
+		1CB152122A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB152112A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift */; };
 		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
 		3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */; };
 		33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */; };
@@ -78,6 +79,7 @@
 		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
 		1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_CoffeeShopViewController.swift; sourceTree = "<group>"; };
 		1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VladyslavYurchenko_CoffeeShopViewController.xib; sourceTree = "<group>"; };
+		1CB152112A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_MainButton.swift; sourceTree = "<group>"; };
 		3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsTypes.swift; sourceTree = "<group>"; };
 		3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsCell.swift; sourceTree = "<group>"; };
@@ -169,8 +171,17 @@
 			children = (
 				1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */,
 				1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */,
+				1CB152132A1FAD6400B2DA0E /* VladyslavYurchenko_View */,
 			);
 			path = VladyslavYurchenko;
+			sourceTree = "<group>";
+		};
+		1CB152132A1FAD6400B2DA0E /* VladyslavYurchenko_View */ = {
+			isa = PBXGroup;
+			children = (
+				1CB152112A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift */,
+			);
+			path = VladyslavYurchenko_View;
 			sourceTree = "<group>";
 		};
 		3308365229ED6A0700DC4774 /* Extensions */ = {
@@ -677,6 +688,7 @@
 				1CB1520F2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift in Sources */,
 				33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
+				1CB152122A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */,
 				8D2517C329C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift in Sources */,
