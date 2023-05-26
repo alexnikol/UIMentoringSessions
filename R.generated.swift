@@ -819,8 +819,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 15 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 16 nibs.
   struct nib {
+    /// Nib `MaksymBilykGamingScreenViewController`.
+    static let maksymBilykGamingScreenViewController = _R.nib._MaksymBilykGamingScreenViewController()
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
     /// Nib `OlKha_PetsViewController`.
@@ -851,6 +853,14 @@ struct R: Rswift.Validatable {
     static let yefimYakuninGamingScreenViewController = _R.nib._YefimYakuninGamingScreenViewController()
     /// Nib `YefimYakunin_StartScreenViewController`.
     static let yefimYakunin_StartScreenViewController = _R.nib._YefimYakunin_StartScreenViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MaksymBilykGamingScreenViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.maksymBilykGamingScreenViewController) instead")
+    static func maksymBilykGamingScreenViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.maksymBilykGamingScreenViewController)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "OlKha_IOSNewsViewController", in: bundle)`
@@ -971,6 +981,10 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.yefimYakunin_StartScreenViewController)
     }
     #endif
+
+    static func maksymBilykGamingScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.maksymBilykGamingScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
 
     static func olKha_IOSNewsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.olKha_IOSNewsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
@@ -1391,6 +1405,7 @@ struct _R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   struct nib: Rswift.Validatable {
     static func validate() throws {
+      try _MaksymBilykGamingScreenViewController.validate()
       try _OlKha_PetsViewController.validate()
       try _OleksandrKharchenko_CoffeShopCell.validate()
       try _OleksandrKharchenko_CoffeShopViewController.validate()
@@ -1402,6 +1417,26 @@ struct _R: Rswift.Validatable {
       try _YeYa_CoffeeShopCell.validate()
       try _YefimYakuninGamingScreenViewController.validate()
       try _YefimYakunin_StartScreenViewController.validate()
+    }
+
+    struct _MaksymBilykGamingScreenViewController: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "MaksymBilykGamingScreenViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Apple icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Apple icon' is used in nib 'MaksymBilykGamingScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Bird logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Bird logo' is used in nib 'MaksymBilykGamingScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Facebook icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Facebook icon' is used in nib 'MaksymBilykGamingScreenViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Phone icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Phone icon' is used in nib 'MaksymBilykGamingScreenViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
     }
 
     struct _OlKha_IOSNewsViewController: Rswift.NibResourceType {

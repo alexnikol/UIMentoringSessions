@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaksymBilykGamingScreenViewController" customModule="UIMentoringSession" customModuleProvider="target">
+            <connections>
+                <outlet property="appleButton" destination="dPd-pu-faB" id="haV-Fs-mN0"/>
+                <outlet property="appleButtonView" destination="xEh-hR-9RN" id="IiF-2v-JdY"/>
+                <outlet property="descriptionLabel" destination="68R-nk-udJ" id="1Db-TR-SWK"/>
+                <outlet property="facebookButton" destination="36w-Bk-fME" id="92r-8n-ycS"/>
+                <outlet property="facebookButtonView" destination="caH-iT-fe3" id="w9H-GO-jWX"/>
+                <outlet property="gamingLabel" destination="FKK-vq-dlt" id="WxN-MA-aEh"/>
+                <outlet property="passwordLabel" destination="ejs-G3-1tL" id="w3w-lQ-1LW"/>
+                <outlet property="phoneButton" destination="DDh-8N-jrp" id="hhn-0x-8T7"/>
+                <outlet property="phoneButtonView" destination="iqm-bI-oaV" id="4mP-3S-qKT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bird logo" translatesAutoresizingMaskIntoConstraints="NO" id="yot-p3-Ael">
+                    <rect key="frame" x="146" y="159" width="101" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yot-p3-Ael" secondAttribute="height" multiplier="101:89" id="wBH-hZ-O48"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-5e-oEz">
+                    <rect key="frame" x="32" y="260" width="329" height="79.666666666666686"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKK-vq-dlt">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="57.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68R-nk-udJ">
+                            <rect key="frame" x="0.0" y="65.333333333333314" width="329" height="14.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-G3-1tL">
+                    <rect key="frame" x="64" y="571.66666666666663" width="265" height="20.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="QHh-D2-S7b">
+                    <rect key="frame" x="32" y="363.66666666666669" width="329" height="192.00000000000006"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-hR-9RN" userLabel="appleButton" customClass="MaksymBilyk_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-pu-faB" customClass="MaksymBilyk_Buttons" customModule="UIMentoringSession" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="6.6666666666666856" width="329" height="34.333333333333343"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple icon" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-ov-g4O">
+                                    <rect key="frame" x="20" y="12" width="40" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="eqg-ov-g4O" secondAttribute="height" multiplier="20:12" id="WTW-AO-wGT"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="Ev8-l4-Bb6"/>
+                                <constraint firstAttribute="bottom" secondItem="eqg-ov-g4O" secondAttribute="bottom" constant="12" id="Ey1-g2-JK1"/>
+                                <constraint firstItem="eqg-ov-g4O" firstAttribute="leading" secondItem="xEh-hR-9RN" secondAttribute="leading" constant="20" id="JhS-he-g50"/>
+                                <constraint firstItem="eqg-ov-g4O" firstAttribute="top" secondItem="xEh-hR-9RN" secondAttribute="top" constant="12" id="g8n-WQ-ovR"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caH-iT-fe3" userLabel="facebookButton" customClass="MaksymBilyk_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="72" width="329" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36w-Bk-fME" customClass="MaksymBilyk_Buttons" customModule="UIMentoringSession" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="6.6666666666666856" width="329" height="34.333333333333343"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook icon" translatesAutoresizingMaskIntoConstraints="NO" id="5Pj-JY-4VI">
+                                    <rect key="frame" x="20" y="12" width="40" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="5Pj-JY-4VI" secondAttribute="height" multiplier="20:12" id="E6G-dH-6md"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="RIV-2s-yfV"/>
+                                <constraint firstItem="5Pj-JY-4VI" firstAttribute="top" secondItem="caH-iT-fe3" secondAttribute="top" constant="12" id="dTE-5I-aBf"/>
+                                <constraint firstItem="5Pj-JY-4VI" firstAttribute="leading" secondItem="caH-iT-fe3" secondAttribute="leading" constant="20" id="iVR-hb-sXh"/>
+                                <constraint firstAttribute="bottom" secondItem="5Pj-JY-4VI" secondAttribute="bottom" constant="12" id="ir3-aY-vpv"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqm-bI-oaV" userLabel="phoneButton" customClass="MaksymBilyk_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="144" width="329" height="48"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-8N-jrp" customClass="MaksymBilyk_Buttons" customModule="UIMentoringSession" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="6.6666666666666856" width="329" height="34.333333333333343"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone icon" translatesAutoresizingMaskIntoConstraints="NO" id="L7s-JX-ZZR">
+                                    <rect key="frame" x="20" y="11.999999999999943" width="40" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="L7s-JX-ZZR" secondAttribute="height" multiplier="20:12" id="lYw-sv-9DN"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="710-Pe-Wef"/>
+                                <constraint firstItem="L7s-JX-ZZR" firstAttribute="top" secondItem="iqm-bI-oaV" secondAttribute="top" constant="12" id="KT6-5r-qt7"/>
+                                <constraint firstItem="L7s-JX-ZZR" firstAttribute="leading" secondItem="iqm-bI-oaV" secondAttribute="leading" constant="20" id="MWp-qd-lad"/>
+                                <constraint firstAttribute="bottom" secondItem="L7s-JX-ZZR" secondAttribute="bottom" constant="12" id="WS9-oh-rPn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ejs-G3-1tL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="60Z-BL-yfK"/>
+                <constraint firstItem="ejs-G3-1tL" firstAttribute="top" secondItem="QHh-D2-S7b" secondAttribute="bottom" constant="16" id="Dnd-89-MmL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ejs-G3-1tL" secondAttribute="trailing" constant="64" id="E0o-D6-qZm"/>
+                <constraint firstItem="KaK-5e-oEz" firstAttribute="top" secondItem="yot-p3-Ael" secondAttribute="bottom" constant="12" id="Mjz-2w-B4G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KaK-5e-oEz" secondAttribute="trailing" constant="32" id="Ugk-hL-EkK"/>
+                <constraint firstItem="QHh-D2-S7b" firstAttribute="top" secondItem="68R-nk-udJ" secondAttribute="bottom" constant="24" id="bRz-AG-44L"/>
+                <constraint firstItem="yot-p3-Ael" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bZk-51-nrP"/>
+                <constraint firstItem="KaK-5e-oEz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="hM9-Gx-fpw"/>
+                <constraint firstItem="yot-p3-Ael" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="kZE-CT-joa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QHh-D2-S7b" secondAttribute="trailing" constant="32" id="vCp-Fa-YRF"/>
+                <constraint firstItem="QHh-D2-S7b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="zoM-2B-NOg"/>
+            </constraints>
+            <point key="canvasLocation" x="184" y="26"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Apple icon" width="19.333333969116211" height="24"/>
+        <image name="Bird logo" width="101" height="89"/>
+        <image name="Facebook icon" width="24" height="24"/>
+        <image name="Phone icon" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
