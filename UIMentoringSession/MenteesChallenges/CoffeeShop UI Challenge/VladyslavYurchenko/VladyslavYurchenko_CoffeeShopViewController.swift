@@ -9,11 +9,11 @@
 import UIKit
 
 final class VladyslavYurchenko_CoffeeShopViewController: UIViewController {
+    
     @IBOutlet private weak var secondaryLabel: UILabel!
     @IBOutlet private weak var mainButton: VladyslavYurchenko_MainButton!
     @IBOutlet private weak var tableView: UITableView!
     var models: [CoffeeShopViewModel] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Coffee shops"
@@ -40,17 +40,18 @@ final class VladyslavYurchenko_CoffeeShopViewController: UIViewController {
         models = item
     }
 }
+
 extension VladyslavYurchenko_CoffeeShopViewController: UITableViewDelegate, UITableViewDataSource {
     
     struct CoffeeShopViewModel {
         let title: String
         let description: String
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return models.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "VladyslavYurchenko_CoffeeShopCell", for: indexPath) as! VladyslavYurchenko_CoffeeShopCell
@@ -62,5 +63,7 @@ extension VladyslavYurchenko_CoffeeShopViewController: UITableViewDelegate, UITa
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
