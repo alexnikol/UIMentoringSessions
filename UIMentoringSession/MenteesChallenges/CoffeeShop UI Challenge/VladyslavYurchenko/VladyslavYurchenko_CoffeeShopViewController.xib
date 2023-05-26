@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VladyslavYurchenko_CoffeeShopViewController" customModule="UIMentoringSession" customModuleProvider="target">
             <connections>
+                <outlet property="mainButton" destination="m6z-Og-Ia0" id="Mh2-pw-j08"/>
+                <outlet property="secondaryLabel" destination="4kz-cj-5HH" id="nex-Hv-vai"/>
+                <outlet property="tableView" destination="vA5-Pc-fyF" id="G1A-Sy-LTg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,15 +37,33 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ea-dz-7Em">
+                    <rect key="frame" x="0.0" y="201.33333333333337" width="393" height="213.66666666666663"/>
+                    <color key="backgroundColor" systemColor="systemMintColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3Ea-dz-7Em" secondAttribute="height" multiplier="375:204" id="Jgd-DS-kDB"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-Pc-fyF">
+                    <rect key="frame" x="0.0" y="415" width="393" height="403"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4kz-cj-5HH" secondAttribute="trailing" constant="16" id="3e2-t3-lUB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vA5-Pc-fyF" secondAttribute="bottom" id="DNF-TB-HG6"/>
                 <constraint firstItem="m6z-Og-Ia0" firstAttribute="top" secondItem="4kz-cj-5HH" secondAttribute="bottom" constant="30" id="INE-4d-oOb"/>
                 <constraint firstItem="4kz-cj-5HH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="NZr-yH-VB7"/>
+                <constraint firstItem="3Ea-dz-7Em" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qvw-ia-okc"/>
+                <constraint firstItem="vA5-Pc-fyF" firstAttribute="top" secondItem="3Ea-dz-7Em" secondAttribute="bottom" id="Raa-Dz-8J7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vA5-Pc-fyF" secondAttribute="trailing" id="Z2V-up-MhZ"/>
+                <constraint firstItem="3Ea-dz-7Em" firstAttribute="top" secondItem="m6z-Og-Ia0" secondAttribute="bottom" constant="16" id="eBp-ey-0TA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Ea-dz-7Em" secondAttribute="trailing" id="ejn-v7-Qju"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m6z-Og-Ia0" secondAttribute="trailing" constant="16" id="iXL-6X-VsG"/>
                 <constraint firstItem="4kz-cj-5HH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="tlB-Jh-d4Q"/>
+                <constraint firstItem="vA5-Pc-fyF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wxJ-oO-9Yh"/>
                 <constraint firstItem="m6z-Og-Ia0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xnM-Ry-PRy"/>
             </constraints>
             <point key="canvasLocation" x="18" y="-11"/>
@@ -54,6 +75,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

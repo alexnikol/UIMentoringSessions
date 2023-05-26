@@ -819,7 +819,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 16 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 17 nibs.
   struct nib {
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
@@ -837,6 +837,8 @@ struct R: Rswift.Validatable {
     static let olkha_AnimalsCell = _R.nib._Olkha_AnimalsCell()
     /// Nib `Olkha_FilterAnimalsCell`.
     static let olkha_FilterAnimalsCell = _R.nib._Olkha_FilterAnimalsCell()
+    /// Nib `VladyslavYurchenko_CoffeeShopCell`.
+    static let vladyslavYurchenko_CoffeeShopCell = _R.nib._VladyslavYurchenko_CoffeeShopCell()
     /// Nib `VladyslavYurchenko_CoffeeShopViewController`.
     static let vladyslavYurchenko_CoffeeShopViewController = _R.nib._VladyslavYurchenko_CoffeeShopViewController()
     /// Nib `VladyslavYurchenko_StartScreenViewController`.
@@ -915,6 +917,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.olkha_FilterAnimalsCell) instead")
     static func olkha_FilterAnimalsCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.olkha_FilterAnimalsCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "VladyslavYurchenko_CoffeeShopCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.vladyslavYurchenko_CoffeeShopCell) instead")
+    static func vladyslavYurchenko_CoffeeShopCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.vladyslavYurchenko_CoffeeShopCell)
     }
     #endif
 
@@ -1012,6 +1022,10 @@ struct R: Rswift.Validatable {
 
     static func olkha_FilterAnimalsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> Olkha_FilterAnimalsCell? {
       return R.nib.olkha_FilterAnimalsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? Olkha_FilterAnimalsCell
+    }
+
+    static func vladyslavYurchenko_CoffeeShopCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> VladyslavYurchenko_CoffeeShopCell? {
+      return R.nib.vladyslavYurchenko_CoffeeShopCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? VladyslavYurchenko_CoffeeShopCell
     }
 
     static func vladyslavYurchenko_CoffeeShopViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -1412,6 +1426,7 @@ struct _R: Rswift.Validatable {
       try _OleksandrKharchenko_StartScreenViewController.validate()
       try _Olkha_AnimalsCell.validate()
       try _Olkha_FilterAnimalsCell.validate()
+      try _VladyslavYurchenko_CoffeeShopCell.validate()
       try _VladyslavYurchenko_StartScreenViewController.validate()
       try _YeYa_CoffeeShopCell.validate()
       try _YefimYakuninGamingScreenViewController.validate()
@@ -1563,6 +1578,24 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "allPet", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'allPet' is used in nib 'Olkha_FilterAnimalsCell', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
           if UIKit.UIColor(named: "descriptionColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'descriptionColor' is used in nib 'Olkha_FilterAnimalsCell', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _VladyslavYurchenko_CoffeeShopCell: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "VladyslavYurchenko_CoffeeShopCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> VladyslavYurchenko_CoffeeShopCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? VladyslavYurchenko_CoffeeShopCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "tagImage", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'tagImage' is used in nib 'VladyslavYurchenko_CoffeeShopCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "descriptionColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'descriptionColor' is used in nib 'VladyslavYurchenko_CoffeeShopCell', but couldn't be loaded.") }
         }
       }
 
