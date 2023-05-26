@@ -37,7 +37,7 @@ final class VladyslavYurchenko_CoffeeShopViewController: UIViewController {
                 description: "293 Roberts Avenue Westbury"
             )
         ]
-        models = item
+        models = item + item + item 
     }
 }
 
