@@ -18,7 +18,7 @@ final class MaksymBilykFactory: MenteeChallengesFactory {
         case .login:
             return nil
         case .startScreen:
-            return MaksymBilyk_StartScreenViewController()
+            return nil
         case .gamingScreen:
             return nil
         case .petsMainScreen:
