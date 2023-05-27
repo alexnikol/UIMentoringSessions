@@ -1,4 +1,10 @@
-//  Created by Maxos on 5/22/23.
+//
+//  MaksymBilykFactory.swift
+//  UIMentoringSession
+//
+//  Created by Maxos on 5/24/23.
+//  Copyright © 2023 Almost Engineer. All rights reserved.
+//
 
 import UIKit
 
@@ -12,7 +18,7 @@ final class MaksymBilykFactory: MenteeChallengesFactory {
         case .login:
             return nil
         case .startScreen:
-            return nil
+            return MaksymBilyk_StartScreenViewController()
         case .gamingScreen:
             return nil
         case .petsMainScreen:

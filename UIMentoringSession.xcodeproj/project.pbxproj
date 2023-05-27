@@ -298,6 +298,7 @@
 		8D25177129C4AE8300CD54A5 /* Start Screen UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				9D37A5072A1E10D400D100CB /* Bilyk */,
 				1C5AF6DE29E71EC000FDDC7A /* VladyslavYurchenko */,
 				8D25177229C4AE8300CD54A5 /* OleksandrKharchenko */,
 				8D25177529C4AE8300CD54A5 /* YefimYakunin */,
@@ -442,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				8D25179B29C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift */,
+				9D37A5042A1E105800D100CB /* MaksymBilykFactory.swift */,
 				8D25179C29C4AE8300CD54A5 /* YefimYakuninFactory.swift */,
 				9D37A4EE2A1BBCC600D100CB /* MaksymBilykFactory.swift */,
 				8D25179D29C4AE8300CD54A5 /* MenteesList.swift */,
@@ -627,6 +629,7 @@
 				8D2517BC29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib in Resources */,
 				9D37A5012A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.xib in Resources */,
 				8D2517AF29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */,
+				9D37A50B2A1E120C00D100CB /* MaksymBilyk_StartScreenViewController.xib in Resources */,
 				8D2517B429C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
 				48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */,
 			);
@@ -730,12 +733,14 @@
 				3389CBF829D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift in Sources */,
 				8D2517BE29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
 				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
+				9D37A50A2A1E120C00D100CB /* MaksymBilyk_StartScreenViewController.swift in Sources */,
 				33E311F229E7325700014BA9 /* OlKha_FilterViewModel.swift in Sources */,
 				8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */,
 				8D2517AE29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift in Sources */,
 				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,
 				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
+				9D37A5052A1E105800D100CB /* MaksymBilykFactory.swift in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
 				8DF4FDB229B6499600EA8715 /* (null) in Sources */,
 				8D2517BD29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift in Sources */,
