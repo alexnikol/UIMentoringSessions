@@ -1,7 +1,6 @@
 import UIKit
 
 final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet private weak var petIconImage: UIImageView!
     @IBOutlet private weak var kindOfPetLabel: UILabel!
     
@@ -13,11 +12,6 @@ final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupLayout()
-    }
-    
-    private func setupLayout() {
-        layer.cornerRadius = 26
-        layer.borderWidth = 1
     }
     
     func setup(petFilterModel petFilter: YeYa_PetFilterModel, isSelected: Bool) {
@@ -32,5 +26,10 @@ final class YeYa_PetFilterCollectionViewCell: UICollectionViewCell {
             layer.borderColor = UIColor.black.withAlphaComponent(0.05).cgColor
             kindOfPetLabel.textColor = RColor.petTextColor()
         }
+    }
+    
+    private func setupLayout() {
+        layer.cornerRadius = 26
+        layer.borderWidth = 1
     }
 }

@@ -3,10 +3,10 @@ import UIKit
 final class YeYa_PetsViewController: UIViewController {
     @IBOutlet private weak var filtersCollectionView: UICollectionView!
     @IBOutlet private weak var petsCollectionView: UICollectionView!
-    var pets: [YeYa_PetModel] = []
-    var filters: [YeYa_PetFilterModel] = []
-    var filteredPets: [YeYa_PetModel] = []
-    var selectedFilterType: YeYa_PetType = .allPets
+    private var pets: [YeYa_PetModel] = []
+    private var filters: [YeYa_PetFilterModel] = []
+    private var filteredPets: [YeYa_PetModel] = []
+    private var selectedFilterType: YeYa_PetType = .allPets
     
     override func viewDidLoad() {
         super.viewDidLoad()
