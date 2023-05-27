@@ -14,11 +14,11 @@ final class MaksymBilykFactory: MenteeChallengesFactory {
     func uiScreenFor(challenge: Challenge) -> UIViewController? {
         switch challenge {
         case .coffeeShopList:
-            return nil
+            return MaksymBilyk_CoffeShopViewController()
         case .login:
             return nil
         case .startScreen:
-            return MaksymBilyk_StartScreenViewController()
+            return nil
         case .gamingScreen:
             return nil
         case .petsMainScreen:
