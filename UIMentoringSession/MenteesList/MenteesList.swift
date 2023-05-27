@@ -9,7 +9,8 @@ enum MenteesList {
             OleksandrNikolaichukFactory(),
             YefimYakuninFactory(),
             OleksandrKharchenkoFactory(),
-            VladyslavYurchenkoFactory()
+            VladyslavYurchenkoFactory(),
+            MaksymBilykFactory()
         ]
     }
 }
