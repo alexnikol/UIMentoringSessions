@@ -15,8 +15,7 @@ final class MaksymBilyk_StartScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         descriptionLabel.text = RText.startScreenLabel()
-        letsGoButton.setTitle(RText.startScreenButton(), for: .normal)
-        letsGoButton.layer.cornerRadius = 32
+        letsGoButton.layer.cornerRadius = 20
         letsGoButton.backgroundColor = RColor.letSGoButtonColor()
         letsGoButton.tintColor = UIColor.white
     }
