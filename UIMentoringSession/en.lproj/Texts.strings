@@ -12,3 +12,5 @@
 "PetsList.petAgeYears" = "years";
 "PetsList.petAgeMonth" = "month";
 "PetsList.petAgeMonths" = "months";
+"StartScreen.button" = "Let's Go!";
+"StartScreen.label" = "Happiness is closer than you think";

@@ -12,3 +12,5 @@
 "PetsList.petAgeYears" = "роки";
 "PetsList.petAgeMonth" = "місяц";
 "PetsList.petAgeMonths" = "місяців";
+"StartScreen.button" = "Поїхали!";
+"StartScreen.label" = "Щастя ближче, ніж ви думаєте";
