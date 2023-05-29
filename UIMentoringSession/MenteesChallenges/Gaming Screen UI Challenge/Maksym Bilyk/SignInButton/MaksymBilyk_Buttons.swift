@@ -10,10 +10,6 @@ import UIKit
 
 final class MaksymBilyk_Buttons: UIButton {
     
-    private func setupButton() {
-        titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButton()
@@ -22,5 +18,9 @@ final class MaksymBilyk_Buttons: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupButton()
+    }
+    
+    private func setupButton() {
+        titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: .semibold)
     }
 }

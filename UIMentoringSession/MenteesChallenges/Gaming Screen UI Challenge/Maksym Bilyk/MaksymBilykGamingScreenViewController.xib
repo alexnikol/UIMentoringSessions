@@ -39,7 +39,7 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKK-vq-dlt">
                             <rect key="frame" x="0.0" y="0.0" width="329" height="57.333333333333336"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="48"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>

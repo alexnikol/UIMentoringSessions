@@ -10,14 +10,6 @@ import UIKit
 
 final class MaksymBilyk_ViewButton: UIView {
     
-    private func setupViewButton() {
-        let colorViewForButton = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.20)
-        backgroundColor = colorViewForButton
-        layer.cornerRadius = 24
-        layer.borderColor = UIColor.white.cgColor
-        layer.borderWidth = 2
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViewButton()
@@ -26,5 +18,13 @@ final class MaksymBilyk_ViewButton: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupViewButton()
+    }
+    
+    private func setupViewButton() {
+        let colorViewForButton = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.20)
+        backgroundColor = colorViewForButton
+        layer.cornerRadius = 24
+        layer.borderColor = UIColor.white.cgColor
+        layer.borderWidth = 2
     }
 }

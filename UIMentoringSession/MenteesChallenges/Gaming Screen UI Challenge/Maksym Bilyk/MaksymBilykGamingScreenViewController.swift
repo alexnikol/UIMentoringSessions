@@ -9,7 +9,7 @@
 import UIKit
 
 final class MaksymBilykGamingScreenViewController: UIViewController {
-    var gradient: CAGradientLayer!
+    private var gradient: CAGradientLayer!
     @IBOutlet private weak var gamingLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var passwordLabel: UILabel!
@@ -34,7 +34,12 @@ final class MaksymBilykGamingScreenViewController: UIViewController {
         appleButton.setTitle(RText.gamingAppleButton().uppercased(), for: .normal)
         facebookButton.setTitle(RText.gamingFacebookButton().uppercased(), for: .normal)
         phoneButton.setTitle(RText.gamingPhoneButton().uppercased(), for: .normal)
-        }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        gradient.frame = view.bounds
+    }
     
     private func setGradientLayer() {
         gradient = CAGradientLayer()
