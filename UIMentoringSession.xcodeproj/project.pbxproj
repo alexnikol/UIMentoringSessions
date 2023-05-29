@@ -68,9 +68,17 @@
 		8DF4FDB229B6499600EA8715 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		8DF4FDB929B64A0B00EA8715 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		9D57BCB22A254483007DB421 /* MaksymBilyk_PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57BCB02A254483007DB421 /* MaksymBilyk_PetsViewController.swift */; };
+		9D57BCB32A254483007DB421 /* MaksymBilyk_PetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D57BCB12A254483007DB421 /* MaksymBilyk_PetsViewController.xib */; };
+		9D57BCB62A254824007DB421 /* MaksymBilyk_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57BCB52A254824007DB421 /* MaksymBilyk_AnimalsTypes.swift */; };
+		9D57BCB92A254892007DB421 /* MaksymBilyk_FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57BCB82A254892007DB421 /* MaksymBilyk_FilterViewModel.swift */; };
+		9D57BCBB2A2549DE007DB421 /* MaksymBilyk_PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57BCBA2A2549DE007DB421 /* MaksymBilyk_PetsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
+		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
+		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
 		3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsTypes.swift; sourceTree = "<group>"; };
 		3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsCell.swift; sourceTree = "<group>"; };
@@ -79,9 +87,6 @@
 		33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_FilterAnimalsCell.swift; sourceTree = "<group>"; };
 		33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Olkha_FilterAnimalsCell.xib; sourceTree = "<group>"; };
 		33E311F129E7325700014BA9 /* OlKha_FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_FilterViewModel.swift; sourceTree = "<group>"; };
-		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
-		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
-		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
 		48A0090B29C099C900DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		48A0090F29C0A6C500DE0A2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
 		48A0091129C0A6D500DE0A2F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
@@ -134,6 +139,11 @@
 		8D4271DA299F789600321A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4271E2299F7BBD00321A85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		8DAF20CB29C4991D003ADAD3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		9D57BCB02A254483007DB421 /* MaksymBilyk_PetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_PetsViewController.swift; sourceTree = "<group>"; };
+		9D57BCB12A254483007DB421 /* MaksymBilyk_PetsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaksymBilyk_PetsViewController.xib; sourceTree = "<group>"; };
+		9D57BCB52A254824007DB421 /* MaksymBilyk_AnimalsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_AnimalsTypes.swift; sourceTree = "<group>"; };
+		9D57BCB82A254892007DB421 /* MaksymBilyk_FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_FilterViewModel.swift; sourceTree = "<group>"; };
+		9D57BCBA2A2549DE007DB421 /* MaksymBilyk_PetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_PetsViewModel.swift; sourceTree = "<group>"; };
 		A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7836AFE77AD449BF51E5C2 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		F4D4A726FE8B1D6FED3A787B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +216,7 @@
 		48E2EC1629D386F400A9ACE2 /* Pets Main Card UI Chellenge */ = {
 			isa = PBXGroup;
 			children = (
+				9D57BCAF2A254457007DB421 /* Maksym Bilyk */,
 				48E2EC2129D3885400A9ACE2 /* README.md */,
 				48E2EC1829D3876D00A9ACE2 /* YefimYakunin */,
 				48E2EC1729D3875D00A9ACE2 /* OleksandrKharchenko */,
@@ -493,6 +504,34 @@
 			path = UIMentoringSession;
 			sourceTree = "<group>";
 		};
+		9D57BCAF2A254457007DB421 /* Maksym Bilyk */ = {
+			isa = PBXGroup;
+			children = (
+				9D57BCB72A25487A007DB421 /* Models */,
+				9D57BCB42A2547CE007DB421 /* Types */,
+				9D57BCB02A254483007DB421 /* MaksymBilyk_PetsViewController.swift */,
+				9D57BCB12A254483007DB421 /* MaksymBilyk_PetsViewController.xib */,
+			);
+			path = "Maksym Bilyk";
+			sourceTree = "<group>";
+		};
+		9D57BCB42A2547CE007DB421 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				9D57BCB52A254824007DB421 /* MaksymBilyk_AnimalsTypes.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		9D57BCB72A25487A007DB421 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D57BCB82A254892007DB421 /* MaksymBilyk_FilterViewModel.swift */,
+				9D57BCBA2A2549DE007DB421 /* MaksymBilyk_PetsViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FFFCE0C5A6F01B233D8D311D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +621,7 @@
 				8D2517BA29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */,
 				3389CBF929D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib in Resources */,
 				8D2517BC29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib in Resources */,
+				9D57BCB32A254483007DB421 /* MaksymBilyk_PetsViewController.xib in Resources */,
 				8D2517AF29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */,
 				8D2517B429C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
 				48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */,
@@ -658,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */,
+				9D57BCB62A254824007DB421 /* MaksymBilyk_AnimalsTypes.swift in Sources */,
 				8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
 				33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
@@ -671,16 +712,19 @@
 				8D2517BB29C4AE8300CD54A5 /* YefimYakunin_MainButton.swift in Sources */,
 				8D2517B129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift in Sources */,
 				8D2517C629C4AE8300CD54A5 /* ChallengesListViewController.swift in Sources */,
+				9D57BCB22A254483007DB421 /* MaksymBilyk_PetsViewController.swift in Sources */,
 				8D2517C029C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift in Sources */,
 				33BF038929EE71AD00C797C0 /* OlKha_PetsViewModel.swift in Sources */,
 				33E311EF29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift in Sources */,
 				8D2517C529C4AE8300CD54A5 /* MenteesListController.swift in Sources */,
 				8D2517B229C4AE8300CD54A5 /* YeYaSignInButton.swift in Sources */,
 				8D2517C129C4AE8300CD54A5 /* YefimYakuninFactory.swift in Sources */,
+				9D57BCBB2A2549DE007DB421 /* MaksymBilyk_PetsViewModel.swift in Sources */,
 				1C5AF6E129E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift in Sources */,
 				8D2517B829C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift in Sources */,
 				8D2517B529C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
 				3389CBF829D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift in Sources */,
+				9D57BCB92A254892007DB421 /* MaksymBilyk_FilterViewModel.swift in Sources */,
 				8D2517BE29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
 				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
 				33E311F229E7325700014BA9 /* OlKha_FilterViewModel.swift in Sources */,
