@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MaksymBilyk_AnimalsCell" id="PPm-ta-b7o" customClass="MaksymBilyk_AnimalsCell" customModule="UIMentoringSession" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whitheyCat" translatesAutoresizingMaskIntoConstraints="NO" id="fV0-RB-Sw0">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="122.33333333333333"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fV0-RB-Sw0" secondAttribute="height" multiplier="163:116" id="Rjv-IH-bun"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name sssssssssss" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-iD-Hek" userLabel="name Label">
+                        <rect key="frame" x="8" y="130.33333333333334" width="97" height="38.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="2.5 years" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyZ-8N-b94" userLabel="age Label">
+                        <rect key="frame" x="107" y="130.33333333333334" width="57" height="15.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" name="descriptionColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="breed animal" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcj-Jm-b0x" userLabel="breed Animal Label">
+                        <rect key="frame" x="8" y="172.66666666666666" width="156" height="14.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" name="descriptionColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favouritePet" translatesAutoresizingMaskIntoConstraints="NO" id="WNi-BU-oNc">
+                        <rect key="frame" x="140" y="8" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="3If-m9-ajf"/>
+                            <constraint firstAttribute="width" constant="24" id="p7p-Yf-FRw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Vw0-DH-c9a"/>
+            <constraints>
+                <constraint firstItem="WNi-BU-oNc" firstAttribute="top" secondItem="PPm-ta-b7o" secondAttribute="top" constant="8" id="1Jo-JP-m9k"/>
+                <constraint firstItem="TyZ-8N-b94" firstAttribute="top" secondItem="fV0-RB-Sw0" secondAttribute="bottom" constant="8" id="Bop-3P-pG1"/>
+                <constraint firstItem="gJs-iD-Hek" firstAttribute="leading" secondItem="PPm-ta-b7o" secondAttribute="leading" constant="8" id="J5w-7r-9Gx"/>
+                <constraint firstItem="gJs-iD-Hek" firstAttribute="top" secondItem="fV0-RB-Sw0" secondAttribute="bottom" constant="8" id="Nt9-9i-JMt"/>
+                <constraint firstItem="Rcj-Jm-b0x" firstAttribute="leading" secondItem="PPm-ta-b7o" secondAttribute="leading" constant="8" id="WJW-Hf-jMl"/>
+                <constraint firstAttribute="trailing" secondItem="fV0-RB-Sw0" secondAttribute="trailing" id="Y85-B0-ILn"/>
+                <constraint firstItem="TyZ-8N-b94" firstAttribute="leading" secondItem="gJs-iD-Hek" secondAttribute="trailing" constant="2" id="e2b-qj-ULh"/>
+                <constraint firstAttribute="trailing" secondItem="Rcj-Jm-b0x" secondAttribute="trailing" constant="8" id="f8h-Wu-RfK"/>
+                <constraint firstItem="Rcj-Jm-b0x" firstAttribute="top" secondItem="gJs-iD-Hek" secondAttribute="bottom" constant="4" id="jBp-OA-bR7"/>
+                <constraint firstAttribute="trailing" secondItem="TyZ-8N-b94" secondAttribute="trailing" constant="8" id="lg9-Js-MA1"/>
+                <constraint firstItem="fV0-RB-Sw0" firstAttribute="top" secondItem="PPm-ta-b7o" secondAttribute="top" id="mHV-zi-XaE"/>
+                <constraint firstAttribute="trailing" secondItem="WNi-BU-oNc" secondAttribute="trailing" constant="8" id="rDp-Ou-F8R"/>
+                <constraint firstItem="fV0-RB-Sw0" firstAttribute="leading" secondItem="PPm-ta-b7o" secondAttribute="leading" id="ra1-rx-aWH"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Rcj-Jm-b0x" secondAttribute="bottom" id="sf5-Hc-Ccs"/>
+            </constraints>
+            <size key="customSize" width="172" height="192"/>
+            <connections>
+                <outlet property="ageLabel" destination="TyZ-8N-b94" id="6Li-JJ-irB"/>
+                <outlet property="animalBreedLabel" destination="Rcj-Jm-b0x" id="Y6d-5B-V3q"/>
+                <outlet property="animalImageView" destination="fV0-RB-Sw0" id="XSh-Ay-Xgc"/>
+                <outlet property="nameLabel" destination="gJs-iD-Hek" id="Q3S-FY-fWE"/>
+            </connections>
+            <point key="canvasLocation" x="137.40458015267174" y="-7.746478873239437"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="favouritePet" width="24" height="24"/>
+        <image name="whitheyCat" width="163" height="116"/>
+        <namedColor name="descriptionColor">
+            <color red="0.54900002479553223" green="0.54900002479553223" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

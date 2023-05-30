@@ -819,8 +819,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 15 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 18 nibs.
   struct nib {
+    /// Nib `MaksymBilyk_AnimalsCell`.
+    static let maksymBilyk_AnimalsCell = _R.nib._MaksymBilyk_AnimalsCell()
+    /// Nib `MaksymBilyk_FilterPetsCell`.
+    static let maksymBilyk_FilterPetsCell = _R.nib._MaksymBilyk_FilterPetsCell()
+    /// Nib `MaksymBilyk_PetsViewController`.
+    static let maksymBilyk_PetsViewController = _R.nib._MaksymBilyk_PetsViewController()
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
     /// Nib `OlKha_PetsViewController`.
@@ -851,6 +857,30 @@ struct R: Rswift.Validatable {
     static let yefimYakuninGamingScreenViewController = _R.nib._YefimYakuninGamingScreenViewController()
     /// Nib `YefimYakunin_StartScreenViewController`.
     static let yefimYakunin_StartScreenViewController = _R.nib._YefimYakunin_StartScreenViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MaksymBilyk_AnimalsCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.maksymBilyk_AnimalsCell) instead")
+    static func maksymBilyk_AnimalsCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.maksymBilyk_AnimalsCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MaksymBilyk_FilterPetsCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.maksymBilyk_FilterPetsCell) instead")
+    static func maksymBilyk_FilterPetsCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.maksymBilyk_FilterPetsCell)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MaksymBilyk_PetsViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.maksymBilyk_PetsViewController) instead")
+    static func maksymBilyk_PetsViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.maksymBilyk_PetsViewController)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "OlKha_IOSNewsViewController", in: bundle)`
@@ -972,6 +1002,18 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    static func maksymBilyk_AnimalsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MaksymBilyk_AnimalsCell? {
+      return R.nib.maksymBilyk_AnimalsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MaksymBilyk_AnimalsCell
+    }
+
+    static func maksymBilyk_FilterPetsCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MaksymBilyk_FilterPetsCell? {
+      return R.nib.maksymBilyk_FilterPetsCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MaksymBilyk_FilterPetsCell
+    }
+
+    static func maksymBilyk_PetsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.maksymBilyk_PetsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
     static func olKha_IOSNewsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.olKha_IOSNewsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
@@ -1035,8 +1077,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 4 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `MaksymBilyk_AnimalsCell`.
+    static let maksymBilyk_AnimalsCell: Rswift.ReuseIdentifier<MaksymBilyk_AnimalsCell> = Rswift.ReuseIdentifier(identifier: "MaksymBilyk_AnimalsCell")
+    /// Reuse identifier `MaksymBilyk_FilterPetsCell`.
+    static let maksymBilyk_FilterPetsCell: Rswift.ReuseIdentifier<MaksymBilyk_FilterPetsCell> = Rswift.ReuseIdentifier(identifier: "MaksymBilyk_FilterPetsCell")
     /// Reuse identifier `Olkha_AnimalsCell`.
     static let olkha_AnimalsCell: Rswift.ReuseIdentifier<Olkha_AnimalsCell> = Rswift.ReuseIdentifier(identifier: "Olkha_AnimalsCell")
     /// Reuse identifier `Olkha_FilterAnimalsCell`.
@@ -1391,6 +1437,9 @@ struct _R: Rswift.Validatable {
   #if os(iOS) || os(tvOS)
   struct nib: Rswift.Validatable {
     static func validate() throws {
+      try _MaksymBilyk_AnimalsCell.validate()
+      try _MaksymBilyk_FilterPetsCell.validate()
+      try _MaksymBilyk_PetsViewController.validate()
       try _OlKha_PetsViewController.validate()
       try _OleksandrKharchenko_CoffeShopCell.validate()
       try _OleksandrKharchenko_CoffeShopViewController.validate()
@@ -1402,6 +1451,66 @@ struct _R: Rswift.Validatable {
       try _YeYa_CoffeeShopCell.validate()
       try _YefimYakuninGamingScreenViewController.validate()
       try _YefimYakunin_StartScreenViewController.validate()
+    }
+
+    struct _MaksymBilyk_AnimalsCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+      typealias ReusableType = MaksymBilyk_AnimalsCell
+
+      let bundle = R.hostingBundle
+      let identifier = "MaksymBilyk_AnimalsCell"
+      let name = "MaksymBilyk_AnimalsCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MaksymBilyk_AnimalsCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MaksymBilyk_AnimalsCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "favouritePet", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'favouritePet' is used in nib 'MaksymBilyk_AnimalsCell', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "whitheyCat", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'whitheyCat' is used in nib 'MaksymBilyk_AnimalsCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "descriptionColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'descriptionColor' is used in nib 'MaksymBilyk_AnimalsCell', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _MaksymBilyk_FilterPetsCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+      typealias ReusableType = MaksymBilyk_FilterPetsCell
+
+      let bundle = R.hostingBundle
+      let identifier = "MaksymBilyk_FilterPetsCell"
+      let name = "MaksymBilyk_FilterPetsCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MaksymBilyk_FilterPetsCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MaksymBilyk_FilterPetsCell
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "allPet", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'allPet' is used in nib 'MaksymBilyk_FilterPetsCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "descriptionColor", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'descriptionColor' is used in nib 'MaksymBilyk_FilterPetsCell', but couldn't be loaded.") }
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _MaksymBilyk_PetsViewController: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "MaksymBilyk_PetsViewController"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "logoTakeeBlack", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'logoTakeeBlack' is used in nib 'MaksymBilyk_PetsViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
     }
 
     struct _OlKha_IOSNewsViewController: Rswift.NibResourceType {
