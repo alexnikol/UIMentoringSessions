@@ -17,7 +17,7 @@ class MaksymBilyk_FilterPetsCell: UICollectionViewCell, ReuseIdentifierType {
     
     private func setupLayout() {
         backgroundColor = .white
-        layer.cornerRadius = 100
+        layer.cornerRadius = 26
         layer.borderColor = UIColor.black.withAlphaComponent(0.20).cgColor
         layer.borderWidth = 1
     }
