@@ -13,12 +13,9 @@ final class MaksymBilykGamingScreenViewController: UIViewController {
     @IBOutlet private weak var gamingLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var passwordLabel: UILabel!
-    @IBOutlet weak var appleButton: MaksymBilyk_Buttons!
-    @IBOutlet weak var facebookButton: MaksymBilyk_Buttons!
-    @IBOutlet weak var phoneButton: MaksymBilyk_Buttons!
-    @IBOutlet weak var appleButtonView: MaksymBilyk_ViewButton!
-    @IBOutlet weak var facebookButtonView: MaksymBilyk_ViewButton!
-    @IBOutlet weak var phoneButtonView: MaksymBilyk_ViewButton!
+    weak var appleButton: MaksymBilyk_ActionButton!
+    weak var facebookButton: MaksymBilyk_ActionButton!
+    weak var phoneButton: MaksymBilyk_ActionButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +28,9 @@ final class MaksymBilykGamingScreenViewController: UIViewController {
             firstPartOfText: RText.gamingFirstPartOfText(),
             secondPartOfText: RText.gamingSecondPartOfText()
         )
-        appleButton.setTitle(RText.gamingAppleButton().uppercased(), for: .normal)
-        facebookButton.setTitle(RText.gamingFacebookButton().uppercased(), for: .normal)
-        phoneButton.setTitle(RText.gamingPhoneButton().uppercased(), for: .normal)
+        appleButton.setup(title: "Apple", image: RImage.appleIcon()!)
+        facebookButton.setup(title: "Facebook", image: RImage.facebookIcon()!)
+        phoneButton.setup(title: "Phone", image: RImage.phoneIcon()!)
     }
     
     override func viewDidLayoutSubviews() {
