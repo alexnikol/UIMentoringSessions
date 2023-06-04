@@ -15,16 +15,25 @@
 		33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */; };
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
-		48561D8B2A124184008CE25B /* YeYa_PetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48561D8A2A124184008CE25B /* YeYa_PetType.swift */; };
-		48761C382A1243E1003CE40B /* YeYa_PetFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48761C372A1243E1003CE40B /* YeYa_PetFilterModel.swift */; };
-		48908D4C29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */; };
-		48908D4D29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */; };
 		3389CBF829D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */; };
 		3389CBF929D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3389CBF729D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib */; };
 		33BF038929EE71AD00C797C0 /* OlKha_PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF038829EE71AD00C797C0 /* OlKha_PetsViewModel.swift */; };
 		33E311EF29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */; };
 		33E311F029E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */; };
 		33E311F229E7325700014BA9 /* OlKha_FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E311F129E7325700014BA9 /* OlKha_FilterViewModel.swift */; };
+		482FFA2B2A26139A00820B3B /* YeYa_BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482FFA2A2A26139A00820B3B /* YeYa_BookModel.swift */; };
+		48561D8B2A124184008CE25B /* YeYa_PetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48561D8A2A124184008CE25B /* YeYa_PetType.swift */; };
+		486D3F432A28EF6D00802452 /* YeYa_ReadingNowTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D3F422A28EF6D00802452 /* YeYa_ReadingNowTableViewCellModel.swift */; };
+		486D3F452A2A299800802452 /* YeYa_BookGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D3F442A2A299800802452 /* YeYa_BookGenre.swift */; };
+		486D3F472A2D082400802452 /* YeYa_MainPageCategore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D3F462A2D082400802452 /* YeYa_MainPageCategore.swift */; };
+		486D3F4A2A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D3F482A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.swift */; };
+		486D3F4B2A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486D3F492A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.xib */; };
+		486D3F4F2A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D3F4D2A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.swift */; };
+		486D3F502A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486D3F4E2A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.xib */; };
+		486D3F522A2D129900802452 /* YeYa_ReadingNowCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D3F512A2D129900802452 /* YeYa_ReadingNowCollectionViewCellModel.swift */; };
+		48761C382A1243E1003CE40B /* YeYa_PetFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48761C372A1243E1003CE40B /* YeYa_PetFilterModel.swift */; };
+		48908D4C29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */; };
+		48908D4D29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */; };
 		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
 		48A0624229ED49CC007BCF02 /* YeYa_PetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0624029ED49CC007BCF02 /* YeYa_PetCell.swift */; };
 		48A0624329ED49CC007BCF02 /* YeYa_PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A0624129ED49CC007BCF02 /* YeYa_PetCell.xib */; };
@@ -95,7 +104,16 @@
 		33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_FilterAnimalsCell.swift; sourceTree = "<group>"; };
 		33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Olkha_FilterAnimalsCell.xib; sourceTree = "<group>"; };
 		33E311F129E7325700014BA9 /* OlKha_FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_FilterViewModel.swift; sourceTree = "<group>"; };
+		482FFA2A2A26139A00820B3B /* YeYa_BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_BookModel.swift; sourceTree = "<group>"; };
 		48561D8A2A124184008CE25B /* YeYa_PetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_PetType.swift; sourceTree = "<group>"; };
+		486D3F422A28EF6D00802452 /* YeYa_ReadingNowTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_ReadingNowTableViewCellModel.swift; sourceTree = "<group>"; };
+		486D3F442A2A299800802452 /* YeYa_BookGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_BookGenre.swift; sourceTree = "<group>"; };
+		486D3F462A2D082400802452 /* YeYa_MainPageCategore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_MainPageCategore.swift; sourceTree = "<group>"; };
+		486D3F482A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_ReadingNowTableViewCell.swift; sourceTree = "<group>"; };
+		486D3F492A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YeYa_ReadingNowTableViewCell.xib; sourceTree = "<group>"; };
+		486D3F4D2A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_ReadingNowCollectionViewCell.swift; sourceTree = "<group>"; };
+		486D3F4E2A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YeYa_ReadingNowCollectionViewCell.xib; sourceTree = "<group>"; };
+		486D3F512A2D129900802452 /* YeYa_ReadingNowCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_ReadingNowCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		48761C372A1243E1003CE40B /* YeYa_PetFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_PetFilterModel.swift; sourceTree = "<group>"; };
 		48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeYa_PetFilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YeYa_PetFilterCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -229,6 +247,16 @@
 			path = FilterAnimalsCell;
 			sourceTree = "<group>";
 		};
+		482FFA292A2612A400820B3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				482FFA2A2A26139A00820B3B /* YeYa_BookModel.swift */,
+				486D3F442A2A299800802452 /* YeYa_BookGenre.swift */,
+				486D3F462A2D082400802452 /* YeYa_MainPageCategore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		48620D332A12530E0042E0D2 /* PetFilterCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +264,27 @@
 				48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */,
 			);
 			path = PetFilterCollectionCell;
+			sourceTree = "<group>";
+		};
+		486D3F412A28EF0700802452 /* ReadingNowTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				486D3F422A28EF6D00802452 /* YeYa_ReadingNowTableViewCellModel.swift */,
+				486D3F482A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.swift */,
+				486D3F492A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.xib */,
+				486D3F4C2A2D111400802452 /* ReadingNowCollectionViewCell */,
+			);
+			path = ReadingNowTableViewCell;
+			sourceTree = "<group>";
+		};
+		486D3F4C2A2D111400802452 /* ReadingNowCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				486D3F512A2D129900802452 /* YeYa_ReadingNowCollectionViewCellModel.swift */,
+				486D3F4D2A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.swift */,
+				486D3F4E2A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.xib */,
+			);
+			path = ReadingNowCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		48E2EC1629D386F400A9ACE2 /* Pets Main Card UI Chellenge */ = {
@@ -334,6 +383,8 @@
 		8D25176E29C4AE8300CD54A5 /* YefimYakunin */ = {
 			isa = PBXGroup;
 			children = (
+				486D3F412A28EF0700802452 /* ReadingNowTableViewCell */,
+				482FFA292A2612A400820B3B /* Model */,
 				8D25176F29C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift */,
 				8D25177029C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib */,
 			);
@@ -343,7 +394,6 @@
 		8D25177129C4AE8300CD54A5 /* Start Screen UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				9D37A5072A1E10D400D100CB /* Bilyk */,
 				1C5AF6DE29E71EC000FDDC7A /* VladyslavYurchenko */,
 				8D25177229C4AE8300CD54A5 /* OleksandrKharchenko */,
 				8D25177529C4AE8300CD54A5 /* YefimYakunin */,
@@ -488,7 +538,6 @@
 			isa = PBXGroup;
 			children = (
 				8D25179B29C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift */,
-				9D37A5042A1E105800D100CB /* MaksymBilykFactory.swift */,
 				8D25179C29C4AE8300CD54A5 /* YefimYakuninFactory.swift */,
 				9D37A4EE2A1BBCC600D100CB /* MaksymBilykFactory.swift */,
 				8D25179D29C4AE8300CD54A5 /* MenteesList.swift */,
@@ -663,6 +712,7 @@
 				1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */,
 				8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
+				486D3F502A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.xib in Resources */,
 				8D2517A729C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
 				48E2EC3229D419A200A9ACE2 /* OlKha_PetsViewController.xib in Resources */,
 				9D37A4F92A1BC98500D100CB /* MaksymBilyk_CoffeShopViewController.xib in Resources */,
@@ -676,7 +726,7 @@
 				8D2517BC29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib in Resources */,
 				9D37A5012A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.xib in Resources */,
 				8D2517AF29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */,
-				9D37A50B2A1E120C00D100CB /* MaksymBilyk_StartScreenViewController.xib in Resources */,
+				486D3F4B2A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.xib in Resources */,
 				8D2517B429C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
 				48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */,
 			);
@@ -753,11 +803,14 @@
 			files = (
 				1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */,
 				8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
+				486D3F4F2A2D11A100802452 /* YeYa_ReadingNowCollectionViewCell.swift in Sources */,
 				33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */,
 				8D2517C329C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift in Sources */,
+				486D3F452A2A299800802452 /* YeYa_BookGenre.swift in Sources */,
+				486D3F432A28EF6D00802452 /* YeYa_ReadingNowTableViewCellModel.swift in Sources */,
 				333913C729AE014D00B05E2B /* (null) in Sources */,
 				9D37A4EF2A1BBCC600D100CB /* MaksymBilykFactory.swift in Sources */,
 				8D2517A929C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.swift in Sources */,
@@ -765,6 +818,7 @@
 				8D2517A829C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.swift in Sources */,
 				8D2517BB29C4AE8300CD54A5 /* YefimYakunin_MainButton.swift in Sources */,
 				8D2517B129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift in Sources */,
+				486D3F4A2A2D0B0C00802452 /* YeYa_ReadingNowTableViewCell.swift in Sources */,
 				9D37A4FB2A1CE89C00D100CB /* MaksymBilyk_MainButton.swift in Sources */,
 				9D37A5002A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.swift in Sources */,
 				8D2517C629C4AE8300CD54A5 /* ChallengesListViewController.swift in Sources */,
@@ -774,15 +828,17 @@
 				8D2517C529C4AE8300CD54A5 /* MenteesListController.swift in Sources */,
 				8D2517B229C4AE8300CD54A5 /* YeYaSignInButton.swift in Sources */,
 				48908D4C29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift in Sources */,
+				486D3F472A2D082400802452 /* YeYa_MainPageCategore.swift in Sources */,
 				8D2517C129C4AE8300CD54A5 /* YefimYakuninFactory.swift in Sources */,
+				482FFA2B2A26139A00820B3B /* YeYa_BookModel.swift in Sources */,
 				1C5AF6E129E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift in Sources */,
 				8D2517B829C4AE8300CD54A5 /* OleksandrKharchenko_MainButton.swift in Sources */,
 				8D2517B529C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.swift in Sources */,
 				3389CBF829D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift in Sources */,
 				8D2517BE29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
 				48761C382A1243E1003CE40B /* YeYa_PetFilterModel.swift in Sources */,
+				486D3F522A2D129900802452 /* YeYa_ReadingNowCollectionViewCellModel.swift in Sources */,
 				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
-				9D37A50A2A1E120C00D100CB /* MaksymBilyk_StartScreenViewController.swift in Sources */,
 				33E311F229E7325700014BA9 /* OlKha_FilterViewModel.swift in Sources */,
 				8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */,
 				8D2517AE29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift in Sources */,
@@ -790,7 +846,6 @@
 				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,
 				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
-				9D37A5052A1E105800D100CB /* MaksymBilykFactory.swift in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
 				8DF4FDB229B6499600EA8715 /* (null) in Sources */,
 				8D2517BD29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift in Sources */,
@@ -952,7 +1007,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K9947R9LK8;
+				DEVELOPMENT_TEAM = 59HT9UJH46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -966,7 +1021,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "--------------------Personal-Team-";
+				PRODUCT_BUNDLE_IDENTIFIER = "ua.yeya.personal-team";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -985,7 +1040,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = K9947R9LK8;
+				DEVELOPMENT_TEAM = 59HT9UJH46;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIMentoringSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -999,7 +1054,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "--------------------Personal-Team-";
+				PRODUCT_BUNDLE_IDENTIFIER = "ua.yeya.personal-team";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
