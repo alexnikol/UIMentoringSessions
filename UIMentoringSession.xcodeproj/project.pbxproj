@@ -15,16 +15,16 @@
 		33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */; };
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
-		48561D8B2A124184008CE25B /* YeYa_PetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48561D8A2A124184008CE25B /* YeYa_PetType.swift */; };
-		48761C382A1243E1003CE40B /* YeYa_PetFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48761C372A1243E1003CE40B /* YeYa_PetFilterModel.swift */; };
-		48908D4C29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */; };
-		48908D4D29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */; };
 		3389CBF829D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */; };
 		3389CBF929D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3389CBF729D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib */; };
 		33BF038929EE71AD00C797C0 /* OlKha_PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF038829EE71AD00C797C0 /* OlKha_PetsViewModel.swift */; };
 		33E311EF29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E311ED29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift */; };
 		33E311F029E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E311EE29E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib */; };
 		33E311F229E7325700014BA9 /* OlKha_FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E311F129E7325700014BA9 /* OlKha_FilterViewModel.swift */; };
+		48561D8B2A124184008CE25B /* YeYa_PetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48561D8A2A124184008CE25B /* YeYa_PetType.swift */; };
+		48761C382A1243E1003CE40B /* YeYa_PetFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48761C372A1243E1003CE40B /* YeYa_PetFilterModel.swift */; };
+		48908D4C29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48908D4A29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift */; };
+		48908D4D29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48908D4B29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib */; };
 		48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48A0091029C0A6C500DE0A2F /* Texts.strings */; };
 		48A0624229ED49CC007BCF02 /* YeYa_PetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0624029ED49CC007BCF02 /* YeYa_PetCell.swift */; };
 		48A0624329ED49CC007BCF02 /* YeYa_PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A0624129ED49CC007BCF02 /* YeYa_PetCell.xib */; };
@@ -81,6 +81,7 @@
 		9D37A4FB2A1CE89C00D100CB /* MaksymBilyk_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37A4FA2A1CE89C00D100CB /* MaksymBilyk_MainButton.swift */; };
 		9D37A5002A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37A4FE2A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.swift */; };
 		9D37A5012A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D37A4FF2A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.xib */; };
+		9DD137002A2678EE0017E5DA /* Bilyk in Resources */ = {isa = PBXBuildFile; fileRef = 9DD136FF2A2678EE0017E5DA /* Bilyk */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +161,7 @@
 		9D37A4FA2A1CE89C00D100CB /* MaksymBilyk_MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_MainButton.swift; sourceTree = "<group>"; };
 		9D37A4FE2A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_CoffeShopCell.swift; sourceTree = "<group>"; };
 		9D37A4FF2A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaksymBilyk_CoffeShopCell.xib; sourceTree = "<group>"; };
+		9DD136FF2A2678EE0017E5DA /* Bilyk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bilyk; sourceTree = "<group>"; };
 		A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7836AFE77AD449BF51E5C2 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		F4D4A726FE8B1D6FED3A787B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
@@ -343,7 +345,7 @@
 		8D25177129C4AE8300CD54A5 /* Start Screen UI Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				9D37A5072A1E10D400D100CB /* Bilyk */,
+				9DD136FF2A2678EE0017E5DA /* Bilyk */,
 				1C5AF6DE29E71EC000FDDC7A /* VladyslavYurchenko */,
 				8D25177229C4AE8300CD54A5 /* OleksandrKharchenko */,
 				8D25177529C4AE8300CD54A5 /* YefimYakunin */,
@@ -488,7 +490,6 @@
 			isa = PBXGroup;
 			children = (
 				8D25179B29C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift */,
-				9D37A5042A1E105800D100CB /* MaksymBilykFactory.swift */,
 				8D25179C29C4AE8300CD54A5 /* YefimYakuninFactory.swift */,
 				9D37A4EE2A1BBCC600D100CB /* MaksymBilykFactory.swift */,
 				8D25179D29C4AE8300CD54A5 /* MenteesList.swift */,
@@ -667,6 +668,7 @@
 				48E2EC3229D419A200A9ACE2 /* OlKha_PetsViewController.xib in Resources */,
 				9D37A4F92A1BC98500D100CB /* MaksymBilyk_CoffeShopViewController.xib in Resources */,
 				33E311F029E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib in Resources */,
+				9DD137002A2678EE0017E5DA /* Bilyk in Resources */,
 				8D2517AA29C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib in Resources */,
 				8D2517A629C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib in Resources */,
 				8D2517B029C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib in Resources */,
@@ -676,7 +678,6 @@
 				8D2517BC29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib in Resources */,
 				9D37A5012A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.xib in Resources */,
 				8D2517AF29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */,
-				9D37A50B2A1E120C00D100CB /* MaksymBilyk_StartScreenViewController.xib in Resources */,
 				8D2517B429C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
 				48A0090E29C0A6C500DE0A2F /* Texts.strings in Resources */,
 			);
@@ -782,7 +783,6 @@
 				8D2517BE29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.swift in Sources */,
 				48761C382A1243E1003CE40B /* YeYa_PetFilterModel.swift in Sources */,
 				8D2517B729C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.swift in Sources */,
-				9D37A50A2A1E120C00D100CB /* MaksymBilyk_StartScreenViewController.swift in Sources */,
 				33E311F229E7325700014BA9 /* OlKha_FilterViewModel.swift in Sources */,
 				8D2517C829C4AF0000CD54A5 /* R.Aliases.swift in Sources */,
 				8D2517AE29C4AE8300CD54A5 /* OleksandrKharchenko_ViewButton.swift in Sources */,
@@ -790,7 +790,6 @@
 				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,
 				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
-				9D37A5052A1E105800D100CB /* MaksymBilykFactory.swift in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
 				8DF4FDB229B6499600EA8715 /* (null) in Sources */,
 				8D2517BD29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.swift in Sources */,
