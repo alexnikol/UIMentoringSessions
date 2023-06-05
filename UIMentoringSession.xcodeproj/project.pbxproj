@@ -12,6 +12,8 @@
 		1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */; };
 		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
 		3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */; };
+		330FEBE92A2CC3E600F84FB7 /* OlKha_PetCatrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330FEBE72A2CC3E600F84FB7 /* OlKha_PetCatrViewController.swift */; };
+		330FEBEA2A2CC3E600F84FB7 /* OlKha_PetCatrViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330FEBE82A2CC3E600F84FB7 /* OlKha_PetCatrViewController.xib */; };
 		33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */; };
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		333913C829AE014D00B05E2B /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -89,6 +91,8 @@
 		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
 		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
 		3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		330FEBE72A2CC3E600F84FB7 /* OlKha_PetCatrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_PetCatrViewController.swift; sourceTree = "<group>"; };
+		330FEBE82A2CC3E600F84FB7 /* OlKha_PetCatrViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OlKha_PetCatrViewController.xib; sourceTree = "<group>"; };
 		33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsTypes.swift; sourceTree = "<group>"; };
 		3389CBF629D5BECD00DCD1A7 /* Olkha_AnimalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsCell.swift; sourceTree = "<group>"; };
 		3389CBF729D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Olkha_AnimalsCell.xib; sourceTree = "<group>"; };
@@ -196,6 +200,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		330FEBEB2A2CC3F300F84FB7 /* PetCart */ = {
+			isa = PBXGroup;
+			children = (
+				330FEBE72A2CC3E600F84FB7 /* OlKha_PetCatrViewController.swift */,
+				330FEBE82A2CC3E600F84FB7 /* OlKha_PetCatrViewController.xib */,
+			);
+			path = PetCart;
+			sourceTree = "<group>";
+		};
 		33309E0A29E87BB300170025 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +266,7 @@
 		48E2EC1729D3875D00A9ACE2 /* OleksandrKharchenko */ = {
 			isa = PBXGroup;
 			children = (
+				330FEBEB2A2CC3F300F84FB7 /* PetCart */,
 				33BF039829EECDB200C797C0 /* FilterAnimalsCell */,
 				33BF038729EE713F00C797C0 /* Model */,
 				33309E0A29E87BB300170025 /* Enum */,
@@ -663,6 +677,7 @@
 				48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */,
 				1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */,
 				8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */,
+				330FEBEA2A2CC3E600F84FB7 /* OlKha_PetCatrViewController.xib in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D2517A729C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
 				48E2EC3229D419A200A9ACE2 /* OlKha_PetsViewController.xib in Resources */,
@@ -773,6 +788,7 @@
 				33BF038929EE71AD00C797C0 /* OlKha_PetsViewModel.swift in Sources */,
 				33E311EF29E72E8600014BA9 /* Olkha_FilterAnimalsCell.swift in Sources */,
 				8D2517C529C4AE8300CD54A5 /* MenteesListController.swift in Sources */,
+				330FEBE92A2CC3E600F84FB7 /* OlKha_PetCatrViewController.swift in Sources */,
 				8D2517B229C4AE8300CD54A5 /* YeYaSignInButton.swift in Sources */,
 				48908D4C29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.swift in Sources */,
 				8D2517C129C4AE8300CD54A5 /* YefimYakuninFactory.swift in Sources */,

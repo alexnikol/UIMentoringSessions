@@ -70,6 +70,9 @@ extension OlKha_PetsViewController: UICollectionViewDataSource, UICollectionView
             }
             animalsCollectionView.reloadData()
         }
+        if collectionView == animalsCollectionView {
+            navigationController?.pushViewController(OlKha_PetCatrViewController(), animated: true)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
