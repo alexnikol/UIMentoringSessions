@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C252AB32A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C252AB12A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.swift */; };
+		1C252AB42A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C252AB22A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.xib */; };
 		1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */; };
 		1C5AF6E129E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */; };
 		1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */; };
+		1CB1520F2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */; };
+		1CB152102A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */; };
+		1CB152122A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB152112A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift */; };
 		2E973A584888144DE531B9DC /* Pods_UIMentoringSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */; };
 		3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */; };
 		33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */; };
@@ -85,6 +90,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C252AB12A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_CoffeeShopCell.swift; sourceTree = "<group>"; };
+		1C252AB22A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VladyslavYurchenko_CoffeeShopCell.xib; sourceTree = "<group>"; };
+		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
+		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
+		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
+		1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_CoffeeShopViewController.swift; sourceTree = "<group>"; };
+		1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VladyslavYurchenko_CoffeeShopViewController.xib; sourceTree = "<group>"; };
+		1CB152112A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_MainButton.swift; sourceTree = "<group>"; };
 		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
 		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
 		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
@@ -186,6 +199,26 @@
 				1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */,
 			);
 			path = VladyslavYurchenko;
+			sourceTree = "<group>";
+		};
+		1CB1520C2A1FA7A100B2DA0E /* VladyslavYurchenko */ = {
+			isa = PBXGroup;
+			children = (
+				1CB1520D2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift */,
+				1CB1520E2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib */,
+				1CB152132A1FAD6400B2DA0E /* VladyslavYurchenko_View */,
+			);
+			path = VladyslavYurchenko;
+			sourceTree = "<group>";
+		};
+		1CB152132A1FAD6400B2DA0E /* VladyslavYurchenko_View */ = {
+			isa = PBXGroup;
+			children = (
+				1CB152112A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift */,
+				1C252AB12A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.swift */,
+				1C252AB22A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.xib */,
+			);
+			path = VladyslavYurchenko_View;
 			sourceTree = "<group>";
 		};
 		3308365229ED6A0700DC4774 /* Extensions */ = {
@@ -423,6 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				9D37A4E92A1BB4C000D100CB /* BilykMaksym */,
+				1CB1520C2A1FA7A100B2DA0E /* VladyslavYurchenko */,
 				8D25178729C4AE8300CD54A5 /* OleksandrKharchenko */,
 				8D25179129C4AE8300CD54A5 /* YefimYakunin */,
 				8D25179929C4AE8300CD54A5 /* README.md */,
@@ -660,6 +694,7 @@
 				8DF4FD8D29B63BB400EA8715 /* (null) in Resources */,
 				8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */,
 				8D2517B629C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
+				1CB152102A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.xib in Resources */,
 				48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */,
 				1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */,
 				8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */,
@@ -671,6 +706,7 @@
 				9DD137002A2678EE0017E5DA /* Bilyk in Resources */,
 				8D2517AA29C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib in Resources */,
 				8D2517A629C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib in Resources */,
+				1C252AB42A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.xib in Resources */,
 				8D2517B029C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib in Resources */,
 				8D4271D6299F789600321A85 /* Assets.xcassets in Resources */,
 				8D2517BA29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */,
@@ -754,8 +790,10 @@
 			files = (
 				1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */,
 				8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
+				1CB1520F2A1FA7E600B2DA0E /* VladyslavYurchenko_CoffeeShopViewController.swift in Sources */,
 				33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
+				1CB152122A1FABC800B2DA0E /* VladyslavYurchenko_MainButton.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */,
 				8D2517C329C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift in Sources */,
@@ -768,6 +806,7 @@
 				8D2517B129C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.swift in Sources */,
 				9D37A4FB2A1CE89C00D100CB /* MaksymBilyk_MainButton.swift in Sources */,
 				9D37A5002A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.swift in Sources */,
+				1C252AB32A211D33002C1B10 /* VladyslavYurchenko_CoffeeShopCell.swift in Sources */,
 				8D2517C629C4AE8300CD54A5 /* ChallengesListViewController.swift in Sources */,
 				8D2517C029C4AE8300CD54A5 /* OleksandrKharchenkoFactory.swift in Sources */,
 				33BF038929EE71AD00C797C0 /* OlKha_PetsViewModel.swift in Sources */,
