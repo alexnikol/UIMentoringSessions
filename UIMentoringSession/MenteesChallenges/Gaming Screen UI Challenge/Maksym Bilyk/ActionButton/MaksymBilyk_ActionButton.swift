@@ -8,9 +8,10 @@
 
 import UIKit
 
-final class MaksymBilyk_ActionButton {
-    @IBOutlet private weak var socialIconView: UIImageView!
-    @IBOutlet private weak var actionButton: MaksymBilyk_Buttons!
+final class MaksymBilyk_ActionButton: NibInitiableView {
+    
+    @IBOutlet weak var socialIconView: UIImageView!
+    @IBOutlet weak var actionButton: MaksymBilyk_Buttons!
     var onTap: (() -> Void)?
     
     @IBAction func onActionTap(_ sender: Any) {

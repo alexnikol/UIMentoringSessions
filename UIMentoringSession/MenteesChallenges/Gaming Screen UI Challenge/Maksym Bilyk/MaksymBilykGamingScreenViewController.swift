@@ -13,9 +13,10 @@ final class MaksymBilykGamingScreenViewController: UIViewController {
     @IBOutlet private weak var gamingLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var passwordLabel: UILabel!
-    weak var appleButton: MaksymBilyk_ActionButton!
-    weak var facebookButton: MaksymBilyk_ActionButton!
-    weak var phoneButton: MaksymBilyk_ActionButton!
+
+    @IBOutlet weak var appleButton: MaksymBilyk_ActionButton!
+    @IBOutlet weak var facebookButton: MaksymBilyk_ActionButton!
+    @IBOutlet weak var phoneButton: MaksymBilyk_ActionButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ final class MaksymBilykGamingScreenViewController: UIViewController {
             firstPartOfText: RText.gamingFirstPartOfText(),
             secondPartOfText: RText.gamingSecondPartOfText()
         )
-        appleButton.setup(title: "Apple", image: RImage.appleIcon()!)
+        appleButton.setup(title: "sss", image: RImage.facebookIcon()!)
         facebookButton.setup(title: "Facebook", image: RImage.facebookIcon()!)
         phoneButton.setup(title: "Phone", image: RImage.phoneIcon()!)
     }

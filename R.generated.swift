@@ -819,10 +819,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 16 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 17 nibs.
   struct nib {
     /// Nib `MaksymBilykGamingScreenViewController`.
     static let maksymBilykGamingScreenViewController = _R.nib._MaksymBilykGamingScreenViewController()
+    /// Nib `MaksymBilyk_ActionButton`.
+    static let maksymBilyk_ActionButton = _R.nib._MaksymBilyk_ActionButton()
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
     /// Nib `OlKha_PetsViewController`.
@@ -859,6 +861,14 @@ struct R: Rswift.Validatable {
     @available(*, deprecated, message: "Use UINib(resource: R.nib.maksymBilykGamingScreenViewController) instead")
     static func maksymBilykGamingScreenViewController(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.maksymBilykGamingScreenViewController)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "MaksymBilyk_ActionButton", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.maksymBilyk_ActionButton) instead")
+    static func maksymBilyk_ActionButton(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.maksymBilyk_ActionButton)
     }
     #endif
 
@@ -984,6 +994,10 @@ struct R: Rswift.Validatable {
 
     static func maksymBilykGamingScreenViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.maksymBilykGamingScreenViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+
+    static func maksymBilyk_ActionButton(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.maksymBilyk_ActionButton.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
 
     static func olKha_IOSNewsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
@@ -1406,6 +1420,7 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _MaksymBilykGamingScreenViewController.validate()
+      try _MaksymBilyk_ActionButton.validate()
       try _OlKha_PetsViewController.validate()
       try _OleksandrKharchenko_CoffeShopCell.validate()
       try _OleksandrKharchenko_CoffeShopViewController.validate()
@@ -1428,10 +1443,24 @@ struct _R: Rswift.Validatable {
       }
 
       static func validate() throws {
-        if UIKit.UIImage(named: "Apple icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Apple icon' is used in nib 'MaksymBilykGamingScreenViewController', but couldn't be loaded.") }
         if UIKit.UIImage(named: "Bird logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Bird logo' is used in nib 'MaksymBilykGamingScreenViewController', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "Facebook icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Facebook icon' is used in nib 'MaksymBilykGamingScreenViewController', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "Phone icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Phone icon' is used in nib 'MaksymBilykGamingScreenViewController', but couldn't be loaded.") }
+        if #available(iOS 11.0, tvOS 11.0, *) {
+        }
+      }
+
+      fileprivate init() {}
+    }
+
+    struct _MaksymBilyk_ActionButton: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "MaksymBilyk_ActionButton"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      static func validate() throws {
+        if UIKit.UIImage(named: "Apple icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Apple icon' is used in nib 'MaksymBilyk_ActionButton', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }

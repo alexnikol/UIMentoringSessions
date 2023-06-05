@@ -74,7 +74,7 @@
 		9D37A51C2A20FA7700D100CB /* MaksymBilyk_ViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37A51B2A20FA7700D100CB /* MaksymBilyk_ViewButton.swift */; };
 		9D37A51E2A20FD4B00D100CB /* MaksymBilyk_Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37A51D2A20FD4B00D100CB /* MaksymBilyk_Buttons.swift */; };
 		9DD137242A28B3ED0017E5DA /* MaksymBilyk_ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD137232A28B3ED0017E5DA /* MaksymBilyk_ActionButton.swift */; };
-		9DD137282A28B4D20017E5DA /* MaksymBilyk_ActionButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD137272A28B4D20017E5DA /* MaksymBilyk_ActionButtonView.xib */; };
+		9DD137452A2A0AE40017E5DA /* MaksymBilyk_ActionButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD137442A2A0AE40017E5DA /* MaksymBilyk_ActionButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,7 +147,7 @@
 		9D37A51B2A20FA7700D100CB /* MaksymBilyk_ViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_ViewButton.swift; sourceTree = "<group>"; };
 		9D37A51D2A20FD4B00D100CB /* MaksymBilyk_Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_Buttons.swift; sourceTree = "<group>"; };
 		9DD137232A28B3ED0017E5DA /* MaksymBilyk_ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaksymBilyk_ActionButton.swift; sourceTree = "<group>"; };
-		9DD137272A28B4D20017E5DA /* MaksymBilyk_ActionButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaksymBilyk_ActionButtonView.xib; sourceTree = "<group>"; };
+		9DD137442A2A0AE40017E5DA /* MaksymBilyk_ActionButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaksymBilyk_ActionButton.xib; sourceTree = "<group>"; };
 		A7751328C34ECF2D1C2A42C8 /* Pods_UIMentoringSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIMentoringSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7836AFE77AD449BF51E5C2 /* Pods-UIMentoringSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.debug.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.debug.xcconfig"; sourceTree = "<group>"; };
 		F4D4A726FE8B1D6FED3A787B /* Pods-UIMentoringSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIMentoringSession.release.xcconfig"; path = "Target Support Files/Pods-UIMentoringSession/Pods-UIMentoringSession.release.xcconfig"; sourceTree = "<group>"; };
@@ -533,7 +533,7 @@
 			isa = PBXGroup;
 			children = (
 				9DD137232A28B3ED0017E5DA /* MaksymBilyk_ActionButton.swift */,
-				9DD137272A28B4D20017E5DA /* MaksymBilyk_ActionButtonView.xib */,
+				9DD137442A2A0AE40017E5DA /* MaksymBilyk_ActionButton.xib */,
 			);
 			path = ActionButton;
 			sourceTree = "<group>";
@@ -616,8 +616,8 @@
 				48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */,
 				1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */,
 				8DF4FDBA29B64A0B00EA8715 /* (null) in Resources */,
+				9DD137452A2A0AE40017E5DA /* MaksymBilyk_ActionButton.xib in Resources */,
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
-				9DD137282A28B4D20017E5DA /* MaksymBilyk_ActionButtonView.xib in Resources */,
 				8D2517A729C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
 				48E2EC3229D419A200A9ACE2 /* OlKha_PetsViewController.xib in Resources */,
 				33E311F029E72E8600014BA9 /* Olkha_FilterAnimalsCell.xib in Resources */,

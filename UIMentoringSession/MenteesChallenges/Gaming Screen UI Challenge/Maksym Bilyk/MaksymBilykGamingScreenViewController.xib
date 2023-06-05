@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,15 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaksymBilykGamingScreenViewController" customModule="UIMentoringSession" customModuleProvider="target">
             <connections>
-                <outlet property="appleButton" destination="dPd-pu-faB" id="haV-Fs-mN0"/>
-                <outlet property="appleButtonView" destination="xEh-hR-9RN" id="IiF-2v-JdY"/>
+                <outlet property="appleButton" destination="xZd-Jd-4Cx" id="mgb-AR-as4"/>
                 <outlet property="descriptionLabel" destination="68R-nk-udJ" id="1Db-TR-SWK"/>
-                <outlet property="facebookButton" destination="36w-Bk-fME" id="92r-8n-ycS"/>
-                <outlet property="facebookButtonView" destination="caH-iT-fe3" id="w9H-GO-jWX"/>
+                <outlet property="facebookButton" destination="Iyi-lM-2mT" id="Qne-J2-JOT"/>
                 <outlet property="gamingLabel" destination="FKK-vq-dlt" id="WxN-MA-aEh"/>
                 <outlet property="passwordLabel" destination="ejs-G3-1tL" id="w3w-lQ-1LW"/>
-                <outlet property="phoneButton" destination="DDh-8N-jrp" id="hhn-0x-8T7"/>
-                <outlet property="phoneButtonView" destination="iqm-bI-oaV" id="4mP-3S-qKT"/>
+                <outlet property="phoneButton" destination="fgv-IH-2Mj" id="sXh-68-ZDZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -52,88 +49,25 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejs-G3-1tL">
-                    <rect key="frame" x="64" y="571.66666666666663" width="265" height="20.333333333333371"/>
+                    <rect key="frame" x="64" y="539.66666666666663" width="265" height="20.333333333333371"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="QHh-D2-S7b">
-                    <rect key="frame" x="32" y="363.66666666666669" width="329" height="192.00000000000006"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QHh-D2-S7b">
+                    <rect key="frame" x="32" y="363.66666666666669" width="329" height="160.00000000000006"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEh-hR-9RN" userLabel="appleButton" customClass="MaksymBilyk_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-Jd-4Cx" customClass="MaksymBilyk_ActionButton" customModule="UIMentoringSession" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="329" height="48"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-pu-faB" customClass="MaksymBilyk_Buttons" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="6.6666666666666856" width="329" height="34.333333333333343"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple icon" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-ov-g4O">
-                                    <rect key="frame" x="20" y="12" width="40" height="24"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="eqg-ov-g4O" secondAttribute="height" multiplier="20:12" id="WTW-AO-wGT"/>
-                                    </constraints>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="48" id="Ev8-l4-Bb6"/>
-                                <constraint firstAttribute="bottom" secondItem="eqg-ov-g4O" secondAttribute="bottom" constant="12" id="Ey1-g2-JK1"/>
-                                <constraint firstItem="eqg-ov-g4O" firstAttribute="leading" secondItem="xEh-hR-9RN" secondAttribute="leading" constant="20" id="JhS-he-g50"/>
-                                <constraint firstItem="eqg-ov-g4O" firstAttribute="top" secondItem="xEh-hR-9RN" secondAttribute="top" constant="12" id="g8n-WQ-ovR"/>
+                                <constraint firstAttribute="height" constant="48" id="mik-QY-UrL"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caH-iT-fe3" userLabel="facebookButton" customClass="MaksymBilyk_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="72" width="329" height="48"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36w-Bk-fME" customClass="MaksymBilyk_Buttons" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="6.6666666666666856" width="329" height="34.333333333333343"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook icon" translatesAutoresizingMaskIntoConstraints="NO" id="5Pj-JY-4VI">
-                                    <rect key="frame" x="20" y="12" width="40" height="24"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="5Pj-JY-4VI" secondAttribute="height" multiplier="20:12" id="E6G-dH-6md"/>
-                                    </constraints>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="48" id="RIV-2s-yfV"/>
-                                <constraint firstItem="5Pj-JY-4VI" firstAttribute="top" secondItem="caH-iT-fe3" secondAttribute="top" constant="12" id="dTE-5I-aBf"/>
-                                <constraint firstItem="5Pj-JY-4VI" firstAttribute="leading" secondItem="caH-iT-fe3" secondAttribute="leading" constant="20" id="iVR-hb-sXh"/>
-                                <constraint firstAttribute="bottom" secondItem="5Pj-JY-4VI" secondAttribute="bottom" constant="12" id="ir3-aY-vpv"/>
-                            </constraints>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iyi-lM-2mT" customClass="MaksymBilyk_ActionButton" customModule="UIMentoringSession" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="56" width="329" height="48"/>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqm-bI-oaV" userLabel="phoneButton" customClass="MaksymBilyk_ViewButton" customModule="UIMentoringSession" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="144" width="329" height="48"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-8N-jrp" customClass="MaksymBilyk_Buttons" customModule="UIMentoringSession" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="6.6666666666666856" width="329" height="34.333333333333343"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone icon" translatesAutoresizingMaskIntoConstraints="NO" id="L7s-JX-ZZR">
-                                    <rect key="frame" x="20" y="11.999999999999943" width="40" height="24"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="L7s-JX-ZZR" secondAttribute="height" multiplier="20:12" id="lYw-sv-9DN"/>
-                                    </constraints>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="48" id="710-Pe-Wef"/>
-                                <constraint firstItem="L7s-JX-ZZR" firstAttribute="top" secondItem="iqm-bI-oaV" secondAttribute="top" constant="12" id="KT6-5r-qt7"/>
-                                <constraint firstItem="L7s-JX-ZZR" firstAttribute="leading" secondItem="iqm-bI-oaV" secondAttribute="leading" constant="20" id="MWp-qd-lad"/>
-                                <constraint firstAttribute="bottom" secondItem="L7s-JX-ZZR" secondAttribute="bottom" constant="12" id="WS9-oh-rPn"/>
-                            </constraints>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgv-IH-2Mj" customClass="MaksymBilyk_ActionButton" customModule="UIMentoringSession" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="112" width="329" height="48"/>
                         </view>
                     </subviews>
                 </stackView>
@@ -157,10 +91,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Apple icon" width="19.333333969116211" height="24"/>
         <image name="Bird logo" width="101" height="89"/>
-        <image name="Facebook icon" width="24" height="24"/>
-        <image name="Phone icon" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
