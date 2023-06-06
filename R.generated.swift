@@ -783,8 +783,10 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.nib` struct is generated, and contains static references to 14 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 15 nibs.
   struct nib {
+    /// Nib `CustomButtonView`.
+    static let customButtonView = _R.nib._CustomButtonView()
     /// Nib `OlKha_IOSNewsViewController`.
     static let olKha_IOSNewsViewController = _R.nib._OlKha_IOSNewsViewController()
     /// Nib `OlKha_PetsViewController`.
@@ -813,6 +815,14 @@ struct R: Rswift.Validatable {
     static let yefimYakuninGamingScreenViewController = _R.nib._YefimYakuninGamingScreenViewController()
     /// Nib `YefimYakunin_StartScreenViewController`.
     static let yefimYakunin_StartScreenViewController = _R.nib._YefimYakunin_StartScreenViewController()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CustomButtonView", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.customButtonView) instead")
+    static func customButtonView(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.customButtonView)
+    }
+    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UINib(name: "OlKha_IOSNewsViewController", in: bundle)`
@@ -925,6 +935,10 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.yefimYakunin_StartScreenViewController)
     }
     #endif
+
+    static func customButtonView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.customButtonView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
 
     static func olKha_IOSNewsViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.olKha_IOSNewsViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
@@ -1340,6 +1354,17 @@ struct _R: Rswift.Validatable {
       try _YeYa_CoffeeShopCell.validate()
       try _YefimYakuninGamingScreenViewController.validate()
       try _YefimYakunin_StartScreenViewController.validate()
+    }
+
+    struct _CustomButtonView: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CustomButtonView"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+
+      fileprivate init() {}
     }
 
     struct _OlKha_IOSNewsViewController: Rswift.NibResourceType {

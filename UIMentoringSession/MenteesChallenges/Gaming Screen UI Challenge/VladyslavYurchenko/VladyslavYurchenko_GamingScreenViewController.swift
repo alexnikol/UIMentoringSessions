@@ -13,27 +13,40 @@ final class VladyslavYurchenko_GamingScreenViewController: UIViewController {
     @IBOutlet weak var logoBird: UIImageView!
     @IBOutlet weak var gamingLabel: UILabel!
     @IBOutlet weak var manualLabel: UILabel!
-    @IBOutlet weak var appleButton: UIButton!
-    @IBOutlet weak var facebookButton: UIButton!
-    @IBOutlet weak var phoneButton: UIButton!
+    @IBOutlet weak var appleButton: CustomButtonView!
+    @IBOutlet weak var facebookButton: CustomButtonView!
+    @IBOutlet weak var phoneButton: CustomButtonView!
     @IBOutlet weak var passwordLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         gamingLabel.text = RText.gamingGamingLabel()
-        appleButton.setTitle(RText.gamingAppleButton().uppercased(), for: .normal)
-        appleButton.setImage(RImage.appleIcon(), for: .normal)
-        facebookButton.setTitle(RText.gamingFacebookButton().uppercased(), for: .normal)
-        facebookButton.setImage(RImage.facebookIcon(), for: .normal)
-        phoneButton.setTitle(RText.gamingPhoneButton().uppercased(), for: .normal)
-        phoneButton.setImage(RImage.phoneIcon(), for: .normal)
         setUnderlineText()
+        appleButton.setupModel(
+            title: RText.gamingAppleButton().uppercased(),
+            image: RImage.appleIcon()
+        )
+        facebookButton.setupModel(
+            title: RText.gamingFacebookButton().uppercased(),
+            image: RImage.facebookIcon()
+        )
+        phoneButton.setupModel(
+            title: RText.gamingPhoneButton().uppercased(),
+            image: RImage.phoneIcon()
+        )
         manualLabel.attributedText = addAttributeManual(firstPartOfText: RText.gamingFirstPartOfText(), secondPartOfText: RText.gamingSecondPartOfText())
-        for button in [appleButton, facebookButton, phoneButton] {
-            button?.layer.cornerRadius = 20
-            button?.layer.borderColor = UIColor.white.cgColor
-            button?.layer.borderWidth = 1
-        }
+        manualLabel.isUserInteractionEnabled = true
+        let guestureRecognizer = UITapGestureRecognizer(target: self, action:
+        #selector (labelClicked(_:)))
+        manualLabel.addGestureRecognizer(guestureRecognizer)
+        view.addSubview(manualLabel)
+        self.view = view
+    }
+    
+    @objc func labelClicked(_ sender: Any) {
+        let alert = UIAlertController(title: "Title", message: "Message", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:  nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     func setUnderlineText() {
@@ -53,7 +66,7 @@ final class VladyslavYurchenko_GamingScreenViewController: UIViewController {
             .font: UIFont.systemFont(ofSize: 13, weight: .semibold)]
         let secondAttributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.white,
-            .font: UIFont.systemFont(ofSize: 13, weight: .semibold),
+            .font: UIFont.systemFont(ofSize: 13, weight: .heavy),
             .underlineStyle: 1,
             .underlineColor: UIColor.white]
         let firstString = NSMutableAttributedString(string: RText.gamingFirstPartOfText(), attributes: firstAttributes)

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomButtonView" customModule="UIMentoringSession" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="fqz-Qs-QwZ" id="uC4-Ne-dlX"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="9X3-TK-NN8"/>
+                <outlet property="imageIcon" destination="Li8-Tb-0VE" id="fiR-gA-raA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ioB-fl-pwX">
+                    <rect key="frame" x="275" y="21" width="20" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="OJP-ha-0dK"/>
+                        <constraint firstAttribute="width" constant="20" id="sMP-zQ-UGd"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqz-Qs-QwZ">
+                    <rect key="frame" x="36" y="0.0" width="239" height="66"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Li8-Tb-0VE">
+                    <rect key="frame" x="16" y="21" width="20" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="7aH-IR-Qon"/>
+                        <constraint firstAttribute="height" constant="24" id="XmB-uY-ahW"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fqz-Qs-QwZ" firstAttribute="leading" secondItem="Li8-Tb-0VE" secondAttribute="trailing" id="BDp-dj-Lx5"/>
+                <constraint firstAttribute="bottom" secondItem="fqz-Qs-QwZ" secondAttribute="bottom" id="Cua-PA-3Eh"/>
+                <constraint firstItem="Li8-Tb-0VE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Fga-tx-4zM"/>
+                <constraint firstAttribute="trailing" secondItem="ioB-fl-pwX" secondAttribute="trailing" constant="16" id="Jb9-G2-jr7"/>
+                <constraint firstItem="Li8-Tb-0VE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="KRk-Yl-GxB"/>
+                <constraint firstItem="fqz-Qs-QwZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ugg-IU-TEN"/>
+                <constraint firstItem="ioB-fl-pwX" firstAttribute="leading" secondItem="fqz-Qs-QwZ" secondAttribute="trailing" id="aFc-cN-mkg"/>
+                <constraint firstItem="ioB-fl-pwX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eCi-Do-hQY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-69.465648854961827" y="-371.83098591549299"/>
+        </view>
+    </objects>
+</document>

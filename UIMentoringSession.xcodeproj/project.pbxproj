@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C101DDA29F05C9700A5A740 /* VladyslavYurchenkoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C101DD929F05C9700A5A740 /* VladyslavYurchenkoButton.swift */; };
+		1C101DDA29F05C9700A5A740 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C101DD929F05C9700A5A740 /* CustomButtonView.swift */; };
 		1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */; };
 		1C5AF6E129E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */; };
+		1C9FDC982A2E256E00A21B8B /* NibInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9FDC972A2E256D00A21B8B /* NibInitable.swift */; };
+		1C9FDCA02A2E266800A21B8B /* CustomButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FDC9F2A2E266800A21B8B /* CustomButtonView.xib */; };
 		1CA05D9129ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA05D8F29ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift */; };
 		1CA05D9229ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA05D9029ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.xib */; };
 		1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */; };
@@ -66,9 +68,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C101DD929F05C9700A5A740 /* VladyslavYurchenkoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoButton.swift; sourceTree = "<group>"; };
+		1C101DD929F05C9700A5A740 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
 		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
+		1C9FDC972A2E256D00A21B8B /* NibInitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInitable.swift; sourceTree = "<group>"; };
+		1C9FDC9F2A2E266800A21B8B /* CustomButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButtonView.xib; sourceTree = "<group>"; };
 		1CA05D8F29ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_GamingScreenViewController.swift; sourceTree = "<group>"; };
 		1CA05D9029ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VladyslavYurchenko_GamingScreenViewController.xib; sourceTree = "<group>"; };
 		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
@@ -144,7 +148,9 @@
 		1C101DD829F05C6D00A5A740 /* ButtonStyle */ = {
 			isa = PBXGroup;
 			children = (
-				1C101DD929F05C9700A5A740 /* VladyslavYurchenkoButton.swift */,
+				1C101DD929F05C9700A5A740 /* CustomButtonView.swift */,
+				1C9FDC9F2A2E266800A21B8B /* CustomButtonView.xib */,
+				1C9FDC972A2E256D00A21B8B /* NibInitable.swift */,
 			);
 			path = ButtonStyle;
 			sourceTree = "<group>";
@@ -162,8 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				1CA05D8F29ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift */,
-				1C101DD829F05C6D00A5A740 /* ButtonStyle */,
 				1CA05D9029ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.xib */,
+				1C101DD829F05C6D00A5A740 /* ButtonStyle */,
 			);
 			path = VladyslavYurchenko;
 			sourceTree = "<group>";
@@ -535,6 +541,7 @@
 				8D4271D9299F789600321A85 /* LaunchScreen.storyboard in Resources */,
 				8D2517A729C4AE8300CD54A5 /* OleksandrKharchenko_StartScreenViewController.xib in Resources */,
 				48E2EC3229D419A200A9ACE2 /* OlKha_PetsViewController.xib in Resources */,
+				1C9FDCA02A2E266800A21B8B /* CustomButtonView.xib in Resources */,
 				8D2517AA29C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.xib in Resources */,
 				8D2517A629C4AE8300CD54A5 /* YeYa_IOSNewsViewController.xib in Resources */,
 				8D2517B029C4AE8300CD54A5 /* YefimYakuninGamingScreenViewController.xib in Resources */,
@@ -622,6 +629,7 @@
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				8D2517C329C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift in Sources */,
+				1C9FDC982A2E256E00A21B8B /* NibInitable.swift in Sources */,
 				333913C729AE014D00B05E2B /* (null) in Sources */,
 				8D2517A929C4AE8300CD54A5 /* YefimYakunin_StartScreenViewController.swift in Sources */,
 				8D2517AC29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.swift in Sources */,
@@ -643,7 +651,7 @@
 				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,
 				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
-				1C101DDA29F05C9700A5A740 /* VladyslavYurchenkoButton.swift in Sources */,
+				1C101DDA29F05C9700A5A740 /* CustomButtonView.swift in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
 				1CA05D9129ED5FC400132B1A /* VladyslavYurchenko_GamingScreenViewController.swift in Sources */,
 				8DF4FDB229B6499600EA8715 /* (null) in Sources */,
