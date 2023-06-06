@@ -43,10 +43,14 @@ final class VladyslavYurchenko_GamingScreenViewController: UIViewController {
         self.view = view
     }
     
-    @objc func labelClicked(_ sender: Any) {
-        let alert = UIAlertController(title: "Title", message: "Message", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:  nil))
-        self.present(alert, animated: true, completion: nil)
+    @objc func labelClicked(_ gesture: UITapGestureRecognizer) {
+        guard let text = self.manualLabel.text else { return }
+        let privacyPolicyRange = (text as NSString).range(of: RText.gamingSecondPartOfText())
+        if gesture.didTapAttributedTextInLabel(label: self.manualLabel, inRange: privacyPolicyRange) {
+            let alert = UIAlertController(title: "Title", message: "Message", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler:  nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func setUnderlineText() {
@@ -68,7 +72,8 @@ final class VladyslavYurchenko_GamingScreenViewController: UIViewController {
             .foregroundColor: UIColor.white,
             .font: UIFont.systemFont(ofSize: 13, weight: .heavy),
             .underlineStyle: 1,
-            .underlineColor: UIColor.white]
+            .underlineColor: UIColor.white,
+        ]
         let firstString = NSMutableAttributedString(string: RText.gamingFirstPartOfText(), attributes: firstAttributes)
         manualLabel.attributedText = firstString
         let secondString = NSAttributedString(string: RText.gamingSecondPartOfText(), attributes: secondAttributes)

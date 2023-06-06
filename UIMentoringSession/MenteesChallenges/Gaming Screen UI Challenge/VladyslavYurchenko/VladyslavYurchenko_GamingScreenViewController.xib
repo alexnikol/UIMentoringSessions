@@ -28,10 +28,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Bird logo" translatesAutoresizingMaskIntoConstraints="NO" id="7xB-DL-x8J">
-                    <rect key="frame" x="146" y="225" width="101" height="89"/>
+                    <rect key="frame" x="146" y="199" width="101" height="89"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ4-wl-NlM">
-                    <rect key="frame" x="133.66666666666666" y="339" width="125.99999999999997" height="60"/>
+                    <rect key="frame" x="133.66666666666666" y="313" width="125.99999999999997" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="6Ix-v3-SYZ"/>
                     </constraints>
@@ -40,7 +40,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdy-0b-dD7">
-                    <rect key="frame" x="179.66666666666666" y="407" width="34" height="32"/>
+                    <rect key="frame" x="179.66666666666666" y="381" width="34" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="32" id="H25-Gx-9BC"/>
                     </constraints>
@@ -49,10 +49,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JC0-Tg-XoO">
-                    <rect key="frame" x="41" y="462.99999999999994" width="311" height="242.33333333333331"/>
+                    <rect key="frame" x="41" y="437" width="311" height="268.33333333333326"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9D-Xu-khD" userLabel="appleButton" customClass="CustomButtonView" customModule="UIMentoringSession" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="311" height="49.333333333333336"/>
+                            <rect key="frame" x="0.0" y="0.0" width="311" height="56"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="Cdz-4B-E7J"/>
@@ -60,7 +60,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPO-nk-wQl" userLabel="facebookButton" customClass="CustomButtonView" customModule="UIMentoringSession" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="64.333333333333371" width="311" height="49.333333333333343"/>
+                            <rect key="frame" x="0.0" y="71" width="311" height="55.666666666666657"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="ZlF-yb-ZdS"/>
@@ -68,7 +68,7 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpC-UX-Uf9" userLabel="phoneButton" customClass="CustomButtonView" customModule="UIMentoringSession" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="128.66666666666663" width="311" height="49.333333333333343"/>
+                            <rect key="frame" x="0.0" y="141.66666666666663" width="311" height="56"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="Qmh-S3-Xa6"/>
@@ -76,7 +76,7 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Je1-UL-c7R">
-                            <rect key="frame" x="0.0" y="195" width="311" height="50"/>
+                            <rect key="frame" x="0.0" y="193" width="311" height="49.333333333333343"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,7 +97,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JC0-Tg-XoO" secondAttribute="bottom" constant="112.66666666666674" id="UAP-jL-pA3"/>
                 <constraint firstItem="Mdy-0b-dD7" firstAttribute="top" secondItem="EJ4-wl-NlM" secondAttribute="bottom" constant="8" id="UWr-O1-GoH"/>
                 <constraint firstItem="EJ4-wl-NlM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Zf5-d9-FvJ"/>
-                <constraint firstItem="7xB-DL-x8J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="166" id="hY1-q3-0ap"/>
+                <constraint firstItem="7xB-DL-x8J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="140" id="hY1-q3-0ap"/>
                 <constraint firstItem="JC0-Tg-XoO" firstAttribute="top" secondItem="Mdy-0b-dD7" secondAttribute="bottom" constant="23.999999999999943" id="kVh-X2-uSJ"/>
                 <constraint firstItem="Mdy-0b-dD7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pP1-2T-X0Q"/>
                 <constraint firstItem="7xB-DL-x8J" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zRA-Om-IHy"/>
