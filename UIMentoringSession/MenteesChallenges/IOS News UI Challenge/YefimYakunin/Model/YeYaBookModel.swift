@@ -1,7 +1,7 @@
 import Foundation
 import UIKit.UIImage
 
-struct YeYa_BookModel {
+struct YeYaBookModel {
     let imageCover: UIImage
     let title: String
     let author: String

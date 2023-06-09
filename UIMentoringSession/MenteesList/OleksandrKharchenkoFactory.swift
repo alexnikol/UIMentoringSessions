@@ -17,6 +17,8 @@ final class OleksandrKharchenkoFactory: MenteeChallengesFactory {
             return OleksandrKharchenko_GamingScreenViewController()
         case .petsMainScreen:
             return OlKha_PetsViewController()
+        case .iOsNewsScreen:
+            return nil
         }
     }
 }

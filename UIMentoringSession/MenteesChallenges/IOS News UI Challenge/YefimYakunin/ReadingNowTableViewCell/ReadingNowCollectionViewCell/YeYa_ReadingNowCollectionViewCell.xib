@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="150" height="342"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uz6-0s-mKB" userLabel="ReadingNow">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="342"/>
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="334"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current&amp;Recent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8w9-WC-vGl" userLabel="Current&amp;Recent">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="22"/>
@@ -34,7 +34,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-GW-PEW">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookCrime" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-GW-PEW">
                                         <rect key="frame" x="0.0" y="38" width="150" height="238"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="U6r-GW-PEW" secondAttribute="height" multiplier="150:238" id="BNs-Hf-qIl"/>
@@ -58,9 +58,10 @@
                                         <color key="textColor" name="description"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="g5E-49-bJm">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookThreeDotsIcons" id="g5E-49-bJm">
                                         <rect key="frame" x="135" y="319" width="15" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -86,7 +87,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="uz6-0s-mKB" secondAttribute="bottom" id="3p9-aP-mns"/>
+                            <constraint firstAttribute="bottom" secondItem="uz6-0s-mKB" secondAttribute="bottom" constant="8" id="2Wf-li-goK"/>
                             <constraint firstItem="uz6-0s-mKB" firstAttribute="top" secondItem="zaP-zm-SWK" secondAttribute="top" id="BZT-9n-Ve2"/>
                             <constraint firstAttribute="trailing" secondItem="uz6-0s-mKB" secondAttribute="trailing" id="hZa-1k-tL4"/>
                             <constraint firstItem="uz6-0s-mKB" firstAttribute="leading" secondItem="zaP-zm-SWK" secondAttribute="leading" id="xwl-Bc-nK5"/>
@@ -101,10 +102,21 @@
                 <constraint firstAttribute="bottom" secondItem="zaP-zm-SWK" secondAttribute="bottom" id="EfN-xT-VXt"/>
                 <constraint firstItem="zaP-zm-SWK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mbZ-3V-96T"/>
             </constraints>
+            <connections>
+                <outlet property="authorBookLabel" destination="4AX-5A-KFv" id="mOO-tp-FcN"/>
+                <outlet property="bookImage" destination="U6r-GW-PEW" id="YX3-Od-PfX"/>
+                <outlet property="currentAndRecent" destination="8w9-WC-vGl" id="FVa-QE-C8D"/>
+                <outlet property="progressLabel" destination="jmG-ON-fun" id="drF-Gs-Ror"/>
+                <outlet property="readingNowView" destination="uz6-0s-mKB" id="va9-3W-VcW"/>
+                <outlet property="shadowView" destination="zaP-zm-SWK" id="yfO-Ty-PbE"/>
+                <outlet property="titleBookLabel" destination="tNv-ZX-xph" id="Nc7-Li-iVY"/>
+            </connections>
             <point key="canvasLocation" x="48.854961832061065" y="-1.4084507042253522"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="bookCrime" width="170" height="258"/>
+        <image name="bookThreeDotsIcons" width="15.666666984558105" height="15.333333015441895"/>
         <namedColor name="description">
             <color red="0.23499999940395355" green="0.23499999940395355" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

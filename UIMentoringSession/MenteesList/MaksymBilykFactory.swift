@@ -23,6 +23,8 @@ final class MaksymBilykFactory: MenteeChallengesFactory {
             return nil
         case .petsMainScreen:
             return nil
+        case .iOsNewsScreen:
+            return nil
         }
     }
 }
