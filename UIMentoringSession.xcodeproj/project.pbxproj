@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C424E872A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C424E852A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift */; };
+		1C424E882A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C424E862A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib */; };
 		1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */; };
 		1C5AF6E129E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */; };
 		1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */; };
@@ -85,6 +87,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C424E852A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_PetsScreenViewController.swift; sourceTree = "<group>"; };
+		1C424E862A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VladyslavYurchenko_PetsScreenViewController.xib; sourceTree = "<group>"; };
 		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
 		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
 		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
@@ -179,6 +183,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C424E842A33B31200B670E4 /* VladyslavYurchenko */ = {
+			isa = PBXGroup;
+			children = (
+				1C424E852A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift */,
+				1C424E862A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib */,
+			);
+			path = VladyslavYurchenko;
+			sourceTree = "<group>";
+		};
 		1C5AF6DE29E71EC000FDDC7A /* VladyslavYurchenko */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				48E2EC2129D3885400A9ACE2 /* README.md */,
+				1C424E842A33B31200B670E4 /* VladyslavYurchenko */,
 				48E2EC1829D3876D00A9ACE2 /* YefimYakunin */,
 				48E2EC1729D3875D00A9ACE2 /* OleksandrKharchenko */,
 			);
@@ -676,6 +690,7 @@
 				8D2517BA29C4AE8300CD54A5 /* YefimYakuninCoffeShopChallengeViewController.xib in Resources */,
 				3389CBF929D5BECD00DCD1A7 /* Olkha_AnimalsCell.xib in Resources */,
 				8D2517BC29C4AE8300CD54A5 /* YeYa_CoffeeShopCell.xib in Resources */,
+				1C424E882A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib in Resources */,
 				9D37A5012A1CF62D00D100CB /* MaksymBilyk_CoffeShopCell.xib in Resources */,
 				8D2517AF29C4AE8300CD54A5 /* OleksandrKharchenko_GamingScreenViewController.xib in Resources */,
 				8D2517B429C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopViewController.xib in Resources */,
@@ -757,6 +772,7 @@
 				33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
+				1C424E872A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift in Sources */,
 				3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */,
 				8D2517C329C4AE8300CD54A5 /* OleksandrNikolaichukFactory.swift in Sources */,
 				333913C729AE014D00B05E2B /* (null) in Sources */,
