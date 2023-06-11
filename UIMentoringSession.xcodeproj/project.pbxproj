@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C424E872A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C424E852A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift */; };
 		1C424E882A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C424E862A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib */; };
+		1C424E8B2A33BB0E00B670E4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C424E8A2A33BB0E00B670E4 /* CustomButton.swift */; };
+		1C424E8D2A33BB4900B670E4 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C424E8C2A33BB4900B670E4 /* CustomButton.xib */; };
 		1C5AF6DD29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */; };
 		1C5AF6E129E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */; };
 		1CACEBD129EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */; };
@@ -89,6 +91,8 @@
 /* Begin PBXFileReference section */
 		1C424E852A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_PetsScreenViewController.swift; sourceTree = "<group>"; };
 		1C424E862A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VladyslavYurchenko_PetsScreenViewController.xib; sourceTree = "<group>"; };
+		1C424E8A2A33BB0E00B670E4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		1C424E8C2A33BB4900B670E4 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		1C5AF6DC29E716B500FDDC7A /* VladyslavYurchenkoFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenkoFactory.swift; sourceTree = "<group>"; };
 		1C5AF6DF29E71F0600FDDC7A /* VladyslavYurchenko_StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VladyslavYurchenko_StartScreenViewController.swift; sourceTree = "<group>"; };
 		1CACEBD029EBEFFD004B0239 /* VladyslavYurchenko_StartScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VladyslavYurchenko_StartScreenViewController.xib; sourceTree = "<group>"; };
@@ -188,8 +192,18 @@
 			children = (
 				1C424E852A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift */,
 				1C424E862A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.xib */,
+				1C424E892A33BAE800B670E4 /* CustomButton */,
 			);
 			path = VladyslavYurchenko;
+			sourceTree = "<group>";
+		};
+		1C424E892A33BAE800B670E4 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				1C424E8A2A33BB0E00B670E4 /* CustomButton.swift */,
+				1C424E8C2A33BB4900B670E4 /* CustomButton.xib */,
+			);
+			path = CustomButton;
 			sourceTree = "<group>";
 		};
 		1C5AF6DE29E71EC000FDDC7A /* VladyslavYurchenko */ = {
@@ -672,6 +686,7 @@
 				48A0624329ED49CC007BCF02 /* YeYa_PetCell.xib in Resources */,
 				48908D4D29F07C76006F9EF2 /* YeYa_PetFilterCollectionViewCell.xib in Resources */,
 				8DF4FD8D29B63BB400EA8715 /* (null) in Resources */,
+				1C424E8D2A33BB4900B670E4 /* CustomButton.xib in Resources */,
 				8D2517A329C4AE8300CD54A5 /* OlKha_IOSNewsViewController.xib in Resources */,
 				8D2517B629C4AE8300CD54A5 /* OleksandrKharchenko_CoffeShopCell.xib in Resources */,
 				48E2EC2E29D4197F00A9ACE2 /* YeYa_PetsViewController.xib in Resources */,
@@ -771,6 +786,7 @@
 				8D2517AD29C4AE8300CD54A5 /* OleksandrKharchenko_MainsButtons.swift in Sources */,
 				33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */,
 				8D2517C229C4AE8300CD54A5 /* MenteesList.swift in Sources */,
+				1C424E8B2A33BB0E00B670E4 /* CustomButton.swift in Sources */,
 				8D4271CD299F789400321A85 /* AppDelegate.swift in Sources */,
 				1C424E872A33B39500B670E4 /* VladyslavYurchenko_PetsScreenViewController.swift in Sources */,
 				3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */,
