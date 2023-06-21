@@ -9,7 +9,8 @@
 import UIKit
 import Rswift
 
-class PetsCollectionViewCell: UICollectionViewCell {
+final class PetsCollectionViewCell: UICollectionViewCell, ReuseIdentifierType {
+    typealias ReusableType = PetsCollectionViewCell
     @IBOutlet weak var breedLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!

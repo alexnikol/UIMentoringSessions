@@ -26,7 +26,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="DAU-Ry-2H5"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0el-aa-NyN">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="10" id="0el-aa-NyN">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -52,8 +52,10 @@
                 <constraint firstAttribute="trailing" secondItem="her-o1-4Fd" secondAttribute="trailing" constant="16" id="O2f-aC-mik"/>
                 <constraint firstItem="her-o1-4Fd" firstAttribute="top" secondItem="Gjf-EY-LIS" secondAttribute="bottom" constant="8" id="QTq-15-Iad"/>
                 <constraint firstItem="Gjf-EY-LIS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="113" id="aeE-Ak-XYA"/>
+                <constraint firstItem="Gjf-EY-LIS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="f9E-Nn-T4M"/>
                 <constraint firstItem="her-o1-4Fd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ffS-v7-JbE"/>
                 <constraint firstAttribute="trailing" secondItem="Gjf-EY-LIS" secondAttribute="trailing" id="ftq-qO-ndI"/>
+                <constraint firstAttribute="trailing" secondItem="Gjf-EY-LIS" secondAttribute="trailing" constant="16" id="i8q-f0-bzC"/>
             </constraints>
             <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
         </view>

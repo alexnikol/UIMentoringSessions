@@ -27,7 +27,6 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fv1-Z9-j9Z">
                         <rect key="frame" x="10" y="124" width="39.666666666666664" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="39.666666666666657" id="El9-Y9-uQX"/>
                             <constraint firstAttribute="height" constant="20" id="q7h-Zw-56C"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -52,7 +51,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZc-Aa-ZAZ">
-                        <rect key="frame" x="111" y="126" width="40" height="16"/>
+                        <rect key="frame" x="118" y="126" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" name="descriptionColor"/>
                         <nil key="highlightedColor"/>
@@ -70,7 +69,6 @@
                 <constraint firstItem="Iut-hb-1TT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Nue-mR-5zm"/>
                 <constraint firstItem="iwS-fa-sHc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="PgI-jt-G66"/>
                 <constraint firstItem="trl-8a-TcJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aDe-RO-9y2"/>
-                <constraint firstItem="kZc-Aa-ZAZ" firstAttribute="leading" secondItem="fv1-Z9-j9Z" secondAttribute="trailing" constant="61.333333333333343" id="mXO-1o-P8r"/>
                 <constraint firstItem="fv1-Z9-j9Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="pII-jB-XQ8"/>
                 <constraint firstAttribute="trailing" secondItem="trl-8a-TcJ" secondAttribute="trailing" id="wXl-Fu-aS1"/>
             </constraints>

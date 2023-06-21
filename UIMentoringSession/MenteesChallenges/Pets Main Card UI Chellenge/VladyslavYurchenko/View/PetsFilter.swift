@@ -1,8 +1,10 @@
 import Foundation
 import UIKit
 
-enum VladyslavYurchenko_FilterType {
-    case all, dog, cat
+enum VladyslavYurchenko_FilterType: CaseIterable {
+    case all
+    case dog
+    case cat
     
     var title: String {
         switch self {
@@ -12,17 +14,6 @@ enum VladyslavYurchenko_FilterType {
             return "Dog"
         case .cat:
             return "Cat"
-        }
-    }
-    
-    var image: UIImage {
-        switch self {
-        case .all:
-            return RImage.allPet()!
-        case .dog:
-            return RImage.dogPet()!
-        case .cat:
-            return RImage.catPet()!
         }
     }
 }
