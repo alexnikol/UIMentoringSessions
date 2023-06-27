@@ -4,9 +4,15 @@ final class OlKha_PetCatrViewController: UIViewController {
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var dogOnTheStreetView: UIView!
     @IBOutlet weak var willieDogImage: UIImageView!
+    @IBOutlet weak var infoPetCollectionViewCell: UICollectionView!
+    
+    private var infoPet: [OlKha_InfoPetViewModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayoutLabel()
+        configureFilterCollection()
+        infoPet = infoPetData
     }
     
     private func setupLayoutLabel() {
@@ -22,5 +28,25 @@ final class OlKha_PetCatrViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+}
+
+extension OlKha_PetCatrViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        infoPet.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let info = infoPet[indexPath.row]
+        let cell = infoPetCollectionViewCell.dequeueReusableCell(withReuseIdentifier: RNib.olKha_PetInformationCell, for: indexPath)!
+        cell.setup(model: info)
+        return cell
+    }
+    
+    private func configureFilterCollection() {
+        infoPetCollectionViewCell.backgroundColor = RColor.petWhiteColor()
+        infoPetCollectionViewCell.register(RNib.olKha_PetInformationCell)
+        infoPetCollectionViewCell.dataSource = self
+        infoPetCollectionViewCell.delegate = self
     }
 }
