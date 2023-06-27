@@ -4,7 +4,7 @@ final class OlKha_PetCatrViewController: UIViewController {
 //    @IBOutlet weak var oldYearPetCartLabel: UILabel!
 //    @IBOutlet weak var weightPetCartLabel: UILabel!
 //    @IBOutlet weak var CommandsPetCartLabel: UILabel!
-//    
+//
 //    @IBOutlet weak var mainButton: UIButton!
 //    @IBOutlet weak var dogOnTheStreetView: UIView!
 //    @IBOutlet weak var willieDogImage: UIImageView!
