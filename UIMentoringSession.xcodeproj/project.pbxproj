@@ -14,6 +14,7 @@
 		330551EB2A4AD36900D5A145 /* OlKha_PetInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330551E92A4AD36900D5A145 /* OlKha_PetInformationCell.swift */; };
 		330551EC2A4AD36900D5A145 /* OlKha_PetInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330551EA2A4AD36900D5A145 /* OlKha_PetInformationCell.xib */; };
 		330551EE2A4AE43000D5A145 /* OlKha_InfoPetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330551ED2A4AE43000D5A145 /* OlKha_InfoPetViewModel.swift */; };
+		330551F02A4B030B00D5A145 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330551EF2A4B030B00D5A145 /* String+Extensions.swift */; };
 		3308365429ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */; };
 		33309E0C29E87BF800170025 /* Olkha_AnimalsTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */; };
 		333913C729AE014D00B05E2B /* (null) in Sources */ = {isa = PBXBuildFile; };
@@ -96,6 +97,7 @@
 		330551E92A4AD36900D5A145 /* OlKha_PetInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_PetInformationCell.swift; sourceTree = "<group>"; };
 		330551EA2A4AD36900D5A145 /* OlKha_PetInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OlKha_PetInformationCell.xib; sourceTree = "<group>"; };
 		330551ED2A4AE43000D5A145 /* OlKha_InfoPetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_InfoPetViewModel.swift; sourceTree = "<group>"; };
+		330551EF2A4B030B00D5A145 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		33309E0B29E87BF800170025 /* Olkha_AnimalsTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Olkha_AnimalsTypes.swift; sourceTree = "<group>"; };
 		338263B52A49AD4600478C4E /* OlKha_PetCatrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlKha_PetCatrViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				3308365329ED6A3600DC4774 /* UICollectionViewCell+Extensions.swift */,
+				330551EF2A4B030B00D5A145 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				48E2EC3A29D4C38100A9ACE2 /* YeYa_PetModel.swift in Sources */,
 				48E2EC3129D419A200A9ACE2 /* OlKha_PetsViewController.swift in Sources */,
 				8D2517A529C4AE8300CD54A5 /* YeYa_IOSNewsViewController.swift in Sources */,
+				330551F02A4B030B00D5A145 /* String+Extensions.swift in Sources */,
 				8DF4FDB929B64A0B00EA8715 /* (null) in Sources */,
 				8DAF20CC29C4991D003ADAD3 /* R.generated.swift in Sources */,
 				8DF4FDB229B6499600EA8715 /* (null) in Sources */,

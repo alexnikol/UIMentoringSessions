@@ -1,11 +1,10 @@
 import UIKit
 
 final class OlKha_PetCatrViewController: UIViewController {
-    @IBOutlet weak var mainButton: UIButton!
-    @IBOutlet weak var dogOnTheStreetView: UIView!
-    @IBOutlet weak var willieDogImage: UIImageView!
-    @IBOutlet weak var infoPetCollectionViewCell: UICollectionView!
-    
+    @IBOutlet private weak var mainButton: UIButton!
+    @IBOutlet private weak var dogOnTheStreetView: UIView!
+    @IBOutlet private weak var willieDogImage: UIImageView!
+    @IBOutlet private weak var infoPetCollectionViewCell: UICollectionView!
     private var infoPet: [OlKha_InfoPetViewModel] = []
     
     override func viewDidLoad() {
@@ -20,6 +19,14 @@ final class OlKha_PetCatrViewController: UIViewController {
         dogOnTheStreetView.layer.cornerRadius = 16
         dogOnTheStreetView.backgroundColor = RColor.pinkColor()
         mainButton.layer.cornerRadius = 28
+    }
+    
+    private func blurEffectForView() {
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = dogOnTheStreetView.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        dogOnTheStreetView.addSubview(blurEffectView)
     }
     
     init() {
