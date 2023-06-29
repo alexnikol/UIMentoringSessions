@@ -7,8 +7,7 @@ final class OlKha_PetInformationCell: UICollectionViewCell, ReuseIdentifierType 
     @IBOutlet private weak var infoPetLabel: UILabel!
     
     private func setupLayout() {
-        backgroundColor = .red
-        layer.cornerRadius = 26
+        layer.cornerRadius = 14
     }
     
     override init(frame: CGRect) {
@@ -23,5 +22,6 @@ final class OlKha_PetInformationCell: UICollectionViewCell, ReuseIdentifierType 
     
     func setup(model: OlKha_InfoPetViewModel) {
         infoPetLabel.text = model.title
+        infoPetLabel.backgroundColor = model.color
     }
 }

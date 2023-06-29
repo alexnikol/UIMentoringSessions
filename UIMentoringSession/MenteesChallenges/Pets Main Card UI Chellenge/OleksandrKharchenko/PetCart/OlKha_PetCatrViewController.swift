@@ -12,21 +12,22 @@ final class OlKha_PetCatrViewController: UIViewController {
         setupLayoutLabel()
         configureFilterCollection()
         infoPet = infoPetData
+        blurEffectForView()
     }
     
     private func setupLayoutLabel() {
         willieDogImage.layer.cornerRadius = 32
         dogOnTheStreetView.layer.cornerRadius = 16
-        dogOnTheStreetView.backgroundColor = RColor.pinkColor()
+        dogOnTheStreetView.clipsToBounds = true
         mainButton.layer.cornerRadius = 28
     }
     
     private func blurEffectForView() {
-        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = dogOnTheStreetView.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        dogOnTheStreetView.addSubview(blurEffectView)
+        dogOnTheStreetView.insertSubview(blurEffectView, at: 0)
     }
     
     init() {
@@ -48,6 +49,12 @@ extension OlKha_PetCatrViewController: UICollectionViewDataSource, UICollectionV
         let cell = infoPetCollectionViewCell.dequeueReusableCell(withReuseIdentifier: RNib.olKha_PetInformationCell, for: indexPath)!
         cell.setup(model: info)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let info = infoPet[indexPath.row]
+        let width = 8 + 8 + info.title.widthOfString(usingFont: .systemFont(ofSize: 13.0, weight: .medium))
+        return .init(width: max(width, 60), height: 29)
     }
     
     private func configureFilterCollection() {

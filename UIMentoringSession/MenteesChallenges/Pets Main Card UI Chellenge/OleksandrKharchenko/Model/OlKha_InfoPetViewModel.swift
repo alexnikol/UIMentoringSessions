@@ -8,16 +8,16 @@ struct OlKha_InfoPetViewModel {
 }
 
 let infoPetData: [OlKha_InfoPetViewModel] = [
-    .init(title: "123",
+    .init(title: "1 year",
           color: RColor.pinkColor()!),
-    .init(title: "123456",
+    .init(title: "Knows the commands",
           color: RColor.purpurColor()!),
-    .init(title: "1234567891289",
+    .init(title: "23 kg",
           color: RColor.beigeColor()!),
-    .init(title: "123",
+    .init(title: "1 year",
           color: RColor.pinkColor()!),
-    .init(title: "123456",
+    .init(title: "Knows the commands",
           color: RColor.purpurColor()!),
-    .init(title: "1234567891269",
+    .init(title: "23 kg",
           color: RColor.beigeColor()!),
 ]

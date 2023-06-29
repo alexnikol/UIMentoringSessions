@@ -18,30 +18,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="210" height="109"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-IH-7kS">
-                        <rect key="frame" x="8" y="59.333333333333336" width="194" height="15.666666666666664"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                        <color key="textColor" name="pet text color"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDX-6n-h73">
+                        <rect key="frame" x="0.0" y="0.0" width="210" height="109"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a8-jY-dHY">
+                                <rect key="frame" x="0.0" y="0.0" width="210" height="109"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" name="descriptionColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5a8-jY-dHY" secondAttribute="bottom" id="F5N-uz-Xuc"/>
+                            <constraint firstAttribute="trailing" secondItem="5a8-jY-dHY" secondAttribute="trailing" id="Kz8-Ea-d6Y"/>
+                            <constraint firstItem="5a8-jY-dHY" firstAttribute="top" secondItem="sDX-6n-h73" secondAttribute="top" id="dzQ-fK-lwz"/>
+                            <constraint firstItem="5a8-jY-dHY" firstAttribute="leading" secondItem="sDX-6n-h73" secondAttribute="leading" id="u3R-qj-YUa"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="tbu-IH-7kS" secondAttribute="trailing" constant="8" id="J9J-2N-ukX"/>
-                <constraint firstItem="tbu-IH-7kS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="fBj-xH-QNP"/>
-                <constraint firstItem="tbu-IH-7kS" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="zwP-fh-cmN"/>
+                <constraint firstItem="sDX-6n-h73" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4nk-dc-edY"/>
+                <constraint firstAttribute="trailing" secondItem="sDX-6n-h73" secondAttribute="trailing" id="VMS-HX-Gz2"/>
+                <constraint firstItem="sDX-6n-h73" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dpY-8F-KWl"/>
+                <constraint firstAttribute="bottom" secondItem="sDX-6n-h73" secondAttribute="bottom" id="ibv-0f-kSn"/>
             </constraints>
             <size key="customSize" width="210" height="109"/>
             <connections>
-                <outlet property="infoPetLabel" destination="tbu-IH-7kS" id="vZc-SR-sPv"/>
+                <outlet property="infoPetLabel" destination="5a8-jY-dHY" id="6QA-aC-oBj"/>
             </connections>
             <point key="canvasLocation" x="245.80152671755724" y="22.183098591549296"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <namedColor name="pet text color">
-            <color red="0.16899999976158142" green="0.16899999976158142" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="descriptionColor">
+            <color red="0.54900002479553223" green="0.54900002479553223" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
