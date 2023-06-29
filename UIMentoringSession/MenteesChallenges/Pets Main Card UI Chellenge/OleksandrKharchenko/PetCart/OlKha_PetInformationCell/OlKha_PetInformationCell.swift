@@ -7,16 +7,10 @@ final class OlKha_PetInformationCell: UICollectionViewCell, ReuseIdentifierType 
     @IBOutlet private weak var infoPetLabel: UILabel!
     
     private func setupLayout() {
-        layer.cornerRadius = 14
+        layer.cornerRadius = 14.0
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupLayout()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override func awakeFromNib() {
         setupLayout()
     }
     

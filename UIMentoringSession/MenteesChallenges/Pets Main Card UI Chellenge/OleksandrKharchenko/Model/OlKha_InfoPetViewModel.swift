@@ -14,10 +14,10 @@ let infoPetData: [OlKha_InfoPetViewModel] = [
           color: RColor.purpurColor()!),
     .init(title: "23 kg",
           color: RColor.pinkColor()!),
-    .init(title: "1 year",
+    .init(title: "likes to eat vegetables",
           color: RColor.pinkColor()!),
-    .init(title: "Knows the commands",
+    .init(title: "plays with the ball",
           color: RColor.purpurColor()!),
-    .init(title: "23 kg",
+    .init(title: "сute",
           color: RColor.beigeColor()!),
 ]

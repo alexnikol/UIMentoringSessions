@@ -16,10 +16,10 @@ final class OlKha_PetCatrViewController: UIViewController {
     }
     
     private func setupLayoutLabel() {
-        willieDogImage.layer.cornerRadius = 32
-        dogOnTheStreetView.layer.cornerRadius = 16
+        willieDogImage.layer.cornerRadius = 32.0
+        dogOnTheStreetView.layer.cornerRadius = 16.0
         dogOnTheStreetView.clipsToBounds = true
-        mainButton.layer.cornerRadius = 28
+        mainButton.layer.cornerRadius = 28.0
     }
     
     private func blurEffectForView() {
@@ -40,6 +40,7 @@ final class OlKha_PetCatrViewController: UIViewController {
 }
 
 extension OlKha_PetCatrViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         infoPet.count
     }
@@ -53,8 +54,8 @@ extension OlKha_PetCatrViewController: UICollectionViewDataSource, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let info = infoPet[indexPath.row]
-        let width = 8 + 8 + info.title.widthOfString(usingFont: .systemFont(ofSize: 13.0, weight: .medium))
-        return .init(width: max(width, 60), height: 29)
+        let width = 8.0 + 8.0 + info.title.widthOfString(usingFont: .systemFont(ofSize: 13.0, weight: .medium))
+        return .init(width: max(width, 60.0), height: 29.0)
     }
     
     private func configureFilterCollection() {
