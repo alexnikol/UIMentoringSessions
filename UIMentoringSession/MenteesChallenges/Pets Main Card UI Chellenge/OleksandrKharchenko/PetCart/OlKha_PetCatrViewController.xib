@@ -36,6 +36,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHB-84-VJV">
                                             <rect key="frame" x="16" y="16" width="361" height="381"/>
                                             <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="willieDog" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-lm-v4n">
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="381"/>
+                                                </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favouritePetCart" translatesAutoresizingMaskIntoConstraints="NO" id="y89-x9-qur">
                                                     <rect key="frame" x="305" y="24" width="32" height="32"/>
                                                     <constraints>
@@ -71,9 +74,6 @@
                                                         <constraint firstAttribute="trailing" secondItem="AfW-7k-Pno" secondAttribute="trailing" constant="16" id="v9k-sr-qCd"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="willieDog" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-lm-v4n">
-                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="381"/>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
