@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Rectangle 9.png",
+      "filename" : "На прогулке.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Rectangle 9@2x.png",
+      "filename" : "На прогулке@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Rectangle 9@3x.png",
+      "filename" : "На прогулке@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
