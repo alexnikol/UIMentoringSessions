@@ -25,25 +25,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txC-Ue-Lzd">
-                    <rect key="frame" x="0.0" y="59" width="434.33333333333331" height="759"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5l5-V6-Fnt">
-                            <rect key="frame" x="0.0" y="0.0" width="434.33333333333331" height="759"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12L-Nd-fWn">
-                                    <rect key="frame" x="0.0" y="0.0" width="434.33333333333331" height="759"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHB-84-VJV">
-                                            <rect key="frame" x="16" y="16" width="402.33333333333331" height="402.33333333333331"/>
+                                            <rect key="frame" x="16" y="16" width="361" height="381"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favouritePetCart" translatesAutoresizingMaskIntoConstraints="NO" id="y89-x9-qur">
-                                                    <rect key="frame" x="346.33333333333331" y="24" width="32" height="32"/>
+                                                    <rect key="frame" x="305" y="24" width="32" height="32"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="y89-x9-qur" secondAttribute="height" multiplier="32:32" id="LR2-RU-FeZ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-qR-oxv">
-                                                    <rect key="frame" x="24" y="330.33333333333331" width="128" height="48"/>
+                                                    <rect key="frame" x="24" y="309" width="128" height="48"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dogOnTheStreet" translatesAutoresizingMaskIntoConstraints="NO" id="U3J-Gd-og5">
                                                             <rect key="frame" x="8" y="8" width="32" height="32"/>
@@ -72,10 +72,7 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="willieDog" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-lm-v4n">
-                                                    <rect key="frame" x="0.0" y="0.0" width="381" height="402.33333333333331"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="bSG-lm-v4n" secondAttribute="height" multiplier="341:360" id="kSU-N5-aTM"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="381"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,23 +82,23 @@
                                                 <constraint firstItem="bSG-lm-v4n" firstAttribute="top" secondItem="RHB-84-VJV" secondAttribute="top" id="Jpj-og-eHM"/>
                                                 <constraint firstAttribute="trailing" secondItem="bSG-lm-v4n" secondAttribute="trailing" id="Ndj-Sq-nrI"/>
                                                 <constraint firstItem="y89-x9-qur" firstAttribute="top" secondItem="RHB-84-VJV" secondAttribute="top" constant="24" id="Rov-GZ-US0"/>
-                                                <constraint firstAttribute="width" secondItem="RHB-84-VJV" secondAttribute="height" multiplier="1:1" id="UGd-oM-Rgf"/>
+                                                <constraint firstAttribute="width" secondItem="RHB-84-VJV" secondAttribute="height" multiplier="341:360" id="UGd-oM-Rgf"/>
                                                 <constraint firstAttribute="trailing" secondItem="y89-x9-qur" secondAttribute="trailing" constant="24" id="fFA-pC-8vh"/>
                                                 <constraint firstAttribute="bottom" secondItem="bSG-lm-v4n" secondAttribute="bottom" id="hl0-Bb-g4l"/>
                                                 <constraint firstAttribute="bottom" secondItem="xfb-qR-oxv" secondAttribute="bottom" constant="24" id="igR-r5-oJa"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAs-ct-Fq2">
-                                            <rect key="frame" x="16" y="446.33333333333331" width="402.33333333333331" height="220.66666666666669"/>
+                                            <rect key="frame" x="16" y="425" width="361" height="240"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Samoyed Willy" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQ2-yn-VlJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="402.33333333333331" height="38.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="361" height="38.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                                     <color key="textColor" name="pet text color"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="sFi-JH-5BR">
-                                                    <rect key="frame" x="-16" y="54.333333333333314" width="434.33333333333331" height="29"/>
+                                                    <rect key="frame" x="-16" y="54.333333333333371" width="393" height="29"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="s1A-oH-IiM"/>
@@ -114,14 +111,14 @@
                                                     </collectionViewFlowLayout>
                                                 </collectionView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7S-D8-eXf">
-                                                    <rect key="frame" x="0.0" y="107.3333333333333" width="402.33333333333331" height="57.333333333333329"/>
+                                                    <rect key="frame" x="0.0" y="107.33333333333337" width="361" height="76.666666666666686"/>
                                                     <string key="text">The kindest Samoyed we've ever met. Likes to play with balls, is friends with other animals. Despite the white color, he loves rain and puddles.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" name="descriptionColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update date: December 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxg-HR-nhj">
-                                                    <rect key="frame" x="0.0" y="180.66666666666669" width="402.33333333333331" height="16"/>
+                                                    <rect key="frame" x="0.0" y="200" width="361" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="nLi-Xr-UHV"/>
                                                     </constraints>
@@ -145,7 +142,7 @@
                                             </constraints>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZ2-Dr-hdy">
-                                            <rect key="frame" x="16" y="685" width="402.33333333333331" height="58"/>
+                                            <rect key="frame" x="16" y="685" width="361" height="58"/>
                                             <color key="backgroundColor" name="Let'sGoButtonColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="58" id="cZr-1R-wWI"/>
