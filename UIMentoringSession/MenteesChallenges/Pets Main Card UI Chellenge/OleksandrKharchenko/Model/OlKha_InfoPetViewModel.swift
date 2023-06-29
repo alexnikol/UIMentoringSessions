@@ -9,11 +9,11 @@ struct OlKha_InfoPetViewModel {
 
 let infoPetData: [OlKha_InfoPetViewModel] = [
     .init(title: "1 year",
-          color: RColor.pinkColor()!),
+          color: RColor.beigeColor()!),
     .init(title: "Knows the commands",
           color: RColor.purpurColor()!),
     .init(title: "23 kg",
-          color: RColor.beigeColor()!),
+          color: RColor.pinkColor()!),
     .init(title: "1 year",
           color: RColor.pinkColor()!),
     .init(title: "Knows the commands",
