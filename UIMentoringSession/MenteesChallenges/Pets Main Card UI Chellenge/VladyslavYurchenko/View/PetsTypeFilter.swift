@@ -1,6 +1,6 @@
-
 import Foundation
 import UIKit
+
 struct VladyslavYurchenko_FilterViewModel {
     let title: String
     let type: VladyslavYurchenko_FilterType

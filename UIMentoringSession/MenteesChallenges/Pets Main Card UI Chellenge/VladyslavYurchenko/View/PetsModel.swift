@@ -13,7 +13,7 @@ let petsView: [VladyslavYurchenko_PetModel] = [
     .init(name: "Gary",
           age: "3 years",
           breed: "Yorkshire Terrier",
-          animal: RImage.buggyDog()!,
+          animal: RImage.garyDog()!,
           type: .dog
          ),
     .init(name: "Peach",

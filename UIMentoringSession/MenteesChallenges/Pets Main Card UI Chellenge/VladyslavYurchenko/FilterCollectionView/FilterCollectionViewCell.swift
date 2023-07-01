@@ -1,17 +1,7 @@
-//
-//  FilterCollectionViewCell.swift
-//  UIMentoringSession
-//
-//  Created by Владислав Юрченко on 13.06.2023.
-//  Copyright © 2023 Almost Engineer. All rights reserved.
-//
-
 import UIKit
-import Rswift
 
-class FilterCollectionViewCell: UICollectionViewCell, ReuseIdentifierType {
-    typealias ReusableType = FilterCollectionViewCell
-
+final class FilterCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var petsFilterImage: UIImageView!
     @IBOutlet weak var petsLabel: UILabel!
     override func awakeFromNib() {
@@ -28,7 +18,7 @@ class FilterCollectionViewCell: UICollectionViewCell, ReuseIdentifierType {
             petsLabel.textColor = .white
         } else {
             backgroundColor = RColor.petWhiteColor()
-            layer.borderColor = UIColor.black.withAlphaComponent(0.05).cgColor
+            layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
             petsLabel.textColor = RColor.petTextColor()
         }
     }
