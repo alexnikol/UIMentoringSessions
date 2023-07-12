@@ -8,8 +8,7 @@ final class PetCardCollectionViewCell: UICollectionViewCell {
         setupLayout()
     }
     
-    func setupLayout() {
-        layer.backgroundColor = UIColor.opaqueSeparator.cgColor
+    private func setupLayout() {
         layer.cornerRadius = 13
     }
 }

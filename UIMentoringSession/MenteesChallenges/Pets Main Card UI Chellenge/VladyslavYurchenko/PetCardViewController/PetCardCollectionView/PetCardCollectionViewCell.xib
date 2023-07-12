@@ -17,11 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="136" height="60"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZC2-fe-w5e">
-                        <rect key="frame" x="51" y="15.666666666666664" width="34" height="29"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="29" id="lPg-r3-11d"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZC2-fe-w5e">
+                        <rect key="frame" x="14" y="0.0" width="108" height="60"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                         <color key="textColor" name="descriptionColor"/>
                         <nil key="highlightedColor"/>
@@ -29,8 +26,10 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="ZC2-fe-w5e" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="x5G-yh-bM0"/>
-                <constraint firstItem="ZC2-fe-w5e" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="z39-cA-U3i"/>
+                <constraint firstItem="ZC2-fe-w5e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cvy-Tf-GtY"/>
+                <constraint firstAttribute="trailing" secondItem="ZC2-fe-w5e" secondAttribute="trailing" constant="14" id="Dcr-tL-cYk"/>
+                <constraint firstAttribute="bottom" secondItem="ZC2-fe-w5e" secondAttribute="bottom" id="Srp-vW-xO1"/>
+                <constraint firstItem="ZC2-fe-w5e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="pRF-La-km2"/>
             </constraints>
             <size key="customSize" width="136" height="60"/>
             <connections>

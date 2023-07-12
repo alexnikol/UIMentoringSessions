@@ -7,33 +7,30 @@ final class VladyslavYurchenko_PetsScreenViewController: UIViewController {
     private var filtersAnimals: [VladyslavYurchenko_PetModel] = []
     private var filters: [VladyslavYurchenko_FilterViewModel] = []
     private var filtersSelection: VladyslavYurchenko_FilterType = .all
-    private var petCard = VladyslavYurchenko_PetCardViewController()
+    private var petScreenView: [VladyslavYurchenko_PetSecondScreenModel] = []
     
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            petsCollectionView.register(UINib(nibName: RNib.petsCollectionViewCell.name, bundle: nil), forCellWithReuseIdentifier: RNib.petsCollectionViewCell.name)
-            petsCollectionView.dataSource = self
-            petsCollectionView.delegate = self
-            filterCollectionView.register(UINib(nibName: RNib.filterCollectionViewCell.name, bundle: nil), forCellWithReuseIdentifier: RNib.filterCollectionViewCell.name)
-            filterCollectionView.dataSource = self
-            filterCollectionView.delegate = self
-            filtersAnimals = petsView
-            allAnimals = petsView
-            filters = petsItems
-            //        let storyboard = UIStoryboard(name: "VladyslavYurchenko_PetCardViewController", bundle: nil)
-            //        if let petCardViewController = storyboard.instantiateViewController(identifier: "VladyslavYurchenko_PetCardViewController") as? VladyslavYurchenko_PetCardViewController {
-            //        }
-            
-        }
-        
-        init() {
-            super.init(nibName: RNib.vladyslavYurchenko_PetsScreenViewController.name, bundle: nil)
-        }
-        
-        required init?(coder aDecoder: NSCoder) {
-            super.init(coder: aDecoder)
-        }
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        petsCollectionView.register(UINib(nibName: RNib.petsCollectionViewCell.name, bundle: nil), forCellWithReuseIdentifier: RNib.petsCollectionViewCell.name)
+        petsCollectionView.dataSource = self
+        petsCollectionView.delegate = self
+        filterCollectionView.register(UINib(nibName: RNib.filterCollectionViewCell.name, bundle: nil), forCellWithReuseIdentifier: RNib.filterCollectionViewCell.name)
+        filterCollectionView.dataSource = self
+        filterCollectionView.delegate = self
+        filtersAnimals = petsView
+        allAnimals = petsView
+        filters = petsItems
+        petScreenView = petCharecteristics
+    }
+    
+    init() {
+        super.init(nibName: RNib.vladyslavYurchenko_PetsScreenViewController.name, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+}
 
 extension VladyslavYurchenko_PetsScreenViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -74,9 +71,8 @@ extension VladyslavYurchenko_PetsScreenViewController: UICollectionViewDataSourc
             filterCollectionView.reloadData()
             petsCollectionView.reloadData()
         } else if collectionView == petsCollectionView {
-            let storyboard = UIStoryboard(name: "VladyslavYurchenko_PetCardViewController", bundle: .main)
-            let petCard = storyboard.instantiateViewController(withIdentifier: "VladyslavYurchenko_PetCardViewController") as! VladyslavYurchenko_PetCardViewController
-            let item = filters[indexPath.row]
+            let item = petScreenView[indexPath.row]
+            let petCard = VladyslavYurchenko_PetCardViewController(petScreen: item)
             navigationController?.pushViewController(petCard, animated: true)
         }
     }
@@ -93,13 +89,5 @@ extension VladyslavYurchenko_PetsScreenViewController: UICollectionViewDataSourc
             return CGSize(width: width, height: heigth)
         }
         return .zero
-    }
-}
-
-extension String {
-    func widthOfString(usingFont font: UIFont) -> CGFloat {
-        let fontAttributes = [NSAttributedString.Key.font: font]
-        let size = self.size(withAttributes: fontAttributes)
-        return size.width
     }
 }
