@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-final class VladyslavYurchenko_Button: UIView {
+final class VladyslavYurchenko_Button: UIButton {
    
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -17,5 +17,6 @@ final class VladyslavYurchenko_Button: UIView {
         layer.cornerRadius = 29
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1
+        backgroundColor = RColor.petSelectColor()!
     }
 }

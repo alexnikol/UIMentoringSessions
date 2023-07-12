@@ -1,37 +1,38 @@
 import UIKit
 
 final class VladyslavYurchenko_PetCardViewController: UIViewController {
-    @IBOutlet weak var petImageCard: UIImageView!
-    @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var updateLabel: UILabel!
-    @IBOutlet weak var petDescription: UILabel!
-    @IBOutlet weak var petInfoCard: UICollectionView!
-    @IBOutlet weak var petNameCard: UILabel!
-    var petsCharacteristics: [(title: String, color: UIColor)] = []
+    @IBOutlet private weak var petImageCard: UIImageView!
+    @IBOutlet private weak var signUpButton: UIButton!
+    @IBOutlet private weak var updateLabel: UILabel!
+    @IBOutlet private weak var petDescription: UILabel!
+    @IBOutlet private weak var petInfoCard: UICollectionView!
+    @IBOutlet private weak var petNameCard: UILabel!
+    private var petsCharacteristics: [(title: String, color: UIColor)] = []
+    private let petScreen: VladyslavYurchenko_PetSecondScreenModel
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         petImageCard.image = petScreen.photo
-        petNameCard.text = petScreen.breed + " " + petScreen.name
+        petNameCard.text = petScreen.name
+        petNameCard.textColor = RColor.petNameTextColorUi()!
         petDescription.text = petScreen.description
         updateLabel.text = petScreen.update
-        signUpButton.setTitle("Sign up for an acquaintance", for: .normal)
+        signUpButton.setTitle(RText.petScreenButtonText(), for: .normal)
         signUpButton.layer.cornerRadius = 29
         signUpButton.backgroundColor = RColor.petSelectColor()
         signUpButton.setTitleColor(UIColor.white, for: .normal)
-        petInfoCard.register(UINib(nibName: "PetCardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PetCardCollectionViewCell")
+        petInfoCard.register(UINib(nibName: RNib.petCardCollectionViewCell.name, bundle: nil), forCellWithReuseIdentifier: RNib.petCardCollectionViewCell.name)
         petInfoCard.dataSource = self
         petInfoCard.delegate = self
     }
-    
-    private let petScreen: VladyslavYurchenko_PetSecondScreenModel
     
     init(petScreen: VladyslavYurchenko_PetSecondScreenModel) {
         self.petScreen = petScreen
         super.init(nibName: RNib.vladyslavYurchenko_PetCardViewController.name, bundle: nil)
         petsCharacteristics = [
-            (petScreen.age, UIColor(red: 1.000, green: 0.920, blue: 0.800, alpha: 1.0)),
-            (petScreen.skills, UIColor(red: 0.880, green: 0.800, blue: 1.000, alpha: 1.0)),
-            (petScreen.weight, UIColor(red: 1.000, green: 0.800, blue: 0.840, alpha: 1.0))
+            (petScreen.age, RColor.petAgeColorUi()!),
+            (petScreen.skills, RColor.petSkillsColorUi()!),
+            (petScreen.weight, RColor.petWeightCollorUi()!)
         ]
     }
     required init?(coder: NSCoder) {
@@ -46,9 +47,8 @@ extension VladyslavYurchenko_PetCardViewController: UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let model = petsCharacteristics[indexPath.row]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PetCardCollectionViewCell", for: indexPath) as! PetCardCollectionViewCell
-        cell.petInfoLabel.text = model.title
-        cell.backgroundColor = model.color
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RNib.petCardCollectionViewCell.name, for: indexPath) as! PetCardCollectionViewCell
+        cell.setup(model: model)
         return cell
     }
     

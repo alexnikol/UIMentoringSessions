@@ -11,4 +11,9 @@ final class PetCardCollectionViewCell: UICollectionViewCell {
     private func setupLayout() {
         layer.cornerRadius = 13
     }
+    
+    func setup(model: (title: String, color: UIColor)) {
+        petInfoLabel.text = model.title
+        backgroundColor = model.color
+    }
 }
